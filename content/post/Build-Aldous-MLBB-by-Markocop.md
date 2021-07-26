@@ -16,7 +16,7 @@ tags:
 playername: "Markocop"
 cleanplayername: "markocop"
 heroname: "Aldous"
-images: ../p/images/buildk/.png
+images: https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/aldous.jpg
 draft: false
 type: post
 proplayer: true

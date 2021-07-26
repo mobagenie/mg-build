@@ -12,7 +12,7 @@ tags:
 playername: "soʟíd › вαвy*"
 cleanplayername: "sod-y"
 heroname: "argus"
-images: ../p/images/buildk/argus.png
+images: https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/argus.jpg
 draft: false
 type: post
 ---

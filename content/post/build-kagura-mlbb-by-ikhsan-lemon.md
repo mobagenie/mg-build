@@ -16,7 +16,7 @@ tags:
 playername: "Ikhsan Lemon"
 cleanplayername: "ikhsan-lemon"
 heroname: "kagura"
-images: ../p/images/buildk/kagura.png
+images: https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/kagura.jpg
 draft: false
 type: post
 proplayer: true

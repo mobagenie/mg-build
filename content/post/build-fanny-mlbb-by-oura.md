@@ -16,7 +16,7 @@ tags:
 playername: "Oura"
 cleanplayername: "oura"
 heroname: "fanny"
-images: ../p/images/buildk/fanny.png
+images: https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/fanny.jpg
 draft: false
 type: post
 proplayer: true
