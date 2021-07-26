@@ -1,6 +1,6 @@
 ---
 title: "{{ .TranslationBaseName | replaceRE "^[0-9]{14}-" "" | replaceRE "-" " " | title }}"
-post_highlight: ""
+post_highlight: "Player:  † WR: % Match:   Tier:  Tier Lane:  Lane"
 author: MobaGenie
 date: {{ .Date }}
 PublishDate: {{ .Date }}
@@ -19,6 +19,15 @@ heroname: ""
 images: ../p/images/buildk/.png
 draft: false
 type: post
+proplayer: false
+team: 
+ytvideoid: 
+ign: 
+yt: 
+fb: 
+ig: 
+tw: 
+bio: 
 ---
 
 {{< HeroInfo HeroName"" View"" Role"" BP"" DM"" Ticket"" Player"" CleanPlayerName"" WR"" League"" Match"" HeroTier"" TierLabel"" LaneImg"" LaneLabel"" >}} {{< /HeroInfo >}}
