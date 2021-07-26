@@ -1,8 +1,1 @@
-/static/p/herosounds/*
-#/static/p/images/*
-/static/p/js/*
-/static/p/mbuild/*
-/static/p/sound/*
-/static/p/news/*
-/static/p/css/*
-/static/p/assets/*
+/public/*
