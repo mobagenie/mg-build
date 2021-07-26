@@ -1,0 +1,142 @@
+#search-overlay {
+    left: 0px;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    /* background: #dd4e42;*/
+	   background: #212529;
+    /* background: linear-gradient(to right, #dd4e42, #fbcd43);	 */
+    /* background: #3ac8dd; */
+    overflow-y: scroll;
+}
+.wrapper {
+    padding: 133px 40px 100px;
+}
+
+.wrapper, .wrapper.home {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#search-overlay a,li {
+    color: white;
+}
+
+.search-title {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.search-input-line {
+    margin-bottom: 5px;
+}
+
+#search-input {
+	background-color: #dee2e6;
+    width: 100%;
+    font-size: 21px;
+	border: none;
+    /* border-radius: 2px; */
+    border-radius: 2px;
+    padding: 5px 5px;
+    border: 1px solid #888888;
+    outline: none;
+    text-align: center;
+}
+
+input, button, select, textarea {
+    font: inherit;
+    font-size: 100%;
+    line-height: normal;
+    vertical-align: baseline;
+}
+/*
+#search-close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 40px;
+    cursor: pointer;
+}
+*/
+
+
+#search-close {
+    background: #007bff!important;
+    /* background: #dd4b39; */
+    border: none;
+    /* border-radius: 2px; */
+    border-radius: 2px;
+    padding: 8px;
+    color: white;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+#search-close:hover
+{
+color: #fff;
+background-image:none;
+background-color:#888888;
+}
+
+em, i {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px)
+.search-help {
+    display: none;
+}
+
+.search-help {
+    text-align: right;
+    margin-top: -28px;	
+    /* text-align: right; */
+    /* margin-top: 0; */
+}
+
+.search-help .key {
+    background: #007bff!important;
+    /* border: 3px solid #ffffff; */
+    border-radius: 2px;
+    padding: 5px;
+}
+
+#search-results {
+    margin-top: 40px;    color: #f8f8f8;
+}
+
+
+#search-overlay p.search-help {color: white;}
+#search-overlay a:hover.search-help {color: black;}
+
+
+/* unvisited link */
+#search-results a:link {
+  color: white;
+}
+
+/* visited link */
+#search-results a:visited {
+  color: #404040;
+}
+
+/* mouse over link */
+#search-results a:hover {
+  color: #007bff;
+}
+
+/* selected link */
+#search-results a:active {
+  color: blue;
+}
+
