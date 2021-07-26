@@ -23,7 +23,7 @@ yt: UCvh1at6xpV1ytYOAzxmqUsA
 fb: jessnolimit.id
 ig: jessnolimit
 tw: _jessnolimit
-bio: Tobias Justin, yang dikenal secara profesional sebagai Jess No Limit (lahir di Kota Jakarta, Indonesia, 5 Februari 1996; umur 25 tahun) adalah seorang pemain permainan daring, streamer, dan YouTuber berkebangsaan Indonesia.
+shortbio: Tobias Justin, yang dikenal secara profesional sebagai Jess No Limit (lahir di Kota Jakarta, Indonesia, 5 Februari 1996; umur 25 tahun) adalah seorang pemain permainan daring, streamer, dan YouTuber berkebangsaan Indonesia.
 ---
 
 {{< HeroInfo HeroName="Phoveous" View="82118" Role="2" BP="32000" DM="599" Ticket="0" Player="JessNoLimit" CleanPlayerName="jessnolimit" WR="94.9%" League="x 1066" Match="238 " HeroTier="6" TierLabel="C Tier" LaneImg="5" LaneLabel="Exp Lane" >}} {{< /HeroInfo >}}

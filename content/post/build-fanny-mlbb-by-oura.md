@@ -20,14 +20,19 @@ images: https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-bui
 draft: false
 type: post
 proplayer: true
-team: 
+team: Genk Kapak
+exteam: "Genk Kapak (curent), Evos Esports (ex), Saints Indo"
 ytvideoid: 
-ign: 
-yt: 
-fb: 
-ig: 
-tw: 
-bio: 
+achievement: "M1"
+allachievement: "#1 Winner M1 World Championship, MSC, MPL ID"
+ign: Biawak Batam
+yt: UCirWugW5e03u3DUGA87s58A
+fb: eko.ourajulianto
+ig: ekooju
+tw: ekojuo
+shortbio: "Di kalangan para gaming nama evos oura sudah tidak asing lagi didengar Doi adalah kapten dari tim Evos eSports divisi Mobile Legends. Yang sangat hebat dalam memainkan game nya di dunia online.
+
+Cowok yang punya nama lengkap Eko Julianto ini sudah menggeluti dunia game semenjak dahulu dan selalu bermain game secara baik."
 ---
 
 {{< HeroInfo HeroName="Fanny" View="" Role="3" BP="24000" DM="499" Ticket="0" Player="Oura" CleanPlayerName="oura" WR="%" League="x" Match="" HeroTier="4" TierLabel="A Tier" LaneImg="4" LaneLabel="Jungle" >}} {{< /HeroInfo >}}

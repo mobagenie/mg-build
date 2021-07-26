@@ -27,7 +27,7 @@ yt: UCuVxJ829ysWH2OhZJiWdnbg
 fb: ikhsanlemon
 ig: ikhsan_lemon
 tw: rrq_lemon_
-bio: RRQ Lemon mengawali karirnya sebagai pro gamer sejak kemunculan game Mobile Legends yaitu pada 2016 silam. Kemudian setahun setelahnya ia mulai masuk dalam squad bernama RRQ. Selain itu, memang sejak kecil ia sangat tertarik pada semua jenis game.
+shortbio: RRQ Lemon mengawali karirnya sebagai pro gamer sejak kemunculan game Mobile Legends yaitu pada 2016 silam. Kemudian setahun setelahnya ia mulai masuk dalam squad bernama RRQ. Selain itu, memang sejak kecil ia sangat tertarik pada semua jenis game.
 ---
 
 {{< HeroInfo HeroName="Kagura" View="-" Role="4" BP="32000" DM="599" Ticket="0" Player="Ikhsan Lemon" CleanPlayerName="ikhsan-lemon" WR="91,4%" League="x -" Match="3500" HeroTier="2" TierLabel="S Tier" LaneImg="3" LaneLabel="Mid Lane" >}} {{< /HeroInfo >}}
