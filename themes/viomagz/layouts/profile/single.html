@@ -167,7 +167,7 @@ ul.twPc-Arrange {
             <!-- Twitter Button -->   
 		</div>
 
-		<a title="Mert S. Kaplan" href="https://twitter.com/mertskaplan" class="twPc-avatarLink">
+		<a title="{{ .Params.playername }}" href="/profile/{{ .Params.cleanplayername }}">{{ .Params.playername }}" class="twPc-avatarLink">
 			<img alt="Mert S. Kaplan" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername | lower }}.jpg" class="twPc-avatarImg">
 		</a>
 
