@@ -1,0 +1,114 @@
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12">
+
+<h2><i class="material-icons">settings_suggest</i> Rec Spell</h2>
+
+</div>
+ 
+{{ $Spell1 := .Get "SpellName1" }}
+
+ 
+{{ .Scratch.Set "SpellDesc1" "nmm" }}
+
+{{ if eq $Spell1 "Aegis" }}
+    {{ .Scratch.Set "SpellDesc1" "Aegis" }}
+{{ else if eq $Spell1 "Flicker" }}
+    {{ .Scratch.Set "SpellDesc1" "Moves a certain distance in a designated direction.Then gains5 (+1 * Hero Level) Physical & Magic Defense for 1s " }}
+{{ else if eq $Spell1 "Arrival" }}
+    {{ .Scratch.Set "SpellDesc1" "Arrival" }}
+{{ else if eq $Spell1 "Execute" }}
+    {{ .Scratch.Set "SpellDesc1" "Execute" }}
+{{ else if eq $Spell1 "Flicker" }}
+    {{ .Scratch.Set "SpellDesc1" "Flicker" }}
+{{ else if eq $Spell1 "Flameshot" }}
+    {{ .Scratch.Set "SpellDesc1" "Fires a Flaming Shot in a designated direction dealing 160(+45% Total Magic Power) - 640 (+180 % Total Magic Power) Magic Damage (scales with distance). While casting this skill knocks back nearby enemies.Upon hitting the target slows the target by30% for 0.5s" }}	
+{{ else if eq $Spell1 "Healing Spell" }}
+    {{ .Scratch.Set "SpellDesc1" "Healing Spell" }}
+{{ else if eq $Spell1 "Inspire" }}
+    {{ .Scratch.Set "SpellDesc1" "Inspire" }}
+{{ else if eq $Spell1 "Iron Wall" }}
+    {{ .Scratch.Set "SpellDesc1" "Iron Wall" }}
+{{ else if eq $Spell1 "Petrify" }}
+    {{ .Scratch.Set "SpellDesc1" "Petrify" }}
+{{ else if eq $Spell1 "Purify" }}
+    {{ .Scratch.Set "SpellDesc1" "Purify" }}
+{{ else if eq $Spell1 "Retribution" }}
+    {{ .Scratch.Set "SpellDesc1" "Retribution" }}
+{{ else if eq $Spell1 "Sprint" }}
+    {{ .Scratch.Set "SpellDesc1" "Sprint" }}
+{{ else if eq $Spell1 "Weaken" }}
+    {{ .Scratch.Set "SpellDesc1" "Weaken" }}
+{{ else if eq $Spell1 "Vengeance" }}
+    {{ .Scratch.Set "SpellDesc1" "Vengeance" }}
+{{ end }}
+
+{{ $Spell2 := .Get "SpellName2" }}
+
+ 
+{{ .Scratch.Set "SpellDesc2" "nmm" }}
+
+{{ if eq $Spell2 "Aegis" }}
+    {{ .Scratch.Set "SpellDesc2" "Aegis" }}
+{{ else if eq $Spell2 "Flicker" }}
+    {{ .Scratch.Set "SpellDesc2" "Moves a certain distance in a designated direction.Then gains5 (+1 * Hero Level) Physical & Magic Defense for 1s " }}
+{{ else if eq $Spell2 "Arrival" }}
+    {{ .Scratch.Set "SpellDesc2" "Arrival" }}
+{{ else if eq $Spell2 "Execute" }}
+    {{ .Scratch.Set "SpellDesc2" "Execute" }}
+{{ else if eq $Spell2 "Flicker" }}
+    {{ .Scratch.Set "SpellDesc2" "Flicker" }}
+{{ else if eq $Spell1 "Flameshot" }}
+    {{ .Scratch.Set "SpellDesc1" "Fires a Flaming Shot in a designated direction dealing 160(+45% Total Magic Power) - 640 (+180 % Total Magic Power) Magic Damage (scales with distance). While casting this skill knocks back nearby enemies.Upon hitting the target slows the target by30% for 0.5s" }}		
+{{ else if eq $Spell2 "Healing Spell" }}
+    {{ .Scratch.Set "SpellDesc2" "Healing Spell" }}
+{{ else if eq $Spell2 "Inspire" }}
+    {{ .Scratch.Set "SpellDesc2" "Inspire" }}
+{{ else if eq $Spell2 "Iron Wall" }}
+    {{ .Scratch.Set "SpellDesc2" "Iron Wall" }}
+{{ else if eq $Spell2 "Petrify" }}
+    {{ .Scratch.Set "SpellDesc2" "Petrify" }}
+{{ else if eq $Spell2 "Purify" }}
+    {{ .Scratch.Set "SpellDesc2" "Purify" }}
+{{ else if eq $Spell2 "Retribution" }}
+    {{ .Scratch.Set "SpellDesc2" "Retribution" }}
+{{ else if eq $Spell2 "Sprint" }}
+    {{ .Scratch.Set "SpellDesc2" "Sprint" }}
+{{ else if eq $Spell2 "Weaken" }}
+    {{ .Scratch.Set "SpellDesc2" "Weaken" }}
+{{ else if eq $Spell2 "Vengeance" }}
+    {{ .Scratch.Set "SpellDesc2" "Vengeance" }}
+{{ end }}
+ 
+        <div class="col-lg-12">
+
+      <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "SpellName1" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/spells/iname/{{ .Get "SpellName1" }}.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+	
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "SpellName2" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/spells/iname/{{ .Get "SpellName2" }}.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+	  
+<!-- <div class="bd-example bd-example-tabs"> -->
+  <!-- <b><ul class="nav nav-tabs " id="pills-tab" role="tablist"> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link active" id="pills-{{ .Get "SpellName1" }}-tab" data-toggle="pill" href="#pills-{{ .Get "SpellName1" }}" role="tab" aria-controls="pills-{{ .Get "SpellName1" }}" aria-selected="true">{{ .Get "SpellName1" }}</a> -->
+    <!-- </li> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link" id="pills-{{ .Get "SpellName2" }}-tab" data-toggle="pill" href="#pills-{{ .Get "SpellName2" }}" role="tab" aria-controls="pills-{{ .Get "build" }}" aria-selected="false">{{ .Get "SpellName2" }}</a> -->
+    <!-- </li> -->
+  <!-- </ul></b> -->
+  <!-- <div class="tab-content" id="pills-tabContent"> -->
+    <!-- <div class="tab-pane fadeshow show active" id="pills-{{ .Get "SpellName1" }}" role="tabpanel" aria-labelledby="pills-{{ .Get "SpellName1" }}-tab"> -->
+      <!-- <p>{{ .Scratch.Get "SpellDesc1" }}</p> -->
+    <!-- </div> -->
+    <!-- <div class="tab-pane fade" id="pills-{{ .Get "SpellName2" }}" role="tabpanel" aria-labelledby="pills-{{ .Get "SpellName2" }}-tab"> -->
+      <!-- <p>{{ .Scratch.Get "SpellDesc2" }}</p> -->
+    <!-- </div> -->
+    
+  </div>
+<!-- </div> <!--.col-lg-4 end-->
+
+</div>
+
+										
+										{{ .Inner }}

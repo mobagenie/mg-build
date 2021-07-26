@@ -1,0 +1,16 @@
+<!-- loop through all pages in this 'blog' section -->
+{{ range .Data.Pages }}
+<article>
+<!-- Title, as defined in the front-matter  of /content/blog/<pagename>.md -->
+<!-- Wrap the title in a link to the actual full length article -->
+<a href="{{ .Permalink }}"><h1>{{ .Title }}</h1></a>
+<div class="content">
+<!-- Just show a summary. Not the full post -->
+{{ .Summary }} <a href="{{ .Permalink }}">[READ MORE...]</a>
+</div>
+</article>
+{{ end }}
+<!-- This ends the loop started with 'range...' above -->
+<!-- Include our /layouts/partials/footer.html partial -->
+
+{{"<!-- end layouts > section > blog.html  template //-->" | safeHTML}}

@@ -1,0 +1,14 @@
+{{ $content := replace $content "mobagenie.id"  "mobagenie.my.id" }}
+{{ $content := replace $content "MobaGenie.ID"  "MobaGenie" }}
+{{ $content := replace $content "www.mobagenie.id"  "mobagenie.my.id" }}
+{{ $content := replace $content "www.mobagenie.my.id"  "mobagenie.my.id" }}
+
+
+{{ $content := replace $content `<iframe`  `<amp-youtube` }}
+{{ $content := replace $content `src="https://www.youtube.com/embed/`  `data-videoid="` }}
+{{ $content := replace $content `?feature=player_embedded"`  `"` }}
+{{ $content := replace $content `allowfullscreen=""` `` }}
+{{ $content := replace $content `frameborder="0"`  `` }}
+{{ $content := replace $content `></iframe>`  `></amp-youtube>` }}
+{{ $content := replace $content `framelayout="responsive"`  `` }}
+{{ $content := $content | replaceRE  "data-thumbnail-src=\".*?.jpg" "" }}

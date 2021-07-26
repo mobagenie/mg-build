@@ -1,0 +1,190 @@
+<script>
+	$.fn.GetParamURL = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null) {
+       return null;
+    }
+    return decodeURI(results[1]) || 0;
+}
+
+var Week  = $().GetParamURL('Week');
+var MatchNo  = $().GetParamURL('MatchNo');
+var Round  = $().GetParamURL('Round');
+var MatchDate  = $().GetParamURL('MatchDate');
+var Time  = $().GetParamURL('Time');
+var BattlefyEmbed  = $().GetParamURL('BattlefyEmbed');
+
+</script>
+
+          <!--   <link rel="stylesheet" href="https://www.josephearl.co.uk/css/style.css9"> -->
+<!-- <script src="https://www.josephearl.co.uk/js/highlight.js"></script>
+<script src="https://www.josephearl.co.uk/js/main.js"></script> -->
+
+
+<!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="/js/widget.js"></script> -->
+<script src="{{ .Site.Params.cdnurl }}/js/lunr.js"></script>
+<!-- <script src="https://www.josephearl.co.uk/js/lunr.js"></script> -->
+<script src="{{ .Site.Params.cdnurl }}/js/search.min.js"></script>
+<script src="{{ .Site.Params.cdnurl }}/js/nav.js"></script>
+<script src="{{ .Site.Params.cdnurl }}/js/scroll.js"></script>
+<script src="{{ .Site.Params.cdnurl }}/js/sticky.js"></script>
+<!-- <script src="{{ .Site.Params.cdnurl }}/js/histats.js"></script> -->
+
+<!-- <script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/prism.js"></script> -->
+<!-- <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500" rel="stylesheet" type="text/css"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/ -->
+
+<!-- Tablesorter script: required -->
+<script src="/tablesorter-master/js/jquery.tablesorter.js"></script>
+<script src="/tablesorter-master/js/jquery.tablesorter.widgets.js"></script>
+<script src="/tablesorter-master/js/widgets/widget-scroller.js"></script>
+
+<script src="/tablesorter-master/js/widgets/widget-sort2Hash.js"></script>
+
+	
+	<script id="js">$(function() {
+
+	$('.tablesorter').tablesorter({
+		theme: 'metro-dark',
+		showProcessing: false,
+		headers: { 0: { filter: false} },
+		headerTemplate : '{content} {icon}',
+		widgets: [ 'uitheme', 'zebra', 'sort2Hash','filter', 'scroller' ,'numbering' ],
+		widgetOptions : {
+			scroller_height : 600,
+			// scroll tbody to top after sorting
+			scroller_upAfterSort: true,
+			// pop table header into view while scrolling up the page
+			scroller_jumpToHeader: true,
+			// In tablesorter v2.19.0 the scroll bar width is auto-detected
+			// add a value here to override the auto-detected setting
+			scroller_barWidth : null
+			// scroll_idPrefix was removed in v2.18.0
+			// scroller_idPrefix : 's_'
+		}
+	});
+
+	var startFixedColumns = 0;
+
+	$('#fixed-columns-table').tablesorter({
+		theme: 'metro-dark',
+		showProcessing: false,
+		headerTemplate : '{content} {icon}',
+		
+		widgets: [ 'uitheme', 'zebra', 'sort2Hash','filter', 'scroller' ],
+		widgetOptions : {
+			// scroll tbody to top after sorting
+			scroller_upAfterSort: true,
+			// pop table header into view while scrolling up the page
+			scroller_jumpToHeader: true,
+
+			scroller_height : 700,
+			// set number of columns to fix
+			scroller_fixedColumns : startFixedColumns,
+			// add a fixed column overlay for styling
+			scroller_addFixedOverlay : false,
+			// add hover highlighting to the fixed column (disable if it causes slowing)
+			scroller_rowHighlight : 'hover',
+
+			// bar width is now calculated; set a value to override
+			scroller_barWidth : null
+		}
+	});
+
+	// use jQuery UI slider to change the fixed column size
+	$( '#slider' ).slider({
+		value : startFixedColumns,
+		min   : 0,
+		max   : 4,
+		step  : 1,
+		slide : function( event, ui ) {
+			// page indicator
+			$( '.fixed-columns' ).text( ui.value );
+			// method to update the fixed column size
+			$( '#fixed-columns-table').trigger( 'setFixedColumnSize', ui.value );
+		}
+	});
+
+	// update column value display
+	$( '.fixed-columns' ).text( startFixedColumns );
+
+});</script>
+<script>
+$(function() {
+
+	var $jth = $('#jth'), // scroller_jumpToHeader toggle button
+		$uas = $('#uas'), // scroller_upAfterSort toggle button
+		themes = 'default blue green grey ice black-ice dark dropbox metro-dark',
+		i, o = '', t = themes.split(' ');
+	for (i = 0; i < t.length; i++) {
+		o += '<option value="' + t[i] + '">' + t[i] + '</option>';
+	}
+
+	$('#theme')
+		.append(o)
+		.val('metro-dark')
+		.change(function() {
+			var theme = $(this).val().toLowerCase();
+
+			// show jui select only if jQuery UI selected
+			$('#switcher').toggle(theme === 'jui');
+			// add class so the black border fits the theme
+			$('#main').attr( 'class', 'using-' + theme + '-theme' );
+
+			// refresh uitheme widget class names
+			$('#main .tablesorter').each(function() {
+				if (this.config) {
+					this.config.theme = theme === 'black-ice' ? 'blackice' : theme;
+				}
+			});
+			$('table').trigger('applyWidgets');
+
+			// make sure columns align
+			$(window).trigger('resize');
+		}).change();
+
+	$('button').click(function() {
+		var jth = $jth.text() === 'true',
+			uas = $uas.text() === 'true';
+		if (this.id === 'jthb') {
+			jth = !jth;
+		} else {
+			uas = !uas;
+		}
+		$('.tablesorter-scroller-table table').each(function() {
+			var c = this.config;
+			if (c) {
+				c.widgetOptions.scroller_jumpToHeader = jth;
+				c.widgetOptions.scroller_upAfterSort = uas;
+			}
+		});
+		$jth.html(jth + '');
+		$uas.html(uas + '');
+		return false;
+	});
+
+});
+
+// add custom numbering widget
+$.tablesorter.addWidget({
+    id: "numbering",
+    format: function(table) {
+        var c = table.config;
+        $("tr", table.tBodies[0]).each(function(i) {
+            //var i =("#" i);
+$(this).find('td').eq(0).text(i + 1);
+        });
+    }
+});
+
+function format(n) {
+    with (Math) {
+        var base = floor(log(abs(n))/log(1000));
+        var suffix = 'KMB'[base-1];
+        return suffix ? String(n/pow(1000,base)).substring(0,3)+suffix : ''+n;
+    }
+}
+</script>

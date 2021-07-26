@@ -1,0 +1,12 @@
+table.allposts, td.allposts-date, td.allposts-title {
+    /* border: none; */
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 3px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

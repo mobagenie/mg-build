@@ -1,0 +1,115 @@
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12">
+
+<h2><i class="material-icons">settings_suggest</i> Rec Emblem</h2>
+
+</div>
+ 
+{{ $Emblem1 := .Get "EmblemName1" }}
+
+ 
+{{ .Scratch.Set "EmblemDesc1" "nmm" }}
+
+{{ if eq $Emblem1 "Assassin" }}
+    {{ .Scratch.Set "EmblemDesc1" "Ass" }}
+{{ else if eq $Emblem1 "Flicker" }}
+    {{ .Scratch.Set "EmblemDesc1" "Moves a certain distance in a designated direction.Then gains5 (+1 * Hero Level) Physical & Magic Defense for 1s " }}
+{{ else if eq $Emblem1 "Arrival" }}
+    {{ .Scratch.Set "EmblemDesc1" "Arrival" }}
+{{ else if eq $Emblem1 "Execute" }}
+    {{ .Scratch.Set "EmblemDesc1" "Execute" }}
+{{ else if eq $Emblem1 "Flicker" }}
+    {{ .Scratch.Set "EmblemDesc1" "Flicker" }}
+{{ else if eq $Emblem1 "Flameshot" }}
+    {{ .Scratch.Set "EmblemDesc1" "Fires a Flaming Shot in a designated direction dealing 160(+45% Total Magic Power) - 640 (+180 % Total Magic Power) Magic Damage (scales with distance). While casting this skill knocks back nearby enemies.Upon hitting the target slows the target by30% for 0.5s" }}	
+{{ else if eq $Emblem1 "Healing Emblem" }}
+    {{ .Scratch.Set "EmblemDesc1" "Healing Emblem" }}
+{{ else if eq $Emblem1 "Inspire" }}
+    {{ .Scratch.Set "EmblemDesc1" "Inspire" }}
+{{ else if eq $Emblem1 "Iron Wall" }}
+    {{ .Scratch.Set "EmblemDesc1" "Iron Wall" }}
+{{ else if eq $Emblem1 "Petrify" }}
+    {{ .Scratch.Set "EmblemDesc1" "Petrify" }}
+{{ else if eq $Emblem1 "Purify" }}
+    {{ .Scratch.Set "EmblemDesc1" "Purify" }}
+{{ else if eq $Emblem1 "Retribution" }}
+    {{ .Scratch.Set "EmblemDesc1" "Retribution" }}
+{{ else if eq $Emblem1 "Sprint" }}
+    {{ .Scratch.Set "EmblemDesc1" "Sprint" }}
+{{ else if eq $Emblem1 "Weaken" }}
+    {{ .Scratch.Set "EmblemDesc1" "Weaken" }}
+{{ else if eq $Emblem1 "Vengeance" }}
+    {{ .Scratch.Set "EmblemDesc1" "Vengeance" }}
+{{ end }}
+
+{{ $Emblem2 := .Get "EmblemName2" }}
+
+ 
+{{ .Scratch.Set "EmblemDesc2" "nmm" }}
+
+{{ if eq $Emblem2 "Aegis" }}
+    {{ .Scratch.Set "EmblemDesc2" "Aegis" }}
+{{ else if eq $Emblem2 "Flicker" }}
+    {{ .Scratch.Set "EmblemDesc2" "Moves a certain distance in a designated direction.Then gains5 (+1 * Hero Level) Physical & Magic Defense for 1s " }}
+{{ else if eq $Emblem2 "Arrival" }}
+    {{ .Scratch.Set "EmblemDesc2" "Arrival" }}
+{{ else if eq $Emblem2 "Execute" }}
+    {{ .Scratch.Set "EmblemDesc2" "Execute" }}
+{{ else if eq $Emblem2 "Flicker" }}
+    {{ .Scratch.Set "EmblemDesc2" "Flicker" }}
+{{ else if eq $Emblem1 "Flameshot" }}
+    {{ .Scratch.Set "EmblemDesc1" "Fires a Flaming Shot in a designated direction dealing 160(+45% Total Magic Power) - 640 (+180 % Total Magic Power) Magic Damage (scales with distance). While casting this skill knocks back nearby enemies.Upon hitting the target slows the target by30% for 0.5s" }}		
+{{ else if eq $Emblem2 "Healing Emblem" }}
+    {{ .Scratch.Set "EmblemDesc2" "Healing Emblem" }}
+{{ else if eq $Emblem2 "Inspire" }}
+    {{ .Scratch.Set "EmblemDesc2" "Inspire" }}
+{{ else if eq $Emblem2 "Iron Wall" }}
+    {{ .Scratch.Set "EmblemDesc2" "Iron Wall" }}
+{{ else if eq $Emblem2 "Petrify" }}
+    {{ .Scratch.Set "EmblemDesc2" "Petrify" }}
+{{ else if eq $Emblem2 "Purify" }}
+    {{ .Scratch.Set "EmblemDesc2" "Purify" }}
+{{ else if eq $Emblem2 "Retribution" }}
+    {{ .Scratch.Set "EmblemDesc2" "Retribution" }}
+{{ else if eq $Emblem2 "Sprint" }}
+    {{ .Scratch.Set "EmblemDesc2" "Sprint" }}
+{{ else if eq $Emblem2 "Weaken" }}
+    {{ .Scratch.Set "EmblemDesc2" "Weaken" }}
+{{ else if eq $Emblem2 "Vengeance" }}
+    {{ .Scratch.Set "EmblemDesc2" "Vengeance" }}
+{{ end }}
+ 
+        <div class="col-lg-12">
+
+      <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "EmblemName1" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/amblems/iname/{{ .Get "EmblemName1" }}.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+	
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "EmblemName2" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/amblems/iname/{{ .Get "EmblemName2" }}.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+	  
+<!-- <div class="bd-example bd-example-tabs"> -->
+  <!-- <b><ul class="nav nav-tabs " id="pills-tab" role="tablist"> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link active" id="pills-{{ .Get "EmblemName1" }}-tab" data-toggle="pill" href="#pills-{{ .Get "EmblemName1" }}" role="tab" aria-controls="pills-{{ .Get "EmblemName1" }}" aria-selected="true">{{ .Get "EmblemName1" }}</a> -->
+    <!-- </li> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link" id="pills-{{ .Get "EmblemName2" }}-tab" data-toggle="pill" href="#pills-{{ .Get "EmblemName2" }}" role="tab" aria-controls="pills-{{ .Get "build" }}" aria-selected="false">{{ .Get "EmblemName2" }}</a> -->
+    <!-- </li> -->
+  <!-- </ul></b> -->
+  <!-- <div class="tab-content" id="pills-tabContent"> -->
+    <!-- <div class="tab-pane fadeshow show active" id="pills-{{ .Get "EmblemName1" }}" role="tabpanel" aria-labelledby="pills-{{ .Get "EmblemName1" }}-tab"> -->
+      <!-- <p>{{ .Scratch.Get "EmblemDesc1" }}</p> -->
+    <!-- </div> -->
+    <!-- <div class="tab-pane fade" id="pills-{{ .Get "EmblemName2" }}" role="tabpanel" aria-labelledby="pills-{{ .Get "EmblemName2" }}-tab"> -->
+      <!-- <p>{{ .Scratch.Get "EmblemDesc2" }}</p> -->
+    <!-- </div> -->
+    
+  </div>
+<!-- </div> <!--.col-lg-4 end-->
+
+</div>
+
+
+										
+										{{ .Inner }}

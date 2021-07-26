@@ -1,0 +1,93 @@
+title = "Build - MobaGenie - Mobile Legends Build Guide"
+# Untuk deskripsi tag meta di homepage
+description = "All about Mobile Legends Build and Guide"
+baseURL = "https://build.mobagenie.my.id"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "viomagz"
+
+#disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+#  player = "player" 
+  
+[permalinks]
+    post = "/:slug/"
+	blog = "/:slug/"
+		post-amp = "/amp/:slug/"
+		# post = "/:year/:month/:day/:slug/"
+    #profile ="/profile/:slug/" 
+	#pplayer = "/:slug/"
+	
+   
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "build-mg"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "UA-175505532-1" 
+
+
+
+# Biodata Author
+[author]
+    name = "Moba Genie"
+    homepage = "https://twitter.com/mobagenie"
+    bio = "noo"
+    image = "https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg"
+	
+	
+languageCode = "en-us"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[outputFormats.LunrIndexJson]
+  baseName = "lunrindexjson"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
+[params.lunrindexjson]
+  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+  params = ["categories", "tags"]
+  
+[outputs]
+  #post = [ "AMP", "HTML"]
+  home = ["HTML", "AMP", "RSS", "LunrIndexJson"]
+  page = ["HTML", "AMP"]
+  p = ["HTML", "AMP"]
+
+[markup.goldmark.renderer]
+      unsafe = true
+
+# CDN 
+[params]
+  cdn = "https://cdn.statically.io/img/cdn2-build.mobagenie.my.id/f=auto"
+   rooturl = ""
+  # rooturl = "http://localhost:1313"
+
+[build.environment]
+TZ = "Asia/Jakarta"
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+    keepDocumentTags = true
+    keepQuotes = true
+	[minify.tdewolff.js]
+	KeepVarNames = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5

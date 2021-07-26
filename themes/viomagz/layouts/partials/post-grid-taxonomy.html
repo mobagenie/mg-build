@@ -1,0 +1,114 @@
+<!-- post wrapper start -->
+<div id="post-wrapper">
+<div class="post-container">
+
+<div class="latest-post-title">
+<h2>LIST OF "{{ .Title }}" BUILD</h2>
+</div><br/>
+
+<div class="main section" id="main"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts">
+<!--Can't find substitution for tag [defaultAdStart]-->
+          
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+  
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 50 }}
+            {{ range $paginator.Pages }}  
+			
+			
+<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+
+{{if isset .Params "images" }}
+{{ $images_set := index .Params.images  | absURL }}
+
+<a href="{{ .RelPermalink }}"><img src="https://cdn.statically.io/img/build.mobagenie.my.id/f=auto/p/images/buildk/{{ .Params.heroname | lower }}.png" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+		
+	<!-- <img src="{{ . | absURL }}" alt="" class="img-fluid rounded-circle" width="100px" height="100px"> -->
+
+	{{ end }}
+	
+
+
+<!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
+</br></br>
+<p href="#" type="button" class="btn btn-secondary" data-toggle="popover" data-toggle="popover" data-placement="top" style="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+  Short Info
+</p></div>
+
+			
+			
+<!-- <div class="post-outer"> -->
+<!-- <article class="post"> -->
+<!-- <div class="label-line"> -->
+<!-- <span class="label-info-th"> -->
+
+<!-- {{ range .Params.categories }} -->
+	
+<!-- <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" rel="tag">{{ . }}</a>	 -->
+	
+    <!-- {{ end }} -->
+
+
+<!-- </span> -->
+<!-- </div> -->
+<!-- <div class="img-thumbnail"> -->
+
+<!-- {{if isset .Params "images" }} -->
+
+<!-- img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_250,h_250,c_fill,g_face,f_auto/{{ index .Params "images" 0 }}" -->
+
+<!-- {{ end }} -->
+
+<!-- </div> -->
+
+<!-- {{if isset .Params "images" }} -->
+<!-- <meta content="{{ index .Params "images" 0 }}" itemprop="image"> -->
+<!-- {{ end }} -->
+
+<!-- <a name=""></a> -->
+<!-- <h2 class="post-title entry-title" itemprop="name headline"> -->
+<!-- <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
+<!-- </h2> -->
+<!-- <div class="post-body entry-content" id="post-body-" itemprop="description"> -->
+<!-- <div class="post-snippet"> -->
+
+<!-- {{ if gt (len .Summary) 150 }} -->
+
+  <!-- {{slicestr .Summary 0 150}} -->
+  
+  <!-- <a href="{{ .Permalink }}">Read More…</a> -->
+
+    <!-- {{ else }} -->
+        <!-- {{ .Summary }} -->
+
+<!-- {{ end }} -->
+
+
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="post-info info-1"> -->
+<!-- </div> -->
+<!-- <div style="clear: both;"></div> -->
+<!-- </article> -->
+<!-- </div> -->
+            {{ end }}
+        </div></div>
+      
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+
+<div class="container">
+    {{ partial "pagination.html" . }}
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+<!-- post wrapper end -->

@@ -1,0 +1,114 @@
+﻿
+         {{ partial "head.html" . }}
+
+  <body>
+
+<style>
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+</style>
+
+<!-- <div class="img-wrapper"> -->
+  <!-- <img class="img-responsive" -->
+    <!-- src="https://i.picsum.photos/id/1016/1200/400.jpg?hmac=NT1ZgM9ZJxiih7JmLKm-Zu_6cAOM7NOxtYZrVospPqU"> -->
+  <!-- <div class="img-overlay"> -->
+    <!-- <button class="btn btn-md btn-success">Button</button> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+<!-- <h2 id="demoHero14">14. Shine</h2> -->
+<!-- <div class="hover14 column"> -->
+  <!-- <div> -->
+    <!-- <figure><img src="https://picsum.photos/300/200?image=244" /></figure> -->
+    <!-- <span>Hover</span> -->
+  <!-- </div> -->
+  <!-- <div> -->
+    <!-- <figure><img src="https://picsum.photos/300/200?image=1024" /></figure> -->
+    <!-- <span>Hover</span> -->
+  <!-- </div> -->
+  <!-- <div> -->
+    <!-- <figure><img src="https://picsum.photos/300/200?image=611" /></figure> -->
+    <!-- <span>Hover</span> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+
+<div class="herobanner">
+
+  <i><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" alt="{{ .Title }}" style="width:100%"></i>
+  
+  <button class="btn" onclick="openModal();currentSlide(1)"><i class="material-icons">info</i></button>
+</div>
+  <!-- <div class="container"> -->
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar" style="padding-top:12px;">
+
+
+ 
+<!-- <div class="container-fluid no-padding" style="padding-bottom:0px;"> -->
+  <!-- <div class="row"> -->
+    <!-- <img class='img-fluid w-100' src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" alt="" /> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+<body>
+
+<!-- <h2 style="text-align:center">Lightbox</h2> -->
+
+<!-- <div class="row"> -->
+  <!-- <div class="column"> -->
+    <!-- <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"> -->
+  <!-- </div> -->
+  <!-- <div class="column"> -->
+    <!-- <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"> -->
+  <!-- </div> -->
+
+<!-- </div> -->
+
+      {{ partial "top-nav.html" . }}
+
+
+
+
+   <!-- <div class="be-content"> -->
+   
+      <div class="container" style="max-width:1500px;margin-top:-30px;font-size:1.2rem;">
+ <!-- <div class="card mb-3"> -->
+  <!-- <img class="card-img-top" src="https://cdn.statically.io/img/build.mobagenie.my.id/f=auto/p/images/banner/full/{{ .Params.heroname | lower }}.jpg" alt="Card image cap"> -->
+  <!-- .../100px180/"  -->
+  <!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title">Card title</h5> -->
+    <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+  <!-- </div> -->
+<!-- </div>	   -->
+		 
+{{ .Content | safeHTML }}
+
+        <script type="application/javascript">		
+			var PAGE_IDENTIFIER = "{{ .Params.Slug }}"; // Disqus PAGE_IDENTIFIER 
+		</script>
+
+{{ partial "disqus.html" . }}
+ 
+
+      <!-- </div> -->
+	  
+
+
+                 	  
+	  
+   </div>
+<br/><br/><br/>
+{{ partial "item-modal.html" . }}
+
+ {{ partial "bottom-nav.html" . }} 
+ 
+        {{ partial "footer.html" . }}
+	 
+  </body>
+
+</html>

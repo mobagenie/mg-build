@@ -1,0 +1,77 @@
+
+         {{ partial "head.html" . }}
+
+  <body>
+
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar">
+  
+      {{ partial "top-nav.html" . }}
+
+   <div class="be-content">
+      <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
+	  
+
+       
+
+          <h1 class="entry-title">
+            <i class="material-icons">person</i> {{ .Title }}<!-- title, in this case it will be "Archive page" -->
+          </h1>
+
+
+
+	<div id="blog-archives" class="category">
+		<table class="allposts">		
+			<tbody>
+
+
+				{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
+
+
+				{{ range (where .Site.RegularPages "Type" "post") }}
+				<tr>	
+
+{{if isset .Params "proplayer" }}
+
+<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+
+	
+<a href="/profile/{{ .Params.cleanplayername  }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername }}.jpg" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+
+<!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
+</br></br>
+<a href="/profile/{{ .Params.cleanplayername  }}" type="button" class="btn btn-secondary" style="background:#009578;">
+{{ .Params.playername }}
+</a></div>	
+
+	{{ end }}
+				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}}</strong></td> -->
+				
+				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "Jan" }} {{ .Date | dateFormat "2" }}</strong></td> -->
+				
+				<!-- <td class="allposts-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></td> -->
+				
+{{ end }}
+
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	
+	
+<br/><br/>	
+	
+         </div>
+      </div>
+   </div>
+
+{{ partial "bottom-nav.html" . }}
+                   
+
+
+        {{ partial "footer.html" . }}
+
+	 
+  </body>
+
+</html>

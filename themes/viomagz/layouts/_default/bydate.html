@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+<ul>
+    <!-- orders content according to the "publishdate" field in front matter -->
+    {{ range .Pages.ByPublishDate }}
+        <li>
+            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+        </li>
+    {{ end }}
+</ul>
+    </body>
+</html>

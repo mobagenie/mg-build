@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+		{{ partial "nav.html" . }}
+		{{ partial "header.html" . }}
+
+		{{ partial "post-grid.html" . }}
+
+		{{ partial "sidebar-wrapper-start.html" . }}
+		 
+		<!-- {{ partial "trending-topic.html" . }} -->
+
+		{{ partial "category.html" . }}
+        
+        {{ partial "sidebar-widget.html" . }}
+
+		{{ partial "sidebar-wrapper-end.html" . }}
+
+		
+    </body>
+</html>

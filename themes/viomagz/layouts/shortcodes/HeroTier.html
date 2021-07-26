@@ -1,0 +1,71 @@
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12">
+
+<h2>Lane : <span class="badge badge-secondary">{{ .Get "LaneLabel" }}</span></h2>
+
+</div>
+     
+        <div class="col-lg-12">
+
+{{ $LaneLabel := .Get "LaneLabel" }}
+{{ .Scratch.Set "LaneLabel" "" }}
+{{ if eq $LaneLabel "gold" }}
+    {{ .Scratch.Set "LaneLabelGoldLink" "active" }}{{ .Scratch.Set "LaneLabelGold" "fadeshow active" }}
+{{ else if eq $LaneLabel "roam" }}
+    {{ .Scratch.Set "LaneLabelRoamLink" "active" }}	{{ .Scratch.Set "LaneLabelRoam" "fadeshow active" }}
+{{ else if eq $LaneLabel "Mid Lane" }}
+    {{ .Scratch.Set "LaneLabelMidLink" "active" }}	{{ .Scratch.Set "LaneLabelMid" "show active" }}	
+{{ else if eq $LaneLabel "jungle" }}
+    {{ .Scratch.Set "LaneLabelJungleLink" "active" }}{{ .Scratch.Set "LaneLabelJungle" "fadeshow active" }}
+{{ else if eq $LaneLabel "exp" }}
+    {{ .Scratch.Set "LaneLabelExpLink" "active" }}	{{ .Scratch.Set "LaneLabelExp" "fadeshow active" }}		
+{{ end }}
+
+
+  <b><ul class="nav nav-tabs " id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link {{ .Scratch.Get "LaneLabelGoldLink" }}" id="pills-splus-tab" data-toggle="pill" href="#pills-gold" role="tab" aria-controls="pills-gold" aria-selected="false">Gold</a>
+    </li>
+    <li class="nav-item">
+      <a  class="nav-link" id="pills-s-tab" data-toggle="pill" href="#pills-roam" role="tab" aria-controls="pills-roam" aria-selected="false">Roam</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link {{ .Scratch.Get "LaneLabelMidLink" }}" id="pills-mid-tab" data-toggle="pill" href="#pills-mid" role="tab" aria-controls="pills-aplus" aria-selected="false">Mid</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link {{ .Scratch.Get "LaneLabelJungleLink" }}" id="pills-a-tab" data-toggle="pill" href="#pills-jungle" role="tab" aria-controls="pills-jungle" aria-selected="false">Jungle</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link {{ .Scratch.Get "LaneLabelExpLink" }}" id="pills-exp-tab" data-toggle="pill" href="#pills-exp" role="tab" aria-controls="pills-c" aria-selected="true">EXP</a>
+    </li>
+  </ul></b>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade{{ .Scratch.Get "LaneLabelGold" }}" id="pills-gold" role="tabpanel" aria-labelledby="pills-gold-tab">
+      <p>Gold&nbsp;Lane<br>Gold Lane: Marksmen rely upon their Equipment. Take the Gold Lane farm quickly. Marksmen are relatively weak in the early game but can accumulate equipment items more quickly by killing the Siege Minions that offer extra gold and provide the team with a strong continuous damage ability in the late game</p>
+    </div>
+    <div class="tab-pane fade{{ .Scratch.Get "LaneLabelRoam" }}" id="pills-roam" role="tabpanel" aria-labelledby="pills-roam-tab">
+      <p>Roam<br>Roaming: Supports and Tanks don't need to rely upon Equipment. Roaming is a better way for them to protect their core allies. Roaming heroes generally excel at initiating teamfights or can provide strong buffs to allies. A great way to lead your team to victory is by utilizing their skills characteristics and looking for the right time to attack</p>
+    </div>
+    
+    <div class="tab-pane fade{{ .Scratch.Get "LaneLabelMid" }}" id="pills-mid" role="tabpanel" aria-labelledby="pills-mid-tab">
+      <p>Mid&nbsp;Lane<br>Mages take the Mid Lane and can swiftly clear lanes as well as backing up allies.After reaching a certain level. Mages can deal considerable AoE damage to clear lanes efficiently. It is recommended to take the advantage of the turrets to farm steadily in the early game and be ready to back up and roam in the middle game</p>
+    </div>
+    
+    <div class="tab-pane fade{{ .Scratch.Get "LaneLabelJungle" }}" id="pills-jungle" role="tabpanel" aria-labelledby="pills-jungle-tab">
+      <p>Jungle<br>Assassins have the highest damage output. Jungling is a good way for them to farm fast. Assassins have high mobility and burst on single targets but can often be weak when soloing lanes early on. In the early game they can level up quickly by killing creeps and find chances to kill single enemies by teamwork with allies in the same lane</p>
+    </div>
+
+    <div class="tab-pane fade{{ .Scratch.Get "LaneLabelExp" }}" id="pills-exp" role="tabpanel" aria-labelledby="pills-exp-tab">
+      <p>Exp Lane: Fighters rely upon leveling up fast to take advantage. Take the EXP Lane to level up faster and fight for the first Turtle. Fighters and some Tanks can both fight and tank and level up quickly by killing the Siege Minions that offer EXP. This can be a great help to the team in the early game and can help build up better solo capabilities in the mid and late game.</p>
+    </div>
+    
+  </div>
+</div> <!--.col-lg-4 end-->
+
+
+
+      </div>
+										
+										{{ .Inner }}

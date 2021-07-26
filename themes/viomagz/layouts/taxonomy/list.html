@@ -1,0 +1,32 @@
+
+         {{ partial "head.html" . }}
+
+  <body>
+
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar">
+  
+      {{ partial "top-nav.html" . }}
+
+   <div class="be-content">
+      <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
+	  
+          <!-- <h1 class="entry-title"> -->
+            <!-- {{ .Title }}  <!-- title, in this case it will be "Archive page" -->
+          <!-- </h1> -->
+		  
+		{{ partial "post-grid-taxonomy.html" . }}
+       
+         </div>
+      </div>
+   </div>
+
+{{ partial "bottom-nav.html" . }}
+                   
+
+
+        {{ partial "footer.html" . }}
+
+	 
+  </body>
+
+</html>

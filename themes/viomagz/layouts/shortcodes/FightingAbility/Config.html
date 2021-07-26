@@ -1,0 +1,11 @@
+<div class="progress bg-dark" style="height: 30px;padding-bottom:5px;" >
+  <div class="progress-bar" role="progressbar" style="width: {{ .Get "Percentage" }}%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">{{ .Get "Label" }} ( {{ .Get "Percentage" }}% )</div>
+</div>
+
+										<!-- <div class="skillbar" data-percent="{{ .Get "AbPercent" }}"> -->
+										<!-- <span class="skillbar-title" style="background: {{ .Get "Background-title" }};">{{ .Get "AbDesc" }}</span> -->
+										<!-- <p class="skillbar-bar" style="background: {{ .Get "Background-bar" }};"></p> -->
+										<!-- <span class="skill-bar-percent"></span> -->
+										<!-- </div> -->
+										
+										{{ .Inner }}

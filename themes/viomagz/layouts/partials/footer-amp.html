@@ -1,0 +1,33 @@
+<!-- footer nav menu -->
+<div id='footer-navmenu'>
+<nav id='footer-navmenu-container'>
+
+<!-- menu navigasi footer end -->
+</nav>
+</div>
+<!-- footer nav menu end -->
+<!-- footer wrapper start -->
+<div id='footer-container'>
+<footer id='footer-wrapper'>
+
+<br><br>
+MobaGenie adalah situs Media Informasi yang berfokus pada seputar Dunia Game MOBA MOBILE dan PC. dari mulai Mobile Legends, DOTA2, Arena of Valor, League of Legends, Wild Rift, Lokapala, Vainglory, dan Game MOBA lain.
+
+Informasi yang disajikan di situs ini meliputi Update Berita, Guide, Fakta Unik, Info Pro Player, Esports, Leaderboard, Redeem Code Tools MOBA dan lain sebagainya. 
+		</br><br>
+			
+{{ $RelPermalink := replace .RelPermalink "/amp/"  "/" }}
+<a href="{{ $RelPermalink }}"><b>Show Non AMP</b></a>
+
+</footer>
+
+<!-- sub footer wrapper start -->
+<div id='footer-container'>
+<footer id='footer-wrapper'>
+&copy; 2018-2020 {{ now.Format ""}} {{ .Site.Title }}
+</footer>
+</div>
+<!-- sub footer wrapper end -->
+
+</div>
+<!-- footer wrapper end -->

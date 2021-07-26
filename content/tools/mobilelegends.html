@@ -1,0 +1,40 @@
+---
+title: "Mobile Legends Nick Fliper v2"
+post_highlight: ""
+author: MobaGenie
+date: 2021-01-30T13:23:09+07:00
+PublishDate: 2021-01-30T13:23:09+07:00
+Lastmod: 2021-01-30T13:23:09+07:00
+slug: mobilelegends-nick-fliper-v2
+categories: []
+tags: []
+images: ['https://mobagenie.my.id/img/leaderboard.jpeg']
+draft: true
+layout: "hero"
+type: page
+---
+
+    <b>Upside Down, Flip Nickname Converter for Mobile Legends.</b>
+
+    <div class="center">
+        <p></p>
+        <textarea id="input" placeholder="Type Your MLBB Nickname here!" autofocus></textarea>
+        <br />
+        <br />
+        <textarea title="Click to Copy!" id="output" class="btn" data-clipboard-target="#output" placeholder="Nickname"></textarea>
+            
+<br>
+<button onclick="copy()"> Copy Nickname </button>
+<br/>
+
+    <script>
+function copy() {
+  let textarea = document.getElementById("output");
+  textarea.select();
+  document.execCommand("copy");
+}
+</script>
+
+    <script src="/ultatext/script.js" type="text/javascript"></script>
+    <script src="/ultatext/clipboard.min.js" type="text/javascript"></script>
+    <script>new Clipboard('.btn');</script>

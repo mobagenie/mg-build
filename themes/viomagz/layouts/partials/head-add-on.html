@@ -1,0 +1,224 @@
+
+		<!-- <link rel="stylesheet" href="/css/archive.css" /> -->
+
+	<!-- jQuery -->
+	<script src="/js/jquery-latest.min.js?v3.3.1"></script>
+
+	<!-- Demo stuff -->
+	<!-- <script src="https://mottie.github.io/tablesorter/docs/js/jquery-ui.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="https://mottie.github.io/tablesorter/docs/css/jq.css"> -->
+	<!-- <link href="https://mottie.github.io/tablesorter/docs/css/prettify.css" rel="stylesheet"> -->
+	<!-- <script src="https://mottie.github.io/tablesorter/docs/js/prettify.js"></script> -->
+	<!-- <script src="https://mottie.github.io/tablesorter/docs/js/docs.js"></script> -->
+
+	Tablesorter: theme
+<!-- 	<link id="ui-theme" class="ui-theme" rel="stylesheet" href="/tablesorter-master/css/jquery-ui.min.css">
+	<link class="ui-theme" rel="stylesheet" href="/tablesorter-master/css/theme.jui.css">
+	<link class="theme default" rel="stylesheet" href="/tablesorter-master/css/theme.default.css"> -->
+	
+
+	<!-- <link class="theme blue" rel="stylesheet" href="/tablesorter-master/css/theme.blue.css"> -->
+	<!-- <link class="theme green" rel="stylesheet" href="/css/theme.green.css"> -->
+	<!-- <link class="theme grey" rel="stylesheet" href="/tablesorter-master/css/theme.grey.css"> -->
+	<!-- <link class="theme ice" rel="stylesheet" href="/tablesorter-master/css/theme.ice.css"> -->
+	<!-- <link class="theme black-ice" rel="stylesheet" href="/tablesorter-master/css/theme.black-ice.css"> -->
+	<!-- <link class="theme dark" rel="stylesheet" href="/tablesorter-master/css/theme.dark.css"> -->
+	<!-- <link class="theme dropbox" rel="stylesheet" href="/tablesorter-master/css/theme.dropbox.css"> -->
+	<link class="theme metro-dark" rel="stylesheet" href="/tablesorter-master/css/theme.metro-dark.css">
+
+	<!-- Tablesorter script: required -->
+	<script src="/tablesorter-master/js/jquery.tablesorter.js"></script>
+	<script src="/tablesorter-master/js/jquery.tablesorter.widgets.js"></script>
+	<script src="/tablesorter-master/js/widgets/widget-scroller.js"></script>
+	
+	<script src="/tablesorter-master/js/widgets/widget-sort2Hash.js"></script>
+			
+    </head>
+    <body>
+		{{ partial "nav.html" . }}
+		{{ partial "header.html" . }}
+
+          <h1 class="entry-title">
+            {{ .Title }}  <!-- title, in this case it will be "Archive page" -->
+          </h1>
+
+
+	<style id="css">/* Fixed column scroll bar spacer styling */
+.tablesorter-scroller-bar-spacer {
+	background: #eee;
+}
+/* add border to right side (LTR pages) of fixed column */
+.tablesorter-scroller-fixed:after {
+	content: '';
+	border-right: 1px solid #444;
+	width: 1px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	/* set to zero for non-jquery ui themes; use "left" here for RTL pages */
+	right: 0;
+	/* match the margins set to the table to keep the border the same height as the table */
+	margin: 10px 0 15px;
+}
+
+/* using-x-theme added by the demo code */
+.using-jui-theme .tablesorter-scroller-fixed:after {
+	/* use "left" here for RTL pages */
+	right: 0;
+}
+.using-green-theme .tablesorter-scroller-fixed:after,
+.using-black-ice-theme .tablesorter-scroller-fixed:after,
+.using-dark-theme .tablesorter-scroller-fixed:after,
+.using-dropbox-theme .tablesorter-scroller-fixed:after {
+	/* match the margins set to the table to keep the border the same height as the table */
+	margin: 0;
+}
+
+/* OPTIONAL CSS! */
+#fixed-columns-table tbody td {
+	/* force "Notes" column to not wrap, so we get a horizontal scrolling demo! */
+	white-space: nowrap;
+	/* Add min column width, or "Index" column filter gets too narrow to use */
+	min-width: 60px;
+}</style>
+
+	<!-- jQuery UI theme switcher: https://github.com/pontikis/jui_theme_switch/ -->
+	<!-- <style> -->
+	<!-- .switcher_container { padding: 5px; } -->
+	<!-- .switcher_list { padding: 2px; } -->
+	<!-- .switcher_label { margin-right: 5px; } -->
+	<!-- </style> -->
+	<!-- <script src="js/jquery.jui_theme_switch.min.js"></script> -->
+	<!-- <script> -->
+	<!-- $(function() { -->
+		<!-- $('#switcher').jui_theme_switch({ -->
+			<!-- stylesheet_link_id : 'ui-theme', -->
+			<!-- switcher_label     : 'Select jQuery UI Theme:', -->
+			<!-- default_theme      : 'cupertino', -->
+			<!-- datasource_url     : 'assets/theme_switcher.json' -->
+		<!-- }); -->
+	<!-- }); -->
+	<!-- </script> -->
+	<script id="js">$(function() {
+
+	$('.tablesorter').tablesorter({
+		theme: 'metro-dark',
+		showProcessing: true,
+		headerTemplate : '{content} {icon}',
+		widgets: [ 'uitheme', 'zebra', 'sort2Hash','filter', 'scroller' ],
+		widgetOptions : {
+			scroller_height : 300,
+			// scroll tbody to top after sorting
+			scroller_upAfterSort: true,
+			// pop table header into view while scrolling up the page
+			scroller_jumpToHeader: true,
+			// In tablesorter v2.19.0 the scroll bar width is auto-detected
+			// add a value here to override the auto-detected setting
+			scroller_barWidth : null
+			// scroll_idPrefix was removed in v2.18.0
+			// scroller_idPrefix : 's_'
+		}
+	});
+
+	var startFixedColumns = 0;
+
+	$('#fixed-columns-table').tablesorter({
+		theme: 'metro-dark',
+		showProcessing: true,
+		headerTemplate : '{content} {icon}',
+		widgets: [ 'uitheme', 'zebra', 'sort2Hash','filter', 'scroller' ],
+		widgetOptions : {
+			// scroll tbody to top after sorting
+			scroller_upAfterSort: true,
+			// pop table header into view while scrolling up the page
+			scroller_jumpToHeader: true,
+
+			scroller_height : 300,
+			// set number of columns to fix
+			scroller_fixedColumns : startFixedColumns,
+			// add a fixed column overlay for styling
+			scroller_addFixedOverlay : false,
+			// add hover highlighting to the fixed column (disable if it causes slowing)
+			scroller_rowHighlight : 'hover',
+
+			// bar width is now calculated; set a value to override
+			scroller_barWidth : null
+		}
+	});
+
+	// use jQuery UI slider to change the fixed column size
+	$( '#slider' ).slider({
+		value : startFixedColumns,
+		min   : 0,
+		max   : 4,
+		step  : 1,
+		slide : function( event, ui ) {
+			// page indicator
+			$( '.fixed-columns' ).text( ui.value );
+			// method to update the fixed column size
+			$( '#fixed-columns-table').trigger( 'setFixedColumnSize', ui.value );
+		}
+	});
+
+	// update column value display
+	$( '.fixed-columns' ).text( startFixedColumns );
+
+});</script>
+<script>
+$(function() {
+
+	var $jth = $('#jth'), // scroller_jumpToHeader toggle button
+		$uas = $('#uas'), // scroller_upAfterSort toggle button
+		themes = 'default blue green grey ice black-ice dark dropbox metro-dark',
+		i, o = '', t = themes.split(' ');
+	for (i = 0; i < t.length; i++) {
+		o += '<option value="' + t[i] + '">' + t[i] + '</option>';
+	}
+
+	$('#theme')
+		.append(o)
+		.val('metro-dark')
+		.change(function() {
+			var theme = $(this).val().toLowerCase();
+
+			// show jui select only if jQuery UI selected
+			$('#switcher').toggle(theme === 'jui');
+			// add class so the black border fits the theme
+			$('#main').attr( 'class', 'using-' + theme + '-theme' );
+
+			// refresh uitheme widget class names
+			$('#main .tablesorter').each(function() {
+				if (this.config) {
+					this.config.theme = theme === 'black-ice' ? 'blackice' : theme;
+				}
+			});
+			$('table').trigger('applyWidgets');
+
+			// make sure columns align
+			$(window).trigger('resize');
+		}).change();
+
+	$('button').click(function() {
+		var jth = $jth.text() === 'true',
+			uas = $uas.text() === 'true';
+		if (this.id === 'jthb') {
+			jth = !jth;
+		} else {
+			uas = !uas;
+		}
+		$('.tablesorter-scroller-table table').each(function() {
+			var c = this.config;
+			if (c) {
+				c.widgetOptions.scroller_jumpToHeader = jth;
+				c.widgetOptions.scroller_upAfterSort = uas;
+			}
+		});
+		$jth.html(jth + '');
+		$uas.html(uas + '');
+		return false;
+	});
+
+});
+
+</script>

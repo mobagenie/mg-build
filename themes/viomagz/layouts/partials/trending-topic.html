@@ -1,0 +1,13 @@
+<div class="widget Label" data-version="1" id="Label1">
+<h2>Trending Topic</h2>
+<div class="widget-content cloud-label-widget-content">
+
+   {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+<span class="label-size label-size-5">
+<a dir="ltr" href="{{ .Page.Permalink }}">{{ .Page.Title }} ( {{ .Count }})</a>
+<span class="label-count" dir="ltr"></span>
+</span>
+    {{ end }}
+
+</div>
+</div>

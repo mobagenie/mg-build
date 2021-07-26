@@ -1,0 +1,48 @@
+  {{ partial "analytics-custom.html" . }}
+
+<title>{{ .Title }}</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+{{ template "_internal/schema.html" . }}
+<!-- {{ template "_internal/google_news.html" . }}-->
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
+  {{ partial "canonical.html" . }}
+
+<!-- Icon -->
+<link rel="icon" href="/img/favicon.ico"/>
+
+<link rel="stylesheet" href="{{ .Site.Params.cdnurl }}/css/style.min.css" />
+
+<style>
+.users {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.users td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.row-ID {
+  width: 10%;
+}
+.row-name {
+  width: 40%;
+}
+.row-job {
+  width: 30%;
+}
+.row-email {
+  width: 20%;
+}
+</style>
+
+<script>
+$("#tablefit").width($(window).width());
+</script>

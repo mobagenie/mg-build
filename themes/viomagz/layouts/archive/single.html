@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+		
+		<link rel="stylesheet" href="/css/archive.css" />
+		
+    </head>
+    <body>
+		{{ partial "nav.html" . }}
+		{{ partial "header.html" . }}
+
+          <h1 class="entry-title">
+            {{ .Title }}  <!-- title, in this case it will be "Archive page" -->
+          </h1>
+
+
+
+	<div id="blog-archives" class="category">
+		<table class="allposts">		
+			<tbody>
+
+
+				{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
+
+
+				{{ range (where .Site.RegularPages "Type" "post") }}
+				<tr>		  
+				<td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}}</strong></td><td class="allposts-date"><strong>{{ .Date | dateFormat "Jan" }} {{ .Date | dateFormat "2" }}</strong></td>
+
+				<td class="allposts-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></td>
+
+				</tr>
+
+				{{ end }}
+
+
+			</tbody>
+		</table>
+	</div>
+	
+		{{ partial "footer.html" . }}
+		{{ partial "js-init.html" . }}
+    </body>
+</html>

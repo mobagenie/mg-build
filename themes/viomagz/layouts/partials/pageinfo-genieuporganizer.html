@@ -1,0 +1,108 @@
+
+<!-- post wrapper start -->
+<div id="post-wrapper">
+<div class="post-container">
+<div class="main section" id="main"><div class="widget Blog" data-version="1" id="Blog1">
+
+
+<div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/genieuporganizer" itemprop="url"><span itemprop="title">GENIEup Organizer</span></a></span> › 
+
+<!-- {{ range .Params.breadcrumb }} -->
+<!-- <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">{{ . }}</span></span> ›  -->
+<!-- {{ end }} -->
+
+{{ range .Params.breadcrumb }}
+<span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">{{ . }}</span></span> › 
+{{ end }}
+
+</div>
+
+<div class="blog-posts">
+<!--Can't find substitution for tag [defaultAdStart]-->
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<article class="post">
+<div>
+
+{{if isset .Params "cover_image" }}
+<!-- <meta content="https://2.bp.blogspot.com/-iGMj2AknPsM/XKsMWC0Ft9I/AAAAAAAAAEE/YOZTh65E_Co0FDctNAlp_P1YmOVTveXVwCLcBGAs/s320/pubg_brendan_greene_154099403922.jpg" itemprop="image"> -->
+<meta content="{{ index .Params "cover_image" }}" itemprop="image">
+{{ end }}
+<a name="6625154319621002880"></a>
+
+<h1 class="post-title entry-title" itemprop="name headline" p="p">
+{{ .Title }}
+</h1>
+
+<!-- Translate to : <a href="https://translate.google.com/translate?hl=en&amp;sl=id&amp;tl=en&amp;prev=search&amp;u={{ .Permalink }}" target="_blank">English (US)</a> ■ <a href="https://translate.google.com/translate?hl=en&amp;sl=id&amp;tl=ja&amp;prev=search&amp;u={{ .Permalink }}" target="_blank">Japan</a> ■ <a href="https://translate.google.com/translate?hl=en&amp;sl=id&amp;tl=ko&amp;prev=search&amp;u={{ .Permalink }}" target="_blank">South Korea</a> ■ <a href="https://translate.google.com/translate?hl=en&amp;sl=id&amp;tl=hi&amp;prev=search&amp;u={{ .Permalink }}" target="_blank">Hindi</a> -->
+<div class="post-info info-3">
+</div>
+
+<div class="post-body entry-content" id="post-body-6625154319621002880">
+<meta content="      MobaGenie  - ...." itemprop="description">
+<div id="kode-iklan-atas">
+</div>
+
+<div id="body-post-it">
+
+		{{ .Content }}
+
+<div id="kode-iklan-bawah">
+</div>
+
+</div>
+
+<div style="clear: both;"></div>
+
+</div>
+</div>
+
+<div style="clear: both;"></div>
+</article>
+
+</div>
+
+        </div></div>
+      
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+
+<div class="clear"></div>
+
+</div>
+</div>
+<div class="iklan-atas section" id="iklan-atas"><div class="widget HTML" data-version="1" id="HTML996">
+<h2 class="title">Iklan Atas Artikel</h2>
+<div class="widget-content">
+
+</div>
+</div></div>
+<div class="iklan-tengah1 section" id="iklan-tengah1"><div class="widget HTML" data-version="1" id="HTML997">
+<h2 class="title">Iklan Tengah Artikel 1</h2>
+<div class="widget-content">
+
+</div>
+</div></div>
+<div class="iklan-tengah2 section" id="iklan-tengah2"><div class="widget HTML" data-version="1" id="HTML998">
+<h2 class="title">Iklan Tengah Artikel 2</h2>
+<div class="widget-content">
+
+</div>
+</div></div>
+<div class="iklan-bawah section" id="iklan-bawah"><div class="widget HTML" data-version="1" id="HTML999">
+<h2 class="title">Iklan bawah ariktel</h2>
+<div class="widget-content">
+
+</div>
+</div></div>
+
+</div>
+</div>
+<!-- post wrapper end -->
+		

@@ -1,0 +1,899 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from mlbuildguide.com/phoveus-build-106 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jul 2021 19:18:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+<title>Mobile Legends Phoveus Build</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Mobile Legends Build,Mobile legends builds,mobile legends karina,mobile legends miya,mobile legends guidance,mobilelegends turkey,mobile legends guidance" />
+<meta name="description" content="Mobile Legends Build And Guides for Phoveus Champion and recommended items, spells for mobile legends. " />
+<meta name="google-site-verification" content="-mEHanEN5lqfhmIe72277oQTHAuRSp_HHSJeNtuNf-g" />
+<link rel="alternate" href="http://mobilelegendsbuild.com/" hreflang="en" />
+<link rel="canonical" href="http://mobilelegendsbuild.com/"/>
+    <link rel="shortcut icon" href="../mlbuild/img/favicon.ico">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../mlbuild/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="../mlbuild/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="../mlbuild/css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../mlbuild/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../mlbuild/css/custom.css">
+	<link rel="stylesheet" href="../mlbuild/css/colorfullbox457c.css??1600771896">
+    <!-- Favicon-->
+	<script src="../mlbuild/js/herosounds.js"></script>
+
+      <!-- //barları ve tooltipleri açıyor-->
+  	<link href="../css/graph.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../mlbuild/css/tierlist.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/tooltip.css" />
+
+<!-- //barları ve tooltipleri açıyor-->
+	<script src="../js/min.js"></script>
+
+	
+<!-- //for bootstrap working -->
+	
+	
+	<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script src="../js/skill.bars.jquery.js"></script>
+
+		<script>
+
+		$(document).ready(function(){
+			
+			$('.skillbar').skillBars({
+				from: 0,
+				speed: 1, 
+				interval: 100,
+				decimals: 0,
+			});
+			
+		});
+
+		</script>
+
+	
+	
+	<style>
+	
+	    :focus
+	   {
+		outline:none;   
+	   }
+	   
+
+	.tippy-tooltip .tippy-backdrop {
+
+    background: #060e1c;
+	font-size:12px;
+	}
+
+
+	.tippy-tooltip {
+
+	}
+
+		body
+		{
+			font-family: Ubuntu, sans-serif;
+			color: #111;
+		
+		}
+
+		#container
+		{
+			width: 400px;
+			height: 300px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -150px 0 0 -200px;
+		}
+			@media screen and (max-width: 440px)
+			{
+				#container
+				{
+					width: 100%;
+					position: static;
+					top: auto;
+					left: auto;
+					padding: 30px 20px;
+					margin: 0;
+				}
+			}
+			@media screen and (max-height: 340px)
+			{
+				#container
+				{
+					position: static;
+					top: auto;
+					left: auto;
+					padding-top: 30px;
+					padding-bottom: 30px;
+					margin: 0 auto;
+				}
+			}
+
+		#container p
+		{
+			text-align: justify;
+			text-shadow: 0 1px 0 rgba( 255, 255, 255, .5 );
+			line-height: 1.85;
+		}
+		#container a
+		{
+			color: #84e100;
+			text-decoration: none;
+		}
+			#container a:hover
+			{
+				color: #6fbc00;
+			}
+
+		#container abbr
+		{
+			border-style: dotted;
+			border-color: #111;
+			border-width: 0 0 1px;
+			cursor: help;
+		}
+
+		#info
+		{
+			width: 60px;
+			height: 60px;
+			background-color: rgba( 0, 0, 0, .05 );
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			padding: 5px;
+			margin: 0 auto 50px;
+		}
+			#info:hover
+			{
+				background-color: rgba( 0, 0, 0, .1 );
+			}
+			#info abbr
+			{
+				height: 100%;
+				font-size: 2.188em;
+				font-weight: bold;
+				line-height: 1.4;
+				text-align: center;
+				text-shadow: 0 1px rgba( 0, 0, 0, .25 );
+				color: #fff;
+				background: #84e100;
+				background: -webkit-gradient( linear, left top, left bottom, from( #84e100 ), to( #6fbc00 ) );
+				background: -webkit-linear-gradient( top, #84e100, #6fbc00 );
+				background: -moz-linear-gradient( top, #84e100, #6fbc00 );
+				background: -ms-radial-gradient( top, #84e100, #6fbc00 );
+				background: -o-linear-gradient( top, #84e100, #6fbc00 );
+				background: linear-gradient( top, #84e100, #6fbc00 );
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				border: none;
+				cursor: help;
+				display: block;
+			}
+			#info
+			{
+				text-decoration: none;
+			}
+
+
+      /*
+          TOOLTIP
+      */
+
+      #tooltip
+      {
+          font-family: Ubuntu, sans-serif;
+          font-size: 0.875em;
+          text-align: center;
+          text-shadow: 0 1px rgba( 0, 0, 0, .5 );
+          line-height: 1.5;
+          color: #fff;
+          background-color:#000;
+
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          -webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+          -moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+          box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+          position: absolute;
+          z-index: 100;
+          padding: 15px;
+      }
+      #tooltip:after
+      {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #333;
+          border-top-color: rgba( 0, 0, 0, .7 );
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -10px;
+          margin-left: -10px;
+      }
+      #tooltip.top:after
+      {
+          border-top-color: transparent;
+          border-bottom: 10px solid #333;
+          border-bottom-color: rgba( 0, 0, 0, .6 );
+          top: -20px;
+          bottom: auto;
+      }
+      #tooltip.left:after
+      {
+          left: 10px;
+          margin: 0;
+      }
+      #tooltip.right:after
+      {
+          right: 10px;
+          left: auto;
+          margin: 0;
+      }
+
+	 .itemler
+	 { 
+	 max-width: 15%;
+    	 box-shadow: 0 0 0 0.12rem #00b0ff;
+	height: auto;
+	margin:0px;
+	 }
+
+	.ggsuz
+	 { 
+	box-shadow: 0 0 0 0.12rem #00b0ff;
+	width:50px;
+    	height: auto;
+	margin:2px;
+	 }
+
+	
+  </style>
+  
+  </head>
+  <body>
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
+ 
+	
+	<nav class="navbar">
+          <!-- Search Box-->
+        <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="https://mlbuildguide.com/search.php" role="search" method="get">
+              <input type="search" placeholder="Örnek: Miya" class="form-control" name="kelime">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                  <div class="brand-text brand-big"><span>Ml </span><strong>Build</strong></div>
+                  <div class="brand-text brand-small"><strong>ML</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              
+            </div>
+          </div>
+        </nav>
+	
+	
+
+      </header>
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><img src="../mlbuild/img/avatar-1.png" alt="..." class="img-fluid rounded-circle" width="100px" height="100px"></div>
+            <div class="title">
+          <h1 class="h4">Ml Build</h1>
+              <p></p>
+            </div>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">Menu</span>
+         <ul class="list-unstyled">
+                    <li><a href="index.html"> <i class="icon-home"></i>Homepage </a></li>
+				    <li><a href="metachampions.html"> <i class="icon-grid"></i>Meta Champions </a></li>
+                    <li><a href="champions.html"> <i class="icon-grid"></i>Champions </a></li>
+					<li><a href="updates.html"> <i class="icon-grid"></i>News </a></li>
+                    <li><a href="items.html"> <i class="icon-interface-windows"></i>Items </a></li>
+                    <li><a href="spells.html"> <i class="fa fa-bar-chart"></i>Spells</a></li>
+                    <li><a href="emblems.html"> <i class="icon-screen"></i>Emblems</a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.buildguidesml.forlegends"> <i class="icon-flask"></i>Android Build</a></li>
+                    <li><a href="about.html"> <i class="icon-flask"></i>About Us</a></li>
+          </ul>
+        </nav>
+				
+        <div class="content-inner">
+          <!-- Page Header-->
+    
+          <!-- Breadcrumb-->
+
+          <!-- Forms Section-->
+          <section class="forms" style="padding:0px; background-color:#0c1c36;"> 
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Basic Form-->
+                
+                
+
+                
+                
+
+                  <style>
+                      .resimbuyuklugu
+                      {
+                          margin-left:220px;
+                          margin-top:-82px;
+                          height:28px;
+                          width:28px;
+
+                      }
+					  
+					  
+					      .uploadresimler
+                      {
+                          margin-left: 210px; margin-top: -70px; width: 30px; height: 30px;
+                       
+
+                      }
+                  </style>
+
+
+                <!-- Form Elements -->
+                <div class="col-lg-12" style="padding-left:0px;padding-right:0px">
+                  <div class="card" style=background-color:#0c1c36;>
+				  
+				  <div class="animated-box in">
+                   <!--    <div class="kahraman" style="height:15rem;background-size:cover; background-image:url(../images/tanitim/phoveus.jpg?1468708631);"></div> -->
+				  </div>
+                    <div class="card-close">
+                      <div class="dropdown">
+                         <!-- <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>-->
+                        <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
+                      </div>
+                    </div>
+                     <!--
+					<div class="card-header d-flex align-items-center" style="padding:1rem 2.25rem;background-color:#0c1c36;border-bottom:0px;">
+                    <br><br>
+                      <h3 class="h2">Phoveus Build</h3> &nbsp; &nbsp; &nbsp;
+                      <div class="comments"><i class="fa fa-eye"></i> View: 98808</div>
+                    </div>
+                    -->
+						
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<div class="animated-box in" style="height:6rem;width:6rem;">
+										<div class="kahraman" style="height: 6rem;width: 6rem;background-size:cover;background-image:url(../images/buildk/phoveus.png);border-radius:5px;"></div>			 				
+										<h3 class="h2" style="padding: 0px 9rem;position: absolute;top: 0px;color: antiquewhite;">Phoveus&nbsp;Build</h3><div class="comments" style=" padding: 0px 9rem; position: absolute;top: 35px; color: antiquewhite;">
+										<i class="fa fa-eye"></i><b style="top: 0px;position: absolute;">View: 98808</b></div></div>
+										<div class="comments" style="padding: 0px 9rem;position: absolute;top: 70px;color: antiquewhite;">
+										<img src="../images/classes/2.png" id="resim2" style="padding: 0px 3rem;position: absolute;/* visibility: hidden; */height: 20px;top: 22px;">
+										<b style="top: 20px;position: absolute;">Role:</b></div>
+										</div>
+														
+
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">		  
+										<img src="../images/symbols/coin.png" alt="cost" id="resim2" width="30px" height="30px"   /></span>
+										<b style="color: antiquewhite">&nbsp;32000&nbsp;&nbsp;&nbsp;&nbsp;</b>
+										<img src="../images/symbols/elmas.png" alt="diamond" id="resim2" width="30px" height="30px"   /></span>
+										<b style="color: antiquewhite">&nbsp;599&nbsp;&nbsp;&nbsp;&nbsp;</b>
+										<img src="../images/symbols/ticket.png" alt="ticket" id="resim2" width="30px" height="30px"  /></span>
+										<b style="color: antiquewhite">&nbsp;0&nbsp;</b>
+										</div>
+															
+                    						
+
+				
+	
+										
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;"> 						 
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0></label>This build verified by Professional player">
+										<img src="../images/symbols/d.png" alt="ticket" id="resim2" width="30px" height="27px" /></abbr>
+										</span><b style="color: antiquewhite">Doc Bry 탁&nbsp&nbsp;&nbsp;|&nbsp;&nbsp;&nbspWinrate&nbsp;95% <br> 	
+										<img src="../images/symbols/lig.png" width="30px" height="30px" alt="ticket" id="resim2" /></span>&nbspLeague: x 420&nbsp|&nbsp&nbsp&nbspMatches&nbsp;155 </b><hr style="margin-bottom:0px;">
+										</div>
+
+							
+
+
+
+               
+									
+										
+
+	
+										
+										
+									
+										
+								
+
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink">Hero Tier</h4><br>
+										<div class="animated-box2 in" style="height:2rem;width:2rem;">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/2.png);border-radius:5px;"></div>								
+										<h3 class="h4" style="padding: 0px 3rem;position: absolute;top: 5px;color: antiquewhite;font-family: Ubuntu, sans-serifsans-serif;">S&nbsp;Tier</h3>
+										</div>
+										<br>
+							
+
+										
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:36px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Meta Tier<br>These type of heroes are currently the most powerful heroes in the game. It is recommended to be taken at first pick during matchmaking and they are difficult heroes to resist and counter." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/1.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class="animated-box2 in" style="height:2rem;width:2rem;position:absolute;left:81px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Strong Tier<br>Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/2.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:126px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Effective Tier<br>Effective Tier heroes are among the good heroes of the game according to their roles and power. They need to be use carefully in order to perform good game." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/3.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:171px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Average Tier<br>These type of heroes are expected to perform just an average game performance because of their abilities and powers lower than the higher tier heroes." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/4.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:216px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Ineffectual Tier<br>Ineffectual Tier heroes are below average performing heroes and not much performance should be expected unless they are performing good team play." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/5.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:261px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Underperforming Tier<br>These type of heroes are the least useful and not recommended to use in the game." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/6.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<br>
+										<label class="col-sm-3 form-control-label" style="padding-left: 0px;color:antiquewhite; "><br>
+										Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands.
+										</div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink">Lane Guide</h4><br>
+										<div class="animated-box in" style="height:2rem;width:2rem;">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/5.png);border-radius:5px;"></div>								
+										<h3 class="h4" style="padding: 0px 3rem;position: absolute;top: 5px;color: antiquewhite;font-family: Ubuntu, sans-serifsans-serif;">Exp&nbsp;Lane</h3>
+										</div>
+										<br>
+										
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:36px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Gold&nbsp;Lane<br>Gold Lane: Marksmen rely upon their Equipment. Take the Gold Lane farm quickly. Marksmen are relatively weak in the early game but can accumulate equipment items more quickly by killing the Siege Minions that offer extra gold and provide the team with a strong continuous damage ability in the late game" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/1.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:81px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Roam<br>Roaming: Supports and Tanks don't need to rely upon Equipment. Roaming is a better way for them to protect their core allies. Roaming heroes generally excel at initiating teamfights or can provide strong buffs to allies. A great way to lead your team to victory is by utilizing their skills characteristics and looking for the right time to attack" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/2.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:126px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Mid&nbsp;Lane<br>Mages take the Mid Lane and can swiftly clear lanes as well as backing up allies.After reaching a certain level. Mages can deal considerable AoE damage to clear lanes efficiently. It is recommended to take the advantage of the turrets to farm steadily in the early game and be ready to back up and roam in the middle game" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/3.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:171px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Jungle<br>Assassins have the highest damage output. Jungling is a good way for them to farm fast. Assassins have high mobility and burst on single targets but can often be weak when soloing lanes early on. In the early game they can level up quickly by killing creeps and find chances to kill single enemies by teamwork with allies in the same lane" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/4.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class="animated-box in" style="height:2rem;width:2rem;position:absolute;left:216px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Exp&nbsp;Lane<br>Exp Lane: Fighters rely upon leveling up fast to take advantage. Take the EXP Lane to level up faster and fight for the first Turtle. Fighters and some Tanks can both fight and tank and level up quickly by killing the Siege Minions that offer EXP. This can be a great help to the team in the early game and can help build up better solo capabilities in the mid and late game." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/5.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<br>
+										<label class="col-sm-3 form-control-label" style="padding-left: 0px;color:antiquewhite; "><br>
+										Exp Lane: Fighters rely upon leveling up fast to take advantage. Take the EXP Lane to level up faster and fight for the first Turtle. Fighters and some Tanks can both fight and tank and level up quickly by killing the Siege Minions that offer EXP. This can be a great help to the team in the early game and can help build up better solo capabilities in the mid and late game.
+										</div>							 					 					 
+							
+
+										
+
+				
+		
+							 
+                   
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Offensive Build</h4><br> 
+																		
+										 <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Clock of Destiny</label><br><br>+60 Magic Power<br>
++615 HP<br>
++600 Mana<br><br>
+
+Equipment Blessing: None<br>
+
+
+Unique Passive-Time: Adds 25 HP and 4 Magic Power every 20s. Up to 12 times.<br>
+Unique Passive-Reincarnate: If Time reaches Max, then the hero will receive extra 5% Magic Power and 300 Mana"><img src="../images/items/magic/m7.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Warrior Boots</label><br><br>+40 Movement Speed<br>
++22  Physical Defense<br><br>
+Equipment Blessing: None<br>
+Unique Passive-Valor: Physical Defense will be increased by 5 for 25s for each basic attack received capped at 25."><img src="../images/items/shoe/s1.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Lightning Truncheon</label><br><br>+75 Magic Power<br>
++300 Mana <br>
++%10 CD Reduction<br><br>
+
+Equipment Blessing : None<br>
+
+Unique Passive-Resonate: Every 6s , the next skill echoes, dealing 20-1000 Magic Damage(scales with the heroes Max Mana)to up to 3 enemies"><img src="../images/items/magic/m17.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Concentrated Energy</label><br><br>+70 Magic Power<br>
++700 HP<br><br>
+Equipment Blessing: None<br>
+Unique: +25% Magic Lifesteal<br>
+Unique Passive- Recharge: Kill enemy hero to recover HP by 10%"><img src="../images/items/magic/m4.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Oracle</label><br><br>+850 HP<br>
++42  Magic Defense<br>
++10% CD Reduction<br><br>
+Equipment Blessing: None<br>
+Unique Passive- Bless: Raises shield absorption and HP regeneration effects by 30%
+"><img src="../images/items/defance/d10.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"  /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Immortality</label><br><br>+800 HP<br>
++40  Physical Defense<br><br>
+Equipment Blessing: None<br>
+Unique Passive-Immortal: Resurrects in 2.5s after death and gets 15% HP and 220- 1200 shield that lasts for 3s.(Scales with hero level). This effect has a CD of 210s.
+"><img src="../images/items/defance/d5.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"  /></abbr>										</div>
+															
+                    
+
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Balanced Build</h4><br> 
+																		
+										 <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Clock of Destiny</label><br><br>+60 Magic Power<br>
++615 HP<br>
++600 Mana<br><br>
+
+Equipment Blessing: None<br>
+
+
+Unique Passive-Time: Adds 25 HP and 4 Magic Power every 20s. Up to 12 times.<br>
+Unique Passive-Reincarnate: If Time reaches Max, then the hero will receive extra 5% Magic Power and 300 Mana"><img src="../images/items/magic/m7.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Warrior Boots</label><br><br>+40 Movement Speed<br>
++22  Physical Defense<br><br>
+Equipment Blessing: None<br>
+Unique Passive-Valor: Physical Defense will be increased by 5 for 25s for each basic attack received capped at 25."><img src="../images/items/shoe/s1.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Ice Queen Wand</label><br><br>+75 Magic Power <br>
++10% Magic Lifesteal<br>
++150 Mana<br>
++7% Movement Speed<br><br>
+
+Equipment Blessing: None<br>
+
+Unique Passive-Ice Bound: Skills that deal damage to an enemy hero will slow them by 15%. This effect lasts 3s. Stacks up to 2 times."><img src="../images/items/magic/m3.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"  /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Brute Force Breastplate</label><br><br>+770 HP<br>
++45 Physical Defense<br><br>
+Equipment Blessing: None<br>
+Unique Passive-Brute Force: Casting a skill or using Basic Attacks will increase Movement Speed by 2% Physical & Magic Defense by 4. Lasts 4s. Stacks up to 5 times."><img src="../images/items/defance/d6.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Oracle</label><br><br>+850 HP<br>
++42  Magic Defense<br>
++10% CD Reduction<br><br>
+Equipment Blessing: None<br>
+Unique Passive- Bless: Raises shield absorption and HP regeneration effects by 30%
+"><img src="../images/items/defance/d10.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Immortality</label><br><br>+800 HP<br>
++40  Physical Defense<br><br>
+Equipment Blessing: None<br>
+Unique Passive-Immortal: Resurrects in 2.5s after death and gets 15% HP and 220- 1200 shield that lasts for 3s.(Scales with hero level). This effect has a CD of 210s.
+"><img src="../images/items/defance/d5.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr>										</div>
+
+
+
+	  
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Recommended Spells</h4><br>
+
+										 <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Flicker</label><br><br>Moves a certain distance in a designated direction.Then gains5 (+1 * Hero Level) Physical & Magic Defense for 1s "><img src="../images/spells/10.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Purify</label><br><br>Immediately removes all negative effects.In the next 1.2s gains control immunity and 30% Movement Speed."><img src="../images/spells/8.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr>										
+										</div>
+											
+
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Recommended Emblems</h4><br>
+									
+										 <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Mage</label><br><br>Magical Penetration +13,5<br>
+Magic Power +17<br>
+Cooldown Reduction %5<br>
+Spell Vamp %5<br>
+Movement Speed %2<br>"><img src="../images/amblems/6.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr> <abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0>Magical</label><br><br>Magic Power +14<br>
+HP Regen +18<br>
+Cooldown Reduction %2<br>
+HP +267<br>
+Mana +180<br>
+"><img src="../images/amblems/2.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="100px" height="100px"   /></abbr>										</div>
+											
+
+
+										
+
+                              
+										 
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Champion Skills</h4><br>
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b>Demonic Intuition<br>Phoveus' weapon, <font color='#404495'>(Astaros)</font>, holds mysterious powers and is exceptionally sensitive to fast-moving prey. When an enemy hero uses Blink or Charge skills within 8 yards of Astaros, it reduces all of Phoveus' skill cooldowns or charge times by 1s.">
+										<img src="http://akmwebstatic.yuanzhanapp.com/web/mlweb/image/res/miya/skill/a00efa0143ec17c70650345cffb38c11.png" id="itemboyutu" style="max-width:%15;margin: 4%;" class="itemler rounded-circle" width="100px" height="100px"   />
+										</abbr>
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="											
+										<b>Malefic Terror<br>Phoveus smashes the ground and unleashes <font color='#404495'>(Astaros Dread)</font>, dealing 275<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the target.
+Upon hitting an enemy hero, Phoveus receives a 0<font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#47BE34'>( +8% Total HP)</font> Shield as well as a 25% Movement Speed boost for 3s.
+If an enemy hero, creep or Phoveus himself touches Astaros Dread, it will spread and deal extra damage (successive damage dealt to the same enemy decays to 25%).
+This skill gains 1 charge every 8.5s, up to 3 charges, and deals 150% damage to minions.">
+										<img src="http://akmwebstatic.yuanzhanapp.com/web/mlweb/image/res/miya/skill/90e3395c8be92b708d7dfe7a549aa8b3.png" id="itemboyutu" style="max-width:%15;margin: 4%;" class="itemler rounded-circle" width="100px" height="100px"   />
+										</abbr>
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b>Astaros Eye<br>Phoveus summons forth <font color='#404495'>(Astaros Eye)</font> in a targeted area that deals 100<font color='#27C0C7'>( +20% Total Magic Power)</font> damage.
+After 1s, <font color='#404495'>(Astaros Eye)</font> starts shrinking and pulling all enemies on it into its center, dealing 250<font color='#27C0C7'>( +70% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.">
+										<img src="http://akmwebstatic.yuanzhanapp.com/web/mlweb/image/res/miya/skill/4be9dff0161a01be78f478b3c11df0a0.png" id="itemboyutu" style="max-width:%15;margin: 4%;" class="itemler rounded-circle" width="100px" height="100px"   />
+										</abbr>
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b>Demonic Force<br><font color='#404495'>(Astaros)</font> keeps a watchful gaze over an area of 8 yards around Phoveus. If it sees an enemy hero using blink or charge skills, it will be activated and cast a Mark upon them for 3s. During this time, Phoveus can rapidly blink to their location to deliver a fierce blow, dealing 440<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the target and its vicinity and gaining a 160<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#47BE34'>( +5% Total HP)</font> Shield.
+Once Phoveus activates this effect, this skill can be cast repeatedly at the cost of Mana for up to 12s before entering cooldown, as long as the required conditions are met.">
+										<img src="http://akmwebstatic.yuanzhanapp.com/web/mlweb/image/res/miya/skill/02a7cad9bd22c16845b011b168e66fd6.png" id="itemboyutu" style="max-width:%15;margin: 4%;" class="itemler rounded-circle" width="100px" height="100px"   />
+										</abbr>
+										</div>
+										      
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+
+									    <div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Champion Attributes</h4><br>
+			
+
+									    <div class="table-responsive">   
+										<table class="table table-striped table-sm">
+										<thead>
+
+										</thead>
+										
+										<tbody>
+																	
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/mspeed.png" alt="ticket" id="resim2" width="25px" height="25px" >
+										<label style="color: antiquewhite;">Movement SPD:</label>
+										
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;252</b></td>
+										</tr>
+										
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/pattack.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Physical Attack</label>	
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;132</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/mpower.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Magic Power</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;0</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/pdefense.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Physical Defense</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;25</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/mdefense.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Magical Defense</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;10</b>	</td>
+										</tr>
+										
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/hp.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">HP</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;2828</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/mana.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Mana:</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;430</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/aspeed.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Attack Speed:</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;0.82</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/hregen.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Hp Regen</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;10.8</b>	</td>
+										</tr>
+
+										<tr>
+										<th scope="row" style="border-top: 1px solid #0c1c36;">
+										<img src="../images/attribute/mregen.png" alt="ticket" id="resim2" width="25px" height="25px">			
+										<label style="color: antiquewhite;">Mana Regen:</label>
+										</th>
+										<td style="border-top: 1px solid #0c1c36;"><b style="color: antiquewhite;font-size:12px;">&nbsp;4.2</b>	</td>
+										</tr>		
+										
+										</tbody>
+
+										</table>
+										</div>
+
+
+										</div>
+
+
+
+
+
+
+
+      
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Fighting Ability</h4><br>
+													
+										<div class="skillbar" data-percent="80">
+										<span class="skillbar-title" style="background: #d35400;">Offense</span>
+										<p class="skillbar-bar" style="background: #e67e22;"></p>
+										<span class="skill-bar-percent"></span>
+										</div>
+															
+										<div class="skillbar" data-percent="75">
+										<span class="skillbar-title" style="background: #2980b9;">Durability</span>
+										<p class="skillbar-bar" style="background: #3498db;"></p>
+										<span class="skill-bar-percent"></span>
+										</div>	
+															
+										<div class="skillbar" data-percent="50">
+										<span class="skillbar-title" style="background: #2c3e50;">Ability&nbsp;Effects</span>
+										<p class="skillbar-bar" style="background: #2c3e50;"></p>
+										<span class="skill-bar-percent"></span>
+										</div>
+															
+										<div class="skillbar" data-percent="76">
+										<!-- TemplateEndEditable -->
+										<span class="skillbar-title" style="background: #46465e;">Difficulty</span>
+										<p class="skillbar-bar" style="background: #5a68a5;"></p>
+										<span class="skill-bar-percent"></span>
+															
+										</div>  
+										</div>
+      
+																					
+
+                        
+                              
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Strong Against</h4><br>              
+										<a class="" data-wow-delay=".5s" href="gloo-build-105.html"><img src="../images/buildk/gloo.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="gloo-build-105.html"><b style="color:antiquewhite">&nbsp;Gloo</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="vale-build-77.html"><img src="../images/buildk/vale.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="vale-build-77.html"><b style="color:antiquewhite">&nbsp;Vale</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="wanwan-build-89.html"><img src="../images/buildk/wanwan.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="wanwan-build-89.html"><b style="color:antiquewhite">&nbsp;Wanwan</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="yve-build-103.html"><img src="../images/buildk/yve.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="yve-build-103.html"><b style="color:antiquewhite">&nbsp;Yve</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="barats-build-98.html"><img src="../images/buildk/barats.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="barats-build-98.html"><b style="color:antiquewhite">&nbsp;Barats</b></a>                                               
+										</div>
+																	
+													
+													
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;">
+										<h4 style="color:deeppink"> Weak Against</h4><br>
+										<a class="" data-wow-delay=".5s" href="granger-build-81.html"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="granger-build-81.html"><b style="color:antiquewhite">&nbsp;Granger</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="paquito-build-102.html"><img src="../images/buildk/paquito.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="paquito-build-102.html"><b style="color:antiquewhite">&nbsp;Paquito</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="brody-build-99.html"><img src="../images/buildk/brody.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="brody-build-99.html"><b style="color:antiquewhite">&nbsp;Brody</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="benedetta-build-100.html"><img src="../images/buildk/benedetta.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="benedetta-build-100.html"><b style="color:antiquewhite">&nbsp;Benedetta</b></a><hr>
+										<a class="" data-wow-delay=".5s" href="yuzhong-build-96.html"><img src="../images/buildk/yuzhong.png"width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="yuzhong-build-96.html"><b style="color:antiquewhite">&nbsp;Yuzhong</b></a>                                              
+										</div>
+															
+                      
+
+
+                 
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <style>
+	section.forms p {color:#FFF;}</style>
+	
+     <!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>ML Build & Guide </p>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <p>Designed by Ml Build  Engineers</p>
+
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>            </div>
+          
+          </section>
+          <!-- Page Footer-->
+
+     <!-- Javascript files-->
+     <!-10 ocak tarihinde kaldırıldı kahraman resimleri gelene kadar  <script  src="../mlbuild/js/colorfullbox.js"><!--</script>-->
+    <script src="../mlbuild/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="../mlbuild/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../mlbuild/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <!-10 ocak tarihinde kaldırıldı  <script src="../mlbuild/vendor/chart.js/Chart.min.js"><!--</script>-->
+     <script src="../mlbuild/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Main File-->
+    <script src="../mlbuild/js/front.js"></script>
+	<script src="../js/newtooltip76f5.js?51392051"></script>
+  </body>
+
+<!-- Mirrored from mlbuildguide.com/phoveus-build-106 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jul 2021 19:18:21 GMT -->
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {{ partial "head-page.html" . }}
+        {{ partial "head-add-on-page.html" . }}	
+
+<div id="main">
+
+		{{ .Content | safeHTML }}
+
+		<!-- {{ partial "footer.html" . }} -->
+    </body>
+</html>

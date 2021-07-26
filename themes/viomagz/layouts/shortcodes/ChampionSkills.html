@@ -1,0 +1,139 @@
+
+      <!-- <div class="row text-white bg-dark"> -->
+      	
+        <!-- <div class="col-lg-12"> -->
+
+<!-- <h2>Skills</h2> -->
+
+<!-- </div> -->
+     
+        <!-- <div class="col-xl-12"> -->
+<!-- <ul> -->
+
+{{ $SkillDesc1 := .Get "SkillDesc1" | safeHTML  }}
+{{ $SkillDesc1 := replace $SkillDesc1 "<b>"  "" }}
+
+{{ $SkillDesc2 := .Get "SkillDesc2" | safeHTML  }}
+{{ $SkillDesc2 := replace $SkillDesc2 "<b>"  "" }}
+
+{{ $SkillDesc3 := .Get "SkillDesc3" | safeHTML  }}
+{{ $SkillDesc3 := replace $SkillDesc3 "<b>"  "" }}		
+
+{{ $SkillDesc4 := .Get "SkillDesc4" | safeHTML  }}
+{{ $SkillDesc4 := replace $SkillDesc4 "<b>"  "" }}	
+		
+<!-- <li class="list-group-item bg-dark">{{ $SkillDesc1 | safeHTML  }}</li> -->
+  <!-- <li class="list-group-item bg-dark">{{  $SkillDesc2  | safeHTML  }}</li> -->
+  <!-- <li class="list-group-item bg-dark">{{  $SkillDesc3 | safeHTML  }}</li> -->
+  <!-- <li class="list-group-item bg-dark">{{  $SkillDesc4 | safeHTML  }}</li>   -->
+<!-- </ul> -->
+
+
+
+
+<!-- <div class="bd-example bd-example-tabs"> -->
+  <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist"> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link active" id="pills-Skill1-tab" data-toggle="pill" href="#pills-Skill1" role="tab" aria-controls="pills-Skill1" aria-selected="true">Skill1</a> -->
+    <!-- </li> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link" id="pills-Skill2-tab" data-toggle="pill" href="#pills-Skill2" role="tab" aria-controls="pills-Skill2" aria-selected="false">Skill2</a> -->
+    <!-- </li> -->
+    <!-- <li class="nav-item"> -->
+      <!-- <a class="nav-link" id="pills-Skill3-tab" data-toggle="pill" href="#pills-Skill3" role="tab" aria-controls="pills-Skill3" aria-selected="false">Skill3</a> -->
+    <!-- </li>     -->
+  <!-- </ul> -->
+  <!-- <div class="tab-content" id="pills-tabContent"> -->
+    <!-- <div class="tab-pane fadeshow  show active" id="pills-Skill1" role="tabpanel" aria-labelledby="pills-Skill1-tab"> -->
+      <!-- <p>{{ .Get "SkillDesc1" | safeHTML  }}</p> -->
+    <!-- </div> -->
+    <!-- <div class="tab-pane fade" id="pills-Skill2" role="tabpanel" aria-labelledby="pills-Skill2-tab"> -->
+      <!-- <p>{{ .Get "SkillDesc2" | safeHTML  }}</p> -->
+    <!-- </div> -->
+    
+    <!-- <div class="tab-pane fade" id="pills-Skill3" role="tabpanel" aria-labelledby="pills-Skill3-tab"> -->
+      <!-- <p>{{ .Get "SkillDesc3" | safeHTML  }}</p> -->
+    <!-- </div> -->
+    
+  <!-- </div> -->
+<!-- </div> <!--.col-lg-4 end-->
+
+<!-- </div> -->
+
+      <!-- </div> -->
+	  
+	  
+<style>
+.modal-backdrop {
+   background-color: black !important;
+}
+</style>
+<div class="modal fade" id="{{ $.Page.Params.heroname }}Skills0Data" tabindex="-1" role="dialog" aria-labelledby="{{ $.Page.Params.heroname }}" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="{{ $.Page.Params.heroname }}"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/0.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /> Skills 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> 
+         </div>
+         <div class="modal-body">
+			{{ $SkillDesc1 | safeHTML  }}
+         </div>
+         <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+<!--- <button type="button" class="btn btn-primary">Save changes</button> --->
+ </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="{{ $.Page.Params.heroname }}Skills1Data" tabindex="-1" role="dialog" aria-labelledby="{{ $.Page.Params.heroname }}" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="{{ $.Page.Params.heroname }}"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/1.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /> Skills 2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> 
+         </div>
+         <div class="modal-body">
+			{{ $SkillDesc2 | safeHTML  }}
+         </div>
+         <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+<!--- <button type="button" class="btn btn-primary">Save changes</button> --->
+ </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="{{ $.Page.Params.heroname }}Skills2Data" tabindex="-1" role="dialog" aria-labelledby="{{ $.Page.Params.heroname }}" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="{{ $.Page.Params.heroname }}"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/2.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /> Skills 3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> 
+         </div>
+         <div class="modal-body">
+			{{ $SkillDesc3 | safeHTML  }}
+         </div>
+         <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+<!--- <button type="button" class="btn btn-primary">Save changes</button> --->
+ </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="{{ $.Page.Params.heroname }}Skills3Data" tabindex="-1" role="dialog" aria-labelledby="{{ $.Page.Params.heroname }}" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="{{ $.Page.Params.heroname }}"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/3.png"id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /> Skills 4</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> 
+         </div>
+         <div class="modal-body">
+			{{ $SkillDesc4 | safeHTML  }}
+         </div>
+         <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+<!--- <button type="button" class="btn btn-primary">Save changes</button> --->
+ </div>
+      </div>
+   </div>
+</div>	  
+										
+										{{ .Inner }}

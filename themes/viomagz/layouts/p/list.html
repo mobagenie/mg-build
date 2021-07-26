@@ -1,0 +1,28 @@
+
+         {{ partial "head.html" . }}
+
+  <body>
+
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar">
+  
+      {{ partial "top-nav.html" . }}
+
+   <div class="be-content">
+      <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
+
+		{{ partial "post-grid-index.html" . }}
+       
+         </div>
+      </div>
+   </div>
+
+{{ partial "bottom-nav.html" . }}
+                   
+
+
+        {{ partial "footer.html" . }}
+
+	 
+  </body>
+
+</html>

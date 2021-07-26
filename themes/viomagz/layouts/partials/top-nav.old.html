@@ -1,0 +1,241 @@
+<style>
+@charset "UTF-8";
+@import url(https://img.imgsmail.ru/e/1556105173/css/main-flat-2018.css);
+html {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  font-family: "Helvеtica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  line-height: 20px;
+  margin: 0;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.page {
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+.page__content {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 361px) {
+  body {
+    background: #135A8C;
+  }
+
+  .page {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+.nav {
+  background: #009688;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  height: 44px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+.nav__list {
+  float: right;
+}
+.nav__item {
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 44px;
+  position: relative;
+  transition: all 0.2s;
+  width: 44px;
+}
+.nav__item.m-active {
+  background: #1378C0;
+}
+.nav__item-icon {
+  content: "";
+  display: block;
+  height: 21px;
+  margin: 12px auto 0;
+  width: 21px;
+}
+.nav__item[data-count]:after {
+  background-color: #FFA930;
+  border-radius: 15px;
+  color: #FFF;
+  content: attr(data-count);
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  height: 15px;
+  line-height: 16px;
+  min-width: 7px;
+  padding: 0 4px;
+  position: absolute;
+  right: 6px;
+  text-align: center;
+  top: 6px;
+}
+.nav__title {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0 0 0 44px;
+  padding: 14px 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aside {
+  background: #333;
+  color: #F0F0F0;
+  font-size: 17px;
+  height: 100%;
+  left: -110%;
+  padding-left: 10%;
+  position: absolute;
+  transition: left 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+}
+.aside__header {
+  border-bottom: 1px solid #F0F0F0;
+  color: #F0F0F0;
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 16px 12px 0;
+  text-transform: uppercase;
+}
+.aside__item + .aside__item .aside__text {
+  border-top: 1px solid #262626;
+}
+.aside__link {
+  background: #333;
+  color: #A6A6A6;
+  display: block;
+  font-size: 17px;
+  margin: 0;
+  position: relative;
+  transition: all 0.2s;
+}
+.aside__link:hover {
+  background: #222;
+  color: #fff;
+}
+.aside__text {
+  display: block;
+  line-height: 21px;
+  margin: 0 0 0 12px;
+  min-height: 21px;
+  padding: 13px 12px 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.aside__icon {
+  float: left;
+  margin: 0 12px 0 0;
+  height: 21px;
+  width: 21px;
+}
+.page.m-show-aside .aside {
+  left: -10%;
+}
+
+/* Overider */
+
+.page {
+    background: #009688;
+}
+
+</style>
+
+  <div class="nav">
+    <a class="nav__item" href="#" onclick="toggleAside(this)">
+      <i class="nav__item-icon pm-uh-burger"></i>
+    </a>
+    <div class="nav__list">
+      <a class="nav__item" href="#">
+        <i class="nav__item-icon pm-uh-discussion"></i>
+      </a>
+      <a class="nav__item" data-count="3" href="">
+        <i class="nav__item-icon pm-uh-notification"></i>
+      </a>
+      <a class="nav__item" href="#">
+        <i class="nav__item-icon pm-uh-add"></i>
+      </a>
+    </div>
+    <div class="nav__title">BUILD MOBAGENIE</div>
+  </div>
+  <div class="aside">
+    <div class="aside__header">Profile</div>
+    <div class="aside__item">
+      <a href="https://belyash.github.io" target="__blank" class="aside__link"><span class="aside__text"><i class="aside__icon pm-uh-profile"></i>Vasiliy</span></a>
+    </div>
+    <div class="aside__item">
+      <a href="#" class="aside__link"><span class="aside__text"><i class="aside__icon pm-uh-contacts"></i>Friends</span></a>
+    </div>
+    <div class="aside__item">
+      <a href="#" class="aside__link"><span class="aside__text"><i class="aside__icon pm-uh-map-route"></i>Routes</span></a>         
+    </div>
+    <div class="aside__header">Settings</div>
+    <div class="aside__item">
+      <a href="#" class="aside__link"><span class="aside__text">Security</span></a>
+    </div>
+    <div class="aside__item">
+      <a href="#" class="aside__link"><span class="aside__text">Notifications</span></a>
+    </div>
+    <div class="aside__item">
+      <a href="#" class="aside__link"><span class="aside__text">Logout</span></a>
+    </div>
+  </div>
+
+      <script id="rendered-js" >
+var page = document.getElementById('page');
+
+/**
+* Just for demonstrate sliding sidebar
+**/
+function toggleAside(elem) {
+  var className = 'm-active';
+  console.log(elem);
+  if (elem.classList.contains(className)) {
+    elem.classList.remove(className);
+    page.classList.remove('m-show-aside');
+  } else {
+    elem.classList.add(className);
+    page.classList.add('m-show-aside');
+  }
+
+  return false;
+}
+//# sourceURL=pen.js
+    </script>

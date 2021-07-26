@@ -1,0 +1,17 @@
+[
+    {{ range $i, $e := .Site.RegularPages }}
+        
+    {{- if $i }}, {{ end }}
+        {
+            "ref": {{ .Permalink | relURL | jsonify }},
+            "title": {{ .Title | jsonify }},
+            "content": "" {{/*  .Plain | jsonify */}}, 
+            "tags": [
+                {{ range $ii, $ee := .Params.tags }}
+                {{ if $ii }}, {{ end }}
+                    {{ $ee | jsonify }}
+                {{ end }}
+            ]
+        }
+    {{- end }}
+]

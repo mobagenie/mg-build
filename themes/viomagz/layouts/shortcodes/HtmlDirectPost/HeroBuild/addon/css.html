@@ -1,0 +1,230 @@
+    <link rel="stylesheet" href="../p/mlbuild/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="../p/mlbuild/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="../p/mlbuild/css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="../p/https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../p/mlbuild/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../p/mlbuild/css/custom.css">
+	<link rel="stylesheet" href="../p/mlbuild/css/colorfullbox457c.css??1600771896">
+
+
+      <!-- //barları ve tooltipleri açıyor-->
+  	<link href="../p/css/graph.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../p/mlbuild/css/tierlist.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="../p/css/tooltip.css" />
+
+
+	
+<!-- //for bootstrap working -->
+	
+	<style>
+	
+	    :focus
+	   {
+		outline:none;   
+	   }
+	   
+
+	.tippy-tooltip .tippy-backdrop {
+
+    background: #060e1c;
+	font-size:12px;
+	}
+
+
+	.tippy-tooltip {
+
+	}
+
+		body
+		{
+			font-family: Ubuntu, sans-serif;
+			color: #111;
+		
+		}
+
+		#container
+		{
+			width: 400px;
+			height: 300px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -150px 0 0 -200px;
+		}
+			@media screen and (max-width: 440px)
+			{
+				#container
+				{
+					width: 100%;
+					position: static;
+					top: auto;
+					left: auto;
+					padding: 30px 20px;
+					margin: 0;
+				}
+			}
+			@media screen and (max-height: 340px)
+			{
+				#container
+				{
+					position: static;
+					top: auto;
+					left: auto;
+					padding-top: 30px;
+					padding-bottom: 30px;
+					margin: 0 auto;
+				}
+			}
+
+		#container p
+		{
+			text-align: justify;
+			text-shadow: 0 1px 0 rgba( 255, 255, 255, .5 );
+			line-height: 1.85;
+		}
+		#container a
+		{
+			color: #84e100;
+			text-decoration: none;
+		}
+			#container a:hover
+			{
+				color: #6fbc00;
+			}
+
+		#container abbr
+		{
+			border-style: dotted;
+			border-color: #111;
+			border-width: 0 0 1px;
+			cursor: help;
+		}
+
+		#info
+		{
+			width: 60px;
+			height: 60px;
+			background-color: rgba( 0, 0, 0, .05 );
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			padding: 5px;
+			margin: 0 auto 50px;
+		}
+			#info:hover
+			{
+				background-color: rgba( 0, 0, 0, .1 );
+			}
+			#info abbr
+			{
+				height: 100%;
+				font-size: 2.188em;
+				font-weight: bold;
+				line-height: 1.4;
+				text-align: center;
+				text-shadow: 0 1px rgba( 0, 0, 0, .25 );
+				color: #fff;
+				background: #84e100;
+				background: -webkit-gradient( linear, left top, left bottom, from( #84e100 ), to( #6fbc00 ) );
+				background: -webkit-linear-gradient( top, #84e100, #6fbc00 );
+				background: -moz-linear-gradient( top, #84e100, #6fbc00 );
+				background: -ms-radial-gradient( top, #84e100, #6fbc00 );
+				background: -o-linear-gradient( top, #84e100, #6fbc00 );
+				background: linear-gradient( top, #84e100, #6fbc00 );
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				border: none;
+				cursor: help;
+				display: block;
+			}
+			#info
+			{
+				text-decoration: none;
+			}
+
+
+      /*
+          TOOLTIP
+      */
+
+      #tooltip
+      {
+          font-family: Ubuntu, sans-serif;
+          font-size: 0.875em;
+          text-align: center;
+          text-shadow: 0 1px rgba( 0, 0, 0, .5 );
+          line-height: 1.5;
+          color: #fff;
+          background-color:#000;
+
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          -webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+          -moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+          box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+          position: absolute;
+          z-index: 100;
+          padding: 15px;
+      }
+      #tooltip:after
+      {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #333;
+          border-top-color: rgba( 0, 0, 0, .7 );
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -10px;
+          margin-left: -10px;
+      }
+      #tooltip.top:after
+      {
+          border-top-color: transparent;
+          border-bottom: 10px solid #333;
+          border-bottom-color: rgba( 0, 0, 0, .6 );
+          top: -20px;
+          bottom: auto;
+      }
+      #tooltip.left:after
+      {
+          left: 10px;
+          margin: 0;
+      }
+      #tooltip.right:after
+      {
+          right: 10px;
+          left: auto;
+          margin: 0;
+      }
+
+	 .itemler
+	 { 
+	 max-width: 15%;
+    	 box-shadow: 0 0 0 0.12rem #00b0ff;
+	height: auto;
+	margin:0px;
+	 }
+
+	.ggsuz
+	 { 
+	box-shadow: 0 0 0 0.12rem #00b0ff;
+	width:50px;
+    	height: auto;
+	margin:2px;
+	 }
+
+	
+  </style>
+  
+  {{ .Inner }}

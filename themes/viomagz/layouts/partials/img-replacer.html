@@ -1,0 +1,28 @@
+{{ $content := replace .Content "https://lh3."  "https://cdn.statically.io/img/lh3." }}
+{{ $content := replace $content "https://lh4."  "https://cdn.statically.io/img/lh4." }}
+{{ $content := replace $content "https://lh5."  "https://cdn.statically.io/img/lh5." }}
+{{ $content := replace $content "https://lh6."  "https://cdn.statically.io/img/lh6." }}
+
+{{ $content := replace $content "localhost:1313"  "mobagenie.my.id" }}
+
+{{ $content := $content | replaceRE "<a.*?href=\".*?.jpg\".*?>" "" }}
+{{ $content := $content | replaceRE "<a.*?href=\".*?.jpeg\".*?>" "" }}
+{{ $content := $content | replaceRE "<a.*?href=\".*?.png\".*?>" "" }}
+{{ $content := $content | replaceRE "<a.*?href=\".*?.webp\".*?>" "" }}
+
+
+{{ $content := $content | replaceRE ".jpg.*?>" ".jpg\"/>" }}
+{{ $content := $content | replaceRE ".jpeg.*?>" ".jpeg\"/>" }}
+{{ $content := $content | replaceRE ".png.*?>" ".png\"/>" }}
+{{ $content := $content | replaceRE ".webp.*?>" ".webp\"/>" }}
+
+{{ $content := $content | replaceRE "<img.*?src=\"" "<amp-img alt=\"AMP IMG\" src=\"" }}
+
+{{ $content := $content | replaceRE ".jpg\"/>" ".jpg\" width=\"900\" height=\"675\" layout=\"responsive\"/></amp-img>" }}
+{{ $content := $content | replaceRE ".jpeg\"/>" ".jpeg\" width=\"900\" height=\"675\" layout=\"responsive\"/></amp-img>" }}
+{{ $content := $content | replaceRE ".png\"/>" ".png\" width=\"900\" height=\"675\" layout=\"responsive\"/></amp-img>" }}
+{{ $content := $content | replaceRE ".webp\"/>" ".webp\" width=\"900\" height=\"675\" layout=\"responsive\"/></amp-img>" }}
+
+{{ $content := replace $content "</amp-img></a>" "</amp-img>" }}
+
+{{ $content := replace $content "AMP IMG" .Title }}

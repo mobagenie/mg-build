@@ -1,0 +1,182 @@
+
+
+
+ 
+ <b><div class="row text-white bg-primary" style="padding-top:30px;">
+	  <!-- background:#03a9f4; -->
+
+<div class="col-lg-12 text-center font-weight-bold">{{ upper $.Page.Params.heroname }} MOBILE LEGENDS BUILD</div>
+        <div class="col-4 text-center font-weight-bold">
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="material-icons">person</i></button>		
+		
+		
+		<br/><a style="color:white;" href="/tags/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a></div>
+        <div class="col-4  text-center font-weight-bold"><i class="material-icons">military_tech</i><br/>WR : {{ .Get "WR" }}</div>
+         <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
+          <div class="col-4 text-center font-weight-bold"><i class="material-icons">play_arrow</i><br/>Match : {{ .Get "Match" }}</div>
+		  
+        <!-- <div class="col-4">BP : {{ .Get "BP" }}</div> -->
+        <!-- <div class="col-4">DM : {{ .Get "DM" }}</div> -->
+         <!-- <div class="col-4">Ticket : {{ .Get "Ticket" }}</div> -->
+
+           
+      </div></b>
+
+<!-- <div class="col-md-12 ml-auto">  -->
+<!-- <h1 id="using-the-grid">Using the grid</h1> -->
+
+<!-- <p>Utilize the Bootstrap grid system within a modal by nesting <code class="highlighter-rouge">.container-fluid</code> within the <code class="highlighter-rouge">.modal-body</code>. Then, use the normal grid system classes as you would anywhere else.</p> -->
+<!-- </div> -->
+
+
+
+<!-- <div class="bd-example"> -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gridSystemModal"> -->
+  <!-- Launch demo modal -->
+<!-- </button> -->
+<!-- </div> -->
+
+
+	      <!-- <div class="row text-white bg-dark"> -->
+      	
+        <!-- <div class="col-lg-12"> -->
+
+<!-- <h2><i class="material-icons">info</i> Skills</h2> -->
+
+<!-- </div> -->
+
+
+      <!-- </div>  -->
+
+
+  <div class="container-fluid">
+
+<div id="gridSystemModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="gridModalLabel"
+		
+		    style="font-size: 16px;
+    margin-bottom: -4px;
+    margin-top: -4px;
+    line-height: 0.5;
+    /* background-color: #2e9fff; */
+    font-weight: 0;"
+		
+		>{{ $.Page.Params.title }}</h1>
+		
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+
+<div class="row">
+<!-- <div class="row"> -->
+	
+<div class="col-md-4 ml-auto"> 
+	  <a class="twitter-timeline" 
+	  data-lang="id" 
+	  data-height="1"
+	  data-chrome="noheader nofooter noborders transparent noscrollbar"
+	  data-show-replies="false" 
+	  data-tweet-limit="1" href="https://twitter.com/{{ $.Page.Params.tw }}?ref_src=twsrc%5Etfw"></a> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div> 	  
+
+<div class="col-md-8 ml-auto">
+
+<style>
+iframe, object, embed {
+        max-width: 100%;
+        max-height: 100%;
+}
+</style>
+<iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="534" height="300" type="text/html" src="https://www.youtube.com/embed/{{ $.Page.Params.ytvideoid }}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://www.unorules.org/">https://www.unorules.org/</a></small></div></iframe>
+
+</div>
+</div>
+<!-- </div> -->
+			<!-- <img src="https://esportsku.com/wp-content/uploads/2020/05/Lemon.jpg" alt="{{ .Get "Player" }}" style="width:100%"> -->
+	
+			
+
+<div class="row">			
+            <div class="col-lg-12"><a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><span class="material-icons">
+smart_display
+</span> Youtube</a>
+			<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><span class="material-icons">
+facebook
+</span> Facebook</a>
+			<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><span class="material-icons">
+photo_camera
+</span> Instagram</a>
+
+<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://twitter.com/{{ $.Page.Params.tw }}" target="_blank"><span class="material-icons">
+flutter_dash
+</span> Twitter</a>
+
+<button  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger disabled" data-toggle="tooltip" data-placement="top" title="no way to visit IGN via link!"><span class="material-icons">
+sports_esports
+</span> {{ $.Page.Params.ign }}</button>
+
+<button  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger disabled" data-toggle="tooltip" data-placement="top" title="no way to visit TEAM via link!"><span class="material-icons">
+sports_esports
+</span> {{ $.Page.Params.team }}</button>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-12">{{ $.Page.Params.bio }} 
+</div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" href="#gridSystemModal" class="btn btn-primary">More Info</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  </div>
+
+	  
+	      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12">
+
+<h2><i class="material-icons">info</i> Skills</h2>
+
+</div>
+
+        <div class="col-lg-12">
+
+
+  
+	
+      <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills0Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/0.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+  
+	
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills1Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/1.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills2Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/2.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+        
+    
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills3Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/3.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+
+
+
+
+</div>
+
+      </div>  
+										
+										{{ .Inner }}

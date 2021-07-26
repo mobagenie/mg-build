@@ -1,0 +1,660 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+          {{ partial "head-single.html" . }}
+          
+          <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/grid/grid.css" rel="stylesheet">
+  </head>
+  
+  </head>
+  <body>
+  	
+  <div class="container">
+
+      <h1>Bootstrap grid examples</h1>
+      <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+
+      <h3>Five grid tiers</h3>
+      <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+
+      <div class="row text-white bg-dark">
+
+        <div class="col-4">BP : 32k</div>
+        <div class="col-4">DM : 599</div>
+         <div class="col-4">Ticket : -</div>
+        <div class="col-4">Player : Doc Bry</div>
+        <div class="col-4">Winrate 95%</div>
+         <div class="col-4">League: X 420</div>
+          <div class="col-4">League: X 420</div>
+           
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+
+
+
+.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+
+<h2>Tier : <span class="badge badge-primary">S</span></h2>
+
+</div>
+     
+        <div class="col-lg-4">
+
+<div class="bd-example bd-example-tabs">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="pills-splus-tab" data-toggle="pill" href="#pills-splus" role="tab" aria-controls="pills-splus" aria-selected="false">S+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-s-tab" data-toggle="pill" href="#pills-s" role="tab" aria-controls="pills-s" aria-selected="true">S</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-aplus-tab" data-toggle="pill" href="#pills-aplus" role="tab" aria-controls="pills-aplus" aria-selected="false">A+</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link" id="pills-a-tab" data-toggle="pill" href="#pills-a" role="tab" aria-controls="pills-a" aria-selected="false">A</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-b-tab" data-toggle="pill" href="#pills-b" role="tab" aria-controls="pills-b" aria-selected="false">B</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-c-tab" data-toggle="pill" href="#pills-c" role="tab" aria-controls="pills-c" aria-selected="false">C</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade" id="pills-splus" role="tabpanel" aria-labelledby="pills-splus-tab">
+      <p>Meta Tier<br>These type of heroes are currently the most powerful heroes in the game. It is recommended to be taken at first pick during matchmaking and they are difficult heroes to resist and counter.</p>
+    </div>
+    <div class="tab-pane fadeshow active" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
+      <p>Strong Tier<br>Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands.</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-aplus" role="tabpanel" aria-labelledby="pills-aplus-tab">
+      <p>Effective Tier<br>Effective Tier heroes are among the good heroes of the game according to their roles and power. They need to be use carefully in order to perform good game.</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+      <p>Average Tier<br>These type of heroes are expected to perform just an average game performance because of their abilities and powers lower than the higher tier heroes.</p>
+    </div>
+    <div class="tab-pane fade" id="pills-b" role="tabpanel" aria-labelledby="pills-b-tab">
+      <p>Ineffectual Tier<br>Ineffectual Tier heroes are below average performing heroes and not much performance should be expected unless they are performing good team play.</p>
+    </div>
+    <div class="tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
+      <p>Underperforming Tier<br>These type of heroes are the least useful and not recommended to use in the game.</p>
+    </div>
+    
+  </div>
+</div> <!--.col-lg-4 end-->
+
+</div>
+
+      </div>
+      
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+
+<h2>Lane : <span class="badge badge-primary">EXP Lane</span></h2>
+
+</div>
+     
+        <div class="col-lg-4">
+
+<div class="bd-example bd-example-tabs">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="pills-splus-tab" data-toggle="pill" href="#pills-gold" role="tab" aria-controls="pills-gold" aria-selected="false">Gold</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-s-tab" data-toggle="pill" href="#pills-roam" role="tab" aria-controls="pills-roam" aria-selected="false">Roam</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-mid-tab" data-toggle="pill" href="#pills-mid" role="tab" aria-controls="pills-aplus" aria-selected="false">Mid</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link" id="pills-a-tab" data-toggle="pill" href="#pills-jungle" role="tab" aria-controls="pills-jungle" aria-selected="false">Jungle</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-exp-tab" data-toggle="pill" href="#pills-exp" role="tab" aria-controls="pills-c" aria-selected="true">EXP</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade" id="pills-gold" role="tabpanel" aria-labelledby="pills-gold-tab">
+      <p>Gold&nbsp;Lane<br>Gold Lane: Marksmen rely upon their Equipment. Take the Gold Lane farm quickly. Marksmen are relatively weak in the early game but can accumulate equipment items more quickly by killing the Siege Minions that offer extra gold and provide the team with a strong continuous damage ability in the late game</p>
+    </div>
+    <div class="tab-pane fade" id="pills-roam" role="tabpanel" aria-labelledby="pills-roam-tab">
+      <p>Roam<br>Roaming: Supports and Tanks don't need to rely upon Equipment. Roaming is a better way for them to protect their core allies. Roaming heroes generally excel at initiating teamfights or can provide strong buffs to allies. A great way to lead your team to victory is by utilizing their skills characteristics and looking for the right time to attack</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-mid" role="tabpanel" aria-labelledby="pills-mid-tab">
+      <p>Mid&nbsp;Lane<br>Mages take the Mid Lane and can swiftly clear lanes as well as backing up allies.After reaching a certain level. Mages can deal considerable AoE damage to clear lanes efficiently. It is recommended to take the advantage of the turrets to farm steadily in the early game and be ready to back up and roam in the middle game</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-jungle" role="tabpanel" aria-labelledby="pills-jungle-tab">
+      <p>Jungle<br>Assassins have the highest damage output. Jungling is a good way for them to farm fast. Assassins have high mobility and burst on single targets but can often be weak when soloing lanes early on. In the early game they can level up quickly by killing creeps and find chances to kill single enemies by teamwork with allies in the same lane</p>
+    </div>
+
+    <div class="tab-pane fadeshow active" id="pills-exp" role="tabpanel" aria-labelledby="pills-exp-tab">
+      <p>Exp Lane: Fighters rely upon leveling up fast to take advantage. Take the EXP Lane to level up faster and fight for the first Turtle. Fighters and some Tanks can both fight and tank and level up quickly by killing the Siege Minions that offer EXP. This can be a great help to the team in the early game and can help build up better solo capabilities in the mid and late game.</p>
+    </div>
+    
+  </div>
+</div> <!--.col-lg-4 end-->
+
+</div>
+
+      </div>
+     
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+
+<h2>Offensive Build : </h2>
+
+</div>
+     
+        <div class="col-lg-4">
+
+<div class="bd-example bd-example-tabs">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-splus-tab" data-toggle="pill" href="#pills-cod" role="tab" aria-controls="pills-cod" aria-selected="false">CoD</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-s-tab" data-toggle="pill" href="#pills-s" role="tab" aria-controls="pills-s" aria-selected="true">WB</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-aplus-tab" data-toggle="pill" href="#pills-aplus" role="tab" aria-controls="pills-aplus" aria-selected="false">LT</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link" id="pills-a-tab" data-toggle="pill" href="#pills-a" role="tab" aria-controls="pills-a" aria-selected="false">CE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-b-tab" data-toggle="pill" href="#pills-b" role="tab" aria-controls="pills-b" aria-selected="false">OR</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-c-tab" data-toggle="pill" href="#pills-c" role="tab" aria-controls="pills-c" aria-selected="false">IM</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fadeshow" id="pills-cod" role="tabpanel" aria-labelledby="pills-cod-tab">
+      <p>>+60 Magic Power<br>
++615 HP<br>
++600 Mana<br><br>
+
+Equipment Blessing: None<br>
+
+
+Unique Passive-Time: Adds 25 HP and 4 Magic Power every 20s. Up to 12 times..</p>
+    </div>
+    <div class="tab-pane fade" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
+      <p>Strong Tier<br>Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands.</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-aplus" role="tabpanel" aria-labelledby="pills-aplus-tab">
+      <p>Effective Tier<br>Effective Tier heroes are among the good heroes of the game according to their roles and power. They need to be use carefully in order to perform good game.</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+      <p>Average Tier<br>These type of heroes are expected to perform just an average game performance because of their abilities and powers lower than the higher tier heroes.</p>
+    </div>
+    <div class="tab-pane fade" id="pills-b" role="tabpanel" aria-labelledby="pills-b-tab">
+      <p>Ineffectual Tier<br>Ineffectual Tier heroes are below average performing heroes and not much performance should be expected unless they are performing good team play.</p>
+    </div>
+    <div class="tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
+      <p>Underperforming Tier<br>These type of heroes are the least useful and not recommended to use in the game.</p>
+    </div>
+    
+  </div>
+</div> <!--.col-lg-4 end-->
+
+</div>
+
+      </div>
+      
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+
+<h2>Balanced Build : </h2>
+
+</div>
+     
+        <div class="col-lg-4">
+
+<div class="bd-example bd-example-tabs">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="pills-splus-tab" data-toggle="pill" href="#pills-cod" role="tab" aria-controls="pills-cod" aria-selected="false">CoD</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-s-tab" data-toggle="pill" href="#pills-s" role="tab" aria-controls="pills-s" aria-selected="true">WB</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-aplus-tab" data-toggle="pill" href="#pills-aplus" role="tab" aria-controls="pills-aplus" aria-selected="false">LT</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link" id="pills-a-tab" data-toggle="pill" href="#pills-a" role="tab" aria-controls="pills-a" aria-selected="false">CE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-b-tab" data-toggle="pill" href="#pills-b" role="tab" aria-controls="pills-b" aria-selected="false">OR</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-c-tab" data-toggle="pill" href="#pills-c" role="tab" aria-controls="pills-c" aria-selected="false">IM</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade" id="pills-cod" role="tabpanel" aria-labelledby="pills-cod-tab">
+      <p>>+60 Magic Power<br>
++615 HP<br>
++600 Mana<br><br>
+
+Equipment Blessing: None<br>
+
+
+Unique Passive-Time: Adds 25 HP and 4 Magic Power every 20s. Up to 12 times..</p>
+    </div>
+    <div class="tab-pane fadeshow active" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
+      <p>Strong Tier<br>Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands.</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-aplus" role="tabpanel" aria-labelledby="pills-aplus-tab">
+      <p>Effective Tier<br>Effective Tier heroes are among the good heroes of the game according to their roles and power. They need to be use carefully in order to perform good game.</p>
+    </div>
+    
+    <div class="tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+      <p>Average Tier<br>These type of heroes are expected to perform just an average game performance because of their abilities and powers lower than the higher tier heroes.</p>
+    </div>
+    <div class="tab-pane fade" id="pills-b" role="tabpanel" aria-labelledby="pills-b-tab">
+      <p>Ineffectual Tier<br>Ineffectual Tier heroes are below average performing heroes and not much performance should be expected unless they are performing good team play.</p>
+    </div>
+    <div class="tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
+      <p>Underperforming Tier<br>These type of heroes are the least useful and not recommended to use in the game.</p>
+    </div>
+    
+  </div>
+</div> <!--.col-lg-4 end-->
+
+</div>
+
+      </div>
+ 
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+<h2>Strong Against </h2>
+</div>
+        <div class="col-4">
+
+<a class="badge badge-success" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a>
+										</div>
+        <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>
+         <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>
+          <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>
+         <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>         
+      </div>    
+      
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+<h2>Weak Against </h2>
+</div>
+        <div class="col-4">
+
+<a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a>
+										</div>
+        <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>
+         <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>
+          <div class="col-4"><a class="badge badge-primary" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>
+         <div class="col-4"><a class="badge badge-danger" data-wow-delay=".5s" href="granger"><img src="../images/buildk/granger.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /><b class="badge badge-primary"  style="color:">Granger</b></a></div>         
+      </div>    
+   
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-4">
+
+<h2>Balanced Build : </h2>
+
+</div>
+     
+        <div class="col-lg-4">
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Cras justo odio
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Dapibus ac facilisis in
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Morbi leo risus
+    <span class="badge badge-danger badge-pill">1</span>
+  </li>
+</ul>
+</div> <!--.col-lg-4 end-->
+
+      </div>
+ 
+      <div class="row">
+        <div class="col-xl-4">.col-xl-4</div>
+        <div class="col-xl-4">.col-xl-4</div>
+        <div class="col-xl-4">.col-xl-4</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xl-4">.col-xl-4</div>
+        <div class="col-xl-4">.col-xl-4</div>
+        <div class="col-xl-4">.col-xl-4</div>
+      </div>
+      
+</div>
+
+
+
+    <div class="page">
+	
+          {{ partial "nav.html" . }}	
+		  
+        <div class="content-inner">
+          <!-- Page Header-->
+    
+          <!-- Breadcrumb-->
+
+          <!-- Forms Section-->
+          <section class="forms" style="padding:0px; background-color:#212529;"> 
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Basic Form-->
+                
+                
+
+                
+                
+
+                  <style>
+                      .resimbuyuklugu
+                      {
+                          margin-left:220px;
+                          margin-top:-82px;
+                          height:28px;
+                          width:28px;
+
+                      }
+					  
+					  
+					      .uploadresimler
+                      {
+                          margin-left: 210px; margin-top: -70px; width: 30px; height: 30px;
+                       
+
+                      }
+                  </style>
+
+
+                <!-- Form Elements -->
+                <div class="col-lg-12" style="padding-left:0px;padding-right:0px">
+                  <div class="card" style=background-color:#0c1c36;>
+				  
+				  <div class="animated-box in">
+                   <!--    <div class="kahraman" style="height:15rem;background-size:cover; background-image:url(../images/tanitim/phoveus.jpg?1468708631);"></div> -->
+				  </div>
+                    <div class="card-close">
+                      <div class="dropdown">
+                         <!-- <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>-->
+                        <!-- <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div> -->
+                      </div>
+                    </div>
+                     <!--
+					<div class="card-header d-flex align-items-center" style="padding:1rem 2.25rem;background-color:#0c1c36;border-bottom:0px;">
+                    <br><br>
+                      <h3 class="h2">Phoveus Build</h3> &nbsp; &nbsp; &nbsp;
+                      <div class="comments"><i class="fa fa-eye"></i> View: 98808</div>
+                    </div>
+                    -->
+						
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#212529;border-bottom:0px;">
+										<div class="animated-box in" style="height:6rem;width:6rem;">
+										<div class="kahraman" style="height: 6rem;width: 6rem;background-size:cover;background-image:url(../images/buildk/phoveus.png);border-radius:5px;"></div>			 				
+										<h3 class="h2" style="padding: 0px 9rem;position: absolute;top: 0px;color: antiquewhite;">{{if isset .Params "hero" }}{{ index .Params "hero" }}{{ end }}&nbsp;Build</h3><div class="comments" style=" padding: 0px 9rem; position: absolute;top: 35px; color: antiquewhite;">
+										<i class="fa fa-eye"></i><b style="top: 0px;position: absolute;">View: 98808</b></div></div>
+										<div class="comments" style="padding: 0px 9rem;position: absolute;top: 70px;color: antiquewhite;">
+										<img src="../images/classes/2.png" id="resim2" style="padding: 0px 3rem;position: absolute;/* visibility: hidden; */height: 20px;top: 22px;">
+										<b style="top: 20px;position: absolute;">Role:</b></div>
+										</div>
+														
+
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#212529;border-bottom:0px;">		  
+										<img src="../images/symbols/coin.png" alt="cost" id="resim2" width="30px" height="30px"   /></span>
+										
+										{{if isset .Params "bp" }}
+										<b style="color: antiquewhite">&nbsp;{{ index .Params "bp" }}&nbsp;&nbsp;&nbsp;&nbsp;</b>
+										{{ end }}
+
+										{{if isset .Params "dm" }}
+										<img src="../images/symbols/elmas.png" alt="diamond" id="resim2" width="30px" height="30px"   /></span>
+										<b style="color: antiquewhite">&nbsp;{{ index .Params "dm" }}&nbsp;&nbsp;&nbsp;&nbsp;</b>
+										{{ end }}
+										
+										{{if isset .Params "ticket" }}
+										<img src="../images/symbols/ticket.png" alt="ticket" id="resim2" width="30px" height="30px"  /></span>
+										<b style="color: antiquewhite">&nbsp;{{ index .Params "ticket" }}&nbsp;</b>
+										{{ end }}
+										
+										</div>
+															
+                    						
+
+				
+	
+										
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#212529;border-bottom:0px;"> 						 
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180"  data-tippy-delay="200" data-tippy="
+										<b><label style=color:#FF0></label>This build verified by Professional player">
+										<img src="../images/symbols/d.png" alt="ticket" id="resim2" width="30px" height="27px" /></abbr>
+										</span><b style="color: antiquewhite">
+										
+										<!-- {{if isset .Params "player" }}{{ index .Params "player" }}{{ end }} -->
+										
+										{{ range .Params.tags }}
+<span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" itemprop="url">{{ . }}</a></span>  
+{{ end }}
+										
+										&nbsp&nbsp;&nbsp;|&nbsp;&nbsp;&nbspWinrate&nbsp;{{if isset .Params "wr" }}{{ index .Params "wr" }}{{ end }} <br> 	
+										<img src="../images/symbols/lig.png" width="30px" height="30px" alt="ticket" id="resim2" /></span>&nbspLeague: {{if isset .Params "league" }}{{ index .Params "league" }}{{ end }}&nbsp|&nbsp&nbsp&nbspMatches&nbsp;{{if isset .Params "matches" }}{{ index .Params "matches" }}{{ end }} </b><hr style="margin-bottom:0px;">
+										</div>
+
+							
+
+
+
+               
+									
+										
+
+	
+										
+										
+									
+										
+								
+
+										<div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#212529;border-bottom:0px;">
+										<h4 style="color:deeppink">Hero Tier</h4><br>
+										<div class="animated-box{{if isset .Params "tier" }}{{ index .Params "tier" }}{{ end }} in" style="height:2rem;width:2rem;">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/{{if isset .Params "tier" }}{{ index .Params "tier" }}{{ end }}.png);border-radius:5px;"></div>								
+										<h3 class="h4" style="padding: 0px 3rem;position: absolute;top: 5px;color: antiquewhite;font-family: Ubuntu, sans-serifsans-serif;">S&nbsp;Tier</h3>
+										</div>
+										<br>
+							
+
+										
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:36px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Meta Tier<br>These type of heroes are currently the most powerful heroes in the game. It is recommended to be taken at first pick during matchmaking and they are difficult heroes to resist and counter." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/1.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class="animated-box{{if isset .Params "tier" }}{{ index .Params "tier" }}{{ end }} in" style="height:2rem;width:2rem;position:absolute;left:81px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Strong Tier<br>Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/2.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:126px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Effective Tier<br>Effective Tier heroes are among the good heroes of the game according to their roles and power. They need to be use carefully in order to perform good game." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/3.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:171px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Average Tier<br>These type of heroes are expected to perform just an average game performance because of their abilities and powers lower than the higher tier heroes." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/4.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:216px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Ineffectual Tier<br>Ineffectual Tier heroes are below average performing heroes and not much performance should be expected unless they are performing good team play." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/5.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:261px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Underperforming Tier<br>These type of heroes are the least useful and not recommended to use in the game." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/tier/6.png);border-radius:3px;"></div>			 				
+										</abbr>
+										</div>
+										<br>
+										<label class="col-sm-3 form-control-label" style="padding-left: 0px;color:antiquewhite; "><br>
+										Strong heroes are also parf of meta champions and it is preferred to be selected at the beginning of matchmaking. They are the kind of heroes that can change the fate of the game in good hands.
+										</div>
+										<div class="card-header" style="padding:1rem 2.25rem;background-color:#212529;border-bottom:0px;">
+										<h4 style="color:deeppink">Lane Guide</h4><br>
+										<div class="animated-box in" style="height:2rem;width:2rem;">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/{{if isset .Params "lane" }}{{ index .Params "lane" }}{{ end }}.png);border-radius:5px;"></div>								
+										<h3 class="h4" style="padding: 0px 3rem;position: absolute;top: 5px;color: antiquewhite;font-family: Ubuntu, sans-serifsans-serif;">Exp&nbsp;Lane</h3>
+										</div>
+										<br>
+										
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:36px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Gold&nbsp;Lane<br>Gold Lane: Marksmen rely upon their Equipment. Take the Gold Lane farm quickly. Marksmen are relatively weak in the early game but can accumulate equipment items more quickly by killing the Siege Minions that offer extra gold and provide the team with a strong continuous damage ability in the late game" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/1.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:81px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Roam<br>Roaming: Supports and Tanks don't need to rely upon Equipment. Roaming is a better way for them to protect their core allies. Roaming heroes generally excel at initiating teamfights or can provide strong buffs to allies. A great way to lead your team to victory is by utilizing their skills characteristics and looking for the right time to attack" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/2.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:126px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Mid&nbsp;Lane<br>Mages take the Mid Lane and can swiftly clear lanes as well as backing up allies.After reaching a certain level. Mages can deal considerable AoE damage to clear lanes efficiently. It is recommended to take the advantage of the turrets to farm steadily in the early game and be ready to back up and roam in the middle game" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/3.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class=" in" style="height:2rem;width:2rem;position:absolute;left:171px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Jungle<br>Assassins have the highest damage output. Jungling is a good way for them to farm fast. Assassins have high mobility and burst on single targets but can often be weak when soloing lanes early on. In the early game they can level up quickly by killing creeps and find chances to kill single enemies by teamwork with allies in the same lane" tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/4.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<div class="animated-box in" style="height:2rem;width:2rem;position:absolute;left:216px;">
+										<abbr data-tippy-animation="Fade" data-tippy-delay="180" data-tippy="
+										<b>Exp&nbsp;Lane<br>Exp Lane: Fighters rely upon leveling up fast to take advantage. Take the EXP Lane to level up faster and fight for the first Turtle. Fighters and some Tanks can both fight and tank and level up quickly by killing the Siege Minions that offer EXP. This can be a great help to the team in the early game and can help build up better solo capabilities in the mid and late game." tabindex="0">
+										<div class="kahraman" style="height: 2rem;width: 2rem;background-size:cover;background-image:url(../images/lanes/5.png);border-radius:5px;"></div>			 				
+										</abbr>
+										</div>
+										<br>
+										<label class="col-sm-3 form-control-label" style="padding-left: 0px;color:antiquewhite; "><br>
+										Exp Lane: Fighters rely upon leveling up fast to take advantage. Take the EXP Lane to level up faster and fight for the first Turtle. Fighters and some Tanks can both fight and tank and level up quickly by killing the Siege Minions that offer EXP. This can be a great help to the team in the early game and can help build up better solo capabilities in the mid and late game.
+										</div>							 					 					 
+							
+
+										
+
+				
+		
+							 
+                   
+										<!-- <div class="col-sm-9" style="background-color:#0c1c36;max-width:100%"> <hr style="margin-bottom:0px;"></div> -->
+										<!-- <div class="card-header" style="padding:1rem 2.25rem;background-color:#091835;border-bottom:0px;"> -->
+										<!-- <h4 style="color:deeppink"> Offensive Build</h4><br>  -->
+
+
+<!--{{ .Content |safeHTML}}-->
+							
+{{ $cols := split .Content "|||||" }} 
+<div class="content-column"> 
+{{ index $cols 0 | safe.HTML }} 
+</div> 
+
+<div class="content-column"> 
+{{ index $cols 1 | safe.HTML }} 
+</div>
+
+<div class="content-column"> 
+{{ index $cols 2 | safe.HTML }} 
+</div>
+
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <style>
+	section.forms p {color:#FFF;}</style>
+	
+     <!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>MobaGenie Build & Guide </p>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <p>Beta v 1.0.0</p>
+
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>            
+          
+          </section>
+</div>		  
+          <!--{{ partial "footer.html" . }}-->
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>

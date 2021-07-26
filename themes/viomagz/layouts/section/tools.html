@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {{ partial "head-page.html" . }}
+        {{ partial "head-add-on-page.html" . }}	
+		
+<div id="main">
+
+<!-- post wrapper start -->
+<div id="post-wrapper">
+<div class="post-container">
+
+ <!--  {{ partial "featured-post.html" . }} -->
+
+<!-- <div class="latest-post-title"> -->
+<!-- <h2>Latest</h2> -->
+<!-- </div> -->
+
+<div class="main section" id="main"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts">
+
+
+<div class="widget PopularPosts" data-version="1" id="PopularPosts1">
+<!-- <h2>Hero Chart | <a href="{{ .Site.Params.rooturl }}/hero-chart/">Show more...</a></h2> -->
+<div class="widget-content popular-posts">
+<ul>
+
+            {{ range .Data.Pages }}
+
+
+<li><div class=item-thumbnail-only><div class=item-thumbnail><a href="{{ .RelPermalink }}" target=_blank> 
+
+{{ with .Params.images }}
+		{{ range first 1 . }}
+	<img alt="thumbnail" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_50,h_50,c_fill,g_face,f_auto/{{ . | absURL }}" />
+		{{ end }}
+	{{ end }}
+
+ </a></div><div class=item-title><a href="{{ .RelPermalink }}">{{ .Title }}</a></div><div style="clear:both"></div></li>
+
+
+            {{ end }}
+
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="iklan-atas section" id="iklan-atas"><div class="widget HTML" data-version="1" id="HTML996">
+</div></div>
+<div class="iklan-tengah1 section" id="iklan-tengah1"><div class="widget HTML" data-version="1" id="HTML997">
+</div></div>
+<div class="iklan-tengah2 section" id="iklan-tengah2"><div class="widget HTML" data-version="1" id="HTML998">
+</div></div>
+<div class="iklan-bawah section" id="iklan-bawah"><div class="widget HTML" data-version="1" id="HTML999">
+</div></div>
+</div>
+</div>
+<!-- post wrapper end -->
+
+    </body>
+</html>
