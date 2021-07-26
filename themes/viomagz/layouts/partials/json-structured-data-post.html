@@ -22,9 +22,9 @@
 
         "position":  2 ,
 
-        "name": "Latest",
+        "name": "{{ .Title }}",
 
-        "item": "https://build.mobagenie.my.id/latest"
+        "item": "{{ .Permalink }}"
 
       },{
 
@@ -32,9 +32,9 @@
 
         "position":  3 ,
 
-        "name": "META",
+        "name": "{{ .Params.playername }}",
 
-        "item": "https://build.mobagenie.my.id/meta"
+        "item": "https:\/\/build.mobagenie.my.id\/profile\/{{ .Params.cleanplayername }}/"
 
       },{
 
@@ -42,39 +42,9 @@
 
         "position":  4 ,
 
-        "name": "Pro Player",
+        "name": "{{ .Params.heroname | humanize}}",
 
-        "item": "https://build.mobagenie.my.id/pro-player"
-
-      },{
-
-        "@type": "ListItem",
-
-        "position":  5 ,
-
-        "name": "All Player",
-
-        "item": "https://build.mobagenie.my.id/player"
-
-      },{
-
-        "@type": "ListItem",
-
-        "position":  6 ,
-
-        "name": "Equipment",
-
-        "item": "https://build.mobagenie.my.id/equipment"
-
-      },{
-
-        "@type": "ListItem",
-
-        "position":  7 ,
-
-        "name": "{{ .Title }}",
-
-        "item": "{{ .Permalink }}"
+        "item": "https:\/\/build.mobagenie.my.id\/tags/{{ .Params.heroname  | lower}}\/"
 
       }
 
