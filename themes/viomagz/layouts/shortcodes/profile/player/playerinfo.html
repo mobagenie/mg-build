@@ -6,24 +6,24 @@
 	
         <div class="col-4  text-center font-weight-bold">
 		
-		<a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><span class="material-icons">
-smart_display
-</span> Youtube</a>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="Also known as" data-content="{{ $.Page.Params.aka }}"><span class="material-icons">
+sports_esports
+</span>{{ $.Page.Params.ign }}</button>
 
 </div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
           <div class="col-4 text-center font-weight-bold">
 		  
-		  <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><span class="material-icons">
-facebook
-</span> Facebook</a>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="All Team or Squad" data-content="{{ $.Page.Params.exteam }}"><span class="material-icons">
+sports_esports
+</span>{{ $.Page.Params.team }}</button>
 
 		  </div>
 		  <div class="col-4 text-center font-weight-bold">
 		  
-<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><span class="material-icons">
-photo_camera
-</span> Instagram</a>	
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="All Achievement" data-content="{{ $.Page.Params.allachievement }}"><span class="material-icons">
+emoji_events
+</span>{{ $.Page.Params.achievement }}</button>
 
 </div>
         <!-- <div class="col-4">BP : {{ .Get "BP" }}</div> -->
@@ -75,7 +75,7 @@ photo_camera
     /* background-color: #2e9fff; */
     font-weight: 0;"
 		
-		>{{ $.Page.Params.title }}</h1>
+		>{{ $.Page.Params.playername }}</h1>
 		
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
@@ -156,65 +156,6 @@ sports_esports
   </div>
 
 	  
-	      <div class="row text-white bg-dark" >
-      	
-        <div class="col-lg-12">
 
-<h2><i class="material-icons">info</i> Latest Build</h2>
-
-</div>
-
-        <div class="col-lg-12">
-
-
-
-  				{{ range (where .Site.RegularPages "Type" "post") }}
-				<tr>	
-				
-{{ $cleanplayername := .Params.cleanplayername }}
-{{ $cleanplayername1 := $.Page.Params.cleanplayername }}
-
-{{ if or 
-
-(eq $cleanplayername1 $cleanplayername ) 
-
-}}
-	
-
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
-
-{{if isset .Params "images" }}
-{{ $images_set := index .Params.images  | absURL }}
-
-<a href="{{ .RelPermalink }}"><img src="{{ .Site.Params.cdn }}/p/images/buildk/{{ .Params.heroname | lower }}.png" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
-		
-	<!-- <img src="{{ . | absURL }}" alt="" class="img-fluid rounded-circle" width="100px" height="100px"> -->
-
-	{{ end }}
-	
-
-
-<!-- <b class="badge badge-primary"  style="color:">{{ index .Params.cleanplayername }}</b> -->
-</br></br>
-<p href="#" type="button" class="btn btn-secondary" data-toggle="popover" data-toggle="popover" data-placement="top" style="background:#009578;" data-content="{{ .Params.post_highlight }}.">
-  Short Info
-</p></div>	
-				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}}</strong></td> -->
-				
-				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "Jan" }} {{ .Date | dateFormat "2" }}</strong></td> -->
-				
-				<!-- <td class="allposts-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></td> -->
-				
-{{ end }}
-
-				</tr>
-
-
-				{{ end }}
-	
-
-</div>
-
-      </div>  
 										
 										{{ .Inner }}

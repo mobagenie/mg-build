@@ -1,0 +1,17 @@
+  
+{{ $socmed := .Get "socmed" }}
+
+{{ if eq $socmed "yt" }}
+		<a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><span class="material-icons">
+smart_display
+</span> Youtube</a>
+{{ else if eq $socmed "fb" }}
+		  <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><span class="material-icons">
+facebook
+</span> Facebook</a>
+{{ else if eq $socmed "ig" }}
+<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><span class="material-icons">
+photo_camera
+</span> Instagram</a>	
+{{ end }}
+		

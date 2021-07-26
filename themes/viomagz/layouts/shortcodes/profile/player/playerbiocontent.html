@@ -1,0 +1,16 @@
+
+  <div class="card">
+    <div class="card-header text-white bg-dark" id="heading{{ .Get "bioid" }}">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ .Get "bioid" }}" aria-expanded="true" aria-controls="collapse{{ .Get "bioid" }}">
+          {{ .Get "biotitle" }}
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapse{{ .Get "bioid" }}" class="collapse" aria-labelledby="heading{{ .Get "bioid" }}" data-parent="#accordion">
+      <div class="card-body text-dark">
+		{{ .Get "biocontent"  | safeHTML }}
+      </div>
+    </div>
+  </div>

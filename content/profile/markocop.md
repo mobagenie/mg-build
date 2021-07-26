@@ -27,7 +27,7 @@ proplayer: false
 team: 
 ytvideoid: 
 ign: 
-yt: 
+yt: UC_rsMKPp_iGAXtblQ-KEXNQ
 fb: 
 ig: 
 tw: 
@@ -35,3 +35,12 @@ bio:
 ---
 
 {{< profile/player/playerinfo name="Markocop" cleanname="markocop" bio="" >}} {{</ profile/player/playerinfo >}}
+
+{{< profile/player/playersocmed >}}
+
+{{< profile/player/playersocmedcontent socmed="yt" >}} 
+
+{{</ profile/player/playersocmed >}}
+
+
+{{< profile/player/playerlatestbuild >}}
