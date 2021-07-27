@@ -37,10 +37,8 @@ Cowok yang punya nama lengkap Eko Julianto ini sudah menggeluti dunia game semen
 
 {{< HeroInfo HeroName="Fanny" View="" Role="3" BP="24000" DM="499" Ticket="0" Player="Oura" CleanPlayerName="oura" WR="%" League="x" Match="" HeroTier="4" TierLabel="A Tier" LaneImg="4" LaneLabel="Jungle" >}} {{< /HeroInfo >}}
 
-{{< OffensiveBuild build1="BeastKiller"  build2="BladeArmor" build3="RoseGoldMeteor" build4="BloodlustAxe" build5="MaleficRoar" build6="BladeoftheHeptaseas" >}} {{</ OffensiveBuild >}}  
+{{< OffensiveBuild build1="BeastKiller"  build2="BladeArmor" build3="RoseGoldMeteor" build4="BloodlustAxe" build5="MaleficRoar" build6="BladeoftheHeptaseas" sourcelink="https://ggwp.id/media/esports/mobile-legends/build-fanny-edisi-pro-player-oura"  >}} {{</ OffensiveBuild >}}  
 
-{{< SourceLink slink="https://ggwp.id/media/esports/mobile-legends/build-fanny-edisi-pro-player-oura" >}} 
-{{</ SourceLink >}} 
 
 {{< RecommendedSpells SpellName1="Retribution" SpellImg1="2" SpellName2="Retribution" SpellImg2="2" >}} {{</ RecommendedSpells >}}   
 

@@ -6,7 +6,24 @@
 
 {{ if (isset $.Page.Params "proplayer") }}
 <button class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Build by Professional Player"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></button>
+{{ end }} 
+
+{{ $notes := .Get "notes" }}
+
+{{ if eq $notes "" }}
+    {{ .Scratch.Set $notes "" }}
+{{ else }}
+<button class="btn btn-warning btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="{{ $notes }}"><i class="fas fa-exclamation-triangle fa-sm"></i> Notes</button>
 {{ end }}
+
+{{ $sourcelink := .Get "sourcelink" }}
+
+{{ if eq $notes "" }}
+    {{ .Scratch.Set $sourcelink "" }}
+{{ else }}
+<button class="btn btn-warning btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="{{ $sourcelink }}"><i class="fas fa-link fa-sm"></i> Source</button>
+{{ end }}
+
 
 </h2>
 
