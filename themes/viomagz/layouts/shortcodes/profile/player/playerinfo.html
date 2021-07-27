@@ -6,22 +6,19 @@
 	
         <div class="col-4  text-center font-weight-bold">
 		
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="Also known as" data-content="{{ $.Page.Params.aka }}"><span class="material-icons md-18">sports_esports</span>{{ $.Page.Params.ign }}</button>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="Also known as" data-content="{{ $.Page.Params.aka }}">
+<i class="fas fa-user fa-lg"></i> {{ $.Page.Params.ign }}</button>
 
 </div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
           <div class="col-4 text-center font-weight-bold">
 		  
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="All Team or Squad" data-content="{{ $.Page.Params.exteam }}"><span class="material-icons">
-sports_esports
-</span>{{ $.Page.Params.team }}</button>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="All Team or Squad" data-content="{{ $.Page.Params.exteam }}"><i class="fas fa-users fa-lg"></i> {{ $.Page.Params.team }}</button>
 
 		  </div>
 		  <div class="col-4 text-center font-weight-bold">
 		  
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="All Achievement" data-content="{{ $.Page.Params.allachievement }}"><span class="material-icons">
-emoji_events
-</span>{{ $.Page.Params.achievement }}</button>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top" title="All Achievement" data-content="{{ $.Page.Params.allachievement }}"><i class="fas fa-trophy fa-lg"></i> {{ $.Page.Params.achievement }}</button>
 
 </div>
         <!-- <div class="col-4">BP : {{ .Get "BP" }}</div> -->
@@ -136,9 +133,7 @@ iframe, object, embed {
 			
 
 <div class="row">			
-            <div class="col-lg-12"><a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><span class="material-icons">
-smart_display
-</span> Youtube</a>
+            <div class="col-lg-12"><a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><i class="fas fa-video fa-lg"></i> Youtube</a>
 			<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><span class="material-icons">
 facebook
 </span> Facebook</a>
