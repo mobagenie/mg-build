@@ -11,7 +11,15 @@
 <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="fas fa-user fa-lg"></i></button>		
 		
 		
-		<br/><a style="color:white;" href="/profile/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a></div>
+		<br/>
+
+{{ if (isset $.Page.Params "proplayer") }}
+    <a style="color:white;" href="/profile/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a>
+{{ else }}
+<a style="color:white;" href="/tags/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a>
+{{ end }}
+
+		</div>
         <div class="col-4  text-center font-weight-bold"><i class="fas fa-medal fa-lg"></i><br/>WR : {{ .Get "WR" }}</div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
           <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Match : {{ .Get "Match" }}</div>
@@ -104,9 +112,21 @@
 <div class="col-md-4 ml-auto"> 
 
 <div class="card" style="max-width:100%;">
+
+{{ if (isset $.Page.Params "proplayer") }}
   <a title="{{ $.Page.Params.playername }}" href="/profile/{{ $.Page.Params.cleanplayername }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ $.Page.Params.cleanplayername | lower }}.jpg" class="card-img-top" alt="{{ $.Page.Params.playername }}"></a>
+{{ else }}
+  <a title="{{ $.Page.Params.playername }}" href="/tags/{{ $.Page.Params.cleanplayername }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/avatar/player/blank.jpg" class="card-img-top" alt="{{ $.Page.Params.playername }}"></a>
+{{ end }}
+  		
   <div class="card-body">
+  
+{{ if (isset $.Page.Params "proplayer") }}
     <h5 class="card-titlec text-center">{{ $.Page.Params.playername }}<br/><a href="/profile/{{ $.Page.Params.cleanplayername }}">@{{ $.Page.Params.playername }}</a></h5>
+{{ else }}	
+    <h5 class="card-titlec text-center">{{ $.Page.Params.playername }}<br/><a href="/tags/{{ $.Page.Params.cleanplayername }}">@{{ $.Page.Params.playername }}</a></h5>	
+{{ end }}
+  	
     <p class="card-text">{{ $.Page.Params.shortbio }} </p>
     <!-- <a href="/profile/{{ $.Page.Params.cleanplayername }}" class="btn btn-danger justify">More Info</a> -->
   </div>
