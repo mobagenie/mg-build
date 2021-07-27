@@ -116,6 +116,7 @@ biocontent = "https://www.manyasahilmu.com/2020/04/biodata-lengkap-evos-oura-ter
 
 {{</ profile/player/playersocmed >}}
 
+{{< profile/player/playerlatestvideo >}}
 
 {{< profile/player/playerlatestbuild >}}
 

@@ -1,0 +1,46 @@
+<div class="row text-white bg-dark" >
+        <div class="col-lg-12">
+
+<h2><i class="material-icons">info</i> {{ $.Page.Params.playername }} Video</h2>
+
+</div>
+
+<div class="col-lg-12">
+
+    <script>
+jQuery(function($){
+	jQuery('.youtube-feed').youtubeFeed({
+		//ID of the channel to pull in
+		channelId: 'UCirWugW5e03u3DUGA87s58A', 
+		//API Key
+		key: 'AIzaSyBfb4A6rdKGwqTbBa_IPny1SUe3qZKN_tU', 
+		//Number of videos to return (number per page if "pager" is set to true)
+		count: 1, 
+		//include Next and Previous page buttons to asynchronously load more videos
+		pager: true, 
+		//Previous Page Text
+		prevPageText: 'Previous Page',
+		//Next Page Text
+		nextPageText: 'Next Page',
+		//Append autoplay to video embed url
+		autoplay: false,
+		//HTML pattern for the output
+		pattern: '<div class="yt-placeholder">' +
+					'<a href="**VideoEmbedUrl**" class="yt-url">' +
+						'<img class="yt-thumb" src="**Thumbnail**">' +
+					'</a>' +
+				'</div>'
+	},
+	function(){
+		//Optional callback
+		console.log('youtube loaded');
+	});
+});
+
+    </script>
+	
+	<div class="youtube-feed"></div>
+
+</div>
+</div>
+
