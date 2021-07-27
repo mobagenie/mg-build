@@ -11,7 +11,7 @@
 <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="fas fa-user fa-lg"></i></button>		
 		
 		
-		<br/><a style="color:white;" href="/tags/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a></div>
+		<br/><a style="color:white;" href="/profile/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a></div>
         <div class="col-4  text-center font-weight-bold"><i class="fas fa-medal fa-lg"></i><br/>WR : {{ .Get "WR" }}</div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
           <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Match : {{ .Get "Match" }}</div>
@@ -102,13 +102,25 @@
 <!-- <div class="row"> -->
 	
 <div class="col-md-4 ml-auto"> 
-	  <a class="twitter-timeline" 
-	  data-lang="id" 
-	  data-height="1"
-	  data-chrome="noheader nofooter noborders transparent noscrollbar"
-	  data-show-replies="false" 
-	  data-tweet-limit="1" href="https://twitter.com/{{ $.Page.Params.tw }}?ref_src=twsrc%5Etfw"></a> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="card" style="max-width:100%;">
+  <a title="{{ $.Page.Params.playername }}" href="/profile/{{ $.Page.Params.cleanplayername }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ $.Page.Params.cleanplayername | lower }}.jpg" class="card-img-top" alt="{{ $.Page.Params.playername }}"></a>
+  <div class="card-body">
+    <h5 class="card-titlec text-center">{{ $.Page.Params.playername }}<br/><a href="/profile/{{ $.Page.Params.cleanplayername }}">@{{ $.Page.Params.playername }}</a></h5>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <!-- <a href="/profile/{{ $.Page.Params.cleanplayername }}" class="btn btn-danger justify">More Info</a> -->
+  </div>
+</div>
+
+<!-- <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills0Data"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ $.Page.Params.cleanplayername | lower }}.jpg"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="200px" height="200px"   /></button> -->
+
+	  <!-- <a class="twitter-timeline"  -->
+	  <!-- data-lang="id"  -->
+	  <!-- data-height="1" -->
+	  <!-- data-chrome="noheader nofooter noborders transparent noscrollbar" -->
+	  <!-- data-show-replies="false"  -->
+	  <!-- data-tweet-limit="1" href="https://twitter.com/{{ $.Page.Params.tw }}?ref_src=twsrc%5Etfw"></a>  -->
+<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 </div> 	  
 
 <div class="col-md-8 ml-auto">
@@ -122,7 +134,7 @@ iframe, object, embed {
 
 
 	
-<!-- <iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="534" height="300" type="text/html" src="https://www.youtube.com/embed/{{ $.Page.Params.ytvideoid }}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://youtubeembedcode.com"></iframe> -->
+<iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="534" height="300" type="text/html" src="https://www.youtube.com/embed/{{ $.Page.Params.ytvideoid }}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://youtubeembedcode.com"></iframe>
 
 </div>
 </div>
@@ -131,28 +143,31 @@ iframe, object, embed {
 	
 			
 
-<div class="row">			
-            <div class="col-lg-12"><a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><span class="material-icons">
-smart_display
-</span> Youtube</a>
-			<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><span class="material-icons">
-facebook
-</span> Facebook</a>
-			<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><span class="material-icons">
-photo_camera
-</span> Instagram</a>
+<div class="row">	
+		
+            <div class="col-lg-12">
+			
+			<!-- <a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><span class="material-icons"> -->
+<!-- smart_display -->
+<!-- </span> Youtube</a> -->
+			<!-- <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><span class="material-icons"> -->
+<!-- facebook -->
+<!-- </span> Facebook</a> -->
+			<!-- <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><span class="material-icons"> -->
+<!-- photo_camera -->
+<!-- </span> Instagram</a> -->
 
-<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://twitter.com/{{ $.Page.Params.tw }}" target="_blank"><span class="material-icons">
-flutter_dash
-</span> Twitter</a>
+<!-- <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://twitter.com/{{ $.Page.Params.tw }}" target="_blank"><span class="material-icons"> -->
+<!-- flutter_dash -->
+<!-- </span> Twitter</a> -->
 
-<button  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger disabled" data-toggle="tooltip" data-placement="top" title="no way to visit IGN via link!"><span class="material-icons">
-sports_esports
-</span> {{ $.Page.Params.ign }}</button>
+<!-- <button  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger disabled" data-toggle="tooltip" data-placement="top" title="no way to visit IGN via link!"><span class="material-icons"> -->
+<!-- sports_esports -->
+<!-- </span> {{ $.Page.Params.ign }}</button> -->
 
-<button  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger disabled" data-toggle="tooltip" data-placement="top" title="no way to visit TEAM via link!"><span class="material-icons">
-sports_esports
-</span> {{ $.Page.Params.team }}</button>
+<!-- <button  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger disabled" data-toggle="tooltip" data-placement="top" title="no way to visit TEAM via link!"><span class="material-icons"> -->
+<!-- sports_esports -->
+<!-- </span> {{ $.Page.Params.team }}</button> -->
 
 </div>
 
@@ -165,7 +180,7 @@ sports_esports
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a type="button" href="/profile/{{ $.Page.Params.cleanplayername }}" class="btn btn-primary">More Info</a>
+        <a type="button" href="/profile/{{ $.Page.Params.cleanplayername }}" class="btn btn-danger">More Info</a>
       </div>
     </div>
   </div>
