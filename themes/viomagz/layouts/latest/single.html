@@ -53,6 +53,8 @@
 
 <div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 
+    {{ partial "pro-player-badge-spiner.html" . }}
+	
 {{if isset .Params "images" }}
 {{ $images_set := index .Params.images  | absURL }}
 

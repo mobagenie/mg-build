@@ -368,3 +368,16 @@ hr {
   /* max-height: 65vh !important; */
   /* overflow-y: auto;  */
 /* } */
+
+
+/* Top navbar studio konkon Hamburger menu reseter */
+@media (max-width: 767.98px){
+.fa-bars:before {
+    color: white;
+}
+}
+@media (min-width: 767.98px){
+.fa-bars:before {
+    color: #393a49;
+}
+}

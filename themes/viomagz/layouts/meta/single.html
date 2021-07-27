@@ -72,9 +72,7 @@
 
 <div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 
-{{ if (isset .Params "proplayer") }}
-<button class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Build by Professional Player"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></button>
-{{ end }}
+    {{ partial "pro-player-badge-spiner.html" . }}
 
 {{if isset .Params "images" }}
 {{ $images_set := index .Params.images  | absURL }}
