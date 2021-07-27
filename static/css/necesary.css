@@ -45,8 +45,8 @@ hr {
   left: 90%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
+  /* background-color: #555; */
+  /* color: white; */
   font-size: 16px;
   /* padding: 5px 5px; */
   padding-top: 6px;
@@ -57,7 +57,7 @@ hr {
 }
 
 .herobanner .btn:hover {
-  background-color: black;
+  /* background-color: black; */
 }
 
 

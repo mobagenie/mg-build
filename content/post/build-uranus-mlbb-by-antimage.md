@@ -34,7 +34,18 @@ shortarticle: Beberapa pertandingan dari MPL Season 7, EVOS Antimage nampak sang
 
 {{< HeroInfo HeroName="Uranus" View="" Role="1" BP="32000" DM="599" Ticket="0" Player="Evos Antimage" WR="%" League="x " Match="" HeroTier="3" TierLabel="A+ Tier" LaneImg="2" LaneLabel="Roam" >}} {{< /HeroInfo >}}
  
-{{< OffensiveBuild build1="ToughBoots"  build2="Oracle" build3="EnchantedTalisman" build4="BladeArmor" build5="BruteForceBreastplate" build6="blank" notes="Build diambil dari pertandingan dari MPL ID Season 7 dimana Item keenam dari Antimage belum jadi mengingat EVOS sudah lebih dahulu menang di menit ke-12." sourcelink="https://www.suara.com/tekno/2021/03/23/170000/build-item-uranus-ala-evos-antimage-hp-auto-tebal">}} {{</ OffensiveBuild >}}   
+{{< OffensiveBuild 
+
+		build1="ToughBoots"  
+		build2="Oracle" 
+		build3="EnchantedTalisman" 
+		build4="BladeArmor" 
+		build5="BruteForceBreastplate" 
+		build6="blank" 
+		notes="Build diambil dari pertandingan dari MPL ID Season 7 dimana Item keenam dari Antimage belum jadi mengingat EVOS sudah lebih dahulu menang di menit ke-12." 
+		sourcelink="https://www.suara.com/tekno/2021/03/23/170000/build-item-uranus-ala-evos-antimage-hp-auto-tebal"
+
+>}} {{</ OffensiveBuild >}}   
 
 
 {{< RecommendedSpells SpellName1="Flameshot" SpellImg1="9" SpellName2="Flicker" SpellImg2="10" >}} {{</ RecommendedSpells >}}   
@@ -79,17 +90,14 @@ SkillDesc4="<b>Consecration<br>Uranus unleashes energy stored within his body to
 {{</ ChampionAttributes >}}
 
 
-{{< FightingAbility >}}
+{{< FightingAbility-v2 
 
-	{{< FightingAbility/Config  Percentage="40"Label="Offense" >}} 
-	{{</ FightingAbility/Config >}}		
-	{{< FightingAbility/Config  Percentage="91"Label="Durability" >}} 
-	{{</ FightingAbility/Config >}}
-	{{< FightingAbility/Config  Percentage="88"Label="Ability Effects" >}} 
-	{{</ FightingAbility/Config >}}
+	Percentage1="40" Label1="Offense" 
+	Percentage2="91" Label2="Durability" 
+	Percentage3="88" Label3="Ability Effects" 
 	
-{{< FightingAbility >}}
-
+	>}} 
+	
 {{< GetStory Story=` The Celestial Palace - Legend has it that this city floating above the skies of the Land of Dawn was once home to the gods. It is also said that this mysterious place holds the key to ruling the world… Eons ago, the ruler of the Celestial Palace used the technological secrets of the ancients to create Uranus, and commanded his creation to guard the city and wait for the emergence of a new ruler. When scholars from the Land of Dawn found and opened the gates to the Celestial Palace, the battle between the Dawn Zenith and the Dark Abyss quickly spread throughout the realm, disrupting the quietude of this ancient city. The two camps sought to occupy the Celestial Palace as a symbol of victory, their heroes unleashing the full extent of their power, and finally reaching an impasse. The massive energy released throughout their incessant battles eventually awakened the ancient city's defense system, and was converted directly into lighting power which fed and reawakened Uranus, who lay dormant in depths of the Celestial Palace. "Leave now, intruders!" he roared upon awakening, and then charged to the battlefield, fueled by lightning, aether, and boundless rage. The guardian has returned, and is now ready to fulfill his destiny. His goal -- to expel these savage intruders disturbing the tranquility of the Celestial Palace. ` >}}  {{</ GetStory >}}
 
 {{< StrongAgainst >}}
