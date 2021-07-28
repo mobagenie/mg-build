@@ -15,7 +15,7 @@
     overflow-y: scroll;
 }
 .wrapper {
-    padding: 133px 40px 100px;
+    padding: 65px 40px 100px;
 }
 
 .wrapper, .wrapper.home {
@@ -127,7 +127,7 @@ em, i {
 
 /* visited link */
 #search-results a:visited {
-  color: #404040;
+  color: #adb5bd;
 }
 
 /* mouse over link */
