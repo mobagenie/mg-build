@@ -32,6 +32,8 @@ hr {
   position: relative;
   width: 100%;
   max-width: 100%;
+    padding-top: 37px;
+    margin-bottom: -72px;  
 }
 
 .herobanner img {

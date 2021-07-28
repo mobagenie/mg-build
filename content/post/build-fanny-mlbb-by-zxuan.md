@@ -34,6 +34,14 @@ bio:
 
 {{< HeroInfo HeroName="Fanny" View="" Role="3" BP="24000" DM="499" Ticket="0" Player="Zxuan" CleanPlayerName="zxuan" WR="%" League="x" Match="" HeroTier="4" TierLabel="A Tier" LaneImg="4" LaneLabel="Jungle" >}} {{< /HeroInfo >}}
 
+{{< playerbadge >}} 
+{{< playerbadgecontent badge="Pro Player" >}}
+{{< playerbadgecontent badge="Top Global" >}} 
+{{< playerbadgecontent badge="Youtuber" >}}
+{{</ playerbadge >}}
+
+{{< HeroSkills >}}
+
 {{< OffensiveBuild 
 build1="BloodlustAxe"  
 build2="WarriorBoots" 

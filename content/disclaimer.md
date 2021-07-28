@@ -2,7 +2,7 @@
 title: "Disclaimer for MobaGenie"
 date: 2019-05-08T02:09:52+07:00
 type: "page"
-#layout: "disclaimer"
+layout: page
 slug : "/disclaimer"
 breadcrumb: [Disclaimer]
 
