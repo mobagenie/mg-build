@@ -4,14 +4,17 @@
 
     <div class="mySlidesHero">
       <div class="numbertext">{{ $.Page.Params.heroname | upper }} HD</div>
-      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%">	
+      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" title="{{ $.Page.Params.heroname | upper }} HD Wallpaper" alt="{{ $.Page.Params.heroname | upper }} HD Wallpaper" style="width:100%">	
     </div>
 
     <div class="mySlidesHero">
       <div class="numbertext">{{ $.Page.Params.heroname | upper }} FLAT</div>
-      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%">
+      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" title="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper" alt="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper" style="width:100%">
     </div>
-
+    <div class="mySlidesHero">
+      <div class="numbertext">{{ $.Page.Params.heroname | upper }} Mobile Wallpaper</div>
+      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_750,h_1334,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" title="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper" alt="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper" style="width:100%">
+    </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -25,12 +28,14 @@
 
 
     <div class="column">
-      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(1)" alt="{{ $.Page.Params.heroname | upper }} HD">	
+      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(1)" title="{{ $.Page.Params.heroname | upper }} HD Wallpaper" alt="{{ $.Page.Params.heroname | upper }} HD Wallpaper">	
     </div>
     <div class="column">
-      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(2)" alt="{{ $.Page.Params.heroname | upper }} FLAT">
+      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(2)" title="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper" alt="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper">
     </div>
-
+    <div class="column">
+      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_750,h_1334,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(3)" title="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper" alt="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper">
+    </div>
   </div>
 </div>
 
