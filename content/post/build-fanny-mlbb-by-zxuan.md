@@ -13,6 +13,8 @@ categories:
 tags: 
 - "Zxuan"
 - "Fanny"
+- top-global
+- youtuber
 playername: "Zxuan"
 cleanplayername: "zxuan"
 heroname: "fanny"

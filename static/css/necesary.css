@@ -369,6 +369,9 @@ hr {
   /* overflow-y: auto;  */
 /* } */
 
+.dsq-clearfix{
+	color: #212529;
+}
 
 /* Top navbar studio konkon Hamburger menu reseter */
 @media (max-width: 767.98px){

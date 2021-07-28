@@ -11,8 +11,9 @@ categories:
 - Build 
 - Mobile Legends
 tags: 
-- ""
-- ""
+- fanny
+- oura
+- youtuber
 playername: "Oura"
 cleanplayername: "oura"
 heroname: "fanny"
