@@ -1,15 +1,20 @@
 ---
-title: "About"
+title: About
 date: 2019-05-08T02:09:52+07:00
-type: "page"
-layout: "about"
-slug : "/about"
-breadcrumb: [About]
-cover_image : 
+type: page
+layout: page
+slug : /about
 ---
 
-<br><br>
-MobaGenie adalah situs Media Informasi yang berfokus pada seputar Dunia Game MOBA MOBILE dan PC. dari mulai Mobile Legends, DOTA2, Arena of Valor, League of Legends, Wild Rift, Lokapala, Vainglory, dan Game MOBA lain.
-<br><br/>
-Informasi yang disajikan di situs ini meliputi Update Berita, Guide, Fakta Unik, Info Pro Player, Esports, Leaderboard, Redeem Code Tools MOBA dan lain sebagainya. 
-		</br><br>
+<h2>About</h2>
+
+BUILD MG is an Unofficial Mobile Legends online WEB based Aplication especialy for Build,Guide, Tips,Trick and Profile Player. Developed and maintained by MobaGenie Team.
+
+Latest APP Version 1.0.1
+
+Changelog :
+
+`- v1.0.1 major update`
+
+`- v1.0.0 First build`
+
