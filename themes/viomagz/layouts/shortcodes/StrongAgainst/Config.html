@@ -1,7 +1,10 @@
-<div class="badge badge-light" style="margin:2px;" data-wow-delay=".5s" href="https://cdn.statically.io/img/build.mobagenie.my.id/f=auto/{{ .Get "href" }}"><img src="{{ .Site.Params.cdn }}/p/images/buildk/{{ .Get "HeroName" }}.png" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  />
-<!-- <b class="badge badge-primary"  style="color:">{{ .Get "HeroName" }}</b> -->
-</div>
+<a class="badge badge-light" style="margin:2px;" data-wow-delay=".5s" href="../../tags/{{ .Get "HeroName" }}">
 
+<img src="{{ .Site.Params.cdn }}/p/images/buildk/{{ .Get "HeroName" }}.png" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  />
+<!-- <b class="badge badge-primary"  style="color:">{{ .Get "HeroName" }}</b> -->
+
+<!-- </div> -->
+</a>
 										<!-- <a class="" data-wow-delay=".5s" href="{{ .Get "AgainstHero" }}"><img src="../images/buildk/{{ .Get "AgainstHero" }}.png" width="100px" height="100px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a><a class="" data-wow-delay=".5s" href="{{ .Get "AgainstHero" }}"><b style="color:antiquewhite">&nbsp;{{ .Get "AgainstHero" }}</b></a><hr> -->
 										
 										{{ .Inner }}
