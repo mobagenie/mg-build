@@ -3,7 +3,7 @@
   <div class="modal-content">
 
     <div class="mySlidesHero">
-      <div class="numbertext">{{ $.Page.Params.heroname | upper }} HD</div>
+      <div class="numbertext">{{ $.Page.Params.heroname | upper }} HD Wallpaper</div>
       <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" title="{{ $.Page.Params.heroname | upper }} HD Wallpaper" alt="{{ $.Page.Params.heroname | upper }} HD Wallpaper" style="width:100%">	
     </div>
 
@@ -21,20 +21,19 @@
 
     <div class="caption-container">
       <p id="caption">
-	  <h4 class="display-4">{{ $.Page.Params.heroname | upper }} STORY</h4>
-	  {{ .Get "Story" }}
+	           <div>{{ .Get "Story" }}</div>
 	  </p>
     </div>
 
 
     <div class="column">
-      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(1)" title="{{ $.Page.Params.heroname | upper }} HD Wallpaper" alt="{{ $.Page.Params.heroname | upper }} HD Wallpaper">	
+      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(1)" title="{{ $.Page.Params.heroname | upper }} HD Wallpaper" alt="{{ $.Page.Params.heroname | upper }} Story">	
     </div>
     <div class="column">
-      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(2)" title="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper" alt="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper">
+      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(2)" title="{{ $.Page.Params.heroname | upper }} FLAT Wallpaper" alt="{{ $.Page.Params.heroname | upper }} Story">
     </div>
     <div class="column">
-      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_750,h_1334,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(3)" title="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper" alt="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper">
+      <img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_750,h_1334,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/{{ $.Page.Params.heroname | lower }}.jpg" style="width:100%" onclick="currentSlide(3)" title="{{ $.Page.Params.heroname | upper }} Mobile Wallpaper" alt="{{ $.Page.Params.heroname | upper }} Story">
     </div>
   </div>
 </div>
