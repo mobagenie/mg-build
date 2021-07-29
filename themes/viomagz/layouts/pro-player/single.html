@@ -1,6 +1,14 @@
 
          {{ partial "head.html" . }}
 		{{ partial "json-structured-data-general.html" . }}
+
+<div class="tagbanner">
+
+  <i><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/flat/PRO-PLAYER-ML.jpg" alt="{{ .Title }}" style="width:100%"></i>
+
+  
+  <!-- <button class="btn btn-danger btn-sm" onclick="openModal();currentSlide(1)"><i class="material-icons">fullscreen</i></button> -->
+</div>
 		
   <body>
 
@@ -8,21 +16,26 @@
   
       {{ partial "top-nav.html" . }}
 
+
+
    <div class="be-content">
       <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
 	  
 
        
 
-          <h1 class="entry-title">
-            <i class="fas fa-user fa-sm"></i> {{ .Title }}<!-- title, in this case it will be "Archive page" -->
-          </h1>
+      <div class="row text-white bg-primary">
+      	
+        <div class="col-lg-12">
 
+<h2>
+<!-- <i class="fas fa-cog fa-sm"></i> "{{ .Title | upper }}" BUILD -->
+<a href="{{ .RelPermalink }}"><button class="btn btn-light btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} </button></a>
+</h2>
 
-
-	<div id="blog-archives" class="category">
-		<table class="allposts">		
-			<tbody>
+</div>
+     
+<div class="col-lg-12">
 
 
 				{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
@@ -40,29 +53,21 @@
 
 <!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
 </br></br>
-<a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild" type="button" class="btn btn-secondary" style="background:#009578;">
+<a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild" type="button" class="btn btn-primary" sty le="background:#009578;">
 {{ .Params.playername }}
-</a></div>	
+</a>
+
+</div>	
 
 	{{ end }}
-				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}}</strong></td> -->
-				
-				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "Jan" }} {{ .Date | dateFormat "2" }}</strong></td> -->
-				
-				<!-- <td class="allposts-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></td> -->
 				
 {{ end }}
 
-				</tr>
+ </div>
 
-			</tbody>
-		</table>
-	</div>
+      </div>	
 	
-	
-<br/><br/>	
-	
-         </div>
+
       </div>
    </div>
 
