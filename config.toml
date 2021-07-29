@@ -1,6 +1,5 @@
 title = "Build - MobaGenie - Mobile Legends Build Guide"
-# Untuk deskripsi tag meta di homepage
-description = "All about Mobile Legends Build and Guide"
+
 baseURL = "https://build.mobagenie.my.id"
 
 # Agar front-matter pakai format YAML
@@ -72,6 +71,11 @@ baseName = "feed"
 
 # CDN 
 [params]
+
+# Untuk deskripsi tag meta di homepage
+description = "All about Mobile Legends Build and Guide"
+homeKeywords = "Mobile Legends, Build, Guide, MLBB, ML, Profile Player, Bio, Biodata, Pro Player, Info, Tips, Trick, Tutorial, HD Wallpaper, Mobile, MOBA, Game"
+
   cdn = "https://cdn.statically.io/img/cdn2-build.mobagenie.my.id/f=auto"
    rooturl = ""
   # rooturl = "http://localhost:1313"
