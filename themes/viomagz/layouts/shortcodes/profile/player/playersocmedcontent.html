@@ -7,5 +7,7 @@
 		  <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><i class="fas fa-thumbs-up fa-lg"></i> Facebook</a>
 {{ else if eq $socmed "ig" }}
 <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><i class="fas fa-camera fa-lg"></i> Instagram</a>	
+{{ else if eq $socmed "nimo" }}
+<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.nimo.tv/live/{{ $.Page.Params.nimotv }}" target="_blank"><i class="fas fa-video fa-lg"></i> Nimo TV</a>
 {{ end }}
 		
