@@ -1,8 +1,8 @@
 
       <div class="row text-white bg-dark">
       	
-        <div class="col-lg-12">
-<h2><button class="btn btn-danger btn-light"><i class="fas fa-user-edit fa-lg"></i> RECENT BUILD</button></h2>
+        <div class="col-lg-12  bg-primary">
+<h2><p class="btn btn-dark"><i class="fas fa-user-edit fa-lg"></i> RECENT BUILD</p></h2>
 </div>
         <div class="col-lg-12">
 		
@@ -19,7 +19,7 @@
 
 {{ if (not (isset .Params "profileplayer")) | or (eq .Params.profileplayer "") }}
 	
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 
     {{ partial "pro-player-badge-spiner.html" . }}
 
@@ -38,8 +38,8 @@
 
 <!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
 </br></br>
-<p type="button" class="btn btn-dark btn-xs" data-toggle="popover" data-toggle="popover" data-placement="top" sty le="background:#009578;" data-content="{{ .Params.post_highlight }}.">
-  {{ .Params.heroname | upper }}
+<p type="button" class="btn btn-dark btn-xs" data-toggle="popover" data-toggle="popover" data-placement="top" sty le="background:#009578;" data-title="{{ .Params.title | upper }}" data-content="{{ .Params.post_highlight }}.">
+  <i class="fas fa-info fa-lg"></i> INFO
 </p></div>
 
 {{ else }}

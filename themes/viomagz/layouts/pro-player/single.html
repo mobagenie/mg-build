@@ -24,13 +24,13 @@
 
        
 
-      <div class="row text-white bg-primary">
+      <div class="row text-white bg-dark">
       	
-        <div class="col-lg-12">
+        <div class="col-lg-12 bg-primary">
 
 <h2>
 <!-- <i class="fas fa-cog fa-sm"></i> "{{ .Title | upper }}" BUILD -->
-<a href="{{ .RelPermalink }}"><button class="btn btn-light btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} </button></a>
+<a href="{{ .RelPermalink }}"><button class="btn btn-dark btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} </button></a>
 </h2>
 
 </div>
@@ -46,14 +46,14 @@
 
 {{if isset .Params "proplayer" }}
 
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 
 	
 <a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername }}.jpg" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
 
 <!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
 </br></br>
-<a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild" type="button" class="btn btn-primary" sty le="background:#009578;">
+<a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild" type="button" class="btn btn-dark" sty le="background:#009578;">
 {{ .Params.playername }}
 </a>
 

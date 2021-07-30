@@ -20,12 +20,12 @@
       <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
 	  
 
-<div class="row text-white bg-secondary">
+<div class="row text-white bg-dark">
 
-        <div class="col-lg-12">	  
+        <div class="col-lg-12 bg-primary">	  
 
           <h1 class="entry-title">
-            <button class="btn btn-danger btn-light"><i class="fas fa-users fa-sm"></i> {{ .Title }}</button>  <!-- title, in this case it will be "Archive page" -->
+            <button class="btn btn-danger btn-dark"><i class="fas fa-users fa-sm"></i> {{ .Title }}</button>  <!-- title, in this case it will be "Archive page" -->
           </h1>
 </div>       
 
@@ -36,7 +36,7 @@
 
 				{{ range (where .Site.RegularPages "Type" "post") }}
 
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 
 <!-- {{if isset .Params "images" }} -->
 <!-- {{ $images_set := index .Params.images  | absURL }} -->
@@ -60,7 +60,7 @@
 
 <!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
 
-<a href="/tags/{{ .Params.cleanplayername  }}" type="button" class="btn btn-secondary" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<a href="/tags/{{ .Params.cleanplayername  }}" type="button" class="btn btn-dark" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
 {{ .Params.playername }}
 </a></div>	
 				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}}</strong></td> -->

@@ -2,29 +2,29 @@
 {{ $Title := .Title | lower }}
 
 {{ if eq $Title "top-global" }}
-      <div class="row text-white bg-warning">
+      <div class="row text-white bg-dark">
 {{ else if eq $Title "pro-player" }}
-      <div class="row text-white bg-primary">
+      <div class="row text-white bg-dark">
 {{ else if eq $Title "youtuber" }}
-      <div class="row text-white bg-danger">
+      <div class="row text-white bg-dark">
 {{ else }}
       <div class="row text-white bg-dark">	  
 {{ end }}
 
       <!-- <div class="row text-white bg-"> -->
       	
-        <div class="col-lg-12">
+        <div class="col-lg-12 bg-primary">
 
 <h2>
 
 {{ if eq $Title "top-global" }}
-<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-light" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
+<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-dark" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
 {{ else if eq $Title "pro-player" }}
-<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-light" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
+<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-dark" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
 {{ else if eq $Title "youtuber" }}
-<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-light" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
+<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-dark" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
 {{ else }}
-<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-light" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
+<a href="{{ .RelPermalink }}"><button class="btn btn-danger btn-dark" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} BUILD</button></a>
 {{ end }}
 
 
@@ -38,13 +38,13 @@
             {{ range $paginator.Pages }}  
 			
 {{ if eq $Title "top-global" }}
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 {{ else if eq $Title "pro-player" }}
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 {{ else if eq $Title "youtuber" }}
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 {{ else }}
-<div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 {{ end }}			
 
 
@@ -63,15 +63,15 @@
 </br></br>
 
 {{ if eq $Title "top-global" }}
-<p href="#" type="button" class="btn btn-warning  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<p href="#" type="button" class="btn btn-dark  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
   {{ .Params.playername | upper }}
 </p>
 {{ else if eq $Title "pro-player" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<p href="#" type="button" class="btn btn-dark  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
   {{ .Params.playername | upper }}
 </p>
 {{ else if eq $Title "youtuber" }}
-<p href="#" type="button" class="btn btn-danger  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<p href="#" type="button" class="btn btn-dark  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
   {{ .Params.playername | upper }}
 </p>
 {{ else  }}
