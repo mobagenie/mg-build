@@ -90,12 +90,6 @@
 		 
 {{ .Content | safeHTML }}
 
-        <script type="application/javascript">		
-			var PAGE_IDENTIFIER = "{{ .Params.Slug }}"; // Disqus PAGE_IDENTIFIER 
-		</script>
-
-{{ partial "disqus.html" . }}
- 
 
       <!-- </div> -->
 	  
@@ -105,7 +99,6 @@
 	  
    </div>
 <br/><br/><br/>
-{{ partial "item-modal.html" . }}
 
  {{ partial "bottom-nav.html" . }} 
  
