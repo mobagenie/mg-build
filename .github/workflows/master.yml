@@ -11,3 +11,4 @@ jobs:
         type: 'zip'
         filename: 'release.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
+        token: ${{ secrets.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 }}
