@@ -1,0 +1,201 @@
+﻿
+         {{ partial "head.html" . }}
+		{{ partial "json-structured-data-post.html" . }}
+		
+  <body>
+
+<style>
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+</style>
+
+<!-- <div class="img-wrapper"> -->
+  <!-- <img class="img-responsive" -->
+    <!-- src="https://i.picsum.photos/id/1016/1200/400.jpg?hmac=NT1ZgM9ZJxiih7JmLKm-Zu_6cAOM7NOxtYZrVospPqU"> -->
+  <!-- <div class="img-overlay"> -->
+    <!-- <button class="btn btn-md btn-success">Button</button> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+<!-- <h2 id="demoHero14">14. Shine</h2> -->
+<!-- <div class="hover14 column"> -->
+  <!-- <div> -->
+    <!-- <figure><img src="https://picsum.photos/300/200?image=244" /></figure> -->
+    <!-- <span>Hover</span> -->
+  <!-- </div> -->
+  <!-- <div> -->
+    <!-- <figure><img src="https://picsum.photos/300/200?image=1024" /></figure> -->
+    <!-- <span>Hover</span> -->
+  <!-- </div> -->
+  <!-- <div> -->
+    <!-- <figure><img src="https://picsum.photos/300/200?image=611" /></figure> -->
+    <!-- <span>Hover</span> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+
+<!-- <div class="herobanner"> -->
+
+  <!-- <i><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" alt="{{ .Title }}" style="width:100%"></i> -->
+  
+  <!-- <button class="btn btn-danger btn-sm" onclick="openModal();currentSlide(1)"><i class="material-icons">fullscreen</i></button> -->
+<!-- </div> -->
+  <!-- <div class="container"> -->
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar" style="padding-top:12px;">
+
+
+ 
+<!-- <div class="container-fluid no-padding" style="padding-bottom:0px;"> -->
+  <!-- <div class="row"> -->
+    <!-- <img class='img-fluid w-100' src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" alt="" /> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+<body>
+
+<!-- <h2 style="text-align:center">Lightbox</h2> -->
+
+<!-- <div class="row"> -->
+  <!-- <div class="column"> -->
+    <!-- <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"> -->
+  <!-- </div> -->
+  <!-- <div class="column"> -->
+    <!-- <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/{{ .Params.heroname | lower }}.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"> -->
+  <!-- </div> -->
+
+<!-- </div> -->
+
+      {{ partial "top-nav.html" . }}
+
+
+
+
+   <!-- <div class="be-content"> -->
+   
+      <div class="container" style="max-width:1500px;margin-top: 30px;font-size:1.2rem;">
+	  
+ <!-- <div class="card mb-3"> -->
+  <!-- <img class="card-img-top" src="https://cdn.statically.io/img/build.mobagenie.my.id/f=auto/p/images/banner/full/{{ .Params.heroname | lower }}.jpg" alt="Card image cap"> -->
+  <!-- .../100px180/"  -->
+  <!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title"></h5> -->
+    <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+  <!-- </div> -->
+<!-- </div>	   -->
+
+		 
+{{ .Content | safeHTML }}
+
+<script>
+    (function () {
+      var goBack = document.querySelector('#js-go-back');
+
+      if (history.length > 1) {
+        goBack.style.display = 'inline';
+      }
+    })();
+  </script>
+  
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12  bg-primary">
+<h2><p class="btn btn-dark"><i class="fas fa-user-edit fa-lg"></i> LEGENDS SKIN : {{ .Params.slug | humanize | upper  }}</p></h2> <a href="javascript:history.back()" id="js-go-back" class="btn btn-dark"><i class="fas fa-back fa-lg"></i> BACK</a>
+</div>
+        <div class="col-lg-12">
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+
+{{ $.Scratch.Set "counter" 0 }} 
+{{ with .Params.wallpaper }}
+{{ range first 10 . }}
+{{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+
+{{$loopnumber := $.Scratch.Get "counter"}}
+
+{{ if eq $loopnumber 1 }}	
+	<li data-target="#carouselExampleIndicators" data-slide-to="{{ . }}" class="active"></li>
+{{ else }}
+	<li data-target="#carouselExampleIndicators" data-slide-to="{{ . }}"></li>
+{{ end }}	
+	
+{{ end }}
+
+{{ end }}
+	
+  </ol>
+  <div class="carousel-inner">
+{{ $slug1 := .Params.slug }}
+{{ $wallpapername := .Params.slug | humanize | upper  }}
+
+	
+{{ $.Scratch.Set "counter" 0 }} 
+{{ with .Params.wallpaper }}
+{{ range first 10 . }}
+{{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+{{$loopnumber := $.Scratch.Get "counter"}}
+{{ if eq $loopnumber 1 }}	
+	<div class="carousel-item active">
+{{ else }}
+	<div class="carousel-item">
+{{ end }}
+  <img class="w-100" src="https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id/p/images/wallpaper/hd/legends/{{ $slug1 }}-{{ . }}" alt="{{ $wallpapername  }} {{ . }}" alt="$wallpapername">
+  <div class="carousel-caption d-block">
+    <h5>{{ $wallpapername }}</h5>
+    <p>{{ . }}</p>
+  </div>
+</div>	
+      <!-- <img class="d-block w-100" src="https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id/p/images/wallpaper/hd/legends/{{ $slug1 }}-{{ . }}" alt="{{ $wallpapername  }} {{ . }}"> -->
+    <!-- </div>	 -->
+{{ end }}
+{{ end }}
+	
+  </div>
+  
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+<!-- {{ with .Params.wallpaper }}{{ range first 10 . }} -->
+
+  <!-- <center><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id/p/images/wallpaper/hd/legends/{{ $slug1 }}-{{ . }}"/><br/>{{ $wallpapername  }} {{ . }}</center> -->
+<!-- {{ end }}{{ end }} -->
+
+        <script type="application/javascript">		
+			var PAGE_IDENTIFIER = "{{ .Params.Slug }}"; // Disqus PAGE_IDENTIFIER 
+		</script>
+		
+<!-- .ReadingTime -->
+
+<!--  .Resources  -->
+
+<!-- {{ partial "disqus.html" . }} -->
+ 
+<br/>
+<br/>			
+</div>
+
+
+</div>			
+    
+<br/><br/>
+
+ {{ partial "bottom-nav.html" . }} 
+ 
+        {{ partial "footer.html" . }}
+	 
+  </body>
+
+</html>

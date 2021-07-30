@@ -16,7 +16,7 @@ tags:
 playername: "Celiboy"
 cleanplayername: "celiboy"
 heroname: "ling"
-images: ../p/images/buildk/ling.png
+images: ../p/images/buildk/ling.png		
 draft: false
 type: post
 proplayer: true
