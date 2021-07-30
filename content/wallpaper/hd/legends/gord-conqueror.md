@@ -7,5 +7,5 @@ type: wallpaper
 layout: wallpaper
 heroname: gord
 wallpaper:
-- 0.png
+- 1.png
 ---

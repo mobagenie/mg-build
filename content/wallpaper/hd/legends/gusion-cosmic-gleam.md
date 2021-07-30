@@ -7,5 +7,5 @@ type: wallpaper
 layout: wallpaper
 heroname: gusion
 wallpaper:
-- 0.jpg
+- 1.jpg
 ---

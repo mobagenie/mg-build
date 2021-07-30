@@ -7,5 +7,7 @@ type: wallpaper
 layout: wallpaper
 heroname: miya
 wallpaper:
-- 0.jpg
+- 1.jpg
+- 2.png
+- 3.jpg
 ---

@@ -7,5 +7,5 @@ type: wallpaper
 layout: wallpaper
 heroname: granger
 wallpaper:
-- 0.jpg
+- 1.jpg
 ---

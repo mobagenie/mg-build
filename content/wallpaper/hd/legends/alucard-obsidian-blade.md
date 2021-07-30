@@ -7,6 +7,6 @@ type: wallpaper
 layout: wallpaper
 heroname: alucard
 wallpaper:
-- 0.jpg
-- 1.webp
+- 1.jpg
+- 2.webp
 ---

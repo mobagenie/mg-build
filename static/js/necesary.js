@@ -9,7 +9,7 @@
 
 Requires:
 
-• jQuery | Boottrap v4.1+
+• jQuery 3.3.1 (note: 3.5.1 error drop down ub menu ) | Boottrap v4.1+ / 
 
 Overlay Scrollbars:
 https://kingsora.github.io/OverlayScrollbars/#!overview
