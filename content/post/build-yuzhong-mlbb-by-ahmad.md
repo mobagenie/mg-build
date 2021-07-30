@@ -1,5 +1,5 @@
 ---
-title: "Build Yuzhong Mlbb by Ahmad"
+title: "Build Yuzhong Mlbb by AE Ahmad"
 post_highlight: "Player: AE Ahmad † WR: % Match:   Tier:  Tier Lane:  Lane"
 author: MobaGenie
 date: 2021-07-30T14:07:38+07:00
@@ -11,18 +11,18 @@ categories:
 - Build 
 - Mobile Legends
 tags: 
-- ""
-- ""
+- "Ahmad"
+- "Yuzhong"
 playername: "Ahmad"
 cleanplayername: "ahmad"
 heroname: "yuzhong"
-images: ../p/images/buildk/.png
+images: ../p/images/buildk/yuzhong.png
 draft: false
 type: post
 proplayer: true
 team: 
 ytvideoid: G2DWRtAxMbA
-ign: 
+ign: ahmad
 yt: 
 fb: 
 ig: 

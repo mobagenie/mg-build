@@ -14,9 +14,9 @@
 		<br/>
 
 {{ if (isset $.Page.Params "proplayer") }}
-    <a style="color:white;" href="/profile/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a>
+    <a style="color:white;" href="/profile/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}">{{ $.Page.Params.playername }}</a>
 {{ else }}
-<a style="color:white;" href="/tags/{{ .Get "CleanPlayerName" }}" title="{{ .Get "Player" }}">{{ .Get "Player" }}</a>
+<a style="color:white;" href="/tags/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}">{{ $.Page.Params.playername }}</a>
 {{ end }}
 
 		</div>
