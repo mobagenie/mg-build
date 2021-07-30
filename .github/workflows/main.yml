@@ -1,4 +1,0 @@
-- name: Archive using zip or tar
-  # You may pin to the exact commit or the version.
-  # uses: NSCoder/archive-action@10750a36d4f79d825a156afa7efd3ae78d0b6eb7
-  uses: NSCoder/archive-action@v1.0.0
