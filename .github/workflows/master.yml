@@ -15,7 +15,7 @@ jobs:
         cd release
         ls -la
     - name: Bump version and push tag
-      uses: mobagenie/github-tag-action@master
+      uses: mobagenie/build-mobagenie@1.0.3
       env:
         GITHUB_TOKEN: ${{ secrets.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 }}
         REPO_OWNER: mobagenie
