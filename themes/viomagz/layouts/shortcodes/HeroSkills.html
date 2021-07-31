@@ -1,28 +1,179 @@
+
+{{ $skills := .Get "skills" }}
+
+{{ .Scratch.Set "skillsas" "" }}
+{{ if eq $skills "1" }}
+{{ .Scratch.Set "skillsas" "0" }}
+{{ else if eq $skills "2" }}
+{{ .Scratch.Set "skillsas" "1" }}
+{{ else if eq $skills "3" }}
+{{ .Scratch.Set "skillsas" "2" }}
+{{ else if eq $skills "4" }}
+{{ .Scratch.Set "skillsas" "3" }}
+{{ end }}
+
+{{ $checkheroname := $.Page.Params.heroname }}
+	{{ .Scratch.Set "skillsdesc1" "Good" }}
+	{{ .Scratch.Set "skillsdesc2" "Good" }}
+	{{ .Scratch.Set "skillsdesc3" "Good" }}
+	{{ .Scratch.Set "skillsdesc4" "Good" }}	
+	
+{{ if eq $checkheroname  "ling" }}
+	{{ .Scratch.Set "skillsdesc1" "Cloud Walker<br>Ling's superb Lightness Skill helps him leap among walls and assassinate enemies. When resting on the wall, Ling restores extra 6 Lightness Points per second. Each time Ling deals damage to enemies, he restores extra 5 Lightness Points. Ling&rsquo;s Lightness Skill grants him 15% Critical Chance, but decreases his Critical Damage to 140%." }}
+	
+	{{ .Scratch.Set "skillsdesc2" "Finch Poise<br><font color='#404495'>(Passive)</font>: Ling&rsquo;s Critical Chance is permanently increased by 5%. <font color='#404495'>(Active)</font>: Ling casts his Lightness Skill, leaping onto the designated wall, entering <font color='#404495'>(half-stealth)</font> state, restoring Lightness Points more quickly and gaining 30% Movement Speed. If Ling receives damage, he will leave the <font color='#404495'>(half-stealth)</font> state. If he is controlled, he will fall onto the ground and be slowed by 30% for 2s. When using this skill to jump from a wall to another, it will reset the Cooldown and refresh the <font color='#404495'>(half-stealth)</font> state." }}
+	
+	{{ .Scratch.Set "skillsdesc3" "Defiant Sword<br>Ling charges in a designated direction and stabs the nearby enemies at his destination, dealing 230<font color='#D58E1F'>( +40% Total Physical ATK)</font> Damage. If Ling casts this skill when he is on the wall, he will dash to a designated spot on the ground, dealing 230<font color='#D58E1F'>( +40% Total Physical ATK)</font> Damage to enemies within a small area and slowing them down by 30% for 1.5s. If this attack deals crit damage, enemies within the area will extra be slowed by 45% for 0.75s. <font color='#404495'>(Defiant Sword)</font> can trigger ATK Effects as Basic Attack and can restore 35 HP for Ling each time hits an enemy." }}
+	
+	{{ .Scratch.Set "skillsdesc4" "Tempest of Blades<br>Ling leaps up in the air and casts his superb sword skill for 1.5s, during which he becomes invincible, gains 10% Movement Speed, and is able to move. Then he lands on the ground, dealing 250<font color='#D58E1F'>( +100% Total Physical ATK)</font> damage to enemies within the area of effect, knocking enemies in the central area airborne for 1s, and generating a Sword Field that lasts for 8s. At the edge of the Sword Field, there will be 4 field eyes named <font color='#404495'>(Tempest of Blades)</font>. By touching the field eye, Ling can reset the Cooldown of <font color='#404495'>(Defiant Sword)</font> and restore 25 Lightness Points." }}	
+
+{{ else if eq $checkheroname  "yuzhong" }}
+
+	{{ .Scratch.Set "skillsdesc1" "Cursing Touch<br>Yu Zhong applies <font color='#404495'>(Sha Residue)</font> to the target every time he deals damage to enemy heroes, and gathers <font color='#404495'>(Sha Essence)</font> in the meantime. <font color='#404495'>(Sha Residue)</font> erupts upon reaching 5 stacks, consuming 1 stack every 0.5s. Each stack consumption deals 30<font color='#D58E1F'>( +20% Extra Physical ATK)</font>+2% of the target's HP lost as <font color='#C53535'>(Physical Damage)</font>, restores 6% of his HP lost and gathers 6 <font color='#404495'>(Sha Essence)</font> for Yu Zhong. When <font color='#404495'>(Sha Essence)</font> is fully charged, Yu Zhong gains 30% Movement Speed and 10% Spell Vamp. (During the period, <font color='#404495'>(Sha Essence)</font> can be restored by dealing damage to enemies. The Movement Speed gain will decay rapidly in 2s.)"  }}
+
+	{{ .Scratch.Set "skillsdesc2" "Dragon Tail<br>Yu Zhong infuses his power into his cloak and turns it into a weapon, which starts to attack nearby enemies after a short delay. The inner area of the cloak deals 200<font color='#D58E1F'>( +100% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>, whereas the sharpened edge deals 250% damage and applies 2 stacks of <font color='#404495'>(Sha Residue)</font>. This skill only benefits 40% from <font color='#404495'>(Spell Vamp)</font> on minions."  }}
+
+	{{ .Scratch.Set "skillsdesc3" "Soul Grip<br>Yu Zhong unleashes the Dragon Soul, dealing 150<font color='#D58E1F'>( +120% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in front and slowing them by 60% for 1s. Upon target hit, Yu Zhong's next Basic Attack will be enhanced, dealing 108<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. (Upon multiple target hit, Yu Zhong applies <font color='#404495'>(Sha Residue)</font> multiple times with the enhanced Basic Attack, dealing up to 200% damage.)"  }}
+
+	{{ .Scratch.Set "skillsdesc4" "Furious Dive<br>Yu Zhong leaps towards the designated area with his full strength, dealing 180<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. He is able to dash one more time in the movement direction. After a short delay, enemies within the area of effect will be knocked airborne for 1s and take 180<font color='#D58E1F'>( +90% Extra Physical ATK)</font> additional <font color='#C53535'>(Physical Damage)</font>." }}
+
+{{ else if eq $checkheroname  "" }}
+
+	{{ .Scratch.Set "skillsdesc1" ""  }}
+
+	{{ .Scratch.Set "skillsdesc2" ""  }}
+
+	{{ .Scratch.Set "skillsdesc3" ""  }}
+
+	{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+	{{ .Scratch.Set "skillsdesc1" ""  }}
+
+	{{ .Scratch.Set "skillsdesc2" ""  }}
+
+	{{ .Scratch.Set "skillsdesc3" ""  }}
+
+	{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+
+{{ else if eq $checkheroname  "" }}
+
+
+{{ else if eq $checkheroname  "" }}
+
+{{ .Scratch.Set "skillsdesc1" ""  }}
+
+{{ .Scratch.Set "skillsdesc2" ""  }}
+
+{{ .Scratch.Set "skillsdesc3" ""  }}
+
+{{ .Scratch.Set "skillsdesc4" "" }}
+	
+{{ end }}
+
+
+
 	      <div class="row text-white bg-dark">
   
   
         <div class="col-lg-12">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script>
-    $(document).ready(function() {
-		
-	   $.ajax({
-            url: "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&fields=items(contentDetails(videoId))&maxResults=1&playlistId=UUirWugW5e03u3DUGA87s58A&key=AIzaSyBfb4A6rdKGwqTbBa_IPny1SUe3qZKN_tU",
-            type: 'GET',
-            dataType: 'json',
-            success: function(json) {
-			//alert(JSON.stringify(json.items[0].contentDetails.videoId));
-			var videoid = JSON.stringify(json.items[0].contentDetails.videoId);
-			videoid = videoid.replace('"', '');
-			document.write('<iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="534" height="300" type="text/html" src="https://www.youtube.com/embed/'+ videoid +'?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://youtubeembedcode.com"></iframe>');
-			}
-			
-			});
-    });
-    </script>
-
-<h2><i class="fas fa-info fa-sm"></i> Hero Skills</h2>
+<h2><i class="fas fa-info fa-sm"></i> Hero skills</h2>
 
 </div>
 
@@ -31,16 +182,16 @@
 
   
 	
-      <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills0Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/0.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+      <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}skills1Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/0.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
   
 	
-      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills1Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/1.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}skills2Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/1.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
     
     
-      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills2Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/2.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}skills3Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/2.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
         
     
-      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}Skills3Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/3.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ $.Page.Params.heroname }}skills4Data"><img src="{{ .Site.Params.cdn }}/p/images/skills/{{ $.Page.Params.heroname }}/3.png"id="heroskillitem" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
     
     
 
@@ -50,3 +201,86 @@
 </div>
 
       </div> 
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="{{ $.Page.Params.heroname }}skills1Data" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{ $.Page.Params.heroname }} Skills 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        	{{ .Scratch.Get "skillsdesc1" | safeHTML }}	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="{{ $.Page.Params.heroname }}skills2Data" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{ $.Page.Params.heroname }} Skills 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        	{{ .Scratch.Get "skillsdesc2" | safeHTML }}	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="{{ $.Page.Params.heroname }}skills3Data" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{ $.Page.Params.heroname }} Skills 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        	{{ .Scratch.Get "skillsdesc3" | safeHTML }}	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>	
+<!-- Modal -->
+<div class="modal fade" id="{{ $.Page.Params.heroname }}skills4Data" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{ $.Page.Params.heroname }} Skills 4</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        	{{ .Scratch.Get "skillsdesc4" | safeHTML }}	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>									

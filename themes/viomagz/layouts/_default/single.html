@@ -90,6 +90,10 @@
 		 
 {{ .Content | safeHTML }}
 
+<!-- {{range where .Site.Pages "Type" "=" "datafanny"}}  -->
+<!-- {{ .Params.story }}  -->
+<!-- {{ end }} -->
+
         <script type="application/javascript">		
 			var PAGE_IDENTIFIER = "{{ .Params.Slug }}"; // Disqus PAGE_IDENTIFIER 
 		</script>
