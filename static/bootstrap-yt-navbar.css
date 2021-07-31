@@ -226,7 +226,7 @@ a:hover, a:focus {
   height: 60px;
   width: 100%;
   min-width: 142px;
-  background-image: url("https://res.cloudinary.com/studiokonkon/image/upload/v1543962008/website/konkon-header-300x76-ova.png");
+  background-image: url("https://build.mobagenie.my.id/img/logo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -236,7 +236,7 @@ a:hover, a:focus {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .be-top-header .be-navbar-header .navbar-brand {
-    background-image: url("https://res.cloudinary.com/studiokonkon/image/upload/v1544030389/website/konkon-header-300x76-ova-pwhite.png");
+    background-image: url("https://build.mobagenie.my.id/img/logo.jpg");
     background-size: 102px 27px;
   }
 }
