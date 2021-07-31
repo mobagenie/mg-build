@@ -46,7 +46,13 @@ manaregen:: 3.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=`` 
+>}}
 
 {{< HeroInfo 
 HeroName="benedetta" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Phantom Slash<br>Benedetta withdraws swiftly and leaves a shadow in front. After a short delay, her shadow slashes forward in a fan-shaped area, dealing 200<font color='#D58E1F'>( +60% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the enemies by 60% for 0.5s. Meanwhile, Benedetta dashes forward to slash, dealing 50<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. (If the target is hit by her shadow, damage caused by Benedetta herself will increase to 200%.)`   
+SkillDesc2=`<b>An Eye for An Eye<br>Benedetta raises her weapon to defend, gaining control immunity and blocking damage from any source for 0.8s. After this, she stabs in the designated direction, dealing 300<font color='#D58E1F'>( +80% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. If Benedetta successfully fends off any damage while defending, she will gain full <font color='#404495'>(Sword Intent)</font>. If she fends off any control effects, her subsequent stab stuns the target for 1.5s.`   
+SkillDesc3=`<b>Alecto: Final Blow<br>Benedetta clenches Alecto and slashes forward after a short delay (invincible while dashing), slowing all targets on the path by 70% for 1s. After dashing, Benedetta detonates the Sword Intent on the path, strangling the enemy with the Sword Intent for 2.5s, dealing 120<font color='#D58E1F'>( +85% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the enemy by 20% every 0.2s.`   
+ 
+>}}
+
 {{< OffensiveBuild 
 build1="WarAxe"  
 build2="BloodlustAxe" 
@@ -90,12 +103,6 @@ EmblemName1="Fighter"
 EmblemName2="" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Phantom Slash<br>Benedetta withdraws swiftly and leaves a shadow in front. After a short delay, her shadow slashes forward in a fan-shaped area, dealing 200<font color='#D58E1F'>( +60% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the enemies by 60% for 0.5s. Meanwhile, Benedetta dashes forward to slash, dealing 50<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. (If the target is hit by her shadow, damage caused by Benedetta herself will increase to 200%.)`   
-SkillDesc2=`<b>An Eye for An Eye<br>Benedetta raises her weapon to defend, gaining control immunity and blocking damage from any source for 0.8s. After this, she stabs in the designated direction, dealing 300<font color='#D58E1F'>( +80% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. If Benedetta successfully fends off any damage while defending, she will gain full <font color='#404495'>(Sword Intent)</font>. If she fends off any control effects, her subsequent stab stuns the target for 1.5s.`   
-SkillDesc3=`<b>Alecto: Final Blow<br>Benedetta clenches Alecto and slashes forward after a short delay (invincible while dashing), slowing all targets on the path by 70% for 1s. After dashing, Benedetta detonates the Sword Intent on the path, strangling the enemy with the Sword Intent for 2.5s, dealing 120<font color='#D58E1F'>( +85% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the enemy by 20% every 0.2s.`   
- 
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="255"
@@ -118,10 +125,6 @@ Percentage3="83" Label3="Ability Effects"
 Percentage4="78" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=`` 
->}}
-
 {{< StrongAgainst 
 HeroName1="luoyi"
 HeroName2="popol"
@@ -135,5 +138,4 @@ HeroName1="atlas"
 HeroName2="barats"
 HeroName3="ling"
 HeroName4="gusion"
-HeroName5="khaleed"
-/>}}
+HeroName5="khaleed"/>}}

@@ -46,7 +46,13 @@ manaregen:: 3.6
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Legends from the Land of Dawn say that the Western Desert\'s Minoan Kingdom possesses a mysterious labyrinth. In the maze is a statue of a giant minotaur, which the people consider to be the mecca of the Minoan Kingdom. Some say that there is a group of mercenaries who guard the entire maze. ??The Kingdom produced a lot of precious jade, which brought the Minoan people great wealth. Very quickly, the entire kingdom was lost in the intoxicating allure of gems. Even many mercaneries, tasked with guarding the sacred maze became corrupted, abandoning their duty. Only one stayed—Aldous, who had never forgotten his duty to guard the Minoan Labyrinth. ?? ` 
+>}}
 
 {{< HeroInfo 
 HeroName="aldous" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Contract: Transform<br>After every 2 attacks, the 100% damage dealt by Aldous's next Basic Attack will be transformed into a shield that lasts for 3s. The shield effect activates every 5s.`   
+SkillDesc2=`<b>Contract: Soul Steal<br>Aldous unleashes his inner energy to strengthen his next Basic Attack, dealing 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. If he eliminates an enemy hero/non-hero unit with this attack, Aldous will gain 10/2 stacks of <font color='#404495'>(Soul Steal)</font>, respectively. Each stack increases the damage of this skill by 6 permanently. When attacking Minions or Creeps, the damage of strengthened Basic Attack is increases by 300%. Aldous gets 1 extra stack(s) from Soul Steal when enemy non-hero units die in a certain range.`   
+SkillDesc3=`<b>Contract: Explosion<br>Aldous assumes a defensive stance and ignores all Basic Attacks, reducing 50% damage that he takes for 2s. When canceling the defensive stance manually or the stance ends, he deals 100<font color='#D58E1F'>( +20% Total Physical ATK)</font> to 200<font color='#D58E1F'>( +40% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemy units and stuns them for 0.5s to 1s. The stun time is affected by the duration of the defensive stance.`   
+SkillDesc4=`<b>Contract: Chase Fate<br>Aldous gains vision of all enemies for 5s. During this time, if Aldous uses this skill again, he can dash toward an enemy hero. When Aldous hits that enemy hero, he will deal <font color='#C53535'>(Physical Damage)</font> equal to 450 plus 10% of the target's Max HP and knock the enemy back for 1s. (Aldous can interrupt targets' Recall and Arrival as he charges.)`   
+>}}
+
 {{< OffensiveBuild 
 build1="RapidBoots"  
 build2="EndlessBattle" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Fighter" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Contract: Transform<br>After every 2 attacks, the 100% damage dealt by Aldous's next Basic Attack will be transformed into a shield that lasts for 3s. The shield effect activates every 5s.`   
-SkillDesc2=`<b>Contract: Soul Steal<br>Aldous unleashes his inner energy to strengthen his next Basic Attack, dealing 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. If he eliminates an enemy hero/non-hero unit with this attack, Aldous will gain 10/2 stacks of <font color='#404495'>(Soul Steal)</font>, respectively. Each stack increases the damage of this skill by 6 permanently. When attacking Minions or Creeps, the damage of strengthened Basic Attack is increases by 300%. Aldous gets 1 extra stack(s) from Soul Steal when enemy non-hero units die in a certain range.`   
-SkillDesc3=`<b>Contract: Explosion<br>Aldous assumes a defensive stance and ignores all Basic Attacks, reducing 50% damage that he takes for 2s. When canceling the defensive stance manually or the stance ends, he deals 100<font color='#D58E1F'>( +20% Total Physical ATK)</font> to 200<font color='#D58E1F'>( +40% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemy units and stuns them for 0.5s to 1s. The stun time is affected by the duration of the defensive stance.`   
-SkillDesc4=`<b>Contract: Chase Fate<br>Aldous gains vision of all enemies for 5s. During this time, if Aldous uses this skill again, he can dash toward an enemy hero. When Aldous hits that enemy hero, he will deal <font color='#C53535'>(Physical Damage)</font> equal to 450 plus 10% of the target's Max HP and knock the enemy back for 1s. (Aldous can interrupt targets' Recall and Arrival as he charges.)`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="65" Label3="Ability Effects"
 Percentage4="40" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Legends from the Land of Dawn say that the Western Desert\'s Minoan Kingdom possesses a mysterious labyrinth. In the maze is a statue of a giant minotaur, which the people consider to be the mecca of the Minoan Kingdom. Some say that there is a group of mercenaries who guard the entire maze. ??The Kingdom produced a lot of precious jade, which brought the Minoan people great wealth. Very quickly, the entire kingdom was lost in the intoxicating allure of gems. Even many mercaneries, tasked with guarding the sacred maze became corrupted, abandoning their duty. Only one stayed—Aldous, who had never forgotten his duty to guard the Minoan Labyrinth. ?? ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="natalia"
 HeroName2="fanny"
@@ -135,5 +138,4 @@ HeroName1="alice"
 HeroName2="zhask"
 HeroName3="lunox"
 HeroName4="grock"
-HeroName5="uranus"
-/>}}
+HeroName5="uranus"/>}}

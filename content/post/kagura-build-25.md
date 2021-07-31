@@ -46,7 +46,13 @@ manaregen:: 4.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Onmyouji Master is a master of the yin yang arts, driven by powerful spirits, yin and yang. The Kagura family is the oldest and most powerful of the Onmyouji, with the most powerful of all being the Ancestor Master. Kagura, as one in the Onmyouji family with the most potentials, had been given the Seimei umbrella, an heirloom of yin yang arts passed down through generations. Legend has it that the umbrella had been refined by the great Seimei himself using power from a hundred ghosts, and now possess life and wisdom of its own only controllable by its rightful owner. After learning that her childhood playmate Hayabusa had headed to the land of dawn to undertake a dangerous mission, Kagura secretly took the Seimei umbrella and followed in Hayabusa\'s step, hoping to be able to help him in battle. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="kagura" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Yin Yang Gathering <br>When Kagura takes Seimei Umbrella, she will gain a shield that absorbs up to 280<font color='#27C0C7'>( +50% Total Magic Power)</font> damage, stunning nearby enemies for 0.5s and slowing them by 60%. Lasts 2s. This effect only activates every 4.5s.`   
+SkillDesc2=`<b>Seimei Umbrella Open <br>Kagura moves Seimei Umbrella to the designated area, dealing 330<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies along the way and slowing them by 60% for 1s.`   
+SkillDesc3=`<b>Rasho Umbrella Flee<br>With Seimei Umbrella, Kagura removes all Debuffs on her and moves in a designated direction, leaving the Umbrella behind.`   
+SkillDesc4=`<b>Yin Yang Overturn<br>With Seimei Umbrella, Kagura deals 260<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>, knocking back nearby enemies and slowing them by 65% for 1s.`   
+>}}
+
 {{< OffensiveBuild 
 build1="DemonShoes"  
 build2="ClockofDestiny" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Mage" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Yin Yang Gathering <br>When Kagura takes Seimei Umbrella, she will gain a shield that absorbs up to 280<font color='#27C0C7'>( +50% Total Magic Power)</font> damage, stunning nearby enemies for 0.5s and slowing them by 60%. Lasts 2s. This effect only activates every 4.5s.`   
-SkillDesc2=`<b>Seimei Umbrella Open <br>Kagura moves Seimei Umbrella to the designated area, dealing 330<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies along the way and slowing them by 60% for 1s.`   
-SkillDesc3=`<b>Rasho Umbrella Flee<br>With Seimei Umbrella, Kagura removes all Debuffs on her and moves in a designated direction, leaving the Umbrella behind.`   
-SkillDesc4=`<b>Yin Yang Overturn<br>With Seimei Umbrella, Kagura deals 260<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>, knocking back nearby enemies and slowing them by 65% for 1s.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="95" Label3="Ability Effects"
 Percentage4="89" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Onmyouji Master is a master of the yin yang arts, driven by powerful spirits, yin and yang. The Kagura family is the oldest and most powerful of the Onmyouji, with the most powerful of all being the Ancestor Master. Kagura, as one in the Onmyouji family with the most potentials, had been given the Seimei umbrella, an heirloom of yin yang arts passed down through generations. Legend has it that the umbrella had been refined by the great Seimei himself using power from a hundred ghosts, and now possess life and wisdom of its own only controllable by its rightful owner. After learning that her childhood playmate Hayabusa had headed to the land of dawn to undertake a dangerous mission, Kagura secretly took the Seimei umbrella and followed in Hayabusa\'s step, hoping to be able to help him in battle. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="miya"
 HeroName2="hayabusa"
@@ -135,5 +138,4 @@ HeroName1="karina"
 HeroName2="zilong"
 HeroName3="moskov"
 HeroName4="akai"
-HeroName5="ruby"
-/>}}
+HeroName5="ruby"/>}}

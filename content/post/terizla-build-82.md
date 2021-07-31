@@ -46,7 +46,13 @@ manaregen:: 4.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` If belief could bring love, hope, and salvation to the world, then how come there are still hurt souls lingering about?\" - a saying carved on the stela of the Monastery of Light in the Moniyan Empire. Deep in the Monastery stands an iron cage, called \"the door to rebirth.\" Within this cage, hides the dark and secret history of the Empire. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="terizla" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Body of Smith<br>Every 2% of Terizla's HP lost will be converted to 1% Damage Reduction (up to 35%). Terizla's Attack Speed can not be increased. Every 1% extra Attack Speed he's supposed to receive will be converted into 1 Physical Attack.`   
+SkillDesc2=`<b>Revenge Strike<br>Terizla cracks the ground with his hammer and the fissure will spread out, dealing 300<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. After the fissure hits the first target, it will drill into the target and slow them by 30%. At the same time, Terizla's Movement Speed will be increased by 25% for 3s. The fissure on target will then explode, dealing 300<font color='#D58E1F'>( +80% Extra Physical ATK)</font> plus 20% of the enemy's lost HP <font color='#C53535'>(Physical Damage)</font>.`   
+SkillDesc3=`<b>Execution Strike<br>Terizla waves his hammer in a fan-shaped area forward for 3 times continuously. (Move the joystick to change the position while waving.) Each of the first 2 waves deals 180<font color='#D58E1F'>( +150% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies. The 3rd wave deals 225<font color='#D58E1F'>( +300% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies. Each wave slows the targets by 15% for 1.5s. (This slow effect can be stacked.) Deals only 60% damage to minions.`   
+SkillDesc4=`<b>Penalty Zone<br>Terizla jumps to the designated area to smash down, causing 300<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing enemies by 40%. Meanwhile, he summons Scaffold, which will reach out a hook to the enemies and pull the target for several times, causing 150<font color='#D58E1F'>( +30% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> each time.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BloodlustAxe" 
@@ -90,12 +103,6 @@ EmblemName1="Fighter"
 EmblemName2="Assassin" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Body of Smith<br>Every 2% of Terizla's HP lost will be converted to 1% Damage Reduction (up to 35%). Terizla's Attack Speed can not be increased. Every 1% extra Attack Speed he's supposed to receive will be converted into 1 Physical Attack.`   
-SkillDesc2=`<b>Revenge Strike<br>Terizla cracks the ground with his hammer and the fissure will spread out, dealing 300<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. After the fissure hits the first target, it will drill into the target and slow them by 30%. At the same time, Terizla's Movement Speed will be increased by 25% for 3s. The fissure on target will then explode, dealing 300<font color='#D58E1F'>( +80% Extra Physical ATK)</font> plus 20% of the enemy's lost HP <font color='#C53535'>(Physical Damage)</font>.`   
-SkillDesc3=`<b>Execution Strike<br>Terizla waves his hammer in a fan-shaped area forward for 3 times continuously. (Move the joystick to change the position while waving.) Each of the first 2 waves deals 180<font color='#D58E1F'>( +150% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies. The 3rd wave deals 225<font color='#D58E1F'>( +300% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies. Each wave slows the targets by 15% for 1.5s. (This slow effect can be stacked.) Deals only 60% damage to minions.`   
-SkillDesc4=`<b>Penalty Zone<br>Terizla jumps to the designated area to smash down, causing 300<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing enemies by 40%. Meanwhile, he summons Scaffold, which will reach out a hook to the enemies and pull the target for several times, causing 150<font color='#D58E1F'>( +30% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> each time.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="255"
@@ -118,10 +125,6 @@ Percentage3="50" Label3="Ability Effects"
 Percentage4="55" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` If belief could bring love, hope, and salvation to the world, then how come there are still hurt souls lingering about?\" - a saying carved on the stela of the Monastery of Light in the Moniyan Empire. Deep in the Monastery stands an iron cage, called \"the door to rebirth.\" Within this cage, hides the dark and secret history of the Empire. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="granger"
 HeroName2="karrie"
@@ -135,5 +138,4 @@ HeroName1="esmeralda"
 HeroName2="guinevere"
 HeroName3="lunox"
 HeroName4="helcurt"
-HeroName5="gusion"
-/>}}
+HeroName5="gusion"/>}}

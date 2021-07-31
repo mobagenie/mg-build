@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` The renowned Bloodaxe Orcs are the descendants of interbreeding between blood demons and other devils, and their custom of using arcane magic to infect the entire bodies of their enemies and animals with blood is a testament to this fact. They are bloodthirsty and war-loving, and the strongest among them is named Balmond ` 
+>}}
 
 {{< HeroInfo 
 HeroName="balmond" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Bloodthirst<br>Balmond recovers 8% of his Max HP upon a minion or creep kill, and 20% upon an enemy hero kill.`   
+SkillDesc2=`<b>Soul Lock<br>Balmond charges forward and deals 150<font color='#D58E1F'>( +60% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemy units along the way. After hitting a target, he will immediately stop and slow that enemy by 30% for 2s.`   
+SkillDesc3=`<b>Cyclone Sweep<br>For 3s, Balmond brandishes the large axe, continuously dealing 50<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemies. Each time an enemy is hit by this skill, the next damage dealt to this enemy by this skill is increased by 25%, capped at 100%. The damage from Physical Attack Bonus can be critical.`   
+SkillDesc4=`<b>Lethal Counter<br>Balmond raises his giant axe, dealing 400<font color='#D58E1F'>( +60% Total Physical ATK)</font> plus 20% of the target's lost HP as <font color='#E5CB19'>(True Damage)</font> to enemies in a fan-shaped area in front of him and slowing them by 40% for 2s. Deals up to 1300 damage to non-hero units.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BloodlustAxe" 
@@ -90,12 +103,6 @@ EmblemName1="Fighter"
 EmblemName2="Physical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Bloodthirst<br>Balmond recovers 8% of his Max HP upon a minion or creep kill, and 20% upon an enemy hero kill.`   
-SkillDesc2=`<b>Soul Lock<br>Balmond charges forward and deals 150<font color='#D58E1F'>( +60% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemy units along the way. After hitting a target, he will immediately stop and slow that enemy by 30% for 2s.`   
-SkillDesc3=`<b>Cyclone Sweep<br>For 3s, Balmond brandishes the large axe, continuously dealing 50<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemies. Each time an enemy is hit by this skill, the next damage dealt to this enemy by this skill is increased by 25%, capped at 100%. The damage from Physical Attack Bonus can be critical.`   
-SkillDesc4=`<b>Lethal Counter<br>Balmond raises his giant axe, dealing 400<font color='#D58E1F'>( +60% Total Physical ATK)</font> plus 20% of the target's lost HP as <font color='#E5CB19'>(True Damage)</font> to enemies in a fan-shaped area in front of him and slowing them by 40% for 2s. Deals up to 1300 damage to non-hero units.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="39" Label3="Ability Effects"
 Percentage4="30" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` The renowned Bloodaxe Orcs are the descendants of interbreeding between blood demons and other devils, and their custom of using arcane magic to infect the entire bodies of their enemies and animals with blood is a testament to this fact. They are bloodthirsty and war-loving, and the strongest among them is named Balmond ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="layla"
 HeroName2="sun"
@@ -135,5 +138,4 @@ HeroName1="clint"
 HeroName2="alucard"
 HeroName3="moskov"
 HeroName4="gord"
-HeroName5="freya"
-/>}}
+HeroName5="freya"/>}}

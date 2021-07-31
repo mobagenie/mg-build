@@ -46,7 +46,13 @@ manaregen:: 2.4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` In every battle, the mystic warrior Tigreal always fought in the front line and never suffered defeat. Even the vilest of enemies did not dare to challenge Tigreal on the battlefield, because they knew such a foolish action would only be met with Tigreal\'s merciless blade. The name of Tigreal, a believer in the Lord of Light, has become synonymous with bravery and fearlessness. His kingdom has conferred upon him the honorable title of Warrior of Light as a reward. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="tigreal" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Fearless<br>Tigreal gains a layer of blessing when using skills or being hit by Basic Attacks (Those from minions are excluded). He gains immunity to the next Basic Attack after gaining 4 layers in total (Those from minions are excluded).`   
+SkillDesc2=`<b>Attack Wave<br>Tigreal smashes the ground, dealing 270<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in a fan-shaped area and slowing them by up to 30% for 1.5s according to the distance between the target and himself.`   
+SkillDesc3=`<b>Sacred Hammer<br>Tigreal charges in a specified direction and collides with enemies, dealing <font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. 4s after the charge, Tigreal can use the skill again to launch a second attack, dealing 280<font color='#D58E1F'>( +60% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and knocking enemies airborne for 1s.`   
+SkillDesc4=`<b>Implosion<br>Tigreal pulls surrounding enemies to himself, dealing 270<font color='#D58E1F'>( +130% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and stunning them for 1.5s. (This skill can be interrupted by transformation and airborne effects.)`   
+>}}
+
 {{< OffensiveBuild 
 build1="ShadowMask"  
 build2="WarriorBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Tank"
 EmblemName2="Physical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Fearless<br>Tigreal gains a layer of blessing when using skills or being hit by Basic Attacks (Those from minions are excluded). He gains immunity to the next Basic Attack after gaining 4 layers in total (Those from minions are excluded).`   
-SkillDesc2=`<b>Attack Wave<br>Tigreal smashes the ground, dealing 270<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in a fan-shaped area and slowing them by up to 30% for 1.5s according to the distance between the target and himself.`   
-SkillDesc3=`<b>Sacred Hammer<br>Tigreal charges in a specified direction and collides with enemies, dealing <font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. 4s after the charge, Tigreal can use the skill again to launch a second attack, dealing 280<font color='#D58E1F'>( +60% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and knocking enemies airborne for 1s.`   
-SkillDesc4=`<b>Implosion<br>Tigreal pulls surrounding enemies to himself, dealing 270<font color='#D58E1F'>( +130% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and stunning them for 1.5s. (This skill can be interrupted by transformation and airborne effects.)`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="59" Label3="Ability Effects"
 Percentage4="23" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` In every battle, the mystic warrior Tigreal always fought in the front line and never suffered defeat. Even the vilest of enemies did not dare to challenge Tigreal on the battlefield, because they knew such a foolish action would only be met with Tigreal\'s merciless blade. The name of Tigreal, a believer in the Lord of Light, has become synonymous with bravery and fearlessness. His kingdom has conferred upon him the honorable title of Warrior of Light as a reward. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="nana"
 HeroName2="rafael"
@@ -135,5 +138,4 @@ HeroName1="saber"
 HeroName2="hayabusa"
 HeroName3="eudora"
 HeroName4="freya"
-HeroName5="karina"
-/>}}
+HeroName5="karina"/>}}

@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` The Baroque family is one of the few nobles on the Land of Dawn. The most prestigious skill of them, fencing, the family\'s emblem, discourages countless opponents from even thinking about attacking. In addition, beauty and wisdom are also the most perfect genetic signs of the Baroque family, just like the eternal beauty and love of Violet. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="guinevere" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Super Magic<br>Guinevere deals 25% increased damage to airborne enemies. Guinevere's mastery of magic allows her basic attack to deal <font color='#D58E1F'>( +80% Total Physical ATK)</font><font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. Guinevere accumulates Super Magic each time she deals damage. When she is fully charged, her next basic attack will become guided, dealing 80<font color='#D58E1F'>( +100% Total Physical ATK)</font><font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic damage)</font> and restoring 8% of her lost HP.`   
+SkillDesc2=`<b>Energy Wave<br>Guinevere releases an energy orb, dealing 300<font color='#27C0C7'>( +130% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in a line and slowing them by 50% for 1.2s. Hitting any target reduces all of her skill CDs by 1s.`   
+SkillDesc3=`<b>Spatial Migration<br>Guinevere thumps at the target location for 250<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. Enemy Heroes and Creeps hit will be knocked airborne for 1s and take 125<font color='#27C0C7'>( +50% Total Magic Power)</font> additional <font color='#3B69FF'>(Magic Damage)</font>. After cast, Guinevere can reactivate the skill in 5s to blink toward the target direction and leave an illusion behind. If the illusion takes damage, it restores Super Magic for Guinevere and will explode in 1.5s, dealing 100<font color='#27C0C7'>( +30% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to nearby enemies.`   
+SkillDesc4=`<b>Violet Requiem<br>Guinevere creates a force field around her, attacking nearby enemies 11 times within 2s, dealing 650<font color='#27C0C7'>( +500% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> in total. If the enemy hit is already airborne, they will be knocked airborne again, up to 6 additional times. Guinevere is immune to CC while casting this skill.`   
+>}}
+
 {{< OffensiveBuild 
 build1="ArcaneBoots"  
 build2="HolyCrystal" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Magical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Super Magic<br>Guinevere deals 25% increased damage to airborne enemies. Guinevere's mastery of magic allows her basic attack to deal <font color='#D58E1F'>( +80% Total Physical ATK)</font><font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. Guinevere accumulates Super Magic each time she deals damage. When she is fully charged, her next basic attack will become guided, dealing 80<font color='#D58E1F'>( +100% Total Physical ATK)</font><font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic damage)</font> and restoring 8% of her lost HP.`   
-SkillDesc2=`<b>Energy Wave<br>Guinevere releases an energy orb, dealing 300<font color='#27C0C7'>( +130% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in a line and slowing them by 50% for 1.2s. Hitting any target reduces all of her skill CDs by 1s.`   
-SkillDesc3=`<b>Spatial Migration<br>Guinevere thumps at the target location for 250<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. Enemy Heroes and Creeps hit will be knocked airborne for 1s and take 125<font color='#27C0C7'>( +50% Total Magic Power)</font> additional <font color='#3B69FF'>(Magic Damage)</font>. After cast, Guinevere can reactivate the skill in 5s to blink toward the target direction and leave an illusion behind. If the illusion takes damage, it restores Super Magic for Guinevere and will explode in 1.5s, dealing 100<font color='#27C0C7'>( +30% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to nearby enemies.`   
-SkillDesc4=`<b>Violet Requiem<br>Guinevere creates a force field around her, attacking nearby enemies 11 times within 2s, dealing 650<font color='#27C0C7'>( +500% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> in total. If the enemy hit is already airborne, they will be knocked airborne again, up to 6 additional times. Guinevere is immune to CC while casting this skill.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="55" Label3="Ability Effects"
 Percentage4="60" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` The Baroque family is one of the few nobles on the Land of Dawn. The most prestigious skill of them, fencing, the family\'s emblem, discourages countless opponents from even thinking about attacking. In addition, beauty and wisdom are also the most perfect genetic signs of the Baroque family, just like the eternal beauty and love of Violet. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="vale"
 HeroName2="lesley"
@@ -135,5 +138,4 @@ HeroName1="selena"
 HeroName2="claude"
 HeroName3="helcurt"
 HeroName4="harith"
-HeroName5="fanny"
-/>}}
+HeroName5="fanny"/>}}

@@ -46,7 +46,13 @@ manaregen:: 4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` A great civilization rose out of the ashes of history, but the aggressive nature of the Kastiyans have persisted to the present. Kastiyans use their time space warping and psionic mind abilities to vanquish weaker races at pleasure. After countless generations of evolution, the Kastiyans have been able to fully mentally manipulate the insect spirit \"Domorey\", or the \'nightmaric spawn\' as they call her in the Kastiyan language. This immortal spirit is able to appear at anywhere, with enough power to break through any known physical or magical barriers. After the Kastiyans brought her back to their home planet, they inscribed her spirit into an almighty staff. This staff is now wielded by the King of the Kastiyans, Zhask，who has already used it to invade numerous worlds. Through invasion, the Kastiyans have been able to enslave the minds of the inhabitants and plunder all their resources. Zhask, has left his \'Plane Dominator\' signature on the many worlds that he has scourged. One of the many spirit he sent out to scout for ripe worlds, was entrapped by the Saintly Angel Argus, but however, after Argus was downcasted, the spirit escaped and re-established the link with the motherbrood. This in turned made Zhask aware of the Land of Dawn. Seeing the vast resources that are ripe for the plunder, Zhask has landed upon the fabled land, to do what he does best: Dominate, Kill and Reap. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="zhask" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Decimation<br>Upon death, Zhask commands <font color='#404495'>(Nightmaric Spawn)</font> to self-explode with him, dealing 500<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#E5CB19'>(True Damage)</font> to enemies nearby.`   
+SkillDesc2=`<b>Nightmaric Spawn<br>Zhask summons <font color='#404495'>(Nightmaric Spawn)</font> in the designated location. <font color='#404495'>(Nightmaric Spawn)</font> cannot move but will automatically attack nearby enemies. Every 2 Basic Attacks launch <font color='#404495'>(Death Ray)</font> at a target, slowing those who are hit continuously for a short time. <font color='#404495'>(Nightmaric Spawn)</font> will enjoy 70% of Zhask's Attributes. If Zhask is too far away from <font color='#404495'>(Nightmaric Spawn)</font>, it will disappear.`   
+SkillDesc3=`<b>Mind Eater<br>Zhask fires penetrating mental missile in the designated direction, dealing 300<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies along the way, after which <font color='#404495'>(Nightmaric Spawn)</font> will cast <font color='#404495'>(Mind Eater)</font> once. If an enemy is hit by both, it will be stunned for 0.5s. <font color='#404495'>(Fusion Enhanced)</font>: The damage of Zhask and <font color='#404495'>(Nightmaric Spawn)</font> is fused together, dealing 540<font color='#27C0C7'>( +180% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
+SkillDesc4=`<b>Hive Clones<br>Zhask releases a swarm of <font color='#404495'>(Nightmeric Clones)</font> in the targeted direction. The clones will explode and deal 110<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies on contact, reducing their Movement Speed by 80% for 1s. If <font color='#404495'>(Nightmeric Clones)</font> find no target, they will burrow into the ground and ambush enemies passing by. <font color='#404495'>(Fusion Enhanced)</font>: Zhask releases several swarms of <font color='#404495'>(Nightmeric Clones)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="SwiftBoots"  
 build2="FeatherofHeaven" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Magical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Decimation<br>Upon death, Zhask commands <font color='#404495'>(Nightmaric Spawn)</font> to self-explode with him, dealing 500<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#E5CB19'>(True Damage)</font> to enemies nearby.`   
-SkillDesc2=`<b>Nightmaric Spawn<br>Zhask summons <font color='#404495'>(Nightmaric Spawn)</font> in the designated location. <font color='#404495'>(Nightmaric Spawn)</font> cannot move but will automatically attack nearby enemies. Every 2 Basic Attacks launch <font color='#404495'>(Death Ray)</font> at a target, slowing those who are hit continuously for a short time. <font color='#404495'>(Nightmaric Spawn)</font> will enjoy 70% of Zhask's Attributes. If Zhask is too far away from <font color='#404495'>(Nightmaric Spawn)</font>, it will disappear.`   
-SkillDesc3=`<b>Mind Eater<br>Zhask fires penetrating mental missile in the designated direction, dealing 300<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies along the way, after which <font color='#404495'>(Nightmaric Spawn)</font> will cast <font color='#404495'>(Mind Eater)</font> once. If an enemy is hit by both, it will be stunned for 0.5s. <font color='#404495'>(Fusion Enhanced)</font>: The damage of Zhask and <font color='#404495'>(Nightmaric Spawn)</font> is fused together, dealing 540<font color='#27C0C7'>( +180% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
-SkillDesc4=`<b>Hive Clones<br>Zhask releases a swarm of <font color='#404495'>(Nightmeric Clones)</font> in the targeted direction. The clones will explode and deal 110<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies on contact, reducing their Movement Speed by 80% for 1s. If <font color='#404495'>(Nightmeric Clones)</font> find no target, they will burrow into the ground and ambush enemies passing by. <font color='#404495'>(Fusion Enhanced)</font>: Zhask releases several swarms of <font color='#404495'>(Nightmeric Clones)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="94" Label3="Ability Effects"
 Percentage4="35" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` A great civilization rose out of the ashes of history, but the aggressive nature of the Kastiyans have persisted to the present. Kastiyans use their time space warping and psionic mind abilities to vanquish weaker races at pleasure. After countless generations of evolution, the Kastiyans have been able to fully mentally manipulate the insect spirit \"Domorey\", or the \'nightmaric spawn\' as they call her in the Kastiyan language. This immortal spirit is able to appear at anywhere, with enough power to break through any known physical or magical barriers. After the Kastiyans brought her back to their home planet, they inscribed her spirit into an almighty staff. This staff is now wielded by the King of the Kastiyans, Zhask，who has already used it to invade numerous worlds. Through invasion, the Kastiyans have been able to enslave the minds of the inhabitants and plunder all their resources. Zhask, has left his \'Plane Dominator\' signature on the many worlds that he has scourged. One of the many spirit he sent out to scout for ripe worlds, was entrapped by the Saintly Angel Argus, but however, after Argus was downcasted, the spirit escaped and re-established the link with the motherbrood. This in turned made Zhask aware of the Land of Dawn. Seeing the vast resources that are ripe for the plunder, Zhask has landed upon the fabled land, to do what he does best: Dominate, Kill and Reap. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="layla"
 HeroName2="vexana"
@@ -135,5 +138,4 @@ HeroName1="freya"
 HeroName2="natalia"
 HeroName3="fanny"
 HeroName4="hayabusa"
-HeroName5="lesley"
-/>}}
+HeroName5="lesley"/>}}

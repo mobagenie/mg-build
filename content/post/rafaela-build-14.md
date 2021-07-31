@@ -46,7 +46,13 @@ manaregen:: 4.6
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Rafaela is an angel capable of miraculously healing anything. It is said that when she appears, all pain suddenly vanishes, all wounds instantly heal, and all evil disperses like rain clouds when the sun comes out. Now Rafaela has descended upon the Land of Dawn in the hopes of using her miraculous powers to restore peace to the land. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="rafaela" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Deity Penalization<br>Rafaela penalizes the target who has killed her (the target should be within a certain range). She charges for 2s and then sends the penalization power to the target, dealing <font color='#E5CB19'>(True Damage)</font> equal to 20% of the target's Max HP. It can be blocked by other enemy heroes. This skill works only on enemy heroes.`   
+SkillDesc2=`<b>Light of Retribution<br>Rafaela uses the power of Holy Light to deal 225<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to three nearest enemies, revealing them for a short period of time and slowing them by 40% for 1.5s. If this skill hits the same target multiple times within 5s, its damage will be increased by 20% after each hit. Stacks up to 3 times.`   
+SkillDesc3=`<b>Holy Healing<br>Rafaela summons Holy Light to regenerate 250<font color='#27C0C7'>( +50% Total Magic Power)</font> HP for herself and the most-injured nearby ally. Regenerates 100<font color='#27C0C7'>( +25% Total Magic Power)</font> HP for other nearby allied heroes. Increases their Movement Speed by 50% within the following 1.5s.`   
+SkillDesc4=`<b>Holy Baptism<br>Rafaela uses the power of Holy Light to punish enemies in front of her, dealing 460<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and stunning them for 1.5s.`   
+>}}
+
 {{< OffensiveBuild 
 build1="CourageMask"  
 build2="DemonShoes" 
@@ -90,12 +103,6 @@ EmblemName1="Support"
 EmblemName2="Mage" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Deity Penalization<br>Rafaela penalizes the target who has killed her (the target should be within a certain range). She charges for 2s and then sends the penalization power to the target, dealing <font color='#E5CB19'>(True Damage)</font> equal to 20% of the target's Max HP. It can be blocked by other enemy heroes. This skill works only on enemy heroes.`   
-SkillDesc2=`<b>Light of Retribution<br>Rafaela uses the power of Holy Light to deal 225<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to three nearest enemies, revealing them for a short period of time and slowing them by 40% for 1.5s. If this skill hits the same target multiple times within 5s, its damage will be increased by 20% after each hit. Stacks up to 3 times.`   
-SkillDesc3=`<b>Holy Healing<br>Rafaela summons Holy Light to regenerate 250<font color='#27C0C7'>( +50% Total Magic Power)</font> HP for herself and the most-injured nearby ally. Regenerates 100<font color='#27C0C7'>( +25% Total Magic Power)</font> HP for other nearby allied heroes. Increases their Movement Speed by 50% within the following 1.5s.`   
-SkillDesc4=`<b>Holy Baptism<br>Rafaela uses the power of Holy Light to punish enemies in front of her, dealing 460<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and stunning them for 1.5s.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="245"
@@ -118,10 +125,6 @@ Percentage3="70" Label3="Ability Effects"
 Percentage4="33" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Rafaela is an angel capable of miraculously healing anything. It is said that when she appears, all pain suddenly vanishes, all wounds instantly heal, and all evil disperses like rain clouds when the sun comes out. Now Rafaela has descended upon the Land of Dawn in the hopes of using her miraculous powers to restore peace to the land. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="alice"
 HeroName2="cyclops"
@@ -135,5 +138,4 @@ HeroName1="karina"
 HeroName2="saber"
 HeroName3="hayabusa"
 HeroName4="natalia"
-HeroName5="moskov"
-/>}}
+HeroName5="moskov"/>}}

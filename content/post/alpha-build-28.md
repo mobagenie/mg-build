@@ -46,7 +46,13 @@ manaregen:: 6.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Alpha is another creation of Laboratory 1718 after Saber left. Mad scientists got a new idea from a famous sci-fi movie. Using human bodies as biological material and space meteorolite as metal skeletons, they created powerful twins. Alpha and Beta, also known as \'Flesh Weapon\', are capable of utilizing a supernatural power that\'s ubiquitous but very mystery. However, the twins had always had a strong conscience, and refused to become killing machines. Getting help from Saber, they escaped from the alt-world. However, on their way to escape, Beta\'s core was destroyed. All that Alpha could retrieve, was Beta\'s half metallic arm. After coming to the Land of Dawn, with the help of master machinist Rooney, now Beta keeps company with Alpha as a form of an aircraft. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="alpha" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Beta, Advance!<br>Each time Alpha uses a skill, he summons Beta to attack and mark the target. Beta will launch 3 laser strikes upon reaching 2 marks. Beta's first two laser strikes each deal 50<font color='#D58E1F'>( +70% Extra Physical ATK)</font> <font color='#E5CB19'>(True Damage)</font> and briefly reduce the target's Movement Speed, and the final one is an AOE attack that deals 50<font color='#D58E1F'>( +130% Extra Physical ATK)</font> <font color='#E5CB19'>(True Damage)</font>.`   
+SkillDesc2=`<b>Rotary Impact<br>Alpha launches a slash forwards, dealing 200<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies along the way and slowing them by 40% for 1s. After the light wave is launched, Beta will follow its trace to strafe enemies, dealing 100<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+SkillDesc3=`<b>Force Swing<br>After charging for a while, Alpha strikes forward in a fan-shaped area, dealing 250<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Each hit restores 100<font color='#D58E1F'>( +30% Extra Physical ATK)</font> HP. Then Beta scans the enemies within the area, dealing 125<font color='#D58E1F'>( +30% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+SkillDesc4=`<b>Alpha, Charge!<br>Alpha commands Beta to smash down at a set location, dealing 100<font color='#D58E1F'>( +20% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and inflicting stun for 1s. At the same time, Alpha flies over to the area and deals 50<font color='#D58E1F'>( +20% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to targets in his path, knocking them airborne toward his destination, and then smashing down to deal 200<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slow them by 40% for 1.5s. After Alpha smashes down, Beta launches 5 AOE strike(s) upon the target area, each dealing 25<font color='#D58E1F'>( +60% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BloodlustAxe" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Fighter" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Beta, Advance!<br>Each time Alpha uses a skill, he summons Beta to attack and mark the target. Beta will launch 3 laser strikes upon reaching 2 marks. Beta's first two laser strikes each deal 50<font color='#D58E1F'>( +70% Extra Physical ATK)</font> <font color='#E5CB19'>(True Damage)</font> and briefly reduce the target's Movement Speed, and the final one is an AOE attack that deals 50<font color='#D58E1F'>( +130% Extra Physical ATK)</font> <font color='#E5CB19'>(True Damage)</font>.`   
-SkillDesc2=`<b>Rotary Impact<br>Alpha launches a slash forwards, dealing 200<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies along the way and slowing them by 40% for 1s. After the light wave is launched, Beta will follow its trace to strafe enemies, dealing 100<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
-SkillDesc3=`<b>Force Swing<br>After charging for a while, Alpha strikes forward in a fan-shaped area, dealing 250<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Each hit restores 100<font color='#D58E1F'>( +30% Extra Physical ATK)</font> HP. Then Beta scans the enemies within the area, dealing 125<font color='#D58E1F'>( +30% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
-SkillDesc4=`<b>Alpha, Charge!<br>Alpha commands Beta to smash down at a set location, dealing 100<font color='#D58E1F'>( +20% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and inflicting stun for 1s. At the same time, Alpha flies over to the area and deals 50<font color='#D58E1F'>( +20% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to targets in his path, knocking them airborne toward his destination, and then smashing down to deal 200<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slow them by 40% for 1.5s. After Alpha smashes down, Beta launches 5 AOE strike(s) upon the target area, each dealing 25<font color='#D58E1F'>( +60% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="62" Label3="Ability Effects"
 Percentage4="70" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Alpha is another creation of Laboratory 1718 after Saber left. Mad scientists got a new idea from a famous sci-fi movie. Using human bodies as biological material and space meteorolite as metal skeletons, they created powerful twins. Alpha and Beta, also known as \'Flesh Weapon\', are capable of utilizing a supernatural power that\'s ubiquitous but very mystery. However, the twins had always had a strong conscience, and refused to become killing machines. Getting help from Saber, they escaped from the alt-world. However, on their way to escape, Beta\'s core was destroyed. All that Alpha could retrieve, was Beta\'s half metallic arm. After coming to the Land of Dawn, with the help of master machinist Rooney, now Beta keeps company with Alpha as a form of an aircraft. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="moskov"
 HeroName2="sun"
@@ -135,5 +138,4 @@ HeroName1="clint"
 HeroName2="eudora"
 HeroName3="alucard"
 HeroName4="bruno"
-HeroName5="miya"
-/>}}
+HeroName5="miya"/>}}

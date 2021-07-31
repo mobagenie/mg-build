@@ -46,7 +46,13 @@ manaregen:: 3.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Scientists from another world gathered DNA from sword masters of hundreds of different races to create the ultimate swordsman using advanced technology. They named him Saber. His sword can tear a hole in spacetime, allowing him to travel to any place or time. His skills as a swordsman make him difficult to defeat, and also lonely beyond compare. After countless challengers were drawn to the land of dawn, Saber also turned his sights on this place, ripping through the fabric of space and time to set foot in the land of dawn and find an opponent worthy enough to face him. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="saber" 
@@ -61,6 +67,13 @@ LaneImg="4"
 LaneLabel="Jungle" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Enemy's Bane<br>Saber's damage reduces Physical Defense of enemies by 7 for 5s. This effect can be stacked up to 5 times.`   
+SkillDesc2=`<b>Orbiting Swords<br>Saber shoots out 5 swords that orbit around him, dealing 80<font color='#D58E1F'>( +30% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies on contact. After orbiting around Saber for a period of time, the swords will fly back to Saber. Within the duration of this skill, when Saber deals damage with his Basic Attacks or skills, he will send an orbiting sword towards the target, dealing 210<font color='#D58E1F'>( +60% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the main target and 50% of the damage to other targets it passes through and reducing the cooldown of <font color='#404495'>(Charge)</font> by 1s. It deals only 50% damage to minions.`   
+SkillDesc3=`<b>Charge<br>Saber charges towards a designated direction, dealing 75<font color='#D58E1F'>( +50% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies along the way. Saber gains an enhanced Basic Attack after the charge, dealing 75<font color='#D58E1F'>( +120% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the target by 60% for 1s.`   
+SkillDesc4=`<b>Triple Sweep<br>Saber dashes toward an enemy hero and knocks the target airborne for 1.2s. During this period, Saber launches 3 consecutive blows in quick succession. The first two blows deal 120<font color='#D58E1F'>( +100% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>, whereas the third blow deals 240<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="RaptorMachete"  
 build2="MagicShoes" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Jungle" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Enemy's Bane<br>Saber's damage reduces Physical Defense of enemies by 7 for 5s. This effect can be stacked up to 5 times.`   
-SkillDesc2=`<b>Orbiting Swords<br>Saber shoots out 5 swords that orbit around him, dealing 80<font color='#D58E1F'>( +30% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies on contact. After orbiting around Saber for a period of time, the swords will fly back to Saber. Within the duration of this skill, when Saber deals damage with his Basic Attacks or skills, he will send an orbiting sword towards the target, dealing 210<font color='#D58E1F'>( +60% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the main target and 50% of the damage to other targets it passes through and reducing the cooldown of <font color='#404495'>(Charge)</font> by 1s. It deals only 50% damage to minions.`   
-SkillDesc3=`<b>Charge<br>Saber charges towards a designated direction, dealing 75<font color='#D58E1F'>( +50% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies along the way. Saber gains an enhanced Basic Attack after the charge, dealing 75<font color='#D58E1F'>( +120% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the target by 60% for 1s.`   
-SkillDesc4=`<b>Triple Sweep<br>Saber dashes toward an enemy hero and knocks the target airborne for 1.2s. During this period, Saber launches 3 consecutive blows in quick succession. The first two blows deal 120<font color='#D58E1F'>( +100% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>, whereas the third blow deals 240<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="50" Label3="Ability Effects"
 Percentage4="63" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Scientists from another world gathered DNA from sword masters of hundreds of different races to create the ultimate swordsman using advanced technology. They named him Saber. His sword can tear a hole in spacetime, allowing him to travel to any place or time. His skills as a swordsman make him difficult to defeat, and also lonely beyond compare. After countless challengers were drawn to the land of dawn, Saber also turned his sights on this place, ripping through the fabric of space and time to set foot in the land of dawn and find an opponent worthy enough to face him. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="miya"
 HeroName2="layla"
@@ -135,5 +138,4 @@ HeroName1="tigreal"
 HeroName2="fanny"
 HeroName3="freya"
 HeroName4="natalia"
-HeroName5="moskov"
-/>}}
+HeroName5="moskov"/>}}

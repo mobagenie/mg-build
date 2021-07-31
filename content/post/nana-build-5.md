@@ -46,7 +46,13 @@ manaregen:: 3.6
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Nana was born deep in a magic forest, and as a rare cat elf, she was naturally endowed with powerful but hard to control magic abilities. Periodic rages of magic outBurst nearly took out half of her forest home, until one day the journeying moon elf Miya restrained Nana and taught this young cat elf the secrets to controlling her magic abilities. The clever Nana quickly mastered these techniques, becoming a powerful cat elf mage. She decided to accompany Miya on her way to the land of dawn, in search of a new king together ` 
+>}}
 
 {{< HeroInfo 
 HeroName="nana" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Molina's Gift<br>Molina's blessings will transform Nana for 2s when she takes fatal damage, removing all her debuffs. In her transformed state Nana is immune to all damage with her Movement Speed increased by 70%, and she recovers 10% of her Max HP over time but can't use skills. The blessings may be triggered once every 120s at the most.`   
+SkillDesc2=`<b>Magic Boomerang<br>Nana launches a magic boomerang in the designated direction. Each time the boomerang hits an enemy, it deals 220<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slow enemies by 40% for 1s. The first enemy takes full damage, the next one takes 20% less damage, up to 60% less damage.`   
+SkillDesc3=`<b>Molina Smooch<br>Nana summons Molina to the designated area. After a short delay, Molina locks onto an enemy hero, chases them, and morphs them, dealing 250<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing them by 50% for 1.5s. Reduces Magic Defense of transformed heroes by 25%.`   
+SkillDesc4=`<b>Molina Blitz<br>Nana summons Molina to attack the designated area 3 times. Each attack deals 400<font color='#27C0C7'>( +180% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in the area and slows them by 50% for 2s. If Molina Blitz hits a single enemy continuously, that enemy will be stunned for 1s.`   
+>}}
+
 {{< OffensiveBuild 
 build1="CourageMask"  
 build2="DemonShoes" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Support" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Molina's Gift<br>Molina's blessings will transform Nana for 2s when she takes fatal damage, removing all her debuffs. In her transformed state Nana is immune to all damage with her Movement Speed increased by 70%, and she recovers 10% of her Max HP over time but can't use skills. The blessings may be triggered once every 120s at the most.`   
-SkillDesc2=`<b>Magic Boomerang<br>Nana launches a magic boomerang in the designated direction. Each time the boomerang hits an enemy, it deals 220<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slow enemies by 40% for 1s. The first enemy takes full damage, the next one takes 20% less damage, up to 60% less damage.`   
-SkillDesc3=`<b>Molina Smooch<br>Nana summons Molina to the designated area. After a short delay, Molina locks onto an enemy hero, chases them, and morphs them, dealing 250<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing them by 50% for 1.5s. Reduces Magic Defense of transformed heroes by 25%.`   
-SkillDesc4=`<b>Molina Blitz<br>Nana summons Molina to attack the designated area 3 times. Each attack deals 400<font color='#27C0C7'>( +180% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in the area and slows them by 50% for 2s. If Molina Blitz hits a single enemy continuously, that enemy will be stunned for 1s.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="250"
@@ -118,10 +125,6 @@ Percentage3="80" Label3="Ability Effects"
 Percentage4="37" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Nana was born deep in a magic forest, and as a rare cat elf, she was naturally endowed with powerful but hard to control magic abilities. Periodic rages of magic outBurst nearly took out half of her forest home, until one day the journeying moon elf Miya restrained Nana and taught this young cat elf the secrets to controlling her magic abilities. The clever Nana quickly mastered these techniques, becoming a powerful cat elf mage. She decided to accompany Miya on her way to the land of dawn, in search of a new king together ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="zilong"
 HeroName2="layla"
@@ -135,5 +138,4 @@ HeroName1="alpha"
 HeroName2="moskov"
 HeroName3="eudora"
 HeroName4="freya"
-HeroName5="sun"
-/>}}
+HeroName5="sun"/>}}

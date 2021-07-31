@@ -46,7 +46,13 @@ manaregen:: 2.4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Lolita was born in a distant elven village, living a happy, uneventful life. That is, until war brought an end to those peaceful, safe days. Her whole village was destroyed in the war; her family torn apart. Just as her own life was in grave peril, Rooney, the master machinist of the City of Scholars, found her when he was passing through and took her back to Eruditio. To show her gratitude to the city, Lolita joined the City Guard and swore an oath to the death to defend its honor. Bruno very much admired and understood this young elf maiden\'s spirit, and so he put in a request with the city scholars for their most advanced tech crystal-- the Noumenon Energy Core-- and bestowed it to Lolita. This powerful energy core endows Lolita\'s tiny frame with the ability to discharge massive Bursts of force, even allowing her to control a giant mechanical hammer with ease. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="lolita" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Noumenon Energy Core<br>If Lolita takes no damage in 5s, Noumenon Energy Core will provide a shield that can take 300 (+40*Hero Level) damage within the next 20s. Lolita's nearby allies can get shields while approaching her.`   
+SkillDesc2=`<b>Charge<br>Lolita dashes in the designated direction. In next 4s, her next Basic Attack will take her to the enemy target, dealing <font color='#C53535'>(Physical Damage)</font> equal to 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> plus 7.5% of target's Max HP. Meanwhile, the target will be stunned for 0.8s. Deals 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> plus 50% of target's Max HP to Minions.`   
+SkillDesc3=`<b>Guardian's Bulwark<br>Lolita raises her shield to block all incoming Ranged Basic Attacks and <font color='#404495'>(Projectiles)</font>. Use again: Lolita launches Energy Blast, dealing 300<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. (Every time the shield blocks attack increases 35% damage. Capped at 210%). `   
+SkillDesc4=`<b>Noumenon Blast<br>Lolita gains a shield from her Passive. Then after charging for 2s, she deals 350<font color='#D58E1F'>( +100% Total Physical ATK)</font> to 700<font color='#D58E1F'>( +200% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> in a fan-shaped area in front of her. When casting at Max charge, Lolita will also stun her enemies for 2s (Tap again to cast immediately). When charging, Lolita slows enemies in the fan-shaped area by 75%.`   
+>}}
+
 {{< OffensiveBuild 
 build1="ShadowMask"  
 build2="ToughBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Tank"
 EmblemName2="Magical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Noumenon Energy Core<br>If Lolita takes no damage in 5s, Noumenon Energy Core will provide a shield that can take 300 (+40*Hero Level) damage within the next 20s. Lolita's nearby allies can get shields while approaching her.`   
-SkillDesc2=`<b>Charge<br>Lolita dashes in the designated direction. In next 4s, her next Basic Attack will take her to the enemy target, dealing <font color='#C53535'>(Physical Damage)</font> equal to 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> plus 7.5% of target's Max HP. Meanwhile, the target will be stunned for 0.8s. Deals 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> plus 50% of target's Max HP to Minions.`   
-SkillDesc3=`<b>Guardian's Bulwark<br>Lolita raises her shield to block all incoming Ranged Basic Attacks and <font color='#404495'>(Projectiles)</font>. Use again: Lolita launches Energy Blast, dealing 300<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. (Every time the shield blocks attack increases 35% damage. Capped at 210%). `   
-SkillDesc4=`<b>Noumenon Blast<br>Lolita gains a shield from her Passive. Then after charging for 2s, she deals 350<font color='#D58E1F'>( +100% Total Physical ATK)</font> to 700<font color='#D58E1F'>( +200% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> in a fan-shaped area in front of her. When casting at Max charge, Lolita will also stun her enemies for 2s (Tap again to cast immediately). When charging, Lolita slows enemies in the fan-shaped area by 75%.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="75" Label3="Ability Effects"
 Percentage4="50" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Lolita was born in a distant elven village, living a happy, uneventful life. That is, until war brought an end to those peaceful, safe days. Her whole village was destroyed in the war; her family torn apart. Just as her own life was in grave peril, Rooney, the master machinist of the City of Scholars, found her when he was passing through and took her back to Eruditio. To show her gratitude to the city, Lolita joined the City Guard and swore an oath to the death to defend its honor. Bruno very much admired and understood this young elf maiden\'s spirit, and so he put in a request with the city scholars for their most advanced tech crystal-- the Noumenon Energy Core-- and bestowed it to Lolita. This powerful energy core endows Lolita\'s tiny frame with the ability to discharge massive Bursts of force, even allowing her to control a giant mechanical hammer with ease. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="saber"
 HeroName2="miya"
@@ -135,5 +138,4 @@ HeroName1="clint"
 HeroName2="akai"
 HeroName3="ruby"
 HeroName4="eudora"
-HeroName5="balmond"
-/>}}
+HeroName5="balmond"/>}}

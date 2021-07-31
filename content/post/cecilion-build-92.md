@@ -46,7 +46,13 @@ manaregen:: 6
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Many years ago, enjoying the night opera performed by Cecilion was the most popular form of entertainment for the people of Castle Aberleen. It was always full house at the theatre each time this most famous opera actor performed. Everyone was attracted by his indescribable beauty and talent. However, the applause, love and cheers from human beings didn’t make Cecilion feel happy. He was one of the Blood Demons, and it was hard for him to open his mind to humans.` 
+>}}
 
 {{< HeroInfo 
 HeroName="cecilion" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Overflowing<br>Cecilion will increase his max mana by 8 each time his skill hits an enemy target. This effect cools down in 1s. Cecilion has higher max mana and mana regen speed, and his skill damage scales with his max mana.`   
+SkillDesc2=`<b>Bat Impact<br>Cecilion orders a giant bat to dive in a designated direction, dealing 100<font color='#27C0C7'>( +80% Total Magic Power)</font><font color='#404495'>( +5% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies on the path. The giant bat will stay at its destination and launch another attack, dealing 200<font color='#27C0C7'>( +160% Total Magic Power)</font><font color='#404495'>( +10% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies and triggering <font color='#404495'>(Overflowing)</font> extra 1 time. In 6s, every time Cecilion casts this skill, the mana cost will be increased by 1.8 time(s) (capped at 4 times). While casting this skill, he also gains 30% Movement Speed for 1s.`   
+SkillDesc3=`<b>Sanguine Claws<br>Cecilion summons a pair of claws in a designated position that will run to each other, slowing down the enemies on the path. After a short delay, the claws pull the enemies to the center, immobilizing them for 1s and dealing 200<font color='#27C0C7'>( +45% Total Magic Power)</font><font color='#404495'>( +1% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
+SkillDesc4=`<b>Bats Feast<br>Cecilion unleashes Blood Demon power, increasing his Movement Speed by 60% (decaying rapidly over 1.5s) and gaining immunity to slow effects. Meanwhile, he shoots 40 bolts of blood energy at the enemies nearby, each dealing 35<font color='#27C0C7'>( +8% Total Magic Power)</font><font color='#404495'>( +0% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing them by 3% (up to 30%) for 1s. Hitting an enemy heals him for 10 and 1% of his lost HP.`   
+>}}
+
 {{< OffensiveBuild 
 build1="DemonShoes"  
 build2="LightningTruncheon" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Magical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Overflowing<br>Cecilion will increase his max mana by 8 each time his skill hits an enemy target. This effect cools down in 1s. Cecilion has higher max mana and mana regen speed, and his skill damage scales with his max mana.`   
-SkillDesc2=`<b>Bat Impact<br>Cecilion orders a giant bat to dive in a designated direction, dealing 100<font color='#27C0C7'>( +80% Total Magic Power)</font><font color='#404495'>( +5% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies on the path. The giant bat will stay at its destination and launch another attack, dealing 200<font color='#27C0C7'>( +160% Total Magic Power)</font><font color='#404495'>( +10% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies and triggering <font color='#404495'>(Overflowing)</font> extra 1 time. In 6s, every time Cecilion casts this skill, the mana cost will be increased by 1.8 time(s) (capped at 4 times). While casting this skill, he also gains 30% Movement Speed for 1s.`   
-SkillDesc3=`<b>Sanguine Claws<br>Cecilion summons a pair of claws in a designated position that will run to each other, slowing down the enemies on the path. After a short delay, the claws pull the enemies to the center, immobilizing them for 1s and dealing 200<font color='#27C0C7'>( +45% Total Magic Power)</font><font color='#404495'>( +1% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
-SkillDesc4=`<b>Bats Feast<br>Cecilion unleashes Blood Demon power, increasing his Movement Speed by 60% (decaying rapidly over 1.5s) and gaining immunity to slow effects. Meanwhile, he shoots 40 bolts of blood energy at the enemies nearby, each dealing 35<font color='#27C0C7'>( +8% Total Magic Power)</font><font color='#404495'>( +0% Total Mana)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing them by 3% (up to 30%) for 1s. Hitting an enemy heals him for 10 and 1% of his lost HP.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="255"
@@ -117,10 +124,6 @@ Percentage2="43" Label2="Durability"
 Percentage3="82" Label3="Ability Effects"
 Percentage4="48" Label4="Difficulty"
  >}}
-
-{{< GetStory 
-Story=` Many years ago, enjoying the night opera performed by Cecilion was the most popular form of entertainment for the people of Castle Aberleen. It was always full house at the theatre each time this most famous opera actor performed. Everyone was attracted by his indescribable beauty and talent. However, the applause, love and cheers from human beings didn’t make Cecilion feel happy. He was one of the Blood Demons, and it was hard for him to open his mind to humans.` 
->}}
 
 {{< StrongAgainst 
 HeroName1="masha"

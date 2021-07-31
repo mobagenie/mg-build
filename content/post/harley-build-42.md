@@ -46,7 +46,13 @@ manaregen:: 3.6
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` There lived a famous young mage - Harley in the Lion Academy of Magical City. He is blessed by the Magical Goddess and as the star of the Academy, he is able to learn quickly and master any magical spell. Kids need adventure when Harley and his friends were exploring the jungle in the middle of the night, they overheard the evil conspiracy of the organization called \"Dark Wizards\". The brave young men decide to stop them! First, they need to find the secret base of Dark Wizards and report to the headmaster. But during the investigation, he accidentally activated the space portal and teleported to the other side of the Land of Dawn - Scholar City. With the help of the mecha master - Rooney, the brave and energetic boy and his partner Lolita, Bruno, Alpha and Saber went back to the Magical City to destroy the core of Demorte, the Boss of Dark Wizards. To improve his battle techniques, Harley started his adventure in the Land of Dawn. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="harley" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Magic Master<br>As a magic master, Harley's Basic Attack deals 60<font color='#D58E1F'>( +50% Total Physical ATK)</font><font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. Damaging enemies decreases their Magic Defense by 2 for 3s, capped at 15 stacks.`   
+SkillDesc2=`<b>Poker Trick<br>Harley shoots 3 rounds of cards forward, dealing 150<font color='#27C0C7'>( +25% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the first enemy hit by the cards (Damage decays when the same target is hit by 3 times or more) and increasing his Attack Speed by 5% for 3s on each hit. This effect can stack up to 8 times. `   
+SkillDesc3=`<b>Space Escape<br>Harley blinks to the designated direction, leaving a magic hat at his place, increasing his Movement Speed by 30% for 2s. <font color='#404495'>(Use Again)</font>: Use again in 4s to return to where the hat is.`   
+SkillDesc4=`<b>Deadly Magic<br>Harley shoots a magic fire ring at a designated enemy hero (can be blocked by other heroes), dealing 200<font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magical Damage)</font> and slowing the enemy by 40% for 1.5s. Generates a huge fire ring around the enemy for 4s. Harley can deal damage by hitting the fire ring with his skills. At the end of its duration, the ring deals 100<font color='#27C0C7'>( +30% Total Magic Power)</font> plus 50% of the target's damage taken during the skill's duration as <font color='#3B69FF'>(Magic Damage)</font>,.`   
+>}}
+
 {{< OffensiveBuild 
 build1="ArcaneBoots"  
 build2="LightningTruncheon" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Mage" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Magic Master<br>As a magic master, Harley's Basic Attack deals 60<font color='#D58E1F'>( +50% Total Physical ATK)</font><font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. Damaging enemies decreases their Magic Defense by 2 for 3s, capped at 15 stacks.`   
-SkillDesc2=`<b>Poker Trick<br>Harley shoots 3 rounds of cards forward, dealing 150<font color='#27C0C7'>( +25% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the first enemy hit by the cards (Damage decays when the same target is hit by 3 times or more) and increasing his Attack Speed by 5% for 3s on each hit. This effect can stack up to 8 times. `   
-SkillDesc3=`<b>Space Escape<br>Harley blinks to the designated direction, leaving a magic hat at his place, increasing his Movement Speed by 30% for 2s. <font color='#404495'>(Use Again)</font>: Use again in 4s to return to where the hat is.`   
-SkillDesc4=`<b>Deadly Magic<br>Harley shoots a magic fire ring at a designated enemy hero (can be blocked by other heroes), dealing 200<font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magical Damage)</font> and slowing the enemy by 40% for 1.5s. Generates a huge fire ring around the enemy for 4s. Harley can deal damage by hitting the fire ring with his skills. At the end of its duration, the ring deals 100<font color='#27C0C7'>( +30% Total Magic Power)</font> plus 50% of the target's damage taken during the skill's duration as <font color='#3B69FF'>(Magic Damage)</font>,.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="80" Label3="Ability Effects"
 Percentage4="50" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` There lived a famous young mage - Harley in the Lion Academy of Magical City. He is blessed by the Magical Goddess and as the star of the Academy, he is able to learn quickly and master any magical spell. Kids need adventure when Harley and his friends were exploring the jungle in the middle of the night, they overheard the evil conspiracy of the organization called \"Dark Wizards\". The brave young men decide to stop them! First, they need to find the secret base of Dark Wizards and report to the headmaster. But during the investigation, he accidentally activated the space portal and teleported to the other side of the Land of Dawn - Scholar City. With the help of the mecha master - Rooney, the brave and energetic boy and his partner Lolita, Bruno, Alpha and Saber went back to the Magical City to destroy the core of Demorte, the Boss of Dark Wizards. To improve his battle techniques, Harley started his adventure in the Land of Dawn. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="layla"
 HeroName2="nana"
@@ -135,5 +138,4 @@ HeroName1="zilong"
 HeroName2="karina"
 HeroName3="saber"
 HeroName4="eudora"
-HeroName5="freya"
-/>}}
+HeroName5="freya"/>}}

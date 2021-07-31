@@ -46,7 +46,13 @@ manaregen:: 4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Cyclops is a giant with only one eye, yes, at least he is in his own homeland. Cyclops were obsessed with stars and skies when he was little. He watched all days and nights and discovered the truth that planets were moving all the time. And this kind of movements, it contains unbelievable magic power. With an hourglass to load and control this kind of power, he became the famous \'Starsoul Magician\' in his homeland. Planetary movements will never stop, hence his strength is extremely powerful and invincible, which, however, made him feel lonely. One day, Cyclops arrived at the Land of Dawn during his space travel and he found out in surprise that there were so many strong opponents waiting him to defeat. \'I come, I see, I conquer!\' Said Cyclops. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="cyclops" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Starlit Hourglass<br>When Cyclops casts this skill and hits enemies, all skill CD will be decreased by 0.5s.`   
+SkillDesc2=`<b>Stardust Shock<br>Cyclops casts two shock waves of stardust forward, each dealing 275<font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the enemy.`   
+SkillDesc3=`<b>Planets Attack<br>Cyclops uses the power of stars to generate a starlit sphere spinning around him and increases 30% of his own Movement Speed within 2s. The sphere will attack nearby enemy heroes first, dealing 200<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to them. (Damage dealt to the same target will decay.)`   
+SkillDesc4=`<b>Star Power Lockdown<br>Cyclops creates a gigantic magic sphere filled with planetary power to chase his enemy, dealing 500<font color='#27C0C7'>( +220% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. The target will be immobilized for 1s-2s based on the distance the sphere travels.`   
+>}}
+
 {{< OffensiveBuild 
 build1="MagicShoes"  
 build2="EnchantedTalisman" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Magical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Starlit Hourglass<br>When Cyclops casts this skill and hits enemies, all skill CD will be decreased by 0.5s.`   
-SkillDesc2=`<b>Stardust Shock<br>Cyclops casts two shock waves of stardust forward, each dealing 275<font color='#27C0C7'>( +60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the enemy.`   
-SkillDesc3=`<b>Planets Attack<br>Cyclops uses the power of stars to generate a starlit sphere spinning around him and increases 30% of his own Movement Speed within 2s. The sphere will attack nearby enemy heroes first, dealing 200<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to them. (Damage dealt to the same target will decay.)`   
-SkillDesc4=`<b>Star Power Lockdown<br>Cyclops creates a gigantic magic sphere filled with planetary power to chase his enemy, dealing 500<font color='#27C0C7'>( +220% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>. The target will be immobilized for 1s-2s based on the distance the sphere travels.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="90" Label3="Ability Effects"
 Percentage4="60" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Cyclops is a giant with only one eye, yes, at least he is in his own homeland. Cyclops were obsessed with stars and skies when he was little. He watched all days and nights and discovered the truth that planets were moving all the time. And this kind of movements, it contains unbelievable magic power. With an hourglass to load and control this kind of power, he became the famous \'Starsoul Magician\' in his homeland. Planetary movements will never stop, hence his strength is extremely powerful and invincible, which, however, made him feel lonely. One day, Cyclops arrived at the Land of Dawn during his space travel and he found out in surprise that there were so many strong opponents waiting him to defeat. \'I come, I see, I conquer!\' Said Cyclops. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="miya"
 HeroName2="layla"
@@ -135,5 +138,4 @@ HeroName1="zilong"
 HeroName2="alucard"
 HeroName3="karina"
 HeroName4="natalia"
-HeroName5="sun"
-/>}}
+HeroName5="sun"/>}}

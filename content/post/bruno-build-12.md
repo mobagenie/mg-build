@@ -46,7 +46,13 @@ manaregen:: 3
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Born in the slums, Bruno was always more frail than other children his age, but this did not prevent him from having a heart that yearned for freedom. One day in a terrible incident, Bruno lost both of his legs trying to save a friend, causing him to pretty much give up on life. The scholars of Eruditio however heard his story, and out of pity for his misfortune and admiration for his bravery, they decided to use the city\'s most advanced technology to make a new pair of legs for him. When Bruno was finally able to stand on two legs again, he was surprised to discover that his mechanical legs allowed him to run like the wind. To express his gratitude, Bruno vowed to always protect the City of Scholars to his dying breath. Eruditio in turn made an energy ball weapon that works with his mechanical legs, and from that day, anyone who tried to cross the citizens of Eruditio were met with Bruno\'s merciless attacks. The people simply call him The Protector. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="bruno" 
@@ -61,6 +67,13 @@ LaneImg="1"
 LaneLabel="Gold Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Mecha Legs<br>Each time Bruno's skill causes damage, his Crit Chance will be increased by 2%. Stacks up to 10 times. Since <font color='#404495'>(Mecha Legs)</font> are infused with power, Bruno can deal more damage, but the extra ATK Speed only takes effect by 80%.`   
+SkillDesc2=`<b>Volley Shot<br>Bruno infuses the power to his Mecha Legs, his next Basic Attack will kick a powerball directly and hit an enemy target, dealing 120<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the target by 30% for 0.5s. The powerball can be rebounded to Bruno when hitting the target. Bruno or his teammates can pick up the energy ball to reduce the CD of <font color='#404495'>(Flying Tackle)</font> by 1s and Bruno will have powerball again.`   
+SkillDesc3=`<b>Flying Tackle<br>Bruno makes a forward slide tackle, dealing 140<font color='#D58E1F'>( +40% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies and stunning them for 0.5s. If Bruno casts Flying Tackle while there is a powerball rebounding to him, he will pull back this powerball immediately.`   
+SkillDesc4=`<b>Wave of the World<br>Bruno kicks an energy ball to a designated hero, dealing 250<font color='#D58E1F'>( +83% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>, knocking back the target, and reducing its Physical Defense by 3 for 8s (capped at 3 stacks). Afterwards the energy ball will ricochet among enemy units (up to 10 times). Every hit deals 150<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="RaptorMachete"  
 build2="SwiftBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Marksman"
 EmblemName2="Assassin" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Mecha Legs<br>Each time Bruno's skill causes damage, his Crit Chance will be increased by 2%. Stacks up to 10 times. Since <font color='#404495'>(Mecha Legs)</font> are infused with power, Bruno can deal more damage, but the extra ATK Speed only takes effect by 80%.`   
-SkillDesc2=`<b>Volley Shot<br>Bruno infuses the power to his Mecha Legs, his next Basic Attack will kick a powerball directly and hit an enemy target, dealing 120<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the target by 30% for 0.5s. The powerball can be rebounded to Bruno when hitting the target. Bruno or his teammates can pick up the energy ball to reduce the CD of <font color='#404495'>(Flying Tackle)</font> by 1s and Bruno will have powerball again.`   
-SkillDesc3=`<b>Flying Tackle<br>Bruno makes a forward slide tackle, dealing 140<font color='#D58E1F'>( +40% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies and stunning them for 0.5s. If Bruno casts Flying Tackle while there is a powerball rebounding to him, he will pull back this powerball immediately.`   
-SkillDesc4=`<b>Wave of the World<br>Bruno kicks an energy ball to a designated hero, dealing 250<font color='#D58E1F'>( +83% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>, knocking back the target, and reducing its Physical Defense by 3 for 8s (capped at 3 stacks). Afterwards the energy ball will ricochet among enemy units (up to 10 times). Every hit deals 150<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="70" Label3="Ability Effects"
 Percentage4="45" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Born in the slums, Bruno was always more frail than other children his age, but this did not prevent him from having a heart that yearned for freedom. One day in a terrible incident, Bruno lost both of his legs trying to save a friend, causing him to pretty much give up on life. The scholars of Eruditio however heard his story, and out of pity for his misfortune and admiration for his bravery, they decided to use the city\'s most advanced technology to make a new pair of legs for him. When Bruno was finally able to stand on two legs again, he was surprised to discover that his mechanical legs allowed him to run like the wind. To express his gratitude, Bruno vowed to always protect the City of Scholars to his dying breath. Eruditio in turn made an energy ball weapon that works with his mechanical legs, and from that day, anyone who tried to cross the citizens of Eruditio were met with Bruno\'s merciless attacks. The people simply call him The Protector. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="zilong"
 HeroName2="layla"
@@ -135,5 +138,4 @@ HeroName1="alpha"
 HeroName2="freya"
 HeroName3="karrie"
 HeroName4="karina"
-
 />}}

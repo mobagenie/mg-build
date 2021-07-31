@@ -46,7 +46,13 @@ manaregen:: 3
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` No one knows where he comes from or why he fights, but everyone born in the Wastelands knows that he is the only semblance of justice in these parts. Even the boldest of thieves wouldn\'t dare to challenge Clint and his six shooters. With his lightning reflexes and unparalleled accuracy, a flurry of bullets would be buried in his enemies\' foreheads before they had time to blink. He only draws his guns for what he believes are just causes, but when he does, there\'s hardly a villain alive who can escape his righteous barrels. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="clint" 
@@ -61,6 +67,13 @@ LaneImg="1"
 LaneLabel="Gold Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Double Shot<br>Each time Clint casts a skill, his next Basic Attack within 4s penetrates a line of targets, dealing <font color='#D58E1F'>( +135% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. This attack carries attack effects and can be critical.`   
+SkillDesc2=`<b>Quick Draw<br>Clint shoots 5 bullets rapidly. Each bullet deals 250<font color='#D58E1F'>( +95% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. The bullets will hit the enemies in a fan-shaped area in turn. Hitting the same target will reduce the damage to 11%.`   
+SkillDesc3=`<b>Trapping Recoil<br>Clint shoots a trap net forwards, dealing 140<font color='#D58E1F'>( +30% Total Physical ATK)</font><font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#C53535'>(Physical Damage)</font> to the first enemy hit and immobilizing it for 1.2s. He will also jump back a little at the same time. Upon hitting an enemy, this skill&rsquo;s cooldown will be reduced by 40%.`   
+SkillDesc4=`<b>Grenade Bombardment<br>Clint launches a grenade in a designated direction. The grenade explodes when hitting the enemy, dealing 280<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the enemy by 25% for 1.2s. 1 grenade can be restored every 12s, up to 5.`   
+>}}
+
 {{< OffensiveBuild 
 build1="RaptorMachete"  
 build2="SwiftBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Marksman" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Double Shot<br>Each time Clint casts a skill, his next Basic Attack within 4s penetrates a line of targets, dealing <font color='#D58E1F'>( +135% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. This attack carries attack effects and can be critical.`   
-SkillDesc2=`<b>Quick Draw<br>Clint shoots 5 bullets rapidly. Each bullet deals 250<font color='#D58E1F'>( +95% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. The bullets will hit the enemies in a fan-shaped area in turn. Hitting the same target will reduce the damage to 11%.`   
-SkillDesc3=`<b>Trapping Recoil<br>Clint shoots a trap net forwards, dealing 140<font color='#D58E1F'>( +30% Total Physical ATK)</font><font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#C53535'>(Physical Damage)</font> to the first enemy hit and immobilizing it for 1.2s. He will also jump back a little at the same time. Upon hitting an enemy, this skill&rsquo;s cooldown will be reduced by 40%.`   
-SkillDesc4=`<b>Grenade Bombardment<br>Clint launches a grenade in a designated direction. The grenade explodes when hitting the enemy, dealing 280<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing the enemy by 25% for 1.2s. 1 grenade can be restored every 12s, up to 5.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="66" Label3="Ability Effects"
 Percentage4="33" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` No one knows where he comes from or why he fights, but everyone born in the Wastelands knows that he is the only semblance of justice in these parts. Even the boldest of thieves wouldn\'t dare to challenge Clint and his six shooters. With his lightning reflexes and unparalleled accuracy, a flurry of bullets would be buried in his enemies\' foreheads before they had time to blink. He only draws his guns for what he believes are just causes, but when he does, there\'s hardly a villain alive who can escape his righteous barrels. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="nana"
 HeroName2="miya"
@@ -135,5 +138,4 @@ HeroName1="eudora"
 HeroName2="akai"
 HeroName3="karina"
 HeroName4="fanny"
-HeroName5="freya"
-/>}}
+HeroName5="freya"/>}}

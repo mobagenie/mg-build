@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` When just a child, both of Alucard\'s parents were killed by demons and he was imprisoned and suffered cruelties at their hands for several months, until finally he was rescued by demon hunters and raised by them. From a young age, he was raised to be an outstanding demon hunter, with an extreme enmity for the demon race. The three iron laws of the demon hunters are: Swear no allegiance to any army. Spare not a single one of demonkind. Never stop carrying out missions. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="alucard" 
@@ -61,6 +67,13 @@ LaneImg="4"
 LaneLabel="Jungle" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Pursuit<br>If Alucard's skill hits only 1 enemy, it deals 1.5 times of damage. After using a skill, he is able to dash to his target with his next Basic Attack, dealing 1.2 times of Basic Attack damage. His skills benefit 50% from Physical Lifesteal.`   
+SkillDesc2=`<b>Groundsplitter<br>Alucard jumps toward a designated area and launches a slash, dealing 250<font color='#D58E1F'>( +110% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in the area.`   
+SkillDesc3=`<b>Whirling Smash<br>Alucard slashes at nearby enemies, dealing 300<font color='#D58E1F'>( +120% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+SkillDesc4=`<b>Fission Wave<br>Alucard absorbs the energy of enemies within the designated area, increasing his own Physical Lifesteal by 40% and reducing Movement Speed of the targets by 40% for 4s. In 8s, Passive is triggered whenever he deals damage to the targets. During this period, he can release a powerful shock wave forward, dealing 400<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="HaasClaws" 
@@ -90,12 +103,6 @@ EmblemName1="Fighter"
 EmblemName2="Assassin" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Pursuit<br>If Alucard's skill hits only 1 enemy, it deals 1.5 times of damage. After using a skill, he is able to dash to his target with his next Basic Attack, dealing 1.2 times of Basic Attack damage. His skills benefit 50% from Physical Lifesteal.`   
-SkillDesc2=`<b>Groundsplitter<br>Alucard jumps toward a designated area and launches a slash, dealing 250<font color='#D58E1F'>( +110% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in the area.`   
-SkillDesc3=`<b>Whirling Smash<br>Alucard slashes at nearby enemies, dealing 300<font color='#D58E1F'>( +120% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
-SkillDesc4=`<b>Fission Wave<br>Alucard absorbs the energy of enemies within the designated area, increasing his own Physical Lifesteal by 40% and reducing Movement Speed of the targets by 40% for 4s. In 8s, Passive is triggered whenever he deals damage to the targets. During this period, he can release a powerful shock wave forward, dealing 400<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="46" Label3="Ability Effects"
 Percentage4="35" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` When just a child, both of Alucard\'s parents were killed by demons and he was imprisoned and suffered cruelties at their hands for several months, until finally he was rescued by demon hunters and raised by them. From a young age, he was raised to be an outstanding demon hunter, with an extreme enmity for the demon race. The three iron laws of the demon hunters are: Swear no allegiance to any army. Spare not a single one of demonkind. Never stop carrying out missions. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="layla"
 HeroName2="zilong"
@@ -135,5 +138,4 @@ HeroName1="eudora"
 HeroName2="saber"
 HeroName3="fanny"
 HeroName4="zhask"
-HeroName5="freya"
-/>}}
+HeroName5="freya"/>}}

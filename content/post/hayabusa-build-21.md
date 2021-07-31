@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` In the town of Iga, the strongest ninja of every generation receives the title of Shadow, responsible for the most dangerous and difficult missions, protecting the town of Iga day in and day out, all without the knowledge of its inhabitants. At present, the freshly-anointed Shadow of Iga, Hayabusa, has been transported to the Land of Dawn to carry out the most dangerous and difficult of missions: find and kill the previous generation\'s Shadow who betrayed and killed his friend, the one who was once lauded as the greatest ninja Iga had seen in centuries. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="hayabusa" 
@@ -61,6 +67,13 @@ LaneImg="4"
 LaneLabel="Jungle" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Ninjutsu: Trace of Shadow<br>Hayabusa&rsquo;s ninjutsu damage inflicts 1 Shadow Stack. Every stack increases Hayabusa&rsquo;s ninjutsu damage by 5%. `   
+SkillDesc2=`<b>Ninjutsu: Phantom Shuriken<br><font color='#404495'>(Passive)</font>: Hayabusa gains 3% Spell Vamp from each skill level-up. <font color='#404495'>(Active)</font>: Hayabusa throws forward three shurikens and swiftly retreives them back. The first hit deals 170<font color='#D58E1F'>( +70% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. For the remaining hits, damage is reduced to 30%. Each hit restores 10 energy for him (capped at 2 times) and slows the enemy by 35% for 2s.`   
+SkillDesc3=`<b>Ninjutsu: Quad Shadow<br>Hayabusa moves in a designated direction and releases a phantom behind him. If he hits an enemy in the path, he will stop immediately and release 3 phantoms that travel in different directions. When phantoms hit enemy heroes, they will seep into them, dealing 130<font color='#D58E1F'>( +30% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing them by 40% for 2s. Use again: Hayabusa can teleport to a phantom&rsquo;s location. If that phantom happens to be in an enemy hero, Hayabusa will deal 130<font color='#D58E1F'>( +30% Extra Physical ATK)</font> extra <font color='#C53535'>(Physical Damage)</font> to it. Every time Hayabusa moves using Quad Shadow, the CD for Shuriken will be reduced by 1s.`   
+SkillDesc4=`<b>Ougi: Shadow Kill<br>Hayabusa turns into a shadow and dashes around the battlefield, dealing 5 times of Single-target attack to enemies in an area. Each attack deals 180<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="RaptorMachete" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Jungle" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Ninjutsu: Trace of Shadow<br>Hayabusa&rsquo;s ninjutsu damage inflicts 1 Shadow Stack. Every stack increases Hayabusa&rsquo;s ninjutsu damage by 5%. `   
-SkillDesc2=`<b>Ninjutsu: Phantom Shuriken<br><font color='#404495'>(Passive)</font>: Hayabusa gains 3% Spell Vamp from each skill level-up. <font color='#404495'>(Active)</font>: Hayabusa throws forward three shurikens and swiftly retreives them back. The first hit deals 170<font color='#D58E1F'>( +70% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. For the remaining hits, damage is reduced to 30%. Each hit restores 10 energy for him (capped at 2 times) and slows the enemy by 35% for 2s.`   
-SkillDesc3=`<b>Ninjutsu: Quad Shadow<br>Hayabusa moves in a designated direction and releases a phantom behind him. If he hits an enemy in the path, he will stop immediately and release 3 phantoms that travel in different directions. When phantoms hit enemy heroes, they will seep into them, dealing 130<font color='#D58E1F'>( +30% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing them by 40% for 2s. Use again: Hayabusa can teleport to a phantom&rsquo;s location. If that phantom happens to be in an enemy hero, Hayabusa will deal 130<font color='#D58E1F'>( +30% Extra Physical ATK)</font> extra <font color='#C53535'>(Physical Damage)</font> to it. Every time Hayabusa moves using Quad Shadow, the CD for Shuriken will be reduced by 1s.`   
-SkillDesc4=`<b>Ougi: Shadow Kill<br>Hayabusa turns into a shadow and dashes around the battlefield, dealing 5 times of Single-target attack to enemies in an area. Each attack deals 180<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="62" Label3="Ability Effects"
 Percentage4="82" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` In the town of Iga, the strongest ninja of every generation receives the title of Shadow, responsible for the most dangerous and difficult missions, protecting the town of Iga day in and day out, all without the knowledge of its inhabitants. At present, the freshly-anointed Shadow of Iga, Hayabusa, has been transported to the Land of Dawn to carry out the most dangerous and difficult of missions: find and kill the previous generation\'s Shadow who betrayed and killed his friend, the one who was once lauded as the greatest ninja Iga had seen in centuries. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="eudora"
 HeroName2="layla"
@@ -135,5 +138,4 @@ HeroName1="saber"
 HeroName2="kagura"
 HeroName3="natalia"
 HeroName4="cyclops"
-HeroName5="zilong"
-/>}}
+HeroName5="zilong"/>}}

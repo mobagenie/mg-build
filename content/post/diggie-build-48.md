@@ -11,7 +11,7 @@ tags:
 playername: "Fαȥҽ~nikarus滅"
 cleanplayername: "fnikarus"
 
-heroname: ""
+heroname: "digie"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/digie.jpg
 View: 41284 
 Role: 6 
@@ -46,7 +46,13 @@ manaregen:: 4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Scholars and thinkers from all over the world gather at the city of Antoinerei. It is here where the commonly overlooked Digger lives. Many don\'t give a second look to Digger due to his small frame, until they come upon his researches in chronoscience. Digger loves clocks, he believes that within these little mechanical toys lies many more yet to be discovered secrets. Through the use of his \"Time Nest\" Digger can control the flow of time. He is also able to release his friends from the physical shackles of time, taking them along with him. Beware though, for if you anger him, be prepared for the taste of a Hoot Hoot \'Time Bomb\'! ` 
+>}}
 
 {{< HeroInfo 
 HeroName="" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Young Again<br>Upon death, Diggie will become an egg. he can move and receive all-new chick abilities. Diggie cannot be targeted in egg form, and after a period of time, Diggie will revive.`   
+SkillDesc2=`<b>Auto Alarm Bomb<br>Diggie throws an owl alarm in the designated direction. The alarm will automatically chase the enemies nearby, dealing 500<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to them and slowing them by 30%. If there is no enemy hero nearby, it will stay at the spot for 25s. This skill can have up to 3 charges. Its charging time is affected by CD Reduction.`   
+SkillDesc3=`<b>Reverse Time<br>Diggie marks a target and pulls it back to a designated location in 4s, dealing 150<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing it by 80%. If enemies escape too far away, they will be pulled back and take damage immediately.`   
+SkillDesc4=`<b>Time Journey<br>Diggie provides a shield that absorbs 400<font color='#27C0C7'>( +200% Total Magic Power)</font> damage to him and surrounding allies, and becomes immune to Control Effects. Lasts 3s. While casting the skill his Movement Speed increases by 50% for 0.5s.`   
+>}}
+
 {{< OffensiveBuild 
 build1="CourageMask"  
 build2="ToughBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Support"
 EmblemName2="Mage" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Young Again<br>Upon death, Diggie will become an egg. he can move and receive all-new chick abilities. Diggie cannot be targeted in egg form, and after a period of time, Diggie will revive.`   
-SkillDesc2=`<b>Auto Alarm Bomb<br>Diggie throws an owl alarm in the designated direction. The alarm will automatically chase the enemies nearby, dealing 500<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to them and slowing them by 30%. If there is no enemy hero nearby, it will stay at the spot for 25s. This skill can have up to 3 charges. Its charging time is affected by CD Reduction.`   
-SkillDesc3=`<b>Reverse Time<br>Diggie marks a target and pulls it back to a designated location in 4s, dealing 150<font color='#27C0C7'>( +100% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing it by 80%. If enemies escape too far away, they will be pulled back and take damage immediately.`   
-SkillDesc4=`<b>Time Journey<br>Diggie provides a shield that absorbs 400<font color='#27C0C7'>( +200% Total Magic Power)</font> damage to him and surrounding allies, and becomes immune to Control Effects. Lasts 3s. While casting the skill his Movement Speed increases by 50% for 0.5s.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="250"
@@ -118,10 +125,6 @@ Percentage3="75" Label3="Ability Effects"
 Percentage4="30" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Scholars and thinkers from all over the world gather at the city of Antoinerei. It is here where the commonly overlooked Digger lives. Many don\'t give a second look to Digger due to his small frame, until they come upon his researches in chronoscience. Digger loves clocks, he believes that within these little mechanical toys lies many more yet to be discovered secrets. Through the use of his \"Time Nest\" Digger can control the flow of time. He is also able to release his friends from the physical shackles of time, taking them along with him. Beware though, for if you anger him, be prepared for the taste of a Hoot Hoot \'Time Bomb\'! ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="saber"
 HeroName2="aurora"
@@ -135,5 +138,4 @@ HeroName1="kagura"
 HeroName2="lancelot"
 HeroName3="hayabusa"
 HeroName4="helcurt"
-HeroName5="natalia"
-/>}}
+HeroName5="natalia"/>}}

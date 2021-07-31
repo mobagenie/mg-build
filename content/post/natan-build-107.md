@@ -46,7 +46,13 @@ manaregen:: 3
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=`` 
+>}}
 
 {{< HeroInfo 
 HeroName="natan" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+ 
+ 
+ 
+ 
+>}}
+
 {{< OffensiveBuild 
 build1="DemonHunterSword"  
 build2="CorrosionScythe" 
@@ -90,12 +103,6 @@ EmblemName1="Magical"
 EmblemName2="" 
 >}}   
 
-{{< ChampionSkills 
- 
- 
- 
- 
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="245"
@@ -118,10 +125,6 @@ Percentage3="55" Label3="Ability Effects"
 Percentage4="80" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=`` 
->}}
-
 {{< StrongAgainst 
 HeroName1="barats"
 HeroName2="thamuz"
@@ -135,5 +138,4 @@ HeroName1="benedetta"
 HeroName2="atlas"
 HeroName3="granger"
 HeroName4="esmeralda"
-HeroName5="helcurt"
-/>}}
+HeroName5="helcurt"/>}}

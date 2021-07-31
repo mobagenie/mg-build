@@ -46,7 +46,13 @@ manaregen:: 2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Franco\'s home is in the eternally frozen seas beyond the land of Nost Gal. This continent of ice and snow is where the sea people have made a life for themselves, but the resurrection of Captain Bane has destroyed their formerly peaceful lives. Franco and his comrades have banded together to oppose Bane\'s rule and bring peace back to the sea ` 
+>}}
 
 {{< HeroInfo 
 HeroName="franco" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Wasteland Force<br>Franco increases Movement Speed by 10% and regens 1% of Max HP per second if he takes no damage for a short time.`   
+SkillDesc2=`<b>Iron Hook<br>Franco launches an iron hook in a designated direction. The hook will snag the first unit, dealing 550<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and dragging the unit back to Franco.`   
+SkillDesc3=`<b>Fury Shock<br>Franco lashes out, dealing <font color='#C53535'>(Physical Damage)</font> equal to 300 plus 4% of his Max HP to nearby enemies and slowing them by 70% for 1.5s.`   
+SkillDesc4=`<b>Bloody Hunt<br>Franco suppresses a designated enemy unit for 1.8s, and then hacks them for 6 times continuously, dealing 60<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> with each hack.`   
+>}}
+
 {{< OffensiveBuild 
 build1="ToughBoots"  
 build2="ShadowMask" 
@@ -90,12 +103,6 @@ EmblemName1="Support"
 EmblemName2="Tank" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Wasteland Force<br>Franco increases Movement Speed by 10% and regens 1% of Max HP per second if he takes no damage for a short time.`   
-SkillDesc2=`<b>Iron Hook<br>Franco launches an iron hook in a designated direction. The hook will snag the first unit, dealing 550<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and dragging the unit back to Franco.`   
-SkillDesc3=`<b>Fury Shock<br>Franco lashes out, dealing <font color='#C53535'>(Physical Damage)</font> equal to 300 plus 4% of his Max HP to nearby enemies and slowing them by 70% for 1.5s.`   
-SkillDesc4=`<b>Bloody Hunt<br>Franco suppresses a designated enemy unit for 1.8s, and then hacks them for 6 times continuously, dealing 60<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> with each hack.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="50" Label3="Ability Effects"
 Percentage4="55" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Franco\'s home is in the eternally frozen seas beyond the land of Nost Gal. This continent of ice and snow is where the sea people have made a life for themselves, but the resurrection of Captain Bane has destroyed their formerly peaceful lives. Franco and his comrades have banded together to oppose Bane\'s rule and bring peace back to the sea ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="eudora"
 HeroName2="ruby"
@@ -135,5 +138,4 @@ HeroName1="chou"
 HeroName2="freya"
 HeroName3="kagura"
 HeroName4="ruby"
-HeroName5="alpha"
-/>}}
+HeroName5="alpha"/>}}

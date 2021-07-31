@@ -46,7 +46,13 @@ manaregen:: 2.4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` A clumsy panda from a far away Eastern villages dreams every night of becoming a mighty warrior. Akai is fat and clumsy even for panda standards and most people say that all he\'s good for is rolling round. However, this never fazed Akai, as he trained daily, hoping to one day achieve his dreams of becoming a respected warrior. His friends mocked him, his parents discouraged him but Akai persisted. Soon one day, a mysterious old monk took notice of Akai\'s persistance and took him under his guidance. Akai flourished under the training of the monk, mastering the arts of the flail. He is now ready to enter the world stage and prove that he is a worthy member of the martial world! ` 
+>}}
 
 {{< HeroInfo 
 HeroName="akai" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Tai Chi<br>After using a skill, Akai will gain a shield that absorbs up to 6% of his Max HP. Lasts 2s. The effect activates every 2.5s.`   
+SkillDesc2=`<b>Thousand Pounder<br>Akai jumps towards a designated location. Upon landing, he deals 300<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemy units, and slows them by 30% for 2s. When Akai deals damage to enemies marked with <font color='#404495'>(Blender)</font>, they will get stunned for extra 1s.`   
+SkillDesc3=`<b>Blender<br>Akai fires a frog-shaped wave in the designated direction. The wave explodes upon hitting enemies or reaching its max travel distance, dealing 350<font color='#D58E1F'>( +120% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies and marking them for 5s. Akai's Basic Attack on marked targets deals extra 5% <font color='#C53535'>(Physical Damage)</font> of Akai's Max HP.`   
+SkillDesc4=`<b>Hurricane Dance<br>Akai spins like a tornado for 3.5s and knocks back the surrounding enemies, dealing 180<font color='#D58E1F'>( +100% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> (Damage decays against the same target). Using this skill removes all Debuffs from Akai immediately. He also becomes immune to Slowing Effect in the duration and increases 30 Movement Speed.`   
+>}}
+
 {{< OffensiveBuild 
 build1="CourageMask"  
 build2="WarriorBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Tank"
 EmblemName2="Physical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Tai Chi<br>After using a skill, Akai will gain a shield that absorbs up to 6% of his Max HP. Lasts 2s. The effect activates every 2.5s.`   
-SkillDesc2=`<b>Thousand Pounder<br>Akai jumps towards a designated location. Upon landing, he deals 300<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemy units, and slows them by 30% for 2s. When Akai deals damage to enemies marked with <font color='#404495'>(Blender)</font>, they will get stunned for extra 1s.`   
-SkillDesc3=`<b>Blender<br>Akai fires a frog-shaped wave in the designated direction. The wave explodes upon hitting enemies or reaching its max travel distance, dealing 350<font color='#D58E1F'>( +120% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies and marking them for 5s. Akai's Basic Attack on marked targets deals extra 5% <font color='#C53535'>(Physical Damage)</font> of Akai's Max HP.`   
-SkillDesc4=`<b>Hurricane Dance<br>Akai spins like a tornado for 3.5s and knocks back the surrounding enemies, dealing 180<font color='#D58E1F'>( +100% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> (Damage decays against the same target). Using this skill removes all Debuffs from Akai immediately. He also becomes immune to Slowing Effect in the duration and increases 30 Movement Speed.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="54" Label3="Ability Effects"
 Percentage4="45" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` A clumsy panda from a far away Eastern villages dreams every night of becoming a mighty warrior. Akai is fat and clumsy even for panda standards and most people say that all he\'s good for is rolling round. However, this never fazed Akai, as he trained daily, hoping to one day achieve his dreams of becoming a respected warrior. His friends mocked him, his parents discouraged him but Akai persisted. Soon one day, a mysterious old monk took notice of Akai\'s persistance and took him under his guidance. Akai flourished under the training of the monk, mastering the arts of the flail. He is now ready to enter the world stage and prove that he is a worthy member of the martial world! ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="gord"
 HeroName2="alice"
@@ -135,5 +138,4 @@ HeroName1="saber"
 HeroName2="moskov"
 HeroName3="kagura"
 HeroName4="eudora"
-HeroName5="karrie"
-/>}}
+HeroName5="karrie"/>}}

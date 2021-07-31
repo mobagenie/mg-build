@@ -46,7 +46,13 @@ manaregen:: 4.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=`` 
+>}}
 
 {{< HeroInfo 
 HeroName="yve" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Void Blast<br>Yve detonates Galactic Energy in a designated area, dealing 180<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the targets. The targets in the central area will take an extra 180<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
+SkillDesc2=`<b>Void Crystal<br>Yve summons a void crystal in a designated area, dealing 220<font color='#27C0C7'>( +40% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the targets hit. <font color='#404495'>(Use Again)</font>: The crystal radiates materialized energy in the designated direction for the next 2.7s, dealing 90<font color='#27C0C7'>( +20% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> every 0.45s to the targets hit and slowing them by 35%. If a target is hit multiple times by the energy, it takes 5% more slow effect for each hit, capped at 60%.`   
+SkillDesc3=`<b>Real World Manipulation<br>Yve creates a starfield that lasts for 15s, and gains 500<font color='#27C0C7'>( +150% Total Magic Power)</font> Shield. During this period, you must tap or slide your finger to cast the Ultimate up to 15 times. <font color='#404495'>(Tapping)</font>: Deals 360<font color='#27C0C7'>( +110% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> in a designated area in the starfield. <font color='#404495'>(Sliding)</font>: Deals 105<font color='#27C0C7'>( +20% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> every 0.45s to the targets in the designated area and slows the targets by 60% for 2.7s. Enemies that come in contact with the starfield will be immobilized for 0.5s. (This only takes effect once on the same target.) During this period, Yve is immune to all knockback effects but cannot cast skills while controlled (the starfield remains while she's controlled, but is cancelled when she's suppressed). Shield disappears <Num10>s after the skill ends.`   
+ 
+>}}
+
 {{< OffensiveBuild 
 build1="IceQueenWand"  
 build2="GlowingWand" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Void Blast<br>Yve detonates Galactic Energy in a designated area, dealing 180<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the targets. The targets in the central area will take an extra 180<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
-SkillDesc2=`<b>Void Crystal<br>Yve summons a void crystal in a designated area, dealing 220<font color='#27C0C7'>( +40% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the targets hit. <font color='#404495'>(Use Again)</font>: The crystal radiates materialized energy in the designated direction for the next 2.7s, dealing 90<font color='#27C0C7'>( +20% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> every 0.45s to the targets hit and slowing them by 35%. If a target is hit multiple times by the energy, it takes 5% more slow effect for each hit, capped at 60%.`   
-SkillDesc3=`<b>Real World Manipulation<br>Yve creates a starfield that lasts for 15s, and gains 500<font color='#27C0C7'>( +150% Total Magic Power)</font> Shield. During this period, you must tap or slide your finger to cast the Ultimate up to 15 times. <font color='#404495'>(Tapping)</font>: Deals 360<font color='#27C0C7'>( +110% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> in a designated area in the starfield. <font color='#404495'>(Sliding)</font>: Deals 105<font color='#27C0C7'>( +20% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> every 0.45s to the targets in the designated area and slows the targets by 60% for 2.7s. Enemies that come in contact with the starfield will be immobilized for 0.5s. (This only takes effect once on the same target.) During this period, Yve is immune to all knockback effects but cannot cast skills while controlled (the starfield remains while she's controlled, but is cancelled when she's suppressed). Shield disappears <Num10>s after the skill ends.`   
- 
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="255"
@@ -118,10 +125,6 @@ Percentage3="78" Label3="Ability Effects"
 Percentage4="65" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=`` 
->}}
-
 {{< StrongAgainst 
 HeroName1="luoyi"
 HeroName2="cecilion"
@@ -135,5 +138,4 @@ HeroName1="paquito"
 HeroName2="brody"
 HeroName3="benedetta"
 HeroName4="lapulapu"
-HeroName5="change"
-/>}}
+HeroName5="change"/>}}

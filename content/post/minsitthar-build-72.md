@@ -46,7 +46,13 @@ manaregen:: 3.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` In the mysterious village of the East there was once a hero, \"Holy Spear\" Minsitthar, who had saved his kingdom from danger. He was once the Prince of Mahar Pura and served in the Forces from his youth. After adulthood he was respectfully called one of the \"Four Great Generals\" of Mahar Pura with his remarkable achievements. Minsitthar was invincible in wars, which earned the trust of the King and his people. They deeply believed that Minsitthar would be the King after his Father. Perseverant and courageous as he might be, yet he couldn\'t avoid falling for an unacceptable love, and it enraged his Father and dried out all the trust and expectation towards his son. Minsitthar knew that he had made an unrecoverable mistake and fled out of the Palace in the dark night with his servants. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="minsitthar" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>All United<br>Minsitthar inspires the whole team. When teammates slay enemy heroes, he obtains extra 60 Gold wherever he is; whenever Minsitthar himself slay enemies, all his teammates obtain extra 15 Gold.`   
+SkillDesc2=`<b>Spear of Glory<br>Minsitthar stabs ahead with the Spear of Glory, dealing 175<font color='#D58E1F'>( +180% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies along the way. When pulling back the spear, he will also pull toward himself the first enemy the spear hits, dealing 150<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and knocks the target back.`   
+SkillDesc3=`<b>Shield Assault<br>Minsitthar awakens the strength of the shield and releases the power within forward. The power explodes upon hitting the first enemy unit and deals 300<font color='#D58E1F'>( +160% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in the area. Meanwhile, he obtains 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> Shield and increases 20% Movement Speed immediately. The first enemy will be stunned for 1s and the other enemies will be knocked back.`   
+SkillDesc4=`<b>King's Calling<br>Minsitthar charges a short distance forward and calls 4 Royal Guards to form a field and fight together with him. Each attack of Royal Guards deals <font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. The Royal Guards cannot move, but they'll attack enemies in the field first. When staying in the area, Minsitthar gains 30 Physical and Magic Defense. Enemies in the field are slowed by 20% and cannot use directional Blink skills. `   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BladeofDespair" 
@@ -90,12 +103,6 @@ EmblemName1="Fighter"
 EmblemName2="Assassin" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>All United<br>Minsitthar inspires the whole team. When teammates slay enemy heroes, he obtains extra 60 Gold wherever he is; whenever Minsitthar himself slay enemies, all his teammates obtain extra 15 Gold.`   
-SkillDesc2=`<b>Spear of Glory<br>Minsitthar stabs ahead with the Spear of Glory, dealing 175<font color='#D58E1F'>( +180% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies along the way. When pulling back the spear, he will also pull toward himself the first enemy the spear hits, dealing 150<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and knocks the target back.`   
-SkillDesc3=`<b>Shield Assault<br>Minsitthar awakens the strength of the shield and releases the power within forward. The power explodes upon hitting the first enemy unit and deals 300<font color='#D58E1F'>( +160% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in the area. Meanwhile, he obtains 200<font color='#D58E1F'>( +100% Total Physical ATK)</font> Shield and increases 20% Movement Speed immediately. The first enemy will be stunned for 1s and the other enemies will be knocked back.`   
-SkillDesc4=`<b>King's Calling<br>Minsitthar charges a short distance forward and calls 4 Royal Guards to form a field and fight together with him. Each attack of Royal Guards deals <font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. The Royal Guards cannot move, but they'll attack enemies in the field first. When staying in the area, Minsitthar gains 30 Physical and Magic Defense. Enemies in the field are slowed by 20% and cannot use directional Blink skills. `   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="50" Label3="Ability Effects"
 Percentage4="40" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` In the mysterious village of the East there was once a hero, \"Holy Spear\" Minsitthar, who had saved his kingdom from danger. He was once the Prince of Mahar Pura and served in the Forces from his youth. After adulthood he was respectfully called one of the \"Four Great Generals\" of Mahar Pura with his remarkable achievements. Minsitthar was invincible in wars, which earned the trust of the King and his people. They deeply believed that Minsitthar would be the King after his Father. Perseverant and courageous as he might be, yet he couldn\'t avoid falling for an unacceptable love, and it enraged his Father and dried out all the trust and expectation towards his son. Minsitthar knew that he had made an unrecoverable mistake and fled out of the Palace in the dark night with his servants. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="aurora"
 HeroName2="layla"
@@ -135,5 +138,4 @@ HeroName1="martis"
 HeroName2="harith"
 HeroName3="grock"
 HeroName4="akai"
-HeroName5="natalia"
-/>}}
+HeroName5="natalia"/>}}

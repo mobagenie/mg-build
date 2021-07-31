@@ -46,7 +46,13 @@ manaregen:: 3
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Alaghat is a mysterious technique empire. There lives a strange humanoid race - Yasson. They are in human shape while having a pair of deformed feet. They are agile and born to fight. Meanwhile, they are also good at techniques that allow them to create a significant civilization and to invade the others. Since Karrie was a child, she was very talented and trained into an excellent and arrogant warrior leader, but at the same time, she lost her feelings and became a machine. During one battle, she was overconfident and got injured seriously. But a prophet from another race saved her and inject his consciousness into her brain. Since then there has been a voice in her head, the prophet told her that the ruin of her empire is about to come and there will be no Yasson anymore. After her escape from death, Karrie didn\'t believe it. But she started to suspect it after returning to her empire. For saving her empire, for her redemption, Karrie chose to believe and came to the Land of Dawn. What kind of destiny is waiting for her? ` 
+>}}
 
 {{< HeroInfo 
 HeroName="karrie" 
@@ -61,6 +67,13 @@ LaneImg="1"
 LaneLabel="Gold Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Lightwheel Mark<br>Karrie adds a <font color='#404495'>(Lightwheel Mark)</font> to enemies with each Basic Attack or Skill. When <font color='#404495'>(Lightwheel Mark)</font> stacks to 5 marks on a target, the mark becomes actual lightwheels, piercing the target and dealing <font color='#E5CB19'>(True Damage)</font> equal to 8%-12% of target's Max HP. Damage against Creeps is no more than 300.`   
+SkillDesc2=`<b>Spinning Lightwheel<br>Karrie releases a sphere of surging energy that deals 200<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies on the path. When the sphere reaches its max travel distance, it deals 100<font color='#D58E1F'>( +20% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> continuously to nearby enemies and slows them by 80% for 1s.`   
+SkillDesc3=`<b>Phantom Step<br>Karrie moves in a designated direction while releasing a lightwheel to the nearest enemy, dealing 150<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and adding <font color='#404495'>(Lightwheel Mark)</font>. After entering Dual Wield Mode, she will release 2 lightwheels.`   
+SkillDesc4=`<b>Speedy Lightwheel<br>Karrie enters Dual Wield Mode. Within the next 6s, Her Movement Speed will be increased by 20%. Releases 2 lightwheels on each Basic Attack, but each Basic Attack only deals 50% damage and her Attack Speed is reduced by 20%.`   
+>}}
+
 {{< OffensiveBuild 
 build1="RaptorMachete"  
 build2="SwiftBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Marksman" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Lightwheel Mark<br>Karrie adds a <font color='#404495'>(Lightwheel Mark)</font> to enemies with each Basic Attack or Skill. When <font color='#404495'>(Lightwheel Mark)</font> stacks to 5 marks on a target, the mark becomes actual lightwheels, piercing the target and dealing <font color='#E5CB19'>(True Damage)</font> equal to 8%-12% of target's Max HP. Damage against Creeps is no more than 300.`   
-SkillDesc2=`<b>Spinning Lightwheel<br>Karrie releases a sphere of surging energy that deals 200<font color='#D58E1F'>( +90% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies on the path. When the sphere reaches its max travel distance, it deals 100<font color='#D58E1F'>( +20% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> continuously to nearby enemies and slows them by 80% for 1s.`   
-SkillDesc3=`<b>Phantom Step<br>Karrie moves in a designated direction while releasing a lightwheel to the nearest enemy, dealing 150<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and adding <font color='#404495'>(Lightwheel Mark)</font>. After entering Dual Wield Mode, she will release 2 lightwheels.`   
-SkillDesc4=`<b>Speedy Lightwheel<br>Karrie enters Dual Wield Mode. Within the next 6s, Her Movement Speed will be increased by 20%. Releases 2 lightwheels on each Basic Attack, but each Basic Attack only deals 50% damage and her Attack Speed is reduced by 20%.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="46" Label3="Ability Effects"
 Percentage4="87" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Alaghat is a mysterious technique empire. There lives a strange humanoid race - Yasson. They are in human shape while having a pair of deformed feet. They are agile and born to fight. Meanwhile, they are also good at techniques that allow them to create a significant civilization and to invade the others. Since Karrie was a child, she was very talented and trained into an excellent and arrogant warrior leader, but at the same time, she lost her feelings and became a machine. During one battle, she was overconfident and got injured seriously. But a prophet from another race saved her and inject his consciousness into her brain. Since then there has been a voice in her head, the prophet told her that the ruin of her empire is about to come and there will be no Yasson anymore. After her escape from death, Karrie didn\'t believe it. But she started to suspect it after returning to her empire. For saving her empire, for her redemption, Karrie chose to believe and came to the Land of Dawn. What kind of destiny is waiting for her? ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="miya"
 HeroName2="sun"
@@ -135,5 +138,4 @@ HeroName1="moskov"
 HeroName2="karina"
 HeroName3="chou"
 HeroName4="freya"
-HeroName5="natalia"
-/>}}
+HeroName5="natalia"/>}}

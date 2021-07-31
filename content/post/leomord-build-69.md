@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` On a day much like today, Tigreal and his Expeditionary Forces of Light charged into the Fortress of Despair with all their might, and swiftly decimated the many of the undead lurking within. After this devastating defeat, Vexana realized she needed to find a formidable ally, who could take on the Warrior of Light head on, or else she would face certain defeat. Vexana paced back and forth as she carefully pondered who had the strength to defeat Tigreal. Suddenly, a vivid image of a face from long ago seared across her mind—Leomord. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="leomord" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>The Oath Keeper<br>If target's HP is lower than 30%, Leomord deals critical damage.`   
+SkillDesc2=`<b>Momentum<br>Leomord immediately gains a shield that absorbs 150<font color='#D58E1F'>( +150% Total Physical ATK)</font> damage and can charge his attack. He then deals 360<font color='#D58E1F'>( +140% Total Physical ATK)</font> <font color='#C53535'>( Physical Damage)</font> and slows enemy units by 40% within the area for 1s. <font color='#404495'>(Use Again)</font>: The longer Leomord charges this skill, the more damage it does. Any actions that interrupt Leomord&rsquo;s charge automatically trigger the attack. `   
+SkillDesc3=`<b>Decimation Assault<br>Leomord quickly charge towards a designated direction, dealing 300<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies near his path and destination and slowing them by 30% for 1s.`   
+SkillDesc4=`<b>Phantom Steed<br>Leomord summons <font color='#404495'>(Barbiel)</font> to rush into the battlefield and knock back all enemies in its way, dealing 350<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies on the path. If <font color='#404495'>(Barbiel)</font> comes in contact with Leomord, they will enter a mounted state. <font color='#404495'>(Mounted State)</font>: Leomord gains a brand-new set of skills. He can cast his Basic Attack in a circular area and even while moving. Additionally, he gains extra 60 Movement Speed and 40 Physical &amp; Magic Defense.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BloodlustAxe" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Physical" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>The Oath Keeper<br>If target's HP is lower than 30%, Leomord deals critical damage.`   
-SkillDesc2=`<b>Momentum<br>Leomord immediately gains a shield that absorbs 150<font color='#D58E1F'>( +150% Total Physical ATK)</font> damage and can charge his attack. He then deals 360<font color='#D58E1F'>( +140% Total Physical ATK)</font> <font color='#C53535'>( Physical Damage)</font> and slows enemy units by 40% within the area for 1s. <font color='#404495'>(Use Again)</font>: The longer Leomord charges this skill, the more damage it does. Any actions that interrupt Leomord&rsquo;s charge automatically trigger the attack. `   
-SkillDesc3=`<b>Decimation Assault<br>Leomord quickly charge towards a designated direction, dealing 300<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies near his path and destination and slowing them by 30% for 1s.`   
-SkillDesc4=`<b>Phantom Steed<br>Leomord summons <font color='#404495'>(Barbiel)</font> to rush into the battlefield and knock back all enemies in its way, dealing 350<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies on the path. If <font color='#404495'>(Barbiel)</font> comes in contact with Leomord, they will enter a mounted state. <font color='#404495'>(Mounted State)</font>: Leomord gains a brand-new set of skills. He can cast his Basic Attack in a circular area and even while moving. Additionally, he gains extra 60 Movement Speed and 40 Physical &amp; Magic Defense.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="240"
@@ -118,10 +125,6 @@ Percentage3="65" Label3="Ability Effects"
 Percentage4="52" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` On a day much like today, Tigreal and his Expeditionary Forces of Light charged into the Fortress of Despair with all their might, and swiftly decimated the many of the undead lurking within. After this devastating defeat, Vexana realized she needed to find a formidable ally, who could take on the Warrior of Light head on, or else she would face certain defeat. Vexana paced back and forth as she carefully pondered who had the strength to defeat Tigreal. Suddenly, a vivid image of a face from long ago seared across her mind—Leomord. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="thamuz"
 HeroName2="hanabi"
@@ -135,5 +138,4 @@ HeroName1="lunox"
 HeroName2="selena"
 HeroName3="claude"
 HeroName4="gusion"
-HeroName5="helcurt"
-/>}}
+HeroName5="helcurt"/>}}

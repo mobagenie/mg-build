@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=`` 
+>}}
 
 {{< HeroInfo 
 HeroName="beatrix" 
@@ -61,6 +67,13 @@ LaneImg="1"
 LaneLabel="Gold Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Renner<br>`   
+SkillDesc2=`<b>Mechanical Genius<br>Her extraordinary talent in the field of mechanics allowed Beatrix to produce 4 weapon(s) of truly awe-inspiring firepower. @{E1058003|1|10510|<font color='#404495'>(Renner)</font> Basic Attack - Longshot: Fire a powerful shot in the enemy's current direction, dealing 125<font color='#D58E1F'>( +500% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the first target hit (this shot can be dodged, or blocked by others. Deals 50% damage to creeps).}@@{E1058013|0|10520|<font color='#404495'>(Bennett)</font> Basic Attack - Area Bombing: Choose a location to bombard, dealing 70<font color='#D58E1F'>( +280% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in that area and slowing them by 30% for 0.5s. Deals 50% damage to creeps.}@@{E1058023|0|10530|<font color='#404495'>(Wesker)</font> Basic Attack - Proximity Advantage: Fire 5 shots at the target, each one dealing 75<font color='#D58E1F'>( +150% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> (damage dealt to targets hit multiple times decays down to <%Num10> and deals <%Num11> damage to creeps).}@@{E1058033|0|10540|<font color='#404495'>(Nibiru)</font> Basic Attack - Rapid Fire: Let loose a volley of <Num12> shots at the target, each one dealing <Num13> <font color='#C53535'>(Physical Damage)</font> (deals <%Num14> damage to creeps).}@ Beatrix cannot Crit, and converts every <%Num15> Critical Chance gained into <Num16> Physical Attack.`   
+SkillDesc3=`<b>Mechanical Genius<br>Her extraordinary talent in the field of mechanics allowed Beatrix to produce 4 weapon(s) of truly awe-inspiring firepower. <font color='#404495'>(Bennett)</font> Basic Attack - Area Bombing: Choose a location to bombard, dealing 70<font color='#D58E1F'>( +280% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in that area and slowing them by 30% for 0.5s (deals 50% damage to creeps). Beatrix cannot Crit, and converts every 1% Critical Chance gained into 1 Physical Attack.`   
+ 
+>}}
+
 {{< OffensiveBuild 
 build1="DemonHunterSword"  
 build2="GoldenStaff" 
@@ -90,12 +103,6 @@ EmblemName1="Marksman"
 EmblemName2="" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Renner<br>`   
-SkillDesc2=`<b>Mechanical Genius<br>Her extraordinary talent in the field of mechanics allowed Beatrix to produce 4 weapon(s) of truly awe-inspiring firepower. @{E1058003|1|10510|<font color='#404495'>(Renner)</font> Basic Attack - Longshot: Fire a powerful shot in the enemy's current direction, dealing 125<font color='#D58E1F'>( +500% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the first target hit (this shot can be dodged, or blocked by others. Deals 50% damage to creeps).}@@{E1058013|0|10520|<font color='#404495'>(Bennett)</font> Basic Attack - Area Bombing: Choose a location to bombard, dealing 70<font color='#D58E1F'>( +280% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in that area and slowing them by 30% for 0.5s. Deals 50% damage to creeps.}@@{E1058023|0|10530|<font color='#404495'>(Wesker)</font> Basic Attack - Proximity Advantage: Fire 5 shots at the target, each one dealing 75<font color='#D58E1F'>( +150% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> (damage dealt to targets hit multiple times decays down to <%Num10> and deals <%Num11> damage to creeps).}@@{E1058033|0|10540|<font color='#404495'>(Nibiru)</font> Basic Attack - Rapid Fire: Let loose a volley of <Num12> shots at the target, each one dealing <Num13> <font color='#C53535'>(Physical Damage)</font> (deals <%Num14> damage to creeps).}@ Beatrix cannot Crit, and converts every <%Num15> Critical Chance gained into <Num16> Physical Attack.`   
-SkillDesc3=`<b>Mechanical Genius<br>Her extraordinary talent in the field of mechanics allowed Beatrix to produce 4 weapon(s) of truly awe-inspiring firepower. <font color='#404495'>(Bennett)</font> Basic Attack - Area Bombing: Choose a location to bombard, dealing 70<font color='#D58E1F'>( +280% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies in that area and slowing them by 30% for 0.5s (deals 50% damage to creeps). Beatrix cannot Crit, and converts every 1% Critical Chance gained into 1 Physical Attack.`   
- 
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="257"
@@ -118,10 +125,6 @@ Percentage3="60" Label3="Ability Effects"
 Percentage4="85" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=`` 
->}}
-
 {{< StrongAgainst 
 HeroName1="mathilda"
 HeroName2="brody"
@@ -135,5 +138,4 @@ HeroName1="benedetta"
 HeroName2="paquito"
 HeroName3="yve"
 HeroName4="barats"
-HeroName5="yuzhong"
-/>}}
+HeroName5="yuzhong"/>}}

@@ -46,7 +46,13 @@ manaregen:: 4
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=`` 
+>}}
 
 {{< HeroInfo 
 HeroName="gloo" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Slam, Slam<br>Gloo reaches out and slams the ground, dealing 360<font color='#27C0C7'>(+80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the enemy. On the final location, a <font color='#404495'>(Goo)</font> is left behind, and after 3s it explodes to deal 270<font color='#27C0C7'>(+60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to nearby enemies, immobilizing them for 1s. Gloo can also make the <font color='#404495'>(Goo)</font> explode immediately by touching it.`   
+SkillDesc2=`<b>Pass, Pass<br>Gloo stretches forth to deal 325<font color='#27C0C7'>(+50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in its path, immobilizing them for 0.5s. If this skill hits a <font color='#404495'>(Goo)</font>, Gloo will charge over to it, dragging enemies in its path in the same direction for a distance.`   
+SkillDesc3=`<b>Split, Split<br>Gloo splits into 12, for up to 10s. They each have 25% HP, and during this time all Goos can move together freely as they increase their Movement Speed by 35%. Gloo recovers 4% of its Max HP every 1s, and deals 120<font color='#27C0C7'>(+25% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> every 0.25s to targets it impacts. <font color='#404495'>(Grab, Grab)</font>: Gloo attaches itself to a target enemy hero with full <font color='#404495'>(Sticky)</font> stacks, immediately regaining 30% of its own Max HP, during which it can cast skills with cooldown times halved, but cannot move. Basic Attacks deal <Num10> <font color='#3B69FF'>(Magic Damage)</font> at its current location, and <%Num11> of the damage it receives (before damage reduction) is transmitted to its host as <font color='#3B69FF'>(Magic Damage)</font>, <%Num12> of this regained as its own HP (excludes damage from Turrets). Lasts <Num13>s. <font color='#404495'>(Go, Go)</font>: Gloo can choose to leave the host before the effect duration is over.`   
+ 
+>}}
+
 {{< OffensiveBuild 
 build1="MagicShoes"  
 build2="BruteForceBreastplate" 
@@ -90,12 +103,6 @@ EmblemName1="Physical"
 EmblemName2="" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Slam, Slam<br>Gloo reaches out and slams the ground, dealing 360<font color='#27C0C7'>(+80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the enemy. On the final location, a <font color='#404495'>(Goo)</font> is left behind, and after 3s it explodes to deal 270<font color='#27C0C7'>(+60% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to nearby enemies, immobilizing them for 1s. Gloo can also make the <font color='#404495'>(Goo)</font> explode immediately by touching it.`   
-SkillDesc2=`<b>Pass, Pass<br>Gloo stretches forth to deal 325<font color='#27C0C7'>(+50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in its path, immobilizing them for 0.5s. If this skill hits a <font color='#404495'>(Goo)</font>, Gloo will charge over to it, dragging enemies in its path in the same direction for a distance.`   
-SkillDesc3=`<b>Split, Split<br>Gloo splits into 12, for up to 10s. They each have 25% HP, and during this time all Goos can move together freely as they increase their Movement Speed by 35%. Gloo recovers 4% of its Max HP every 1s, and deals 120<font color='#27C0C7'>(+25% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> every 0.25s to targets it impacts. <font color='#404495'>(Grab, Grab)</font>: Gloo attaches itself to a target enemy hero with full <font color='#404495'>(Sticky)</font> stacks, immediately regaining 30% of its own Max HP, during which it can cast skills with cooldown times halved, but cannot move. Basic Attacks deal <Num10> <font color='#3B69FF'>(Magic Damage)</font> at its current location, and <%Num11> of the damage it receives (before damage reduction) is transmitted to its host as <font color='#3B69FF'>(Magic Damage)</font>, <%Num12> of this regained as its own HP (excludes damage from Turrets). Lasts <Num13>s. <font color='#404495'>(Go, Go)</font>: Gloo can choose to leave the host before the effect duration is over.`   
- 
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="245"
@@ -118,10 +125,6 @@ Percentage3="70" Label3="Ability Effects"
 Percentage4="75" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=`` 
->}}
-
 {{< StrongAgainst 
 HeroName1="barats"
 HeroName2="khaleed"
@@ -135,5 +138,4 @@ HeroName1="beatrix"
 HeroName2="brody"
 HeroName3="yuzhong"
 HeroName4="paquito"
-HeroName5="wanwan"
-/>}}
+HeroName5="wanwan"/>}}

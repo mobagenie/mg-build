@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Chou was born in a secluded slum deep in the hearts of poverty, living the lowest quality of life. Despite the dreadful conditions Chou still kept his heart of kindness, as day in day out he continued to look after the old and the young there with passion. At that time, there was great turmoil and unrest in the Land of the Dawn; mayhem spread throughout the land and eventually started to affect this small remote area. One day, Chou rescued a mystic monk under pursuit by his captors, and took him back to his slum to care for him. In return, the monk imparted the ancient Asian Kung-Fu skill to Chou, and told him that the world needed a real hero to stand up and end the turmoils. Chou made a vow right there and then, and without looking back he would start out on his journey in the Land to become a true hero. As Chou was leaving, the monk nodded and disappeared into the shadows. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="chou" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Only Fast<br>After every 8 yards Chou moves, his next Basic Attack will deal 180% of damage (can't be critic) and shortly slow enemies by 80%.`   
+SkillDesc2=`<b>Jeet Kune Do<br>Chou punches forward for 3 times continuously. Each punch deals 180<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. The 3rd attack knocks nearby enemies airborne. The 3rd use of this skill resets the CD of <font color='#404495'>(Shunpo)</font>.`   
+SkillDesc3=`<b>Shunpo<br>Chou dashes forward, becoming immune to Control Effects during the dash. After the dash, Chou increases his Physical Penetration by 15 and obtains 200<font color='#D58E1F'>( +200% Extra Physical ATK)</font> Shield for 2s.`   
+SkillDesc4=`<b>The Way of Dragon<br>Chou casts a roundhouse kick to knock back enemies and deals 400<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Use Again: Chou will chase up the enemies in the air, dealing at least 400<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BladeoftheHeptaseas" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Tank" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Only Fast<br>After every 8 yards Chou moves, his next Basic Attack will deal 180% of damage (can't be critic) and shortly slow enemies by 80%.`   
-SkillDesc2=`<b>Jeet Kune Do<br>Chou punches forward for 3 times continuously. Each punch deals 180<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. The 3rd attack knocks nearby enemies airborne. The 3rd use of this skill resets the CD of <font color='#404495'>(Shunpo)</font>.`   
-SkillDesc3=`<b>Shunpo<br>Chou dashes forward, becoming immune to Control Effects during the dash. After the dash, Chou increases his Physical Penetration by 15 and obtains 200<font color='#D58E1F'>( +200% Extra Physical ATK)</font> Shield for 2s.`   
-SkillDesc4=`<b>The Way of Dragon<br>Chou casts a roundhouse kick to knock back enemies and deals 400<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Use Again: Chou will chase up the enemies in the air, dealing at least 400<font color='#D58E1F'>( +200% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="52" Label3="Ability Effects"
 Percentage4="63" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Chou was born in a secluded slum deep in the hearts of poverty, living the lowest quality of life. Despite the dreadful conditions Chou still kept his heart of kindness, as day in day out he continued to look after the old and the young there with passion. At that time, there was great turmoil and unrest in the Land of the Dawn; mayhem spread throughout the land and eventually started to affect this small remote area. One day, Chou rescued a mystic monk under pursuit by his captors, and took him back to his slum to care for him. In return, the monk imparted the ancient Asian Kung-Fu skill to Chou, and told him that the world needed a real hero to stand up and end the turmoils. Chou made a vow right there and then, and without looking back he would start out on his journey in the Land to become a true hero. As Chou was leaving, the monk nodded and disappeared into the shadows. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="clint"
 HeroName2="zilong"
@@ -135,5 +138,4 @@ HeroName1="bruno"
 HeroName2="freya"
 HeroName3="moskov"
 HeroName4="gord"
-HeroName5="sun"
-/>}}
+HeroName5="sun"/>}}

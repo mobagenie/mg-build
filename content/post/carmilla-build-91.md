@@ -46,7 +46,13 @@ manaregen:: 3.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Many years ago, Carmilla was born in the House Ansaac in the Castle Aberleen. As the only daughter of the Earl, she was loved by all her family since birth. When she grew up, her eminent family background coupled with her captivating beauty made her one of the most popular noble ladies around the Castle Aberleen, and maybe even the whole Empire. However, her royal origin was inevitably bound to the tragedy as was to become a political tool of her father Earl Anssac, ` 
+>}}
 
 {{< HeroInfo 
 HeroName="carmilla" 
@@ -61,6 +67,13 @@ LaneImg="2"
 LaneLabel="Roam" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Vampire Pact<br>Carmilla steals 6-12 Physical &amp; Magic Defense (scales with level) from enemy heroes while dealing damage to them. Each target's defense can be stolen only once in 5s. The stolen Physical &amp; Magic Defense can be stacked up to 5 times. Lasts for 5s.`   
+SkillDesc2=`<b>Crimson Flower<br>Carmilla summons 2 Crimson Flowers circling around herself for 5s. When Crimson Flowers hit an enemy, they increase spinning speed, deal 100<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the target and slow it by 10% for 0.8s (slow effect stacks up to 50%). Each time the Crimson Flowers deal damage to enemies, Carmilla will restore 75<font color='#27C0C7'>( +35% Total Magic Power)</font> HP (only heals 30% of this amount on minion hit).`   
+SkillDesc3=`<b>Bloodbath<br>Carmilla accumulates Bloodbath Energy, greatly increasing her Movement Speed by 70% (decreases rapidly in 4.5s). <font color='#404495'>(Use Again)</font>: Carmilla casts Bloodbath Energy to a designated enemy (can't target at the minion), dealing 150<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and stunning the enemy for 0.6s. The damage and the stunning duration scale with the Bloodbath Energy accumulation, capped at 100%.`   
+SkillDesc4=`<b>Curse of Blood<br>Carmilla casts Curse of Blood at a designated enemy hero. The Curse will spread out from the enemy hit to nearby enemy heroes, dealing 275<font color='#27C0C7'>( +160% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing them by 80% for 5s. (The slow effect will decay rapidly to 20% in 2s.) The curse can be inflicted to up to 3 targets at the same time. As long as one target with the Curse of Blood is damaged or controlled, the other influenced targets will also receive damage and control effects. (Damage decreases to 70%, and control duration decreases to 70%.)`   
+>}}
+
 {{< OffensiveBuild 
 build1="CourageMask"  
 build2="WarriorBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Support"
 EmblemName2="Tank" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Vampire Pact<br>Carmilla steals 6-12 Physical &amp; Magic Defense (scales with level) from enemy heroes while dealing damage to them. Each target's defense can be stolen only once in 5s. The stolen Physical &amp; Magic Defense can be stacked up to 5 times. Lasts for 5s.`   
-SkillDesc2=`<b>Crimson Flower<br>Carmilla summons 2 Crimson Flowers circling around herself for 5s. When Crimson Flowers hit an enemy, they increase spinning speed, deal 100<font color='#27C0C7'>( +50% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the target and slow it by 10% for 0.8s (slow effect stacks up to 50%). Each time the Crimson Flowers deal damage to enemies, Carmilla will restore 75<font color='#27C0C7'>( +35% Total Magic Power)</font> HP (only heals 30% of this amount on minion hit).`   
-SkillDesc3=`<b>Bloodbath<br>Carmilla accumulates Bloodbath Energy, greatly increasing her Movement Speed by 70% (decreases rapidly in 4.5s). <font color='#404495'>(Use Again)</font>: Carmilla casts Bloodbath Energy to a designated enemy (can't target at the minion), dealing 150<font color='#27C0C7'>( +120% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and stunning the enemy for 0.6s. The damage and the stunning duration scale with the Bloodbath Energy accumulation, capped at 100%.`   
-SkillDesc4=`<b>Curse of Blood<br>Carmilla casts Curse of Blood at a designated enemy hero. The Curse will spread out from the enemy hit to nearby enemy heroes, dealing 275<font color='#27C0C7'>( +160% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and slowing them by 80% for 5s. (The slow effect will decay rapidly to 20% in 2s.) The curse can be inflicted to up to 3 targets at the same time. As long as one target with the Curse of Blood is damaged or controlled, the other influenced targets will also receive damage and control effects. (Damage decreases to 70%, and control duration decreases to 70%.)`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="255"
@@ -118,10 +125,6 @@ Percentage3="85" Label3="Ability Effects"
 Percentage4="30" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Many years ago, Carmilla was born in the House Ansaac in the Castle Aberleen. As the only daughter of the Earl, she was loved by all her family since birth. When she grew up, her eminent family background coupled with her captivating beauty made her one of the most popular noble ladies around the Castle Aberleen, and maybe even the whole Empire. However, her royal origin was inevitably bound to the tragedy as was to become a political tool of her father Earl Anssac, ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="karrie"
 HeroName2="aurora"
@@ -135,5 +138,4 @@ HeroName1="harith"
 HeroName2="masha"
 HeroName3="wanwan"
 HeroName4="hayabusa"
-HeroName5="franco"
-/>}}
+HeroName5="franco"/>}}

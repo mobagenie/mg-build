@@ -46,7 +46,13 @@ manaregen:: 3
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Hanabi received the teachings of the Scarlet Shadow ninja sect's Supreme Grandmaster from a young age, exhibiting natural talent that far exceeded any of her peers, until she met a young shadow ninja called Hayabusa. This was the very first time the proud Hanabi came across anyone who could hold their own against her. Whenever the moon was full, Hanabi would try to find ways to provoke this young shadow ninja into dueling with her, however, she could never defeat this youngster, who fused spiritualism with shadow techniques to create a unique and powerful style. As the two of them slowly grew up together, it began to dawn on Hanabi that this young shadow ninja carried the burden of an inescapable fate -- Hayabusa was in fact destined to challenge and kill the legendary former Shadow of Iga for his betrayal of their clan. After the two young ninjas fought, Hayabusa would lie on the ground, staring up at the full moon in the sky, the reflection of the moonlight in his eyes quietly burning into Hanabi's heart. Having never felt this kind of feeling before, Hanabi became very distressed. Whenever she saw Hayabusa and the young spiritualist girl known as Kagura smiling and laughing as they greeted each other, her heart would fill with inexplicable rage and vexation. When she heard that Hayabusa would become the clan's next Shadow, she decided to take on the name Scarlet, and from the secret vault of the Supreme Grandmaster, she stole her sect's forbidden weapon - the Higanbana. Hanabi decided that she would challenge her age-old rival to one final competition, and now her one aim in life is to find and kill the disgraced former Shadow before Hayabusa does. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="hanabi" 
@@ -61,6 +67,13 @@ LaneImg="1"
 LaneLabel="Gold Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Ninjutsu: Equinox<br>When Hanabi is at full HP, 60% of incoming HP that would have been granted from Lifesteal is converted into a shield for up to 25% of her Max HP. When the shield is active, Hanabi is immune to all controls and her Movement Speed is increased by 30.`   
+SkillDesc2=`<b>Ninjutsu: Petal Barrage<br><font color='#404495'>(Passive)</font>: Hanabi permanently gains 8% Physical Lifesteal. <font color='#404495'>(Active)</font>: While active, for each Basic Attack hit, Hanabi generates a new petal blade that bounces between nearby enemies for up to 3 times.(Damage reduced by 25% after each bounce.)`   
+SkillDesc3=`<b>Ninjutsu: Soul Scroll<br>Hanabi fires the energy scroll in the targeted direction, dealing 400<font color='#D58E1F'>( +80% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies along the way and slowing them by 50% for 2s. For each target hit, Hanabi regens 140 Mana. If multiple enemies are hit, the Mana restored from the subsequent enemies will decay. `   
+SkillDesc4=`<b>Forbidden Jutsu: Higanbana<br>Hanabi throws Higanbana in the targeted direction and Higanbana will fully bloom upon hitting a target, infilcting 400<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physcial Damage)</font> and immobilizing it for 2s. This effect will spread to enemies nearby and each enemy nearby will only be effected once. If the enemy still remains within the range of Higanbana, another Higanbana will bloom, causing the same amount of damage and immobilization effect again. `   
+>}}
+
 {{< OffensiveBuild 
 build1="SwiftBoots"  
 build2="ScarletPhantom" 
@@ -90,12 +103,6 @@ EmblemName1="Marksman"
 EmblemName2="Assassin" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Ninjutsu: Equinox<br>When Hanabi is at full HP, 60% of incoming HP that would have been granted from Lifesteal is converted into a shield for up to 25% of her Max HP. When the shield is active, Hanabi is immune to all controls and her Movement Speed is increased by 30.`   
-SkillDesc2=`<b>Ninjutsu: Petal Barrage<br><font color='#404495'>(Passive)</font>: Hanabi permanently gains 8% Physical Lifesteal. <font color='#404495'>(Active)</font>: While active, for each Basic Attack hit, Hanabi generates a new petal blade that bounces between nearby enemies for up to 3 times.(Damage reduced by 25% after each bounce.)`   
-SkillDesc3=`<b>Ninjutsu: Soul Scroll<br>Hanabi fires the energy scroll in the targeted direction, dealing 400<font color='#D58E1F'>( +80% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies along the way and slowing them by 50% for 2s. For each target hit, Hanabi regens 140 Mana. If multiple enemies are hit, the Mana restored from the subsequent enemies will decay. `   
-SkillDesc4=`<b>Forbidden Jutsu: Higanbana<br>Hanabi throws Higanbana in the targeted direction and Higanbana will fully bloom upon hitting a target, infilcting 400<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physcial Damage)</font> and immobilizing it for 2s. This effect will spread to enemies nearby and each enemy nearby will only be effected once. If the enemy still remains within the range of Higanbana, another Higanbana will bloom, causing the same amount of damage and immobilization effect again. `   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="245"
@@ -118,10 +125,6 @@ Percentage3="53" Label3="Ability Effects"
 Percentage4="60" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Hanabi received the teachings of the Scarlet Shadow ninja sect's Supreme Grandmaster from a young age, exhibiting natural talent that far exceeded any of her peers, until she met a young shadow ninja called Hayabusa. This was the very first time the proud Hanabi came across anyone who could hold their own against her. Whenever the moon was full, Hanabi would try to find ways to provoke this young shadow ninja into dueling with her, however, she could never defeat this youngster, who fused spiritualism with shadow techniques to create a unique and powerful style. As the two of them slowly grew up together, it began to dawn on Hanabi that this young shadow ninja carried the burden of an inescapable fate -- Hayabusa was in fact destined to challenge and kill the legendary former Shadow of Iga for his betrayal of their clan. After the two young ninjas fought, Hayabusa would lie on the ground, staring up at the full moon in the sky, the reflection of the moonlight in his eyes quietly burning into Hanabi's heart. Having never felt this kind of feeling before, Hanabi became very distressed. Whenever she saw Hayabusa and the young spiritualist girl known as Kagura smiling and laughing as they greeted each other, her heart would fill with inexplicable rage and vexation. When she heard that Hayabusa would become the clan's next Shadow, she decided to take on the name Scarlet, and from the secret vault of the Supreme Grandmaster, she stole her sect's forbidden weapon - the Higanbana. Hanabi decided that she would challenge her age-old rival to one final competition, and now her one aim in life is to find and kill the disgraced former Shadow before Hayabusa does. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="saber"
 HeroName2="moskov"
@@ -135,5 +138,4 @@ HeroName1="natalia"
 HeroName2="fanny"
 HeroName3="hayabusa"
 HeroName4="cyclops"
-HeroName5="lesley"
-/>}}
+HeroName5="lesley"/>}}

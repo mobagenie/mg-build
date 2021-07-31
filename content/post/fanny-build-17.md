@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Despite just being a human, Fanny never gave up on her dream of flying. She fashioned a kind of steel grappling hook for herself in the hopes of using it to grab onto cliff faces and soar between mountain peaks. After countless training sessions in live environments, Fanny has finally mastered this technique. Folks who have seen her soaring through the air refer to her as the Blade of Freedom. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="fanny" 
@@ -61,6 +67,13 @@ LaneImg="4"
 LaneLabel="Jungle" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Air Superiority<br>According to her flying speed, Fanny's damage while flying is increased by 15% to 30% and leaves a <font color='#404495'>(Prey Mark)</font> on the target (Stack up to 2 times). For Each stack of <font color='#404495'>(Prey Mark)</font> the target has, Fanny regens 10 energy when she deals damage to it. (Energy regen effect decays if she deals damage to multiple enemy heroes in a short time.)`   
+SkillDesc2=`<b>Tornado Strike<br>Fanny whirls her blade, dealing 280<font color='#D58E1F'>( +90% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemies.`   
+SkillDesc3=`<b>Steel Cable<br>Fanny throws out a cable that draws her to the first obstacle that it touches. Each successive use of this skill within 2s decreases its energy cost by 1 and changes her flying direction. If energy is sufficient and she hits an enemy while flying, <font color='#404495'>(Tornado Strike)</font> will be triggered.`   
+SkillDesc4=`<b>Cut Throat<br>Fanny initiates a quick attack on an enemy, dealing 500<font color='#D58E1F'>( +240% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Each stack of <font color='#404495'>(Prey Mark)</font> of enemies will increase her damage by 20%.`   
+>}}
+
 {{< OffensiveBuild 
 build1="RaptorMachete"  
 build2="ToughBoots" 
@@ -90,12 +103,6 @@ EmblemName1="Fighter"
 EmblemName2="Assassin" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Air Superiority<br>According to her flying speed, Fanny's damage while flying is increased by 15% to 30% and leaves a <font color='#404495'>(Prey Mark)</font> on the target (Stack up to 2 times). For Each stack of <font color='#404495'>(Prey Mark)</font> the target has, Fanny regens 10 energy when she deals damage to it. (Energy regen effect decays if she deals damage to multiple enemy heroes in a short time.)`   
-SkillDesc2=`<b>Tornado Strike<br>Fanny whirls her blade, dealing 280<font color='#D58E1F'>( +90% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemies.`   
-SkillDesc3=`<b>Steel Cable<br>Fanny throws out a cable that draws her to the first obstacle that it touches. Each successive use of this skill within 2s decreases its energy cost by 1 and changes her flying direction. If energy is sufficient and she hits an enemy while flying, <font color='#404495'>(Tornado Strike)</font> will be triggered.`   
-SkillDesc4=`<b>Cut Throat<br>Fanny initiates a quick attack on an enemy, dealing 500<font color='#D58E1F'>( +240% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Each stack of <font color='#404495'>(Prey Mark)</font> of enemies will increase her damage by 20%.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="265"
@@ -118,10 +125,6 @@ Percentage3="50" Label3="Ability Effects"
 Percentage4="100" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Despite just being a human, Fanny never gave up on her dream of flying. She fashioned a kind of steel grappling hook for herself in the hopes of using it to grab onto cliff faces and soar between mountain peaks. After countless training sessions in live environments, Fanny has finally mastered this technique. Folks who have seen her soaring through the air refer to her as the Blade of Freedom. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="layla"
 HeroName2="karina"
@@ -135,5 +138,4 @@ HeroName1="ruby"
 HeroName2="chou"
 HeroName3="eudora"
 HeroName4="franco"
-HeroName5="akai"
-/>}}
+HeroName5="akai"/>}}

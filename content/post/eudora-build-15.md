@@ -46,7 +46,13 @@ manaregen:: 3.2
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` Ever since she was an apprentice wizard, Eudora\'s special talent for controlling lightning always shocked (no pun intended) her many teachers. After a brief period of study, her teachers discovered she had already mastered all they had to teach her. Yearning to continue her progress, Eudora set foot on the road to the Land of Dawn, believing that her lightning magic could reach new heights in that turbulent land. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="eudora" 
@@ -61,6 +67,13 @@ LaneImg="3"
 LaneLabel="Mid Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Superconductor<br>Eudora's skills inflict <font color='#404495'>(Superconductor)</font> on the target for 3s. Additional effects will be applied when Eudora lands her skills on to targets affected by <font color='#404495'>(Superconductor)</font>.`   
+SkillDesc2=`<b>Forked Lightning<br>Eudora casts fork lightning, dealing 400<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in a fan-shaped area in front of her. Enemies affected by <font color='#404495'>(Superconductor)</font> will take 240<font color='#27C0C7'>( +30% Total Magic Power)</font> additional <font color='#3B69FF'>(Magic Damage)</font> after a short delay.`   
+SkillDesc3=`<b>Ball Lightning<br>Eudora launches a lightning ball toward the target, dealing 350<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>, stunning the target for 1.2s and reducing the target's Magic Defense by 20 for 1.8s. If the target is already affected by <font color='#404495'>(Superconductor)</font> before getting struck by the lightning ball, the lightning will split into minor lightning balls and further spread toward up to 3 targets nearby, dealing 175<font color='#27C0C7'>( +40% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and stunning them for 0.6s. The minor lightning balls prioritize enemy heroes over enemy minions.`   
+SkillDesc4=`<b>Thunder&rsquo;s Wrath<br>Eudora summons a great lightning storm, dealing 480<font color='#27C0C7'>( +180% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the target. If the target is affected by <font color='#404495'>(Superconductor)</font>, dark clouds will be formed over the target's head. After a 0.8s delay, lightning strikes down from the clouds, dealing 440<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in the area of effect. Meanwhile, the lightning charges will spread on the ground toward nearby enemies, dealing 360<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
+>}}
+
 {{< OffensiveBuild 
 build1="DemonShoes"  
 build2="LightningTruncheon" 
@@ -90,12 +103,6 @@ EmblemName1="Mage"
 EmblemName2="Mage" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Superconductor<br>Eudora's skills inflict <font color='#404495'>(Superconductor)</font> on the target for 3s. Additional effects will be applied when Eudora lands her skills on to targets affected by <font color='#404495'>(Superconductor)</font>.`   
-SkillDesc2=`<b>Forked Lightning<br>Eudora casts fork lightning, dealing 400<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in a fan-shaped area in front of her. Enemies affected by <font color='#404495'>(Superconductor)</font> will take 240<font color='#27C0C7'>( +30% Total Magic Power)</font> additional <font color='#3B69FF'>(Magic Damage)</font> after a short delay.`   
-SkillDesc3=`<b>Ball Lightning<br>Eudora launches a lightning ball toward the target, dealing 350<font color='#27C0C7'>( +80% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>, stunning the target for 1.2s and reducing the target's Magic Defense by 20 for 1.8s. If the target is already affected by <font color='#404495'>(Superconductor)</font> before getting struck by the lightning ball, the lightning will split into minor lightning balls and further spread toward up to 3 targets nearby, dealing 175<font color='#27C0C7'>( +40% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> and stunning them for 0.6s. The minor lightning balls prioritize enemy heroes over enemy minions.`   
-SkillDesc4=`<b>Thunder&rsquo;s Wrath<br>Eudora summons a great lightning storm, dealing 480<font color='#27C0C7'>( +180% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to the target. If the target is affected by <font color='#404495'>(Superconductor)</font>, dark clouds will be formed over the target's head. After a 0.8s delay, lightning strikes down from the clouds, dealing 440<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font> to enemies in the area of effect. Meanwhile, the lightning charges will spread on the ground toward nearby enemies, dealing 360<font color='#27C0C7'>( +150% Total Magic Power)</font> <font color='#3B69FF'>(Magic Damage)</font>.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="250"
@@ -118,10 +125,6 @@ Percentage3="90" Label3="Ability Effects"
 Percentage4="39" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` Ever since she was an apprentice wizard, Eudora\'s special talent for controlling lightning always shocked (no pun intended) her many teachers. After a brief period of study, her teachers discovered she had already mastered all they had to teach her. Yearning to continue her progress, Eudora set foot on the road to the Land of Dawn, believing that her lightning magic could reach new heights in that turbulent land. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="alice"
 HeroName2="miya"
@@ -135,5 +138,4 @@ HeroName1="akai"
 HeroName2="sun"
 HeroName3="hayabusa"
 HeroName4="karina"
-HeroName5="franco"
-/>}}
+HeroName5="franco"/>}}

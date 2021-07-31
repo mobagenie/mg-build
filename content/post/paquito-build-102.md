@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=`` 
+>}}
 
 {{< HeroInfo 
 HeroName="paquito" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Champ Stance<br>Paquito builds stacks when hitting enemy heroes with Basic Attacks or dealing damage with skills. Once this stack reaches 4, he enters <font color='#404495'>(Champ Stance)</font> and enhances his next skill. Paquito excels in his technique, and once empowered his skills have no cooldown. However, each of his Basic Attacks only deals <font color='#D58E1F'>( +85% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. After using any enhanced skill, Paquito increases his Movement Speed by 60% which decays rapidly in 2.5s.`   
+SkillDesc2=`<b>Heavy Left Punch<br>Paquito punches in a specified direction, dealing 245<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the target hit. If a hero is hit, Paquito gains 150<font color='#D58E1F'>( +110% Total Physical ATK)</font> Shield. <font color='#404495'>(Champ Stance)</font> Enhanced: Paquito's heavy punch becomes even fiercer, dealing 350<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and granting him 120% of the original Shield (this enhanced shield can stack with the non-enhanced shield, too). Shield lasts 2.5s.`   
+SkillDesc3=`<b>Jab<br>Paquito dashes forth and throws a jab, dealing 200<font color='#D58E1F'>( +120% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies within area of effect. <font color='#404495'>(Champ Stance)</font> Enhanced: Gives Paquito's jab even more striking force, dealing 320<font color='#D58E1F'>( +192% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies within area of effect. Jab deals no damage to targets in your path, and stops only when hitting a hero or creep (it passes through minions).`   
+SkillDesc4=`<b>Knockout Strike<br>Paquito launches an elbow strike to all enemies in front, dealing 250<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and pushing them to the destination. He then swings a haymaker at rapid speed, dealing 400<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing targets by 75% for 1s, as he darts backward. <font color='#404495'>(Champ Stance)</font> Enhanced: Having pushed enemies to the destination, Paquito launches an uppercut, dealing 450<font color='#D58E1F'>( +120% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and knocking his enemies airborne for 0.5s instead of slowing them.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BloodlustAxe" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Fighter" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Champ Stance<br>Paquito builds stacks when hitting enemy heroes with Basic Attacks or dealing damage with skills. Once this stack reaches 4, he enters <font color='#404495'>(Champ Stance)</font> and enhances his next skill. Paquito excels in his technique, and once empowered his skills have no cooldown. However, each of his Basic Attacks only deals <font color='#D58E1F'>( +85% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. After using any enhanced skill, Paquito increases his Movement Speed by 60% which decays rapidly in 2.5s.`   
-SkillDesc2=`<b>Heavy Left Punch<br>Paquito punches in a specified direction, dealing 245<font color='#D58E1F'>( +70% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the target hit. If a hero is hit, Paquito gains 150<font color='#D58E1F'>( +110% Total Physical ATK)</font> Shield. <font color='#404495'>(Champ Stance)</font> Enhanced: Paquito's heavy punch becomes even fiercer, dealing 350<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and granting him 120% of the original Shield (this enhanced shield can stack with the non-enhanced shield, too). Shield lasts 2.5s.`   
-SkillDesc3=`<b>Jab<br>Paquito dashes forth and throws a jab, dealing 200<font color='#D58E1F'>( +120% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to all enemies within area of effect. <font color='#404495'>(Champ Stance)</font> Enhanced: Gives Paquito's jab even more striking force, dealing 320<font color='#D58E1F'>( +192% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies within area of effect. Jab deals no damage to targets in your path, and stops only when hitting a hero or creep (it passes through minions).`   
-SkillDesc4=`<b>Knockout Strike<br>Paquito launches an elbow strike to all enemies in front, dealing 250<font color='#D58E1F'>( +50% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and pushing them to the destination. He then swings a haymaker at rapid speed, dealing 400<font color='#D58E1F'>( +100% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and slowing targets by 75% for 1s, as he darts backward. <font color='#404495'>(Champ Stance)</font> Enhanced: Having pushed enemies to the destination, Paquito launches an uppercut, dealing 450<font color='#D58E1F'>( +120% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> and knocking his enemies airborne for 0.5s instead of slowing them.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="65" Label3="Ability Effects"
 Percentage4="86" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=`` 
->}}
-
 {{< StrongAgainst 
 HeroName1="barats"
 HeroName2="khaleed"
@@ -135,5 +138,4 @@ HeroName1="benedetta"
 HeroName2="ling"
 HeroName3="yuzhong"
 HeroName4="aldous"
-HeroName5="mathilda"
-/>}}
+HeroName5="mathilda"/>}}

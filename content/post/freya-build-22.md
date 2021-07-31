@@ -46,7 +46,13 @@ manaregen:: 0
 
 draft: false
 type: post
+originalpost: true
 ---
+
+
+{{< GetStory 
+Story=` In the far northern reaches of Nost Gal, there is a legend: When a warrior dies on the battlefield, the goddess of war Freya will come down from heaven, kiss the spirit of the fallen, and lead it to the Temple of Heroes, where former warriors can have a new life. Freya herself is an outstanding warrior. She can both attack and defend with her sword and shield, and at a critical moment in battle she can transform into a halberd and smash the enemy formation. ` 
+>}}
 
 {{< HeroInfo 
 HeroName="freya" 
@@ -61,6 +67,13 @@ LaneImg="5"
 LaneLabel="Exp Lane" 
 >}}
  
+{{< ChampionSkills 
+SkillDesc1=`<b>Power of Einherjar<br>After casting a skill, Freya greatly increases her ATK Speed for the next 2 basic attacks. This effect has 6 stacks at most. Freya gains a stack of <font color='#404495'>(Sacred Orb)</font> for every 2 attacks. By sacrificing different amounts of <font color='#404495'>(Sacred Orb)</font>, Freya can enhance her skills to different degrees.`   
+SkillDesc2=`<b>Leap of Faith<br>Freya jumps to a designated area, dealing 200<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies in the area and pulling them to the center. Sacred Orb Enhancement: Consumes 1 stacks of <font color='#404495'>(Sacred Orb)</font>, increasing the damage to 150%, extending the area of effect and stunning the targets for 0.5s.`   
+SkillDesc3=`<b>Spirit Combo<br>Freya dashes forward and gains a shield that can absorb 160<font color='#D58E1F'>( +70% Extra Physical ATK)</font> damage, while dealing 130<font color='#D58E1F'>( +90% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the enemies and slowing them by 30% for 0.5s. Sacred Orb Enhances: the skill can be recast in 4s at the cost of 1 <font color='#404495'>(Sacred Orb)</font> up to 4 times. Freya will swing the hammer on the <font color='#404495'>(4th cast)</font>, increasing the damage to 156<font color='#D58E1F'>( +108% Total Physical ATK)</font> and knocking the enemies airborne for 0.5s.`   
+SkillDesc4=`<b>Valkyrie Descent<br>Freya gains 3 stack(s) of <font color='#404495'>(Sacred Orb)</font> and enters <font color='#404495'>(Valkyrie State)</font>: Gains a shield that can absorb 600<font color='#D58E1F'>( +180% Total Physical ATK)</font> damage and increase 30 Physical Attack. Her basic attack also becomes ranged and can deal <font color='#404495'>(Splash Damage)</font>. <font color='#404495'>(Valkyrie State)</font> lasts for 10s.`   
+>}}
+
 {{< OffensiveBuild 
 build1="WarriorBoots"  
 build2="BladeofDespair" 
@@ -90,12 +103,6 @@ EmblemName1="Assassin"
 EmblemName2="Fighter" 
 >}}   
 
-{{< ChampionSkills 
-SkillDesc1=`<b>Power of Einherjar<br>After casting a skill, Freya greatly increases her ATK Speed for the next 2 basic attacks. This effect has 6 stacks at most. Freya gains a stack of <font color='#404495'>(Sacred Orb)</font> for every 2 attacks. By sacrificing different amounts of <font color='#404495'>(Sacred Orb)</font>, Freya can enhance her skills to different degrees.`   
-SkillDesc2=`<b>Leap of Faith<br>Freya jumps to a designated area, dealing 200<font color='#D58E1F'>( +80% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to enemies in the area and pulling them to the center. Sacred Orb Enhancement: Consumes 1 stacks of <font color='#404495'>(Sacred Orb)</font>, increasing the damage to 150%, extending the area of effect and stunning the targets for 0.5s.`   
-SkillDesc3=`<b>Spirit Combo<br>Freya dashes forward and gains a shield that can absorb 160<font color='#D58E1F'>( +70% Extra Physical ATK)</font> damage, while dealing 130<font color='#D58E1F'>( +90% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to the enemies and slowing them by 30% for 0.5s. Sacred Orb Enhances: the skill can be recast in 4s at the cost of 1 <font color='#404495'>(Sacred Orb)</font> up to 4 times. Freya will swing the hammer on the <font color='#404495'>(4th cast)</font>, increasing the damage to 156<font color='#D58E1F'>( +108% Total Physical ATK)</font> and knocking the enemies airborne for 0.5s.`   
-SkillDesc4=`<b>Valkyrie Descent<br>Freya gains 3 stack(s) of <font color='#404495'>(Sacred Orb)</font> and enters <font color='#404495'>(Valkyrie State)</font>: Gains a shield that can absorb 600<font color='#D58E1F'>( +180% Total Physical ATK)</font> damage and increase 30 Physical Attack. Her basic attack also becomes ranged and can deal <font color='#404495'>(Splash Damage)</font>. <font color='#404495'>(Valkyrie State)</font> lasts for 10s.`   
->}}
 
 {{< ChampionAttributes
 img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="260"
@@ -118,10 +125,6 @@ Percentage3="37" Label3="Ability Effects"
 Percentage4="40" Label4="Difficulty"
  >}}
 
-{{< GetStory 
-Story=` In the far northern reaches of Nost Gal, there is a legend: When a warrior dies on the battlefield, the goddess of war Freya will come down from heaven, kiss the spirit of the fallen, and lead it to the Temple of Heroes, where former warriors can have a new life. Freya herself is an outstanding warrior. She can both attack and defend with her sword and shield, and at a critical moment in battle she can transform into a halberd and smash the enemy formation. ` 
->}}
-
 {{< StrongAgainst 
 HeroName1="odette"
 HeroName2="irithel"
@@ -135,5 +138,4 @@ HeroName1="franco"
 HeroName2="chou"
 HeroName3="esmeralda"
 HeroName4="kagura"
-HeroName5="moskov"
-/>}}
+HeroName5="moskov"/>}}
