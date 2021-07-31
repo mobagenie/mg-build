@@ -1,0 +1,117 @@
+
+         {{ partial "head.html" . }}
+		{{ partial "json-structured-data-general.html" . }}
+
+<div class="tagbanner">
+
+  <i><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/flat/LATEST-HERO-ML.jpg" alt="{{ .Title }}" style="width:100%"></i>
+
+  
+  <!-- <button class="btn btn-danger btn-sm" onclick="openModal();currentSlide(1)"><i class="material-icons">fullscreen</i></button> -->
+</div>	
+		
+  <body>
+
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar">
+  
+      {{ partial "top-nav.html" . }}
+
+   <div class="be-content">
+      <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
+	  
+
+<div class="row text-white bg-dark">
+
+        <div class="col-lg-12 bg-primary">	  
+
+          <h1 class="entry-title">
+            <button class="btn btn-dark"><i class="fas fa-clock fa-sm"></i> {{ .Title }}</button>  <!-- title, in this case it will be "Archive page" -->
+          </h1>
+</div>       
+
+<div class="col-lg-12">
+<br/><br/><b>
+				{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
+
+
+{{ range sort .Site.RegularPages ".Params.difficulty" "desc"}}
+
+{{if isset .Params "difficulty" }}
+
+
+
+<div class="progress bg-dark" style="    display: -ms-flexbox;
+    display: flex;
+    height: 4rem;
+    line-height: 0;
+    font-size: 1.75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    margin-bottom: -21px;
+    margin-top: -9px;
+	max-width: 75%;
+	    margin-left: 47px;
+		background-color:#393a49!important;
+		
+	" >
+  <div class="progress-bar bg-danger" role="progressbar" style="
+padding: 9px;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    margin-top: -8px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: right;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width .6s ease;
+
+	width: {{ .Params.difficulty}}%;" 
+	
+	aria-valuenow="{{ .Params.difficulty}}" aria-valuemin="0" aria-valuemax="100"><p class="bartitle" style="
+font-size: 10px;
+    padding-bottom: 0px;
+        padding-top: 0px;
+		margin-top: 22px;
+	
+	">{{ .Params.heroname | upper  }} {{ .Params.difficulty }}% <a style="    padding-bottom: 8px;" href="/tags/{{ .Params.heroname }}">
+	
+	<img  src="{{ .Site.Params.cdn }}/p/images/buildk/{{ .Params.heroname | lower }}.png" alt="{{ .Params.heroname }}" width="20px" height="20px" id="itemboyutu" style="" class="ggsuz rounded-circle"  />
+	
+	</a></p></div>
+	
+	
+</div>
+
+												
+
+
+{{ end }}
+{{ end }}		
+</b>
+<hr/>				
+</div>
+
+</div>
+	
+	
+         </div>
+      </div>
+   </div>
+
+{{ partial "bottom-nav.html" . }}
+                   
+
+
+        {{ partial "footer.html" . }}
+
+	 
+  </body>
+
+</html>
