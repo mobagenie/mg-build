@@ -86,7 +86,7 @@
 
 <!-- <a href="{{ .RelPermalink }}" target="_blank" data-toggle="lightbox" data-gallery="gallery" class="col-md-4"> -->
     <a href="{{ .RelPermalink }}" class="col-md-4">
-      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_100,h_100,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/wallpaper/hd/legends/{{ .Params.slug | lower }}-{{ with .Params.wallpaper }}{{ range first 1 . }}{{ . }}{{ end }}{{ end }}" class="img-fluid rounded">
+      <img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_100,h_100,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/wallpaper/hd/legends/{{ .Params.slug | lower }}-{{ with .Params.wallpaper }}{{ range first 1 . }}{{ . }}{{ end }}{{ end }}" alt="{{ .Params.heroname }}" class="img-fluid rounded">
     </a>
 	
     <!-- <div class="badge badge-light" style="margin:5px;" data-wow-delay=".5s" href="#"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_250,h_250,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/wallpaper/hd/legends/{{ .Params.heroname | lower }}.jpg" style="width:20%;cursor:pointer" -->

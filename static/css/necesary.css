@@ -395,3 +395,8 @@ hr {
     color: #393a49;
 }
 }
+
+/* bootstrap Table TExt Color Reset */
+.table {
+    color: #f8f9fa;
+}
