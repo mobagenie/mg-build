@@ -57,8 +57,6 @@ LaneLabel="Jungle"
 {{< playerbadgecontent badge="Youtuber" >}}
 {{</ playerbadge >}}
 
-{{< heroskills >}}
-
 {{< OffensiveBuild 
 build1="BloodlustAxe"  
 build2="WarriorBoots" 
