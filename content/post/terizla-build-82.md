@@ -40,7 +40,7 @@ physicaldefense: 19
 magicaldefense: 10
 hp: 2728
 mana: 430
-attackspeed:: 0.8
+attackspeed: 0.8
 hpregen: 10.8
 manaregen:: 4.2
 

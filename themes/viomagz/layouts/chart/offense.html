@@ -33,54 +33,61 @@
 <br/><br/><b>
 				{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
 
+<style>
 
-{{ range sort .Site.RegularPages ".Params.difficulty" "desc"}}
+/* Bootsrap 4 Progess BAR reseter style */
 
-{{if isset .Params "difficulty" }}
-
-
-
-<div class="progress bg-dark" style="    display: -ms-flexbox;
-    display: flex;
-    height: 4rem;
-    line-height: 0;
-    font-size: 1.75rem;
-    background-color: #e9ecef;
-    border-radius: .25rem;
-    margin-bottom: -21px;
-    margin-top: -9px;
+#hero-chart {
+	display: -ms-flexbox;
+	display: flex;
+	height: 4rem;
+	line-height: 0;
+	font-size: 1.75rem;
+	background-color: #e9ecef;
+	border-radius: .25rem;
+	margin-bottom: -21px;
+	margin-top: -9px;
 	max-width: 75%;
-	    margin-left: 47px;
-		background-color:#393a49!important;
-		
-	" >
-  <div class="progress-bar bg-danger" role="progressbar" style="
-padding: 9px;
-    padding-bottom: 10px;
-    margin-bottom: 24px;
-    margin-top: -8px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    text-align: right;
-    white-space: nowrap;
-    background-color: #007bff;
-    transition: width .6s ease;
+	margin-left: 47px;
+	background-color:#393a49!important;		
+}
 
-	width: {{ .Params.difficulty}}%;" 
-	
-	aria-valuenow="{{ .Params.difficulty}}" aria-valuemin="0" aria-valuemax="100"><p class="bartitle" style="
-font-size: 10px;
-    padding-bottom: 0px;
-        padding-top: 0px;
-		margin-top: 22px;
-	
-	">{{ .Params.heroname | upper  }} {{ .Params.difficulty }}% <a style="    padding-bottom: 8px;" href="/tags/{{ .Params.heroname }}">
+#hero-chart-bar {
+	padding: 9px;
+	padding-bottom: 10px;
+	margin-bottom: 24px;
+	margin-top: -8px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+	overflow: hidden;
+	color: #fff;
+	text-align: right;
+	white-space: nowrap;
+	background-color: #007bff;
+	transition: width .6s ease;
+}
+
+#hero-chart-bar-title {
+	font-size: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-top: 22px;
+}
+
+</style>
+
+{{ range sort .Site.RegularPages ".Params.offense" "desc"}}
+
+{{if isset .Params "originalpost" }}
+
+
+
+<div id="hero-chart" class="progress bg-dark" >
+  <div id="hero-chart-bar" class="progress-bar bg-danger" role="progressbar" style="width: {{ .Params.offense}}%;" aria-valuenow="{{ .Params.offense}}" aria-valuemin="0" aria-valuemax="100"><p id="hero-chart-bar-title">{{ .Params.heroname | upper  }} {{ .Params.offense }}% <a style="    padding-bottom: 8px;" href="/tags/{{ .Params.heroname }}">
 	
 	<img  src="{{ .Site.Params.cdn }}/p/images/buildk/{{ .Params.heroname | lower }}.png" alt="{{ .Params.heroname }}" width="20px" height="20px" id="itemboyutu" style="" class="ggsuz rounded-circle"  />
 	
