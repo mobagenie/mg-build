@@ -48,21 +48,23 @@
     {{ .Scratch.Set "lane" "EXP" }}	
 {{ end }}
 
+
+
 <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="fas fa-user fa-lg"></i></button>		 -->
 		
 		
 		<!-- <br/> -->
 		
-<a style="color:white;" href="/tags/{{ .Scratch.Get "role" | lower  }}" title="{{ $.Page.Params.playername }}"> Role: {{ .Scratch.Get "role" }}</a>
+<i class="fas fa-project-diagram fa-lg"></i><br/><a style="color:white;" href="/tags/{{ .Scratch.Get "role" | lower  }}" title="{{ $.Page.Params.playername }}"> Role: {{ .Scratch.Get "role" }}</a>
 
 		</div>
-        <div class="col-4  text-center font-weight-bold"><i class="fas fa-medal fa-lg"></i><br/>Lane: {{ .Scratch.Get "lane" }}</div>
+        <div class="col-4  text-center font-weight-bold"><i class="fas fa-ruler-combined fa-lg"></i><br/>Lane: {{ .Scratch.Get "lane" }}</div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
-          <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Tier : {{ $.Page.Params.lane }}</div>
+          <div class="col-4 text-center font-weight-bold"><i class="fas fa-sitemap fa-lg"></i><br/>Tier : {{ $.Page.Params.TierLabel }}</div>
 		  
-        <div class="col-4  text-center ">BP : {{ $.Page.Params.BP }}</div>
-        <div class="col-4  text-center ">DM : {{ $.Page.Params.DM }}</div>
-         <div class="col-4  text-center ">Ticket : {{ $.Page.Params.Ticket }}</div>
+        <div class="col-4  text-center "><i class="fas fa-coins fa-lg"></i><br/>BP : {{ $.Page.Params.BP }}</div>
+        <div class="col-4  text-center "><i class="fas fa-gem fa-lg"></i><br/>DM : {{ $.Page.Params.DM }}</div>
+         <div class="col-4  text-center "><i class="fas fa-credit-card fa-lg"></i><br/>Ticket : {{ $.Page.Params.Ticket }}</div>
 
            
       </div></b>
