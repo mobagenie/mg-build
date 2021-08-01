@@ -15,37 +15,31 @@
 <!-- {{ end }} -->
 
 {{ if eq $.Page.Params.role 1 }}
-    {{ .Scratch.Set "role" "Marksman" }}
-    {{ .Scratch.Set "lane" "Gold Lane" }}	
+    {{ .Scratch.Set "role" "Tank" }}	
 {{ else if eq $.Page.Params.role 2 }}
-    {{ .Scratch.Set "role" "Supports" }}	
-    {{ .Scratch.Set "lane" "ROAM" }}	
+    {{ .Scratch.Set "role" "Fighter" }}	
 {{ else if eq $.Page.Params.role 3 }}
-    {{ .Scratch.Set "role" "Mage" }}
-    {{ .Scratch.Set "lane" "MID" }}	
+    {{ .Scratch.Set "role" "Assassins" }}
 {{ else if eq $.Page.Params.role 4 }}
-    {{ .Scratch.Set "role" "Asssasins" }}
-    {{ .Scratch.Set "lane" "Jungle" }}	
+    {{ .Scratch.Set "role" "Mage" }}
 {{ else if eq $.Page.Params.role 5 }}
-    {{ .Scratch.Set "role" "Fighter" }}
-    {{ .Scratch.Set "lane" "EXP" }}	
+    {{ .Scratch.Set "role" "Marksman" }}
+{{ else if eq $.Page.Params.role 6 }}
+    {{ .Scratch.Set "role" "Supports" }}		
 {{ end }}
 
 {{ if eq $.Page.Params.LaneLabel "Gold Lane" }}
-    {{ .Scratch.Set "role" "Marksman" }}
     {{ .Scratch.Set "lane" "Gold Lane" }}	
-{{ else if eq $.Page.Params.LaneLabel "ROAM" }}
-    {{ .Scratch.Set "role" "Supports" }}	
+{{ else if eq $.Page.Params.LaneLabel "Roam" }}
+
     {{ .Scratch.Set "lane" "ROAM" }}	
-{{ else if eq $.Page.Params.LaneLabel "MID Lane" }}
-    {{ .Scratch.Set "role" "Mage" }}
-    {{ .Scratch.Set "lane" "MID" }}	
+	
+{{ else if eq $.Page.Params.LaneLabel "Mid Lane" }}
+    {{ .Scratch.Set "lane" "MID Lane" }}	
 {{ else if eq $.Page.Params.LaneLabel "Jungle" }}
-    {{ .Scratch.Set "role" "Asssasins" }}
     {{ .Scratch.Set "lane" "Jungle" }}	
-{{ else if eq $.Page.Params.LaneLabel "EXP Lane" }}
-    {{ .Scratch.Set "role" "Fighter" }}
-    {{ .Scratch.Set "lane" "EXP" }}	
+{{ else if eq $.Page.Params.LaneLabel "Exp Lane" }}
+    {{ .Scratch.Set "lane" "EXP Lane" }}	
 {{ end }}
 
 
