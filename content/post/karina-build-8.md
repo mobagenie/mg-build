@@ -18,6 +18,32 @@ Match: 550
 
 heroname: "karina"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/karina.jpg
+
+View: 163022 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 84 
+durability: 38 
+abilityeffects: 42 
+difficulty: 50 
+
+movementspeed: 260
+physicalattack: 121
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2633
+mana: 431
+attackspeed:: 0.9
+hpregen: 7.8
+manaregen: 3.2
  
 OBuild1: "ArcaneBoots"  
 OBuild2: "CalamityReaper" 

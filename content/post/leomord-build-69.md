@@ -18,6 +18,32 @@ Match: 190
 
 heroname: "leomord"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/leomord.jpg
+
+View: 137592 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 84 
+durability: 48 
+abilityeffects: 65 
+difficulty: 52 
+
+movementspeed: 240
+physicalattack: 126
+magicpower: 0
+physicaldefense: 21
+magicaldefense: 10
+hp: 2738
+mana: 0
+attackspeed:: 0.844
+hpregen: 7
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 

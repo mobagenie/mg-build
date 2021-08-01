@@ -18,6 +18,32 @@ Match: 580
 
 heroname: "bruno"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/bruno.jpg
+
+View: 240868 
+Role: 5 
+BP: 15000
+DM: 399 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 90 
+durability: 43 
+abilityeffects: 70 
+difficulty: 45 
+
+movementspeed: 240
+physicalattack: 140
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2522
+mana: 439
+attackspeed:: 0.81
+hpregen: 6
+manaregen: 3
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

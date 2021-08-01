@@ -18,6 +18,32 @@ Match: 301
 
 heroname: "mathilda"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/mathilda.jpg
+
+View: 31233 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 65 
+durability: 44 
+abilityeffects: 78 
+difficulty: 78 
+
+movementspeed: 252
+physicalattack: 120
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2651
+mana: 430
+attackspeed:: 0.8
+hpregen: 6.8
+manaregen: 3.2
  
 OBuild1: "ArcaneBoots"  
 OBuild2: "EnchantedTalisman" 

@@ -18,6 +18,32 @@ Match: 165
 
 heroname: "thamuz"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/thamuz.jpg
+
+View: 110600 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 50 
+durability: 59 
+abilityeffects: 68 
+difficulty: 56 
+
+movementspeed: 250
+physicalattack: 107
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2758
+mana: 0
+attackspeed:: 0.844
+hpregen: 7.4
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "WarriorBoots" 

@@ -18,6 +18,32 @@ Match: 148
 
 heroname: "aurora"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/aurora.jpg
+
+View: 36370 
+Role: 4 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 45 
+durability: 40 
+abilityeffects: 90 
+difficulty: 60 
+
+movementspeed: 245
+physicalattack: 110
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2501
+mana: 750
+attackspeed:: 0.8
+hpregen: 6.8
+manaregen: 4.6
  
 OBuild1: "DemonShoes"  
 OBuild2: "NecklaceofDurance" 

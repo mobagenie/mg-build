@@ -18,6 +18,32 @@ Match: 390
 
 heroname: "faramis"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/faramis.jpg
+
+View: 17453 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 36 
+durability: 81 
+abilityeffects: 85 
+difficulty: 67 
+
+movementspeed: 245
+physicalattack: 118
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2543
+mana: 500
+attackspeed:: 0.784
+hpregen: 6.8
+manaregen: 3.8
  
 OBuild1: "ArcaneBoots"  
 OBuild2: "ConcentratedEnergy" 

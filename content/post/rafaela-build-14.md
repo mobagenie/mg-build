@@ -18,6 +18,32 @@ Match: 637
 
 heroname: "rafaela"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/rafaela.jpg
+
+View: 71054 
+Role: 6 
+BP: 6500
+DM: 254 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 50 
+durability: 52 
+abilityeffects: 70 
+difficulty: 33 
+
+movementspeed: 245
+physicalattack: 117
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2441
+mana: 545
+attackspeed:: 0.792
+hpregen: 7.2
+manaregen: 4.6
  
 OBuild1: "CourageMask"  
 OBuild2: "DemonShoes" 

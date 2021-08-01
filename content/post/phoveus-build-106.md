@@ -18,6 +18,32 @@ Match: 155
 
 heroname: "phoveus"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/phoveus.jpg
+
+View: 98808 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 80 
+durability: 75 
+abilityeffects: 50 
+difficulty: 76 
+
+movementspeed: 252
+physicalattack: 132
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 2828
+mana: 430
+attackspeed:: 0.82
+hpregen: 10.8
+manaregen: 4.2
  
 OBuild1: "ClockofDestiny"  
 OBuild2: "WarriorBoots" 

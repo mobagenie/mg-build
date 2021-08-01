@@ -18,6 +18,32 @@ Match: 586
 
 heroname: "angela"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/angela.jpg
+
+View: 88487 
+Role: 6 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 38 
+durability: 45 
+abilityeffects: 88 
+difficulty: 30 
+
+movementspeed: 240
+physicalattack: 115
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2421
+mana: 515
+attackspeed:: 0.792
+hpregen: 6.8
+manaregen: 3.6
  
 OBuild1: "CourageMask"  
 OBuild2: "MagicShoes" 

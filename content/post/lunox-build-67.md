@@ -18,6 +18,32 @@ Match: 170
 
 heroname: "lunox"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/lunox.jpg
+
+View: 122929 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 36 
+durability: 62 
+abilityeffects: 78 
+difficulty: 60 
+
+movementspeed: 240
+physicalattack: 115
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2621
+mana: 540
+attackspeed:: 0.808
+hpregen: 6.8
+manaregen: 4.6
  
 OBuild1: "DemonShoes"  
 OBuild2: "GlowingWand" 

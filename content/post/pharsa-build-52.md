@@ -18,6 +18,32 @@ Match: 453
 
 heroname: "pharsa"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/pharsa.jpg
+
+View: 64873 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 40 
+durability: 52 
+abilityeffects: 92 
+difficulty: 75 
+
+movementspeed: 240
+physicalattack: 109
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2421
+mana: 490
+attackspeed:: 0.7904
+hpregen: 6.8
+manaregen: 3.6
  
 OBuild1: "MagicShoes"  
 OBuild2: "ClockofDestiny" 

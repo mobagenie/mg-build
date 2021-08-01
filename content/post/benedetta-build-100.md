@@ -18,6 +18,32 @@ Match:
 
 heroname: "benedetta"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/benedetta.jpg
+
+View: 59475 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 1 
+TierLabel: S+ Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 74 
+durability: 46 
+abilityeffects: 83 
+difficulty: 78 
+
+movementspeed: 255
+physicalattack: 113
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2649
+mana: 460
+attackspeed:: 0.886
+hpregen: 6.6
+manaregen: 3.2
  
 OBuild1: "WarAxe"  
 OBuild2: "BloodlustAxe" 

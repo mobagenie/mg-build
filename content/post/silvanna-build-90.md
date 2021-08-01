@@ -18,6 +18,32 @@ Match: 264
 
 heroname: "silvanna"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/silvanna.jpg
+
+View: 132106 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 65 
+durability: 70 
+abilityeffects: 50 
+difficulty: 40 
+
+movementspeed: 255
+physicalattack: 126
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2828
+mana: 430
+attackspeed:: 0.916
+hpregen: 7.8
+manaregen: 3.2
  
 OBuild1: "ToughBoots"  
 OBuild2: "NecklaceofDurance" 

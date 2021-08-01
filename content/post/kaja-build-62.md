@@ -18,6 +18,32 @@ Match: 250
 
 heroname: "kaja"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/kaja.jpg
+
+View: 74347 
+Role: 6 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 48 
+durability: 80 
+abilityeffects: 82 
+difficulty: 53 
+
+movementspeed: 270
+physicalattack: 120
+magicpower: 0
+physicaldefense: 16
+magicaldefense: 10
+hp: 2609
+mana: 400
+attackspeed:: 0.842
+hpregen: 10.4
+manaregen: 2.4
  
 OBuild1: "DemonShoes"  
 OBuild2: "LightningTruncheon" 

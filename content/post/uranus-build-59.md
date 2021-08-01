@@ -18,6 +18,32 @@ Match: 600
 
 heroname: "uranus"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/uranus.jpg
+
+View: 95054 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 40 
+durability: 91 
+abilityeffects: 88 
+difficulty: 50 
+
+movementspeed: 260
+physicalattack: 115
+magicpower: 0
+physicaldefense: 14
+magicaldefense: 10
+hp: 2489
+mana: 455
+attackspeed:: 0.834
+hpregen: 6.4
+manaregen: 2.4
  
 OBuild1: "WarriorBoots"  
 OBuild2: "CursedHelmet" 

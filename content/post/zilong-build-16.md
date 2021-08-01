@@ -18,6 +18,32 @@ Match: 3000
 
 heroname: "zilong"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/zilong.jpg
+
+View: 342832 
+Role: 2 
+BP: 0
+DM: 0 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 80 
+durability: 70 
+abilityeffects: 40 
+difficulty: 50 
+
+movementspeed: 265
+physicalattack: 123
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 2689
+mana: 405
+attackspeed:: 0.964
+hpregen: 7
+manaregen: 3.2
  
 OBuild1: "SwiftBoots"  
 OBuild2: "EndlessBattle" 

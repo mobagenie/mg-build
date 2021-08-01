@@ -18,6 +18,32 @@ Match: 904
 
 heroname: "natalia"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/natalia.jpg
+
+View: 140718 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 1 
+TierLabel: S+ Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 94 
+durability: 53 
+abilityeffects: 44 
+difficulty: 57 
+
+movementspeed: 260
+physicalattack: 121
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 10
+hp: 2589
+mana: 486
+attackspeed:: 0.886
+hpregen: 7
+manaregen: 3.2
  
 OBuild1: "RapidBoots"  
 OBuild2: "BladeoftheHeptaseas" 

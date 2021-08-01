@@ -18,6 +18,32 @@ Match: 395
 
 heroname: "hylos"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/hylos.jpg
+
+View: 37655 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 40 
+durability: 93 
+abilityeffects: 65 
+difficulty: 30 
+
+movementspeed: 260
+physicalattack: 105
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 3109
+mana: 430
+attackspeed:: 0.826
+hpregen: 18.4
+manaregen: 2.4
  
 OBuild1: "WarriorBoots"  
 OBuild2: "ClockofDestiny" 

@@ -18,6 +18,32 @@ Match: 158
 
 heroname: "guinevere"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/guinevere.jpg
+
+View: 160056 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 85 
+durability: 35 
+abilityeffects: 55 
+difficulty: 60 
+
+movementspeed: 260
+physicalattack: 126
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 10
+hp: 2528
+mana: 0
+attackspeed:: 0.916
+hpregen: 7.8
+manaregen: 0
  
 OBuild1: "ArcaneBoots"  
 OBuild2: "HolyCrystal" 

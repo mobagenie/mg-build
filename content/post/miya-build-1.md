@@ -18,6 +18,32 @@ Match: 3596
 
 heroname: "miya"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/miya.jpg
+
+View: 612394 
+Role: 5 
+BP: 10800
+DM: 0 
+Ticket: 399 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 96 
+durability: 39 
+abilityeffects: 66 
+difficulty: 33 
+
+movementspeed: 240
+physicalattack: 100
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2524
+mana: 445
+attackspeed:: 0.85
+hpregen: 0
+manaregen: 0
  
 OBuild1: "SwiftBoots"  
 OBuild2: "Windtalker" 

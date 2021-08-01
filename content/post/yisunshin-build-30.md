@@ -18,6 +18,32 @@ Match: 295
 
 heroname: "yisunshin"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/yisunshin.jpg
+
+View: 58316 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 79 
+durability: 45 
+abilityeffects: 75 
+difficulty: 60 
+
+movementspeed: 250
+physicalattack: 110
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2570
+mana: 438
+attackspeed:: 0.826
+hpregen: 7.2
+manaregen: 3
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

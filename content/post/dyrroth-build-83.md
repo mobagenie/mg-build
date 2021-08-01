@@ -18,6 +18,32 @@ Match: 374
 
 heroname: "dyrroth"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/dyrroth.jpg
+
+View: 266206 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 90 
+durability: 35 
+abilityeffects: 50 
+difficulty: 60 
+
+movementspeed: 255
+physicalattack: 117
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2758
+mana: 0
+attackspeed:: 0.916
+hpregen: 8.2
+manaregen: 0
  
 OBuild1: "SwiftBoots"  
 OBuild2: "BloodlustAxe" 

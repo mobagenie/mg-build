@@ -18,6 +18,32 @@ Match: 238
 
 heroname: "masha"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/masha.jpg
+
+View: 82118 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 85 
+durability: 75 
+abilityeffects: 80 
+difficulty: 81 
+
+movementspeed: 250
+physicalattack: 101
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2043
+mana: 0
+attackspeed:: 0.804
+hpregen: 3.8
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "BladeoftheHeptaseas" 

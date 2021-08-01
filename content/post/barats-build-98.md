@@ -18,6 +18,32 @@ Match: 126
 
 heroname: "barats"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/barats.jpg
+
+View: 50169 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket:  
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 82 
+durability: 90 
+abilityeffects: 50 
+difficulty: 38 
+
+movementspeed: 268
+physicalattack: 135
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2559
+mana: 430
+attackspeed:: 0.81
+hpregen: 8.8
+manaregen: 3
  
 OBuild1: "RaptorMachete"  
 OBuild2: "WarriorBoots" 

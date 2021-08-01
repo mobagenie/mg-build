@@ -18,6 +18,32 @@ Match: 4456
 
 heroname: "fanny"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/fanny.jpg
+
+View: 321133 
+Role: 3 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 85 
+durability: 60 
+abilityeffects: 50 
+difficulty: 100 
+
+movementspeed: 265
+physicalattack: 126
+magicpower: 0
+physicaldefense: 19
+magicaldefense: 10
+hp: 2526
+mana: 0
+attackspeed:: 0.894
+hpregen: 6.6
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "ToughBoots" 

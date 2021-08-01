@@ -18,6 +18,32 @@ Match: 150
 
 heroname: "wanwan"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/wanwan.jpg
+
+View: 161105 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 1 
+TierLabel: S+ Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 85 
+durability: 30 
+abilityeffects: 80 
+difficulty: 86 
+
+movementspeed: 240
+physicalattack: 90
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2540
+mana: 424
+attackspeed:: 0.786
+hpregen: 5.4
+manaregen: 2.8
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

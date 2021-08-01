@@ -18,6 +18,32 @@ Match: 415
 
 heroname: "vale"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/vale.jpg
+
+View: 63646 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 45 
+durability: 50 
+abilityeffects: 95 
+difficulty: 70 
+
+movementspeed: 250
+physicalattack: 115
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2401
+mana: 490
+attackspeed:: 0.8
+hpregen: 6.8
+manaregen: 4.2
  
 OBuild1: "DemonShoes"  
 OBuild2: "ClockofDestiny" 

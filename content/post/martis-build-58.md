@@ -18,6 +18,32 @@ Match: 840
 
 heroname: "martis"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/martis.jpg
+
+View: 112460 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 83 
+durability: 75 
+abilityeffects: 60 
+difficulty: 56 
+
+movementspeed: 260
+physicalattack: 128
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 2738
+mana: 0
+attackspeed:: 0.868
+hpregen: 7
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 

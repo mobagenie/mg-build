@@ -18,6 +18,32 @@ Match: 422
 
 heroname: "lancelot"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/lancelot.jpg
+
+View: 166355 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 96 
+durability: 47 
+abilityeffects: 40 
+difficulty: 68 
+
+movementspeed: 260
+physicalattack: 124
+magicpower: 0
+physicaldefense: 16
+magicaldefense: 10
+hp: 2549
+mana: 450
+attackspeed:: 0.87
+hpregen: 7
+manaregen: 3.2
  
 OBuild1: "RaptorMachete"  
 OBuild2: "WarriorBoots" 

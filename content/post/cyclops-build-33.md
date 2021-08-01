@@ -18,6 +18,32 @@ Match: 480
 
 heroname: "cyclops"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/cyclops.jpg
+
+View: 69525 
+Role: 4 
+BP: 15000
+DM: 399 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 45 
+durability: 39 
+abilityeffects: 90 
+difficulty: 60 
+
+movementspeed: 240
+physicalattack: 112
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 10
+hp: 2521
+mana: 500
+attackspeed:: 0.8
+hpregen: 7.6
+manaregen: 4
  
 OBuild1: "MagicShoes"  
 OBuild2: "EnchantedTalisman" 

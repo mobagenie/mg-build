@@ -18,6 +18,32 @@ Match: 722
 
 heroname: "roger"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/roger.jpg
+
+View: 198192 
+Role: 2 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 70 
+durability: 52 
+abilityeffects: 60 
+difficulty: 52 
+
+movementspeed: 240
+physicalattack: 128
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2730
+mana: 450
+attackspeed:: 0.842
+hpregen: 7.2
+manaregen: 3
  
 OBuild1: "WarriorBoots"  
 OBuild2: "CorrosionScythe" 

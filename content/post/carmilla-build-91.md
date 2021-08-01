@@ -18,6 +18,32 @@ Match: 877
 
 heroname: "carmilla"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/carmilla.jpg
+
+View: 78718 
+Role: 6 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 35 
+durability: 40 
+abilityeffects: 85 
+difficulty: 30 
+
+movementspeed: 255
+physicalattack: 126
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 2528
+mana: 430
+attackspeed:: 0.916
+hpregen: 7.8
+manaregen: 3.2
  
 OBuild1: "CourageMask"  
 OBuild2: "WarriorBoots" 

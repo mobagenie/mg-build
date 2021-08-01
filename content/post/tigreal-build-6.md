@@ -18,6 +18,32 @@ Match: 1187
 
 heroname: "tigreal"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/tigreal.jpg
+
+View: 176474 
+Role: 1 
+BP: 6500
+DM: 0 
+Ticket: 299 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 32 
+durability: 90 
+abilityeffects: 59 
+difficulty: 23 
+
+movementspeed: 260
+physicalattack: 112
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 2890
+mana: 450
+attackspeed:: 0.826
+hpregen: 8.4
+manaregen: 2.4
  
 OBuild1: "ShadowMask"  
 OBuild2: "WarriorBoots" 

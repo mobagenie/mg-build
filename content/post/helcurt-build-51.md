@@ -18,6 +18,32 @@ Match: 415
 
 heroname: "helcurt"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/helcurt.jpg
+
+View: 140904 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 93 
+durability: 48 
+abilityeffects: 50 
+difficulty: 58 
+
+movementspeed: 255
+physicalattack: 121
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2599
+mana: 440
+attackspeed:: 0.934
+hpregen: 7
+manaregen: 3.2
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

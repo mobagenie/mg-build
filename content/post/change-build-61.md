@@ -18,6 +18,32 @@ Match: 200
 
 heroname: "change"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/change.jpg
+
+View: 107528 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 40 
+durability: 42 
+abilityeffects: 92 
+difficulty: 67 
+
+movementspeed: 240
+physicalattack: 115
+magicpower: 0
+physicaldefense: 16
+magicaldefense: 10
+hp: 2301
+mana: 505
+attackspeed:: 0.808
+hpregen: 6.8
+manaregen: 4.2
  
 OBuild1: "DemonShoes"  
 OBuild2: "IceQueenWand" 

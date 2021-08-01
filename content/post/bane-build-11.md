@@ -18,6 +18,32 @@ Match: 550
 
 heroname: "bane"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/bane.jpg
+
+View: 87227 
+Role: 2 
+BP: 6500
+DM: 254 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 65 
+durability: 71 
+abilityeffects: 48 
+difficulty: 55 
+
+movementspeed: 260
+physicalattack: 117
+magicpower: 0
+physicaldefense: 23
+magicaldefense: 10
+hp: 2559
+mana: 433
+attackspeed:: 0.85
+hpregen: 8.4
+manaregen: 2.4
  
 OBuild1: "DemonShoes"  
 OBuild2: "BladeofDespair" 

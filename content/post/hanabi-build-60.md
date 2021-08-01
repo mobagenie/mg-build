@@ -18,6 +18,32 @@ Match: 133
 
 heroname: "hanabi"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/hanabi.jpg
+
+View: 179106 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 94 
+durability: 53 
+abilityeffects: 53 
+difficulty: 60 
+
+movementspeed: 245
+physicalattack: 105
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2510
+mana: 390
+attackspeed:: 0.85
+hpregen: 6
+manaregen: 3
  
 OBuild1: "SwiftBoots"  
 OBuild2: "ScarletPhantom" 

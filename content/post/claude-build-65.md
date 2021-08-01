@@ -18,6 +18,32 @@ Match: 110
 
 heroname: "claude"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/claude.jpg
+
+View: 265297 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 94 
+durability: 35 
+abilityeffects: 40 
+difficulty: 93 
+
+movementspeed: 240
+physicalattack: 97
+magicpower: 0
+physicaldefense: 14
+magicaldefense: 10
+hp: 2370
+mana: 450
+attackspeed:: 0.826
+hpregen: 8
+manaregen: 3.2
  
 OBuild1: "DemonShoes"  
 OBuild2: "DemonHunterSword" 

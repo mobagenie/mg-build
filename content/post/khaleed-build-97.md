@@ -18,6 +18,32 @@ Match: 327
 
 heroname: "khaleed"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/khaleed.jpg
+
+View: 92964 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket:  
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 73 
+durability: 51 
+abilityeffects: 50 
+difficulty: 80 
+
+movementspeed: 250
+physicalattack: 109
+magicpower: 0
+physicaldefense: 23
+magicaldefense: 10
+hp: 2778
+mana: 0
+attackspeed:: 0.844
+hpregen: 7
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 

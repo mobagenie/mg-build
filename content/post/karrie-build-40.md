@@ -18,6 +18,32 @@ Match: 650
 
 heroname: "karrie"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/karrie.jpg
+
+View: 211273 
+Role: 5 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 88 
+durability: 31 
+abilityeffects: 46 
+difficulty: 87 
+
+movementspeed: 240
+physicalattack: 120
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2578
+mana: 440
+attackspeed:: 0.8396
+hpregen: 8
+manaregen: 3
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

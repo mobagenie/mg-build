@@ -18,6 +18,32 @@ Match: 100
 
 heroname: "kimmy"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/kimmy.jpg
+
+View: 210266 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket:  
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 85 
+durability: 40 
+abilityeffects: 85 
+difficulty: 60 
+
+movementspeed: 245
+physicalattack: 90
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2450
+mana: 100
+attackspeed:: 0.826
+hpregen: 8
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "ArcaneBoots" 

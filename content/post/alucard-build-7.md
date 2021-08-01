@@ -18,6 +18,32 @@ Match: 1795
 
 heroname: "alucard"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/alucard.jpg
+
+View: 593490 
+Role: 2 
+BP: 15000
+DM: 0 
+Ticket: 399 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 88 
+durability: 50 
+abilityeffects: 46 
+difficulty: 35 
+
+movementspeed: 260
+physicalattack: 123
+magicpower: 0
+physicaldefense: 21
+magicaldefense: 10
+hp: 2621
+mana: 0
+attackspeed:: 0.9
+hpregen: 7.8
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "HaasClaws" 

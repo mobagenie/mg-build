@@ -18,6 +18,32 @@ Match: 284
 
 heroname: "minsitthar"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/minsitthar.jpg
+
+View: 145601 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 78 
+durability: 70 
+abilityeffects: 50 
+difficulty: 40 
+
+movementspeed: 260
+physicalattack: 121
+magicpower: 0
+physicaldefense: 23
+magicaldefense: 10
+hp: 2698
+mana: 380
+attackspeed:: 0.852
+hpregen: 7.4
+manaregen: 3.2
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BladeofDespair" 

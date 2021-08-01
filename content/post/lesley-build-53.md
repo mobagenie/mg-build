@@ -18,6 +18,32 @@ Match: 420
 
 heroname: "lesley"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/lesley.jpg
+
+View: 229771 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 89 
+durability: 45 
+abilityeffects: 53 
+difficulty: 65 
+
+movementspeed: 240
+physicalattack: 131
+magicpower: 0
+physicaldefense: 14
+magicaldefense: 10
+hp: 2490
+mana: 0
+attackspeed:: 0.826
+hpregen: 7.2
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

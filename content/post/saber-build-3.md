@@ -18,6 +18,32 @@ Match: 1330
 
 heroname: "saber"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/saber.jpg
+
+View: 218480 
+Role: 3 
+BP: 6500
+DM: 254 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 86 
+durability: 65 
+abilityeffects: 50 
+difficulty: 63 
+
+movementspeed: 260
+physicalattack: 118
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2599
+mana: 443
+attackspeed:: 0.87
+hpregen: 7
+manaregen: 3.2
  
 OBuild1: "RaptorMachete"  
 OBuild2: "MagicShoes" 

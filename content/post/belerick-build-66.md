@@ -18,6 +18,32 @@ Match: 132
 
 heroname: "belerick"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/belerick.jpg
+
+View: 55266 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 65 
+durability: 82 
+abilityeffects: 60 
+difficulty: 43 
+
+movementspeed: 250
+physicalattack: 110
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2769
+mana: 450
+attackspeed:: 0.81
+hpregen: 8.4
+manaregen: 2.4
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BladeArmor" 

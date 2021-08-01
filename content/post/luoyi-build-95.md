@@ -18,6 +18,32 @@ Match: 300
 
 heroname: "luoyi"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/luoyi.jpg
+
+View: 103033 
+Role: 4 
+BP: 0
+DM: 0 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 55 
+durability: 40 
+abilityeffects: 73 
+difficulty: 91 
+
+movementspeed: 250
+physicalattack: 107
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2601
+mana: 520
+attackspeed:: 0.792
+hpregen: 7.2
+manaregen: 4.2
  
 OBuild1: "MagicShoes"  
 OBuild2: "EnchantedTalisman" 

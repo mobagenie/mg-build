@@ -18,6 +18,32 @@ Match: 659
 
 heroname: "kagura"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/kagura.jpg
+
+View: 73024 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 45 
+durability: 61 
+abilityeffects: 95 
+difficulty: 89 
+
+movementspeed: 240
+physicalattack: 118
+magicpower: 0
+physicaldefense: 19
+magicaldefense: 10
+hp: 2556
+mana: 519
+attackspeed:: 0.816
+hpregen: 7
+manaregen: 4.2
  
 OBuild1: "DemonShoes"  
 OBuild2: "ClockofDestiny" 

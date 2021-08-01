@@ -18,6 +18,32 @@ Match: 1836
 
 heroname: "hayabusa"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/hayabusa.jpg
+
+View: 142722 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 87 
+durability: 35 
+abilityeffects: 62 
+difficulty: 82 
+
+movementspeed: 260
+physicalattack: 117
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2629
+mana: 0
+attackspeed:: 0.854
+hpregen: 7.4
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "RaptorMachete" 

@@ -18,6 +18,32 @@ Match: 1777
 
 heroname: "clint"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/clint.jpg
+
+View: 126191 
+Role: 5 
+BP: 15000
+DM: 0 
+Ticket: 399 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 86 
+durability: 39 
+abilityeffects: 66 
+difficulty: 33 
+
+movementspeed: 240
+physicalattack: 115
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2530
+mana: 450
+attackspeed:: 0.842
+hpregen: 7.2
+manaregen: 3
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

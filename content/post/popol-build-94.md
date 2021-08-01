@@ -18,6 +18,32 @@ Match: 100
 
 heroname: "popol"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/popol.jpg
+
+View: 114731 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 75 
+durability: 36 
+abilityeffects: 41 
+difficulty: 80 
+
+movementspeed: 250
+physicalattack: 95
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2325
+mana: 445
+attackspeed:: 0.8
+hpregen: 6
+manaregen: 3
  
 OBuild1: "SwiftBoots"  
 OBuild2: "DemonHunterSword" 

@@ -18,6 +18,32 @@ Match: 913
 
 heroname: "gord"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/gord.jpg
+
+View: 119591 
+Role: 4 
+BP: 24000
+DM: 0 
+Ticket: 499 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 52 
+durability: 46 
+abilityeffects: 90 
+difficulty: 66 
+
+movementspeed: 240
+physicalattack: 110
+magicpower: 0
+physicaldefense: 13
+magicaldefense: 10
+hp: 2478
+mana: 570
+attackspeed:: 0.772
+hpregen: 6.4
+manaregen: 5
  
 OBuild1: "ArcaneBoots"  
 OBuild2: "LightningTruncheon" 

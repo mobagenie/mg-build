@@ -18,6 +18,32 @@ Match: 520
 
 heroname: "hilda"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/hilda.jpg
+
+View: 59300 
+Role: 2 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 58 
+durability: 85 
+abilityeffects: 52 
+difficulty: 40 
+
+movementspeed: 260
+physicalattack: 123
+magicpower: 0
+physicaldefense: 24
+magicaldefense: 10
+hp: 2789
+mana: 0.842
+attackspeed:: 8.4
+hpregen: 0
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 

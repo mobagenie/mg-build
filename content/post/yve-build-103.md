@@ -18,6 +18,32 @@ Match:
 
 heroname: "yve"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/yve.jpg
+
+View: 30016 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 40 
+durability: 35 
+abilityeffects: 78 
+difficulty: 65 
+
+movementspeed: 255
+physicalattack: 115
+magicpower: 0
+physicaldefense: 19
+magicaldefense: 10
+hp: 2651
+mana: 510
+attackspeed:: 0.784
+hpregen: 7.2
+manaregen: 4.2
  
 OBuild1: "IceQueenWand"  
 OBuild2: "GlowingWand" 

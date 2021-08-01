@@ -18,6 +18,32 @@ Match: 368
 
 heroname: "granger"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/granger.jpg
+
+View: 225963 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 1 
+TierLabel: S+ Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 85 
+durability: 55 
+abilityeffects: 45 
+difficulty: 60 
+
+movementspeed: 240
+physicalattack: 100
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2370
+mana: 0
+attackspeed:: 0.818
+hpregen: 5.4
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "MagicShoes" 

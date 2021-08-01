@@ -18,6 +18,32 @@ Match: 100
 
 heroname: "terizla"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/terizla.jpg
+
+View: 64531 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 6 
+TierLabel: C Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 78 
+durability: 65 
+abilityeffects: 50 
+difficulty: 55 
+
+movementspeed: 255
+physicalattack: 129
+magicpower: 0
+physicaldefense: 19
+magicaldefense: 10
+hp: 2728
+mana: 430
+attackspeed:: 0.8
+hpregen: 10.8
+manaregen: 4.2
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 

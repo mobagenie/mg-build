@@ -18,6 +18,32 @@ Match: 1366
 
 heroname: "freya"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/freya.jpg
+
+View: 126090 
+Role: 2 
+BP: 0
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 80 
+durability: 70 
+abilityeffects: 37 
+difficulty: 40 
+
+movementspeed: 260
+physicalattack: 109
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2801
+mana: 0
+attackspeed:: 0.836
+hpregen: 9.8
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BladeofDespair" 

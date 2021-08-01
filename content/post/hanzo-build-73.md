@@ -18,6 +18,32 @@ Match: 650
 
 heroname: "hanzo"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/hanzo.jpg
+
+View: 244581 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 95 
+durability: 50 
+abilityeffects: 40 
+difficulty: 60 
+
+movementspeed: 260
+physicalattack: 108
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2594
+mana: 0
+attackspeed:: 0.87
+hpregen: 7
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "MagicShoes" 

@@ -18,6 +18,32 @@ Match: 106
 
 heroname: "cecilion"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/cecilion.jpg
+
+View: 133599 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 40 
+durability: 43 
+abilityeffects: 82 
+difficulty: 48 
+
+movementspeed: 255
+physicalattack: 105
+magicpower: 0
+physicaldefense: 20
+magicaldefense: 10
+hp: 2516
+mana: 700
+attackspeed:: 0.8
+hpregen: 6.8
+manaregen: 6
  
 OBuild1: "DemonShoes"  
 OBuild2: "LightningTruncheon" 

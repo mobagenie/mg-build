@@ -18,6 +18,32 @@ Match:
 
 heroname: "natan"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/natan.jpg
+
+View: 20737 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 1 
+TierLabel:  Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 70 
+durability: 30 
+abilityeffects: 55 
+difficulty: 80 
+
+movementspeed: 245
+physicalattack: 110
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 15
+hp: 2530
+mana: 443
+attackspeed:: 0.698
+hpregen: 6
+manaregen: 3
  
 OBuild1: "DemonHunterSword"  
 OBuild2: "CorrosionScythe" 

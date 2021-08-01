@@ -18,6 +18,32 @@ Match: 50
 
 heroname: "gatotkaca"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/gatotkaca.jpg
+
+View: 88676 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 49 
+durability: 92 
+abilityeffects: 70 
+difficulty: 70 
+
+movementspeed: 260
+physicalattack: 120
+magicpower: 0
+physicaldefense: 10
+magicaldefense: 10
+hp: 2629
+mana: 0
+attackspeed:: 0.818
+hpregen: 8.4
+manaregen: 0
  
 OBuild1: "CourageMask"  
 OBuild2: "WarriorBoots" 

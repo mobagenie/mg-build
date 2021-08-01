@@ -18,6 +18,32 @@ Match: 1626
 
 heroname: "ruby"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/ruby.jpg
+
+View: 66791 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 45 
+durability: 78 
+abilityeffects: 66 
+difficulty: 70 
+
+movementspeed: 260
+physicalattack: 129
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 5
+hp: 2509
+mana: 430
+attackspeed:: 0.858
+hpregen: 6
+manaregen: 5.8
  
 OBuild1: "WarriorBoots"  
 OBuild2: "EndlessBattle" 

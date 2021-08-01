@@ -18,6 +18,32 @@ Match: 611
 
 heroname: "irithel"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/irithel.jpg
+
+View: 79746 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 80 
+durability: 38 
+abilityeffects: 42 
+difficulty: 70 
+
+movementspeed: 260
+physicalattack: 118
+magicpower: 0
+physicaldefense: 17
+magicaldefense: 10
+hp: 2540
+mana: 438
+attackspeed:: 0.826
+hpregen: 7
+manaregen: 3
  
 OBuild1: "SwiftBoots"  
 OBuild2: "BerserkersFury" 

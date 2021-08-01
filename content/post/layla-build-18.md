@@ -18,6 +18,32 @@ Match: 1763
 
 heroname: "layla"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/layla.jpg
+
+View: 282568 
+Role: 5 
+BP: 0
+DM: 0 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 95 
+durability: 18 
+abilityeffects: 62 
+difficulty: 25 
+
+movementspeed: 240
+physicalattack: 125
+magicpower: 0
+physicaldefense: 15
+magicaldefense: 10
+hp: 2500
+mana: 424
+attackspeed:: 0.85
+hpregen: 5.4
+manaregen: 2.8
  
 OBuild1: "SwiftBoots"  
 OBuild2: "DemonHunterSword" 

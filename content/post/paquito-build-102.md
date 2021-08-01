@@ -18,6 +18,32 @@ Match: 381
 
 heroname: "paquito"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/paquito.jpg
+
+View: 97800 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 1 
+TierLabel: S+ Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 40 
+durability: 60 
+abilityeffects: 65 
+difficulty: 86 
+
+movementspeed: 260
+physicalattack: 121
+magicpower: 0
+physicaldefense: 22
+magicaldefense: 10
+hp: 2798
+mana: 0
+attackspeed:: 0.98
+hpregen: 9.8
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 

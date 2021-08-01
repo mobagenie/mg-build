@@ -18,6 +18,32 @@ Match: 853
 
 heroname: "badang"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/badang.jpg
+
+View: 147635 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 82 
+durability: 59 
+abilityeffects: 68 
+difficulty: 65 
+
+movementspeed: 255
+physicalattack: 111
+magicpower: 0
+physicaldefense: 23
+magicaldefense: 10
+hp: 2708
+mana: 0
+attackspeed:: 0.908
+hpregen: 8
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "DemonHunterSword" 

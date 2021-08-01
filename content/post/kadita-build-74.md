@@ -18,6 +18,32 @@ Match: 895
 
 heroname: "kadita"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/kadita.jpg
+
+View: 88541 
+Role: 4 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 46 
+durability: 55 
+abilityeffects: 90 
+difficulty: 65 
+
+movementspeed: 240
+physicalattack: 105
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 10
+hp: 2491
+mana: 495
+attackspeed:: 0.8
+hpregen: 7.2
+manaregen: 3.6
  
 OBuild1: "DemonShoes"  
 OBuild2: "LightningTruncheon" 

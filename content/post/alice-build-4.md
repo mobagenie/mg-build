@@ -18,6 +18,32 @@ Match: 2600
 
 heroname: "alice"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/alice.jpg
+
+View: 127433 
+Role: 4 
+BP: 15000
+DM: 399 
+Ticket: 0 
+HeroTier: 1 
+TierLabel: S+ Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 57 
+durability: 65 
+abilityeffects: 75 
+difficulty: 73 
+
+movementspeed: 240
+physicalattack: 114
+magicpower: 0
+physicaldefense: 21
+magicaldefense: 10
+hp: 2573
+mana: 493
+attackspeed:: 0.8
+hpregen: 7.2
+manaregen: 3.6
  
 OBuild1: "DemonShoes"  
 OBuild2: "LightningTruncheon" 

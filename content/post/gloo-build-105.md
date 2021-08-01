@@ -18,6 +18,32 @@ Match:
 
 heroname: "gloo"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/gloo.jpg
+
+View: 60970 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 45 
+durability: 75 
+abilityeffects: 70 
+difficulty: 75 
+
+movementspeed: 245
+physicalattack: 120
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 10
+hp: 2819
+mana: 440
+attackspeed:: 0.786
+hpregen: 12.4
+manaregen: 4
  
 OBuild1: "MagicShoes"  
 OBuild2: "BruteForceBreastplate" 

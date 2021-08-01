@@ -18,6 +18,32 @@ Match: 1084
 
 heroname: "sun"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/sun.jpg
+
+View: 239939 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 63 
+durability: 83 
+abilityeffects: 47 
+difficulty: 44 
+
+movementspeed: 260
+physicalattack: 114
+magicpower: 0
+physicaldefense: 23
+magicaldefense: 10
+hp: 2758
+mana: 400
+attackspeed:: 0.916
+hpregen: 8.2
+manaregen: 3.2
  
 OBuild1: "SwiftBoots"  
 OBuild2: "DemonHunterSword" 

@@ -18,6 +18,32 @@ Match: 2000
 
 heroname: "khufra"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/khufra.jpg
+
+View: 91120 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 73 
+durability: 85 
+abilityeffects: 75 
+difficulty: 70 
+
+movementspeed: 255
+physicalattack: 117
+magicpower: 0
+physicaldefense: 19
+magicaldefense: 10
+hp: 2779
+mana: 460
+attackspeed:: 0.786
+hpregen: 9.4
+manaregen: 3
  
 OBuild1: "CourageMask"  
 OBuild2: "WarriorBoots" 

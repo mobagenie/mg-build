@@ -18,6 +18,32 @@ Match: 630
 
 heroname: "eudora"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/eudora.jpg
+
+View: 153299 
+Role: 4 
+BP: 2000
+DM: 299 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 3
+LaneLabel: Mid Lane
+
+offense: 53 
+durability: 50 
+abilityeffects: 90 
+difficulty: 39 
+
+movementspeed: 250
+physicalattack: 112
+magicpower: 0
+physicaldefense: 19
+magicaldefense: 10
+hp: 2524
+mana: 468
+attackspeed:: 0.8
+hpregen: 7.6
+manaregen: 3.2
  
 OBuild1: "DemonShoes"  
 OBuild2: "LightningTruncheon" 

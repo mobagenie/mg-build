@@ -18,6 +18,32 @@ Match: 1270
 
 heroname: "chou"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/chou.jpg
+
+View: 333519 
+Role: 2 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 82 
+durability: 75 
+abilityeffects: 52 
+difficulty: 63 
+
+movementspeed: 260
+physicalattack: 121
+magicpower: 0
+physicaldefense: 23
+magicaldefense: 10
+hp: 2708
+mana: 0
+attackspeed:: 0.884
+hpregen: 7.8
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BladeoftheHeptaseas" 

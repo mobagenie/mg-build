@@ -18,6 +18,32 @@ Match: 999
 
 heroname: "moskov"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/moskov.jpg
+
+View: 136354 
+Role: 5 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 1
+LaneLabel: Gold Lane
+
+offense: 95 
+durability: 25 
+abilityeffects: 40 
+difficulty: 72 
+
+movementspeed: 240
+physicalattack: 125
+magicpower: 0
+physicaldefense: 16
+magicaldefense: 10
+hp: 2455
+mana: 420
+attackspeed:: 0.814
+hpregen: 6.4
+manaregen: 3
  
 OBuild1: "RaptorMachete"  
 OBuild2: "SwiftBoots" 

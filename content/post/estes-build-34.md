@@ -18,6 +18,32 @@ Match: 503
 
 heroname: "estes"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/estes.jpg
+
+View: 46409 
+Role: 6 
+BP: 24000
+DM: 499 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 50 
+durability: 47 
+abilityeffects: 68 
+difficulty: 45 
+
+movementspeed: 240
+physicalattack: 120
+magicpower: 0
+physicaldefense: 13
+magicaldefense: 10
+hp: 2221
+mana: 545
+attackspeed:: 0.8
+hpregen: 7.2
+manaregen: 3.6
  
 OBuild1: "CourageMask"  
 OBuild2: "DemonShoes" 

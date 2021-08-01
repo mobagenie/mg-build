@@ -18,6 +18,32 @@ Match: 2514
 
 heroname: "akai"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/akai.jpg
+
+View: 78292 
+Role: 1 
+BP: 32000
+DM: 0 
+Ticket: 599 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 63 
+durability: 91 
+abilityeffects: 54 
+difficulty: 45 
+
+movementspeed: 260
+physicalattack: 115
+magicpower: 0
+physicaldefense: 24
+magicaldefense: 10
+hp: 2769
+mana: 422
+attackspeed:: 0.85
+hpregen: 8.4
+manaregen: 2.4
  
 OBuild1: "CourageMask"  
 OBuild2: "WarriorBoots" 

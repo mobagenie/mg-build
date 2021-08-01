@@ -18,6 +18,32 @@ Match: 1028
 
 heroname: "ling"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/ling.jpg
+
+View: 184123 
+Role: 3 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 4
+LaneLabel: Jungle
+
+offense: 77 
+durability: 48 
+abilityeffects: 55 
+difficulty: 80 
+
+movementspeed: 260
+physicalattack: 125
+magicpower: 0
+physicaldefense: 18
+magicaldefense: 10
+hp: 2578
+mana: 0
+attackspeed:: 0.81
+hpregen: 7.8
+manaregen: 0
  
 OBuild1: "RaptorMachete"  
 OBuild2: "MagicShoes" 

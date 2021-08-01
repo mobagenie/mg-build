@@ -18,6 +18,32 @@ Match: 900
 
 heroname: "jawhead"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/jawhead.jpg
+
+View: 82834 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 2 
+TierLabel: S Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 85 
+durability: 88 
+abilityeffects: 70 
+difficulty: 76 
+
+movementspeed: 255
+physicalattack: 119
+magicpower: 0
+physicaldefense: 24
+magicaldefense: 10
+hp: 2658
+mana: 430
+attackspeed:: 0.9
+hpregen: 7.8
+manaregen: 3.2
  
 OBuild1: "ToughBoots"  
 OBuild2: "RaptorMachete" 

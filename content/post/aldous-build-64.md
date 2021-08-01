@@ -18,6 +18,32 @@ Match: 550
 
 heroname: "aldous"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/aldous.jpg
+
+View: 302220 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 3 
+TierLabel: A+ Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 80 
+durability: 75 
+abilityeffects: 65 
+difficulty: 40 
+
+movementspeed: 260
+physicalattack: 129
+magicpower: 0
+physicaldefense: 21
+magicaldefense: 10
+hp: 2718
+mana: 405
+attackspeed:: 0.836
+hpregen: 9.8
+manaregen: 3.6
  
 OBuild1: "RapidBoots"  
 OBuild2: "EndlessBattle" 

@@ -18,6 +18,32 @@ Match: 702
 
 heroname: "grock"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/grock.jpg
+
+View: 52852 
+Role: 1 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 2
+LaneLabel: Roam
+
+offense: 45 
+durability: 80 
+abilityeffects: 55 
+difficulty: 40 
+
+movementspeed: 260
+physicalattack: 135
+magicpower: 0
+physicaldefense: 21
+magicaldefense: 10
+hp: 2819
+mana: 430
+attackspeed:: 0.81
+hpregen: 8.4
+manaregen: 2.4
  
 OBuild1: "ShadowMask"  
 OBuild2: "AntiqueCuirass" 

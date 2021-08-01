@@ -18,6 +18,32 @@ Match: 150
 
 heroname: "xborg"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/xborg.jpg
+
+View: 153980 
+Role: 2 
+BP: 32000
+DM: 599 
+Ticket: 0 
+HeroTier: 5 
+TierLabel: B Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 78 
+durability: 69 
+abilityeffects: 82 
+difficulty: 79 
+
+movementspeed: 260
+physicalattack: 117
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 1018
+mana: 0
+attackspeed:: 0.868
+hpregen: 7.8
+manaregen: 0
  
 OBuild1: "BloodlustAxe"  
 OBuild2: "WarriorBoots" 

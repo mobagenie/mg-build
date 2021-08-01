@@ -12,12 +12,38 @@ tags:
 
 playername: "Proxima"
 cleanplayername: "proxima"
-WR: %65%
+WR: 65%
 League: x 250
 Match: 2040 
 
 heroname: "balmond"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/balmond.jpg
+
+View: 230254 
+Role: 2 
+BP: 6500
+DM: 299 
+Ticket: 0 
+HeroTier: 4 
+TierLabel: A Tier 
+LaneImg: 5
+LaneLabel: Exp Lane
+
+offense: 75 
+durability: 80 
+abilityeffects: 39 
+difficulty: 30 
+
+movementspeed: 260
+physicalattack: 119
+magicpower: 0
+physicaldefense: 25
+magicaldefense: 10
+hp: 2736
+mana: 0
+attackspeed:: 0.85
+hpregen: 9.4
+manaregen: 0
  
 OBuild1: "WarriorBoots"  
 OBuild2: "BloodlustAxe" 
