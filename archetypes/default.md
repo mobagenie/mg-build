@@ -1,6 +1,5 @@
 ---
 title: "{{ .TranslationBaseName | replaceRE "^[0-9]{14}-" "" | replaceRE "-" " " | title }}"
-post_highlight: "Player:  † WR: % Match:   Tier:  Tier Lane:  Lane"
 author: MobaGenie
 date: {{ .Date }}
 PublishDate: {{ .Date }}
@@ -17,10 +16,10 @@ playername: ""
 cleanplayername: "{{substr ( lower .File.BaseFileName  | replaceRE "^[0-9]{14}-" "" | replaceRE "," "") 0 80 }}"
 heroname: ""
 images: ../p/images/buildk/.png
-Player="" 
-WR="" 
-League="" 
-Match="" 
+Player: "" 
+WR: "" 
+League: "" 
+Match: "" 
 draft: false
 type: post
 proplayer: false
@@ -34,10 +33,33 @@ tw:
 bio: 
 ---
 
-{{< HeroInfo HeroName="" Role="" BP="" DM="" Ticket="" HeroTier="" TierLabel="" LaneImg="" LaneLabel="" >}} {{< /HeroInfo >}}
+
+{{< HeroInfo 
+HeroName="" 
+Role="" 
+BP="" 
+DM="" 
+Ticket="" 
+HeroTier="" 
+TierLabel="" 
+LaneImg="" 
+LaneLabel="" 
+>}}
  
-{{< OffensiveBuild build1=""  build2="" build3="" build4="" build5="" build6="" >}} {{</ OffensiveBuild >}}  
+{{< OffensiveBuild 
+build1=""  
+build2="" 
+build3=""
+build4="" 
+build5="" 
+build6="" 
+>}}  
 
-{{< BalancedBuild build1=""  build2="" build3="" build4="" build5="" build6="" >}} {{</ BalancedBuild >}}  
-
-
+{{< BalancedBuild 
+build1=""  
+build2="" 
+build3="" 
+build4="" 
+build5="" 
+build6="" 
+>}}
