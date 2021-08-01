@@ -20,9 +20,9 @@
 {{ end }}
 
 		</div>
-        <div class="col-4  text-center font-weight-bold"><i class="fas fa-medal fa-lg"></i><br/>WR : {{ .Get "WR" }}</div>
+        <div class="col-4  text-center font-weight-bold"><i class="fas fa-medal fa-lg"></i><br/>WR : {{ $.Page.Params.WR }}</div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
-          <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Match : {{ .Get "Match" }}</div>
+          <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Match : {{ $.Page.Params.match }}</div>
 		  
         <!-- <div class="col-4">BP : {{ .Get "BP" }}</div> -->
         <!-- <div class="col-4">DM : {{ .Get "DM" }}</div> -->

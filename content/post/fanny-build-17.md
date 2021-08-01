@@ -2,77 +2,57 @@
 title: Build fanny Mobile Legends by God Of Babannen
 slug: build-fanny-mlbb-by-god-of-babannen
 filename: "fanny-build-17.html"
+
 categories: 
 - Build 
 - Mobile Legends
 tags: 
 - "god-of-babannen"
 - "fanny"
+
 playername: "God Of Babannen"
 cleanplayername: "god-of-babannen"
+WR: 88.0%
+League: x 800
+Match: 4456 
 
 heroname: "fanny"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/fanny.jpg
-View: 321133 
-Role: 3 
-BP: 24000
-DM: 499 
-Ticket: 0 
-HeroTier: 4 
-TierLabel: A Tier 
-LaneImg: 4
-LaneLabel: Jungle 
+ 
+OBuild1: "RaptorMachete"  
+OBuild2: "ToughBoots" 
+OBuild3: "BloodlustAxe" 
+OBuild4: "BruteForceBreastplate" 
+OBuild5: "BladeofDespair" 
+OBuild6: "QueensWings" 
+ 
+BBuild1: "BeastKiller"  
+BBuild2: "WarriorBoots" 
+BBuild3: "BloodlustAxe" 
+BBuild4: "AntiqueCuirass" 
+BBuild5: "MaleficRoar" 
+BBuild6: "AthenasShield"
 
-SkillDesc1: "<b>Air Superiority<br>According to her flying speed, Fanny's damage while flying is increased by 15% to 30% and leaves a <font color='#404495'>(Prey Mark)</font> on the target (Stack up to 2 times). For Each stack of <font color='#404495'>(Prey Mark)</font> the target has, Fanny regens 10 energy when she deals damage to it. (Energy regen effect decays if she deals damage to multiple enemy heroes in a short time.)"   
-SkillDesc2: "<b>Tornado Strike<br>Fanny whirls her blade, dealing 280<font color='#D58E1F'>( +90% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemies."   
-SkillDesc3: "<b>Steel Cable<br>Fanny throws out a cable that draws her to the first obstacle that it touches. Each successive use of this skill within 2s decreases its energy cost by 1 and changes her flying direction. If energy is sufficient and she hits an enemy while flying, <font color='#404495'>(Tornado Strike)</font> will be triggered."   
-SkillDesc4: "<b>Cut Throat<br>Fanny initiates a quick attack on an enemy, dealing 500<font color='#D58E1F'>( +240% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Each stack of <font color='#404495'>(Prey Mark)</font> of enemies will increase her damage by 20%."  
 
-offense: 85 
-durability: 60 
-abilityeffects: 50 
-difficulty: 100 
-
-movementspeed: 265
-physicalattack: 126
-magicpower: 0
-physicaldefense: 19
-magicaldefense: 10
-hp: 2526
-mana: 0
-attackspeed: 0.894
-hpregen: 6.6
-manaregen:: 0
 
 draft: false
 type: post
 originalpost: true
+
+unusedparam1: true
+unusedparam2: true
+unusedparam3: true
+unusedparam4: true
+unusedparam5: true
+unusedparam6: true
+unusedparam7: true
+unusedparam8: true
+unusedparam9: true
+unusedparam10: true
+
 ---
 
-
-{{< GetStory 
-Story=` Despite just being a human, Fanny never gave up on her dream of flying. She fashioned a kind of steel grappling hook for herself in the hopes of using it to grab onto cliff faces and soar between mountain peaks. After countless training sessions in live environments, Fanny has finally mastered this technique. Folks who have seen her soaring through the air refer to her as the Blade of Freedom. ` 
->}}
-
-{{< HeroInfo 
-HeroName="fanny" 
-View="321133" 
-Role="3" 
-BP="24000" 
-DM="499" 
-Ticket="0" 
-HeroTier="4" 
-TierLabel="A Tier" 
-LaneImg="4" 
-LaneLabel="Jungle" 
->}}
- 
-{{< ChampionSkills 
-SkillDesc1=`<b>Air Superiority<br>According to her flying speed, Fanny's damage while flying is increased by 15% to 30% and leaves a <font color='#404495'>(Prey Mark)</font> on the target (Stack up to 2 times). For Each stack of <font color='#404495'>(Prey Mark)</font> the target has, Fanny regens 10 energy when she deals damage to it. (Energy regen effect decays if she deals damage to multiple enemy heroes in a short time.)`   
-SkillDesc2=`<b>Tornado Strike<br>Fanny whirls her blade, dealing 280<font color='#D58E1F'>( +90% Total Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font> to nearby enemies.`   
-SkillDesc3=`<b>Steel Cable<br>Fanny throws out a cable that draws her to the first obstacle that it touches. Each successive use of this skill within 2s decreases its energy cost by 1 and changes her flying direction. If energy is sufficient and she hits an enemy while flying, <font color='#404495'>(Tornado Strike)</font> will be triggered.`   
-SkillDesc4=`<b>Cut Throat<br>Fanny initiates a quick attack on an enemy, dealing 500<font color='#D58E1F'>( +240% Extra Physical ATK)</font> <font color='#C53535'>(Physical Damage)</font>. Each stack of <font color='#404495'>(Prey Mark)</font> of enemies will increase her damage by 20%.`   
->}}
+{{< HeroInfo >}} 
 
 {{< OffensiveBuild 
 build1="RaptorMachete"  
@@ -81,7 +61,7 @@ build3="BloodlustAxe"
 build4="BruteForceBreastplate" 
 build5="BladeofDespair" 
 build6="QueensWings" 
->}} 
+ >}} 
 
 {{< BalancedBuild 
 build1="BeastKiller"  
@@ -90,52 +70,5 @@ build3="BloodlustAxe"
 build4="AntiqueCuirass" 
 build5="MaleficRoar" 
 build6="AthenasShield" 
->}}
-
-
-{{< RecommendedSpells 
-SpellName1="Retribution" 
-SpellName2="Retribution" 
->}}  
-
-{{< RecommendedEmblems 
-EmblemName1="Fighter" 
-EmblemName2="Assassin" 
->}}   
-
-
-{{< ChampionAttributes
-img1="mspeed.png" Attrib1="Movement SPD:" AttribVal1="265"
-img2="pattack" Attrib2="Physical Attack" AttribVal2="126"
-img3="mpower" Attrib3="Magic Power" AttribVal3="0"
-img4="pdefense" Attrib4="Physical Defense" AttribVal4="19"
-img5="mdefense" Attrib5="Magical Defense" AttribVal5="10"
-img6="hp" Attrib6="HP" AttribVal6="2526"
-img7="mana" Attrib7="Mana:" AttribVal7="0"
-img8="aspeed" Attrib8="Attack Speed:" AttribVal8="0.894"
-img9="hregen" Attrib9="Hp Regen" AttribVal9="6.6"
-img10="mregen" Attrib10="Mana Regen:" AttribVal10="0"
->}}
-
-
-{{< FightingAbility
-Percentage1="85" Label1="Offense"
-Percentage2="60" Label2="Durability"
-Percentage3="50" Label3="Ability Effects"
-Percentage4="100" Label4="Difficulty"
  >}}
 
-{{< StrongAgainst 
-HeroName1="layla"
-HeroName2="karina"
-HeroName3="estes"
-HeroName4="natalia"
-HeroName5="bruno"
-/>}}
-
-{{< WeakAgainst
-HeroName1="ruby"
-HeroName2="chou"
-HeroName3="eudora"
-HeroName4="franco"
-HeroName5="akai"/>}}
