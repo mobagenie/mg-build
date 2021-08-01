@@ -31,21 +31,38 @@
     {{ .Scratch.Set "lane" "EXP" }}	
 {{ end }}
 
+{{ if eq $.Page.Params.LaneLabel "Gold Lane" }}
+    {{ .Scratch.Set "role" "Marksman" }}
+    {{ .Scratch.Set "lane" "Gold Lane" }}	
+{{ else if eq $.Page.Params.LaneLabel "ROAM" }}
+    {{ .Scratch.Set "role" "Supports" }}	
+    {{ .Scratch.Set "lane" "ROAM" }}	
+{{ else if eq $.Page.Params.LaneLabel "MID Lane" }}
+    {{ .Scratch.Set "role" "Mage" }}
+    {{ .Scratch.Set "lane" "MID" }}	
+{{ else if eq $.Page.Params.LaneLabel "Jungle" }}
+    {{ .Scratch.Set "role" "Asssasins" }}
+    {{ .Scratch.Set "lane" "Jungle" }}	
+{{ else if eq $.Page.Params.LaneLabel "EXP Lane" }}
+    {{ .Scratch.Set "role" "Fighter" }}
+    {{ .Scratch.Set "lane" "EXP" }}	
+{{ end }}
+
 <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="fas fa-user fa-lg"></i></button>		 -->
 		
 		
 		<!-- <br/> -->
 		
-<a style="color:white;" href="/tags/ {{ .Scratch.Get "role" | lower  }}" title="{{ $.Page.Params.playername }}"> Role: {{ .Scratch.Get "role"}}</a>
+<a style="color:white;" href="/tags/{{ .Scratch.Get "role" | lower  }}" title="{{ $.Page.Params.playername }}"> Role: {{ .Scratch.Get "role" }}</a>
 
 		</div>
         <div class="col-4  text-center font-weight-bold"><i class="fas fa-medal fa-lg"></i><br/>Lane: {{ .Scratch.Get "lane" }}</div>
          <!-- <div class="col-4">League: {{ .Get "League" }}</div> -->
-          <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Tier : {{ $.Page.Params.tierlabel }}</div>
+          <div class="col-4 text-center font-weight-bold"><i class="fas fa-play fa-lg"></i><br/>Tier : {{ $.Page.Params.lane }}</div>
 		  
-        <div class="col-4">BP : {{ .Get "BP" }}</div>
-        <div class="col-4">DM : {{ .Get "DM" }}</div>
-         <div class="col-4">Ticket : {{ .Get "Ticket" }}</div>
+        <div class="col-4  text-center ">BP : {{ $.Page.Params.BP }}</div>
+        <div class="col-4  text-center ">DM : {{ $.Page.Params.DM }}</div>
+         <div class="col-4  text-center ">Ticket : {{ $.Page.Params.Ticket }}</div>
 
            
       </div></b>

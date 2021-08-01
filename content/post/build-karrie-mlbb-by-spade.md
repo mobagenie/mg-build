@@ -37,5 +37,3 @@ bio:
  
 {{< OffensiveBuild build1="RaptorMachete"  build2="BloodlustAxe" build3="SwiftBoots" build4="EndlessBattle" build5="ThunderBelt" build6="QueensWings" sourcelink="https://www.anonytun.com/build-karrie/">}}
 
-{{< HeroProfileButton >}} 
-
