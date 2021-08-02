@@ -89,5 +89,6 @@ biocontent = `https://revivalpedia.com/mlbb/pemain/antimage<br/>https://metrolam
 
 {{</ profile/player/playersocmed >}}
 
+{{< profile/player/playerlatestvideo >}}
 
 {{< profile/player/playerlatestbuild >}}

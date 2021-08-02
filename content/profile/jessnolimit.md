@@ -37,6 +37,8 @@ bio: Tobias Justin, yang dikenal secara profesional sebagai Jess No Limit (lahir
 ---
 
 {{< profile/player/playerinfo name="Jess no Limit" cleanname="jessnolimit" bio="Tobias Justin, yang dikenal secara profesional sebagai Jess No Limit (lahir di Kota Jakarta, Indonesia, 5 Februari 1996; umur 25 tahun) adalah seorang pemain permainan daring, streamer, dan YouTuber berkebangsaan Indonesia." >}} {{</ profile/player/playerinfo >}}
+
+{{< profile/player/playerlatestvideo >}}
  
  {{< profile/player/playerlatestbuild >}}
 

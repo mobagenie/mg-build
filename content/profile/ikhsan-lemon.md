@@ -57,5 +57,6 @@ biocontent = "RRQ Lemon mengawali karirnya sebagai pro gamer sejak kemunculan ga
 
 {{</ profile/player/playersocmed >}}
 
+{{< profile/player/playerlatestvideo >}}
 
 {{< profile/player/playerlatestbuild >}}

@@ -42,5 +42,6 @@ bio:
 
 {{</ profile/player/playersocmed >}}
 
+{{< profile/player/playerlatestvideo >}}
 
 {{< profile/player/playerlatestbuild >}}
