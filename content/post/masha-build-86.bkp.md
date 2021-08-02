@@ -13,7 +13,7 @@ playername: "JessNoLimit"
 cleanplayername: "jessnolimit"
 heroname: "masha"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/f_auto/https://cdn2-build.mobagenie.my.id//p/images/banner/full/masha.jpg
-draft: false
+draft: true
 type: post
 proplayer: true
 team: Evos Esports (ex)

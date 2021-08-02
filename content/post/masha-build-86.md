@@ -18,6 +18,15 @@ Match: 238
 
 heroname: "masha"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/masha.jpg
+proplayer: true
+team: Evos Esports (ex)
+ytvideoid: 1xbIGJsnlHQ
+ign: JessNoLimit
+yt: UCvh1at6xpV1ytYOAzxmqUsA
+fb: jessnolimit.id
+ig: jessnolimit
+tw: _jessnolimit
+shortbio: Tobias Justin, yang dikenal secara profesional sebagai Jess No Limit (lahir di Kota Jakarta, Indonesia, 5 Februari 1996; umur 25 tahun) adalah seorang pemain permainan daring, streamer, dan YouTuber berkebangsaan Indonesia.
 
 View: 82118 
 Role: 2 

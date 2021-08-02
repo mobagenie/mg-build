@@ -8,15 +8,17 @@
 <div class="col-lg-12 text-center font-weight-bold">BUILD {{ upper $.Page.Params.heroname }} MOBILE LEGENDS BY {{ upper $.Page.Params.playername }}</div>
         <div class="col-4 text-center font-weight-bold">
 
-<button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="fas fa-user fa-lg"></i></button>		
+<!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#gridSystemModal" ><i class="fas fa-user fa-lg"></i></button>		 -->
 		
-		
-		<br/>
 
 {{ if (isset $.Page.Params "proplayer") }}
-    <a style="color:white;" href="/profile/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}">{{ $.Page.Params.playername }}</a>
+<div class="badge badge-light" style="margin-top:-5px;">
+    <a style="color:white;" href="/profile/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ $.Page.Params.cleanplayername | lower }}.jpg" width="50px" height="50px"  class="" alt="{{ $.Page.Params.playername }}">
+	</div><a style="color:white;" href="/profile/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}"><div style="padding-top: 3px;">@{{ $.Page.Params.playername }}</div></a>
 {{ else }}
-<a style="color:white;" href="/tags/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}">{{ $.Page.Params.playername }}</a>
+<div class="badge badge-light" style="margin-top:-5px;">
+    <a style="color:white;" href="/tags/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/blank.jpg" width="50px" height="50px"  class="" alt="{{ $.Page.Params.playername }}">
+	</div><a style="color:white;" href="/tags/{{ $.Page.Params.cleanplayername }}" title="{{ $.Page.Params.playername }}"><div style="padding-top: 3px;">@{{ $.Page.Params.playername }}</div></a>
 {{ end }}
 
 		</div>
