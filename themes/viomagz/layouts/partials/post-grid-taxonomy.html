@@ -51,32 +51,87 @@
 {{if isset .Params "images" }}
 {{ $images_set := index .Params.images  | absURL }}
 
-<a href="{{ .RelPermalink }}"><img src="https://cdn.statically.io/img/build.mobagenie.my.id/f=auto/p/images/buildk/{{ .Params.heroname | lower }}.png" alt="{{ .Params.heroname }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+<a href="{{ .RelPermalink }}"><img src="https://cdn.statically.io/img/cdn2-build.mobagenie.my.id/f=auto/p/images/buildk/{{ .Params.heroname | lower }}.png" alt="{{ .Params.heroname }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
 		
 	<!-- <img src="{{ . | absURL }}" alt="" class="img-fluid rounded-circle" width="100px" height="100px"> -->
 
 	{{ end }}
 	
+<br/>
+<h1 class="badge badge-warning font-weight-bold"  style="color:">{{ .Params.playername | upper }}</h1>
 
 
 <!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
-</br></br>
+</br>
+
 
 {{ if eq $Title "top-global" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+
+
+{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
+{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
+{{ end }}
+{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
+{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
+{{ end }}
+{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
+{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
+{{ end }}
+
+">
   {{ .Params.playername | upper }}
 </p>
 {{ else if eq $Title "pro-player" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+
+
+{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
+{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
+{{ end }}
+{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
+{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
+{{ end }}
+{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
+{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
+{{ end }}
+
+">
   {{ .Params.playername | upper }}
 </p>
 {{ else if eq $Title "youtuber" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+
+
+{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
+{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
+{{ end }}
+{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
+{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
+{{ end }}
+{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
+{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
+{{ end }}
+
+">
   {{ .Params.playername | upper }}
 </p>
 {{ else  }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
-  {{ .Params.playername | upper }}
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+
+
+{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
+{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
+{{ end }}
+{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
+{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
+{{ end }}
+{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
+{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
+{{ end }}
+
+">
+  <i class="fas fa-info fa-sm"></i> detail
 </p>
 {{ end }}
 

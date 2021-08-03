@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             //alert(JSON.stringify(json.items[0].contentDetails.videoId));
             var videoid = {{ .Params.ytvideoid }};
             htmlStr1 = "";
-            htmlStr1 += '<img src="http://img.youtube.com/vi/' + videoid + '/mqdefault.jpg">';
+            htmlStr1 += '<img width="534" height="300" class="mw-100" src="http://img.youtube.com/vi/' + videoid + '/mqdefault.jpg">';
             htmlStr1 += "";
 
             $("#thumbnail").html(htmlStr1);

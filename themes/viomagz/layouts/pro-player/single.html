@@ -40,27 +40,30 @@
 
 				{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
 
+{{ $cleanplayername := slice }}
+{{ $cleanplayername2 := slice }}
+{{ range (where .Site.RegularPages "Type" "profile") }}
+{{if isset .Params "proplayer" }}  
+{{ $cleanplayername = $cleanplayername | append .Params.cleanplayername }}
+{{ $cleanplayername2 = $cleanplayername2 | append .Params.cleanplayername }}
+{{ end }}
+{{ end }}
 
-				{{ range (where .Site.RegularPages "Type" "post") }}
-				<tr>	
+{{ range $cleanplayername | uniq }}
 
-{{if isset .Params "proplayer" }}
+<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="">
 
-<div class="badge badge-dark" style="margin:5px;" data-wow-delay=".5s" href="{{ .RelPermalink }}">
 
 	
-<a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername }}.jpg" alt="{{ .Params.playername }}"width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+<a href="/profile/{{ . }}/#latestbuild"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ . }}.jpg" alt="{{ . }}"width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
 
-<!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
-</br></br>
-<a href="/profile/{{ .Params.cleanplayername  }}/#latestbuild" type="button" class="btn btn-primary" sty le="background:#009578;">
-{{ .Params.playername }}
-</a>
+<!-- <b class="badge badge-primary"  style="color:">{{ . }}</b> -->
+</br>
+<h1 class="badge badge-warning font-weight-bold"  style="color:">{{ . | upper }}</h1>
+</br>
+<a href="/profile/{{ .  }}/#latestbuild" type="button" class="btn btn-primary" sty le="background:#009578;">Build</a>
 
-</div>	
-
-	{{ end }}
-				
+</div>				
 {{ end }}
 
  </div>
