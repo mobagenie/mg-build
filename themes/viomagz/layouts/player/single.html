@@ -63,7 +63,20 @@
 
 <!-- <b class="badge badge-primary"  style="color:">{{ index .Params.heroname }}</b> -->
 
-<a href="/tags/{{ .Params.cleanplayername  }}" type="button" class="btn btn-primary" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="{{ .Params.post_highlight }}.">
+<a href="/tags/{{ .Params.cleanplayername  }}" type="button" class="btn btn-primary" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+
+
+{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
+{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
+{{ end }}
+{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
+{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
+{{ end }}
+{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
+{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
+{{ end }}
+
+">
 {{ .Params.playername }}
 </a></div>	
 				<!-- <td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}}</strong></td> -->

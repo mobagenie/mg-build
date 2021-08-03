@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             videoid = videoid.replace('"', '');
 
             htmlStr1 = "";
-            htmlStr1 += '<img class="mw-100" width="534" height="300" src="http://img.youtube.com/vi/' + videoid + '/hqdefault.jpg">';
+            htmlStr1 += '<img class="mw-100" src="http://img.youtube.com/vi/' + videoid + '/hqdefault.jpg">';
             htmlStr1 += "";
 
             $("#thumbnail").html(htmlStr1);
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 $("#thumbnail").hide();
 
                 htmlStr = "";
-                htmlStr += '<iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="534" height="300" type="text/html" src="https://www.youtube.com/embed/' + videoid + '?autoplay=1&playsinline=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://www.google.com"></iframe>';
+                htmlStr += '<iframe  class="mw-100" layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="534" height="300" type="text/html" src="https://www.youtube.com/embed/' + videoid + '?autoplay=1&playsinline=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://www.google.com"></iframe>';
                 htmlStr += "";
 
                 $("#video").html(htmlStr);

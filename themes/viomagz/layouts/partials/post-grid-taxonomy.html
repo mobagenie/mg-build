@@ -66,7 +66,7 @@
 
 
 {{ if eq $Title "top-global" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-title="{{ .Params.title | upper }}" data-content="
 
 
 {{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
@@ -83,7 +83,7 @@
   {{ .Params.playername | upper }}
 </p>
 {{ else if eq $Title "pro-player" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-title="{{ .Params.title | upper }}" data-content="
 
 
 {{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
@@ -100,7 +100,7 @@
   {{ .Params.playername | upper }}
 </p>
 {{ else if eq $Title "youtuber" }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-title="{{ .Params.title | upper }}" data-content="
 
 
 {{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
@@ -117,7 +117,7 @@
   {{ .Params.playername | upper }}
 </p>
 {{ else  }}
-<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-content="
+<p href="#" type="button" class="btn btn-primary  btn-sm" data-toggle="popover" data-toggle="popover" data-placement="top" st yle="background:#009578;" data-title="{{ .Params.title | upper }}" data-content="
 
 
 {{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
