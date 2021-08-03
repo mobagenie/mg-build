@@ -1,0 +1,121 @@
+
+         {{ partial "head.html" . }}
+		{{ partial "json-structured-data-index.html" . }}
+<div class="tagbanner">
+
+  <i><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_1000,h_200,c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/flat/BUILD-MG-BANNER.jpg" alt="{{ .Title }}" style="width:100%"></i>
+
+  
+  <!-- <button class="btn btn-danger btn-sm" onclick="openModal();currentSlide(1)"><i class="material-icons">fullscreen</i></button> -->
+</div>		
+  <body>
+
+  <div class="be-wrapper be-offcanvas-menu be-fixed-sidebar">
+  
+      {{ partial "top-nav.html" . }}
+
+   <div class="be-content">
+      <div class="container" style="max-width:1500px;margin:40px auto;font-size:1.2rem;">
+	  
+
+
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12  bg-primary">
+<h2><p class="btn btn-dark"><i class="fas fa-user-edit fa-lg"></i> GAMEPLAY VIDEO</p></h2>
+</div>
+        <div class="col-lg-12">
+	
+	
+ <!-- {{ where .Site.RegularPages "Type" "post" }} -->
+ 
+{{ $paginator := .Paginate (where (where .Site.RegularPages ".Params.ytvideoid" ">" "") ".Params.type" "post") 1 }}
+{{ range $paginator.Pages.ByParam "ytvideoid" }}
+
+<div class="col-lg-12">
+
+<h2>Gameplay {{ .Params.heroname | upper }} by {{ .Params.playername }}</h2>
+
+</div>
+
+<div class="col-lg-12">
+
+    <script>
+<!-- $(document).ready(function() { -->
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+            //alert(JSON.stringify(json.items[0].contentDetails.videoId));
+            var videoid = {{ .Params.ytvideoid }};
+            htmlStr1 = "";
+            htmlStr1 += '<img src="http://img.youtube.com/vi/' + videoid + '/mqdefault.jpg">';
+            htmlStr1 += "";
+
+            $("#thumbnail").html(htmlStr1);
+
+            $("#play").show();
+
+            $("#play").click(function() {
+
+                $("#play").hide();
+                //alert("The paragraph was clicked.");
+                $("#thumbnail").hide();
+
+                htmlStr = "";
+                htmlStr += '<iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="534" height="300" type="text/html" src="https://www.youtube.com/embed/' + videoid + '?autoplay=1&playsinline=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://www.google.com"></iframe>';
+                htmlStr += "";
+
+                $("#video").html(htmlStr);
+
+            }); // jquery on click
+
+
+}); // jquery on ready doc
+    </script>
+
+
+<div class="youtube-embed">
+
+<div id="video"></div>
+
+<DIV id="thumbnail"></div><br/>
+<button id="play" type="button" class="btn btn-lg btn-warning text-center" style="display:none"; ><i class="fas fa-play fa-lg"></i> PLAY VIDEO</button>
+
+</div>
+ 
+
+ 
+{{ end }}
+<br/>
+{{ template "_internal/pagination.html" . }}
+</div>
+
+
+<br/><br/>
+    <!-- {{ partial "pagination-index.html" . }} -->
+<br/>			
+</div>
+
+
+			
+        </div>
+<br/><br/>
+
+
+
+
+       
+         </div>
+      </div>
+   </div>
+
+{{ partial "bottom-nav.html" . }}
+                   
+
+
+        {{ partial "footer.html" . }}
+
+
+	 
+  </body>
+
+</html>

@@ -18,19 +18,19 @@ tags:
 - Biodata
 playername: "Xinnn"
 cleanplayername: "xinnn"
-aka: ""
+aka: "RRQ Xinnn, Xinnn"
 images: https://res.cloudinary.com/drlhixyyd/image/fetch/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/xinnn.jpg
 draft: false
 layout: profile
 type: profile
 profileplayer: true
 proplayer: true
-team: 
+team: Team RRQ 
 exteam: "" 
 achievement: ""
 allachievement: ""
 ytvideoid: 
-ign: 
+ign: xinnn
 yt: UCDfcUKYZOjC0G-5uM0UwYTg
 fb: 
 ig: rrq_xinn
