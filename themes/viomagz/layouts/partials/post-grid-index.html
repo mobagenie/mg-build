@@ -42,15 +42,7 @@
 <br/>
 <p type="button" class="btn btn-primary btn-xs" data-toggle="popover" data-toggle="popover" data-placement="top" sty le="background:#009578;" data-title="{{ .Params.title | upper }}" data-content="
 
-{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
-{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
-{{ end }}
-{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
-{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
-{{ end }}
-{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
-{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
-{{ end }}
+{{ partial "badge-details.html" . }}
 
 ">
   <i class="fas fa-info fa-sm"></i> detail

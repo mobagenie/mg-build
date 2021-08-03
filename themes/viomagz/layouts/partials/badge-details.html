@@ -1,0 +1,10 @@
+
+{{ if (and (isset .Params "wr" ) .Params.wr ">" "0") }}
+{{$wr := " ■ WR : "}}{{ $wr }}{{.Params.wr }}
+{{ end }}
+{{ if (and (isset .Params "match" ) .Params.match ">" "0") }}
+{{$match := " ■ Match : "}}{{ $match }}{{.Params.match }}
+{{ end }}
+{{ if (and (isset .Params "team" ) .Params.team ">" "0") }}
+{{$team := " ■ Team : "}}{{ $team }}{{.Params.team }}
+{{ end }}

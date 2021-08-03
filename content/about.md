@@ -14,7 +14,7 @@ Latest APP Version 1.0.6
 
 Changelog :
 
-`- v1.0.6 First build (August 03, 2021)`
+`- v1.0.6  (August 03, 2021)`
 
 `- v1.0.1 major update`
 
