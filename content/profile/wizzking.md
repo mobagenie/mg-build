@@ -1,40 +1,43 @@
 ---
-title: "Profile Xinnn"
+title: "Profile Wizzking"
 post_highlight: ""
 author: MobaGenie
-date: 2021-08-03T04:53:57+07:00
-PublishDate: 2021-08-03T04:53:57+07:00
-Lastmod: 2021-08-03T04:53:57+07:00
-slug: xinnn
+date: 2021-08-06T18:34:58+07:00
+PublishDate: 2021-08-06T18:34:58+07:00
+Lastmod: 2021-08-06T18:34:58+07:00
+slug: wizzking
 categories: 
 - Profile 
 - Player
 - Biodata
 tags: 
-- "xinnn"
-- "Xinnn"
+- "wizzking"
+- "Wizzking"
 - Profile 
 - Player
 - Biodata
-playername: "Xinnn"
-cleanplayername: "xinnn"
-aka: "Yesaya Omega Armando Wowiling, RRQ Xinnn, Xinnn"
-images: https://res.cloudinary.com/drlhixyyd/image/fetch/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/xinnn.jpg
+playername: "Wizzking"
+cleanplayername: "wizzking"
+aka: "Mohd Zulkarnain Hj Mohd Zulkifli"
+images: https://res.cloudinary.com/drlhixyyd/image/fetch/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/wizzking.jpg
 draft: false
 layout: profile
 type: profile
 profileplayer: true
-proplayer: true
-team: Team RRQ 
+proplayer: false
+team: 
 exteam: "" 
 achievement: ""
 allachievement: ""
-ytvideoid: 
-ign: xinnn
-yt: UCDfcUKYZOjC0G-5uM0UwYTg
-fb: 
-ig: rrq_xinn
-tw: 
+age: "24"
+birthplace: "Brunei Darussalam
+Nationality Brunei Darussalam"
+ytvideoid: ""
+ign: ""
+yt: "UCWgw2kyEGkhIN_yTg7dd2ZA"
+fb: ""
+ig: "rrq_wizzking"
+tw: ""
 shortbio: ""
 ---
 
@@ -56,16 +59,13 @@ biocontent = ""
  
 {{< profile/player/playersocmed >}}
 
-{{< profile/player/playersocmed >}}
-
 {{< profile/player/playersocmedcontent socmed="yt" >}} 
 {{< profile/player/playersocmedcontent socmed="fb" >}} 
 {{< profile/player/playersocmedcontent socmed="ig" >}} 
-{{< profile/player/playersocmedcontent socmed="nimo" >}} 
+{{< profile/player/playersocmedcontent socmed="tw" >}} 
 
 {{</ profile/player/playersocmed >}}
 
 {{< profile/player/playerlatestvideo >}}
-
 
 {{< profile/player/playerlatestbuild >}}

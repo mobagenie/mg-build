@@ -1,39 +1,39 @@
 ---
-title: "Profile Xinnn"
+title: "Profile Vyn"
 post_highlight: ""
 author: MobaGenie
-date: 2021-08-03T04:53:57+07:00
-PublishDate: 2021-08-03T04:53:57+07:00
-Lastmod: 2021-08-03T04:53:57+07:00
-slug: xinnn
+date: 2021-08-06T18:16:56+07:00
+PublishDate: 2021-08-06T18:16:56+07:00
+Lastmod: 2021-08-06T18:16:56+07:00
+slug: vyn
 categories: 
 - Profile 
 - Player
 - Biodata
 tags: 
-- "xinnn"
-- "Xinnn"
+- "vyn"
+- "Vyn"
 - Profile 
 - Player
 - Biodata
-playername: "Xinnn"
-cleanplayername: "xinnn"
-aka: "Yesaya Omega Armando Wowiling, RRQ Xinnn, Xinnn"
-images: https://res.cloudinary.com/drlhixyyd/image/fetch/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/xinnn.jpg
+playername: "Vyn"
+cleanplayername: "vyn"
+aka: ""
+images: https://res.cloudinary.com/drlhixyyd/image/fetch/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/vyn.jpg
 draft: false
 layout: profile
 type: profile
 profileplayer: true
-proplayer: true
-team: Team RRQ 
+proplayer: false
+team: 
 exteam: "" 
 achievement: ""
 allachievement: ""
 ytvideoid: 
-ign: xinnn
-yt: UCDfcUKYZOjC0G-5uM0UwYTg
+ign: 
+yt: UCKp8hygnzB0ElZ7YuVJEWVQ
 fb: 
-ig: rrq_xinn
+ig: rrq_vyn
 tw: 
 shortbio: ""
 ---
@@ -56,16 +56,13 @@ biocontent = ""
  
 {{< profile/player/playersocmed >}}
 
-{{< profile/player/playersocmed >}}
-
 {{< profile/player/playersocmedcontent socmed="yt" >}} 
 {{< profile/player/playersocmedcontent socmed="fb" >}} 
 {{< profile/player/playersocmedcontent socmed="ig" >}} 
-{{< profile/player/playersocmedcontent socmed="nimo" >}} 
+{{< profile/player/playersocmedcontent socmed="tw" >}} 
 
 {{</ profile/player/playersocmed >}}
 
 {{< profile/player/playerlatestvideo >}}
-
 
 {{< profile/player/playerlatestbuild >}}

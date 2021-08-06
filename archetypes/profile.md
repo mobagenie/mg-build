@@ -29,12 +29,15 @@ team:
 exteam: "" 
 achievement: ""
 allachievement: ""
-ytvideoid: 
-ign: 
-yt: 
-fb: 
-ig: 
-tw: 
+age: ""
+birthplace: ""
+nationality: ""
+ytvideoid: ""
+ign: ""
+yt: ""
+fb: ""
+ig: ""
+tw: ""
 shortbio: ""
 ---
 
@@ -63,5 +66,6 @@ biocontent = ""
 
 {{</ profile/player/playersocmed >}}
 
+{{< profile/player/playerlatestvideo >}}
 
 {{< profile/player/playerlatestbuild >}}
