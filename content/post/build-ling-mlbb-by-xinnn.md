@@ -10,7 +10,7 @@ categories:
 - Build 
 - Mobile Legends
 tags: 
-- "xinn"
+- "xinnn"
 - "ling"
 playername: "Xinn"
 cleanplayername: "xinnn"

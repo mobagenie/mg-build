@@ -30,7 +30,7 @@
 
 <h2>
 <!-- <i class="fas fa-cog fa-sm"></i> "{{ .Title | upper }}" BUILD -->
-<a href="{{ .RelPermalink }}"><button class="btn btn-dark btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> {{ .Title | upper }} </button></a>
+<a href="{{ .RelPermalink }}"><button class="btn btn-dark btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-users fa-lg"></i> {{ .Title | upper }} </button></a> <a href="/pro-player/"><button class="btn btn-warning btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content=""><i class="fas fa-cog fa-lg"></i> PRO PLAYER BUILD </button></a>
 </h2>
 
 </div>
@@ -55,13 +55,13 @@
 
 
 	
-<a href="/profile/{{ . }}/#latestbuild"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ . }}.jpg" alt="{{ . }}"width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+<a href="/profile/{{ . }}/"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ . }}.jpg" alt="{{ . }}"width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
 
 <!-- <b class="badge badge-primary"  style="color:">{{ . }}</b> -->
 </br>
 <h1 class="badge badge-warning font-weight-bold"  style="color:">{{ . | upper }}</h1>
 </br>
-<a href="/profile/{{ .  }}/#latestbuild" type="button" class="btn btn-primary" sty le="background:#009578;">Build</a>
+<a href="/profile/{{ .  }}/" type="button" class="btn btn-primary" sty le="background:#009578;">Profile</a>
 
 </div>				
 {{ end }}
