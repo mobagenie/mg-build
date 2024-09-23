@@ -167,13 +167,13 @@ ul.twPc-Arrange {
             <!-- Twitter Button -->   
 		</div>
 
-		<a title="{{ .Params.playername }}" href="/profile/{{ .Params.cleanplayername }}" class="twPc-avatarLink">
+		<a title="{{ .Params.playername }}" href="/profile/{{ .Params.cleanplayername }}.html" class="twPc-avatarLink">
 			<img alt="{{ .Params.playername }}" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername | lower }}.jpg" alt="{{ .Params.playername }}"class="twPc-avatarImg">
 		</a>
 
 		<div class="twPc-divUser">
 			<div class="twPc-divName">
-				<a href="/profile/{{ .Params.cleanplayername }}">{{ .Params.playername }}</a>
+				<a href="/profile/{{ .Params.cleanplayername }}.html">{{ .Params.playername }}</a>
 			</div>
 			<span>
 				<a href="/profile/{{ .Params.cleanplayername }}">@<span>{{ .Params.cleanplayername }}</span></a>

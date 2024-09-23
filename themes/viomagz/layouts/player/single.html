@@ -41,7 +41,7 @@
 <!-- {{if isset .Params "images" }} -->
 <!-- {{ $images_set := index .Params.images  | absURL }} -->
 
-<!-- <a href="/tags/{{ .Params.cleanplayername  }}"><img src="{{ $images_set }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a> -->
+<!-- <a href="/tags/{{ .Params.cleanplayername  }}.html"><img src="{{ $images_set }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a> -->
 		
 	<!-- <img src="{{ . | absURL }}" alt="" class="img-fluid rounded-circle" width="100px" height="100px"> -->
 
@@ -52,10 +52,10 @@
 
 
 	
-<a href="/tags/{{ .Params.cleanplayername  }}"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername }}.jpg" alt="{{ .Params.playername }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+<a href="/tags/{{ .Params.cleanplayername  }}.html"><img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/{{ .Params.cleanplayername }}.jpg" alt="{{ .Params.playername }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
 </br></br>
 {{else}}
-<a href="/tags/{{ .Params.cleanplayername  }}"><img src="https://cdn.statically.io/img/cdn2-build.mobagenie.my.id/f=auto/p/images/items/iname/blank.png" alt="{{ .Params.playername }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
+<a href="/tags/{{ .Params.cleanplayername  }}.html"><img src="https://cdn.statically.io/img/cdn2-build.mobagenie.my.id/f=auto/p/images/items/iname/blank.png" alt="{{ .Params.playername }}" width="50px" height="50px" id="itemboyutu" style="" class="ggsuz rounded-circle"  /></a>
 </br></br>
 {{ end}}
 	

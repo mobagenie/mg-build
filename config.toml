@@ -1,6 +1,12 @@
 title = "Build - MobaGenie - Mobile Legends Build Guide"
 
-baseURL = "https://build.mobagenie.my.id"
+#baseURL = "https://build.mobagenie.my.id"
+#baseURL = "/"
+
+# CORDOVA CONF 
+baseURL = ""
+relativeURLs = true
+uglyURLs = true
 
 # Agar front-matter pakai format YAML
 MetaDataFormat = "yaml"
@@ -14,17 +20,22 @@ theme = "viomagz"
 [taxonomies]
   category = "categories"
   tag = "tags"
+#tag = "/tags-:slug/"
+
 #  player = "player" 
   
 [permalinks]
-    post = "/:slug/"
+
+  
+ # post = "/:title"
+   post = "/:slug"
 	blog = "/:slug/"
-		post-amp = "/amp/:slug/"
+	#	post-amp = "/amp/:slug/"
 		# post = "/:year/:month/:day/:slug/"
     #profile ="/profile/:slug/" 
 	#pplayer = "/:slug/"
 	
-   
+#   uglyURLs = true
 
 # Shortname disqus, silahkan sesuaikan
 DisqusShortname = "build-mg"
@@ -62,9 +73,12 @@ baseName = "feed"
   
 [outputs]
   #post = [ "AMP", "HTML"]
-  home = ["HTML", "AMP", "RSS", "LunrIndexJson"]
-  page = ["HTML", "AMP"]
-  p = ["HTML", "AMP"]
+ # home = ["HTML", "AMP", "RSS", "LunrIndexJson"]
+home = ["HTML"]
+ # page = ["HTML", "AMP"]
+page = ["HTML"]
+#  p = ["HTML", "AMP"]
+p = ["HTML"]
 
 [markup.goldmark.renderer]
       unsafe = true
@@ -76,7 +90,7 @@ baseName = "feed"
 description = "Mobile Legends Build and Guide"
 homeKeywords = "Mobile Legends, Build, Guide, MLBB, ML, Profile Player, Bio, Biodata, Pro Player, Info, Tips, Trick, Tutorial, HD Wallpaper, Mobile, MOBA, Game"
 
-  cdn = "https://cdn.statically.io/img/cdn2-build.mobagenie.my.id/f=auto"
+  cdn = "https://cdn.statically.io/img/cdn2-build-mobagenie.netlify.app/f=auto"
    rooturl = ""
   # rooturl = "http://localhost:1313"
 

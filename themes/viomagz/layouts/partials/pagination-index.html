@@ -47,6 +47,8 @@
 	
 	<li class="page-item"><a class="page-link bg-dark" href="{{ .URL }}" onclick="redirectpage(3);return false">{{ .PageNumber }}</a></li>
 	
+
+
     {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
    <li class="page-item disabled"><span class="page-link  bg-dark">&#x2022;&#x2022;&#x2022;</span></li>
     {{ end }}
