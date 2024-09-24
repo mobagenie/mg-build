@@ -59,7 +59,7 @@ jobs:
         run: |
           docker run --rm \
             -v ${{ github.workspace }}:/workspace \
-            mobagenie/buildmlbb \
+            mobagenie/mgbuild:v1 \
             bash -c "
               cd /workspace &&
               cordova create cordova-app com.example.app MyApp &&
