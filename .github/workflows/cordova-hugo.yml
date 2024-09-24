@@ -89,7 +89,7 @@ jobs:
 
       - name: Copy Hugo `public` to Cordova `www`
         run: |
-       #   rm -rf cordova-app/www
+          rm -rf cordova-app/www4
           cp -r public/* cordova-app/www
 
       - name: Install Android SDK
