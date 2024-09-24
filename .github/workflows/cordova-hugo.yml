@@ -32,7 +32,7 @@ jobs:
         run: |
           docker run --rm \
             -v ${{ github.workspace }}:/workspace \
-            mobagenie/buildmlbb \
+            mobagenie/buildmlbb:v1 \
             bash -c "
               cd /workspace &&
               hugo --minify --baseURL '${{ steps.pages.outputs.base_url }}/'
