@@ -14,31 +14,33 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.85.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      - name: Install Hugo CLI
+      - name: Build with Docker
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            mobagenie/buildmlbb \
+            bash -c "
+              cd /workspace &&
+              hugo --minify --baseURL '${{ steps.pages.outputs.base_url }}/'
+            "
 
-      - name: Build with Hugo
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
-        run: |
-          hugo \
-            --minify \
-            --baseURL "${{ github.repository }}"
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -49,39 +51,24 @@ jobs:
   cordova_build:
     runs-on: ubuntu-latest
     needs: build
-    container:
-      image: alpine:latest  # Use Alpine base image for speed
     steps:
-      - name: Install Dependencies
-        run: |
-          apk add --no-cache nodejs npm openjdk11 git wget unzip bash
-          npm install -g cordova
-          mkdir -p $HOME/android-sdk
-          wget -q https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip -O sdk-tools.zip
-          unzip -q sdk-tools.zip -d $HOME/android-sdk
-          yes | $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk --install "platforms;android-30" "build-tools;30.0.3" "platform-tools"
-
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Initialize Cordova Project
+      - name: Build Cordova with Docker
         run: |
-          cordova create cordova-app com.example.app MyApp
-
-      - name: Copy Hugo `public` to Cordova `www`
-        run: |
-          rm -rf cordova-app/www/*
-          cp -r public/* cordova-app/www
-
-      - name: Add Android Platform
-        run: |
-          cd cordova-app
-          cordova platform add android --android-sdk $HOME/android-sdk
-
-      - name: Build Cordova Android App
-        run: |
-          cd cordova-app
-          cordova build android --release
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            mobagenie/buildmlbb \
+            bash -c "
+              cd /workspace &&
+              cordova create cordova-app com.example.app MyApp &&
+              rm -rf cordova-app/www &&
+              cp -r public/* cordova-app/www &&
+              cd cordova-app &&
+              cordova platform add android &&
+              cordova build android --release
+            "
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
