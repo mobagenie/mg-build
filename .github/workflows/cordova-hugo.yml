@@ -33,6 +33,19 @@ jobs:
     env:
       HUGO_VERSION: 0.85.0
     steps:
+
+      - name: Install Android SDK if not already installed
+        run: |
+          if [ ! -d "$HOME/android-sdk/platform-tools" ]; then
+            echo "Installing Android SDK..."
+            mkdir -p $HOME/android-sdk
+            wget -q https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip -O sdk-tools.zip
+            unzip -q sdk-tools.zip -d $HOME/android-sdk
+            yes | $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk --install "platforms;android-30" "build-tools;30.0.3" "platform-tools"
+          else
+            echo "Android SDK already installed, skipping installation."
+          fi
+
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
@@ -91,19 +104,6 @@ jobs:
         run: |
           rm -rf cordova-app/www/*
           cp -r public/* cordova-app/www
-
-      - name: Install Android SDK if not already installed
-        run: |
-          if [ ! -d "$HOME/android-sdk/platform-tools" ]; then
-            echo "Installing Android SDK..."
-            mkdir -p $HOME/android-sdk
-            wget -q https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip -O sdk-tools.zip
-            unzip -q sdk-tools.zip -d $HOME/android-sdk
-            yes | $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk --install "platforms;android-30" "build-tools;30.0.3" "platform-tools"
-          else
-            echo "Android SDK already installed, skipping installation."
-          fi
-
 
       - name: Add Android Platform
         run: |
