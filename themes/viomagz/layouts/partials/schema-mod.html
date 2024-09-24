@@ -8,7 +8,7 @@
 <meta itemprop="wordCount" content="{{ .WordCount }}">
 
 <!-- {{ with .Params.imagesp }}{{ range first 6 . }} -->
-  <!-- <meta itemprop="image" content="{{ . | absURL }}"> -->
+  <!-- <meta itemprop="image" content="{{ index . 0 | absURL }}"> -->
 <!-- {{ end }}{{ end }} -->
 
 {{if isset .Params "images" }}
