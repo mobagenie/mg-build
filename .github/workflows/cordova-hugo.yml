@@ -35,7 +35,7 @@ jobs:
     steps:
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_0.85.0_Linux-64bit.deb \
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Install Dart Sass
@@ -92,17 +92,17 @@ jobs:
           rm -rf cordova-app/www
           cp -r public/* cordova-app/www
 
+      - name: Install Android SDK
+        run: |
+          mkdir -p $HOME/android-sdk
+          wget -q https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip -O sdk-tools.zip
+          unzip -q sdk-tools.zip -d $HOME/android-sdk
+          yes | $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk --install "platforms;android-30" "build-tools;30.0.3" "platform-tools"
+
       - name: Add Android Platform
         run: |
           cd cordova-app
-          cordova platform add android
-
-      - name: Install Android SDK
-        uses: malcoded/setup-android@v1
-        with:
-          api-level: 30
-          build-tools: 30.0.3
-          platform-tools-version: 'latest'
+          cordova platform add android --android-sdk $HOME/android-sdk
 
       - name: Build Cordova Android App
         run: |
