@@ -87,9 +87,9 @@ jobs:
         run: |
           cordova create cordova-app com.example.app MyApp
 
-      - name: Copy Hugo `public` to Cordova `www`
+      - name: Copy Hugo 'public'  to Cordova 'www'
         run: |
-       #   rm -rf cordova-app/www
+          rm -rf cordova-app/www
           cp -r public/* cordova-app/www
 
       - name: Install Android SDK if not already installed
