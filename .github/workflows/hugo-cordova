@@ -1,0 +1,61 @@
+name: Build Cordova App with Hugo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.111.3'
+
+      - name: Build Hugo Site
+        run: hugo
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Cordova
+        run: npm install -g cordova
+
+      - name: Initialize Cordova Project
+        run: cordova create cordova-app com.example.app MyApp
+
+      - name: Copy Hugo `public` to Cordova `www`
+        run: |
+          rm -rf cordova-app/www
+          cp -r public cordova-app/www
+
+      - name: Add Android Platform
+        run: |
+          cd cordova-app
+          cordova platform add android
+
+      - name: Install Android SDK
+        uses: malcoded/setup-android@v1
+        with:
+          api-level: 30
+          build-tools: 30.0.3
+          platform-tools-version: 'latest'
+
+      - name: Build Cordova Android App
+        run: |
+          cd cordova-app
+          cordova build android --release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: MyApp-release.apk
+          path: cordova-app/platforms/android/app/build/outputs/apk/release/app-release.apk
