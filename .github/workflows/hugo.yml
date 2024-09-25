@@ -54,11 +54,22 @@ jobs:
 
       - name: Build APK using Docker
         run: |
+          # Get the repository permalink
+          REPO_URL="${{ github.event.repository.html_url }}"
+          
+          # Extract the repo name and format it for Cordova
+          REPO_NAME=$(basename -s .git "$REPO_URL")
+          APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/') # Capitalize first letter and replace '-' with space
+          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||') # Transform URL to package name format
+          
+          echo "Creating Cordova project with:"
+          echo "App Name: $APP_NAME"
+          echo "Package Name: com.$PACKAGE_NAME"
+          
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
-          cordova create myApp com.example.myapp MyApp &&
-          rm -rf myApp/www/* &&
-          cp -r gradle/public/* myApp/www &&          
-          cd myApp &&
+          cd gradle/public &&
+          cordova create $APP_NAME com.$PACKAGE_NAME $APP_NAME &&
+          cd $APP_NAME &&
           cordova platform add android &&
           cordova build android --debug"
         env:
