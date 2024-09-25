@@ -68,7 +68,7 @@ jobs:
           
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
           cordova create $APP_NAME com.$PACKAGE_NAME $APP_NAME &&
-          rm -rf com.$APP_NAME/www/* &&
+          rm -rf $APP_NAME/www/* &&
           cp -r gradle/public/* $APP_NAME/www &&          
           cd $APP_NAME &&
           cordova platform add android &&
