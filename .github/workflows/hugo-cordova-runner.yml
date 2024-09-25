@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # Ensure write permissions for the repository
-  pages: write     # For GitHub Pages
-  id-token: write  # For token access
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -19,6 +19,39 @@ defaults:
     shell: bash
 
 jobs:
+  check-keystore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check if KEYSTORE_FILE secret is empty
+        run: |
+          if [ -z "${{ secrets.KEYSTORE_FILE }}" ]; then
+            echo "Keystore secret is empty. Exiting..."
+            exit 1
+          fi
+
+      - name: Restore Keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_FILE }}" | base64 --decode > mg-build-release-key.keystore
+
+      - name: Verify Keystore File Size
+        run: |
+          if [ ! -s mg-build-release-key.keystore ]; then
+            echo "Keystore file is empty. Exiting..."
+            exit 1
+          fi
+
+      - name: List Keystore Contents
+        run: |
+          keytool -list -v -keystore mg-build-release-key.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}"
+        env:
+          JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+
+      - name: Clean up
+        run: rm mg-build-release-key.keystore
+
   build:
     runs-on: ubuntu-latest
     env:
@@ -28,23 +61,28 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-        run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -66,7 +104,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Restore Keystore
         run: |
@@ -74,26 +112,16 @@ jobs:
 
       - name: Build APK using Docker
         run: |
-          # Get the repository permalink
           REPO_URL="${{ github.event.repository.html_url }}"
-          
-          # Extract the repo name and format it for Cordova
           REPO_NAME=$(basename -s .git "$REPO_URL")
-          APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/') # Capitalize first letter and replace '-' with space
+          APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/')
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
-          
-          echo "Creating Cordova project with:"
-          echo "App Name: $APP_NAME"
-          echo "Package Name: com.$PACKAGE_NAME"
-          
+
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
           cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME $APP_NAME &&
-          ls &&
           rm -rf com.$PACKAGE_NAME/www/* &&
           cp -r gradle/public/* com.$PACKAGE_NAME/www &&
           cd com.$PACKAGE_NAME &&
-          ls &&
-          ls www &&
           cordova platform add android &&
           cordova build android --release -- --packageType=apk --keystore=mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
         env:
@@ -107,7 +135,7 @@ jobs:
           mkdir -p apk
           cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/release/*.apk apk/
           echo "APK files in apk directory:"
-          ls apk  # List APK files to verify they exist
+          ls apk
 
       - name: Set tag and release name
         id: set_release_info
@@ -132,7 +160,7 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/*.apk  # Change to the appropriate APK file name
+          asset_path: apk/*.apk
           asset_name: MyApp-release.apk
           asset_content_type: application/vnd.android.package-archive
         env:
