@@ -1,4 +1,4 @@
-name: Hugo Build and Deploy
+name: Hugo Build and Publish
 
 on:
   push:
@@ -22,20 +22,10 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
 
-      - name: List public directory contents
-        run: ls -la public  # List contents for debugging
+      - name: Publish to gradle/public
+        run: |
+          mkdir -p gradle/public
+          cp -r public/* gradle/public/  # Copy generated files to gradle/public
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/gradle'
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages  # Ensure this is set to the correct branch for GitHub Pages
+      - name: List published files
+        run: ls -la gradle/public  # List contents for debugging
