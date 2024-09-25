@@ -67,7 +67,7 @@ jobs:
       - name: Archive APK
         run: |
           mkdir -p apk
-        #  cp -r gradle/public/myApp/platforms/android/app/build/outputs/apk/debug/*.apk apk/
+
     cp -r myApp/platforms/android/app/build/outputs/apk/debug/*.apk apk/
           echo "APK files in apk directory:"
           ls apk  # List APK files to verify they exist
