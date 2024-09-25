@@ -22,16 +22,16 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
 
-      - name: Publish to gradle/public
+      - name: Publish to public
         run: |
-          mkdir -p gradle/public
-          cp -r public/* gradle/public/  # Copy generated files to gradle/public
+          mkdir -p public
+          cp -r public/* public/  # Copy generated files to public
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add gradle/public
+          git add public
           git commit -m "Update static site content"
           git push origin gradle  # Push changes to the gradle branch
         env:
