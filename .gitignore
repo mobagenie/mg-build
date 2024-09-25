@@ -1,4 +1,5 @@
-
+public/*
+/public/*
 ssh_setup.sh
 push.sh
 deploy.sh
