@@ -55,6 +55,7 @@ jobs:
       - name: Build APK using Docker
         run: |
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
+          echo pwd &&
           # cd gradle/public &&
           cordova create myApp com.example.myapp MyApp &&
           cd myApp &&
