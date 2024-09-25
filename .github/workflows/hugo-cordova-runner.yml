@@ -98,6 +98,7 @@ jobs:
           
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
           cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME  $APP_NAME &&
+          ls &&
           rm -rf com.$PACKAGE_NAME/www/* &&
           cp -r public/* com.$PACKAGE_NAME/www &&          
           cd com.$PACKAGE_NAME &&
