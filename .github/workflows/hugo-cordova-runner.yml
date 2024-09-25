@@ -95,7 +95,7 @@ jobs:
           ls &&
           ls www &&
           cordova platform add android &&
-          cordova build android --release -- --keystore=mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
+          cordova build android --release --packageType=apk -- --keystore=mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
