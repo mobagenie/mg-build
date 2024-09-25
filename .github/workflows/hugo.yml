@@ -84,8 +84,8 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         with:
-          tag_name: v1.0.0
-          release_name: "Release v1.0.0"
+          tag_name: ${{ github.sha }}  # Unique tag for each commit
+          release_name: "Release ${{ github.sha }}"
           body: "APK build for gradle branch"
           draft: false
           prerelease: false
