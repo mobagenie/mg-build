@@ -73,7 +73,8 @@ jobs:
       - name: Set tag and release name
         id: set_release_info
         run: |
-          echo "TAG_NAME=release-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
+          TAG_NAME="release-$(echo $GITHUB_SHA | cut -c1-7)"
+          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
           echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
       - name: Create GitHub Release
@@ -92,7 +93,7 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/*.apk
+          asset_path: apk/app-debug.apk  # Specify the exact APK file name
           asset_name: MyApp-debug.apk
           asset_content_type: application/vnd.android.package-archive
         env:
