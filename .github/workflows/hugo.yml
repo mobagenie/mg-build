@@ -1,4 +1,4 @@
-name: Build, Deploy, and APKh
+name: Build, Deploy, and APK
 
 on:
   push:
@@ -80,8 +80,8 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         with:
-          tag_name: "release-${{ github.sha::7 }}"  # First 7 characters of commit SHA
-          release_name: "Release ${{ github.sha::7 }}"
+          tag_name: "release-${{ github.sha.substr(0, 7) }}"  # First 7 characters of commit SHA
+          release_name: "Release ${{ github.sha.substr(0, 7) }}"
           body: "APK build for gradle branch"
           draft: false
           prerelease: false
