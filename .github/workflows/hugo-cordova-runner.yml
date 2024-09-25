@@ -68,6 +68,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Restore Keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_FILE }}" | base64 --decode > mg-build-release-key.keystore
+
       - name: Build APK using Docker
         run: |
           # Get the repository permalink
@@ -91,7 +95,7 @@ jobs:
           ls &&
           ls www &&
           cordova platform add android &&
-          cordova build android --debug"
+          cordova build android --release -- --keystore=mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -101,7 +105,7 @@ jobs:
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
           
           mkdir -p apk
-          cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/debug/*.apk apk/
+          cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/release/*.apk apk/
           echo "APK files in apk directory:"
           ls apk  # List APK files to verify they exist
 
@@ -128,8 +132,8 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-debug.apk  # Make sure this path matches your APK
-          asset_name: MyApp-debug.apk
+          asset_path: apk/app-release.apk  # Change to release APK
+          asset_name: MyApp-release.apk
           asset_content_type: application/vnd.android.package-archive
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
