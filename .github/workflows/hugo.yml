@@ -27,10 +27,6 @@ jobs:
           mkdir -p gradle/public
           cp -r public/* gradle/public/
 
-      - name: Check for changes
-        run: |
-          git diff --exit-code gradle/public || echo "Changes detected"
-
       - name: Commit and push changes to gradle/public
         run: |
           git config --local user.email "action@github.com"
@@ -74,24 +70,31 @@ jobs:
           echo "APK files:"
           ls apk
 
-      - name: Upload APK Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: apk-files
-          path: apk/
-
-      - name: Create Release
-        id: create_release
+      - name: Set tag and release name
+        id: set_release_info
         run: |
-          release=$(gh release create "v1.0.0" apk/*.apk --title "Release v1.0.0" --notes "APK build for gradle branch")
-          echo "::set-output name=release::$release"
+          TAG_NAME="release-$(echo $GITHUB_SHA | cut -c1-7)"
+          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
+          echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v3
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: ${{ env.RELEASE_NAME }}
+          body: "APK build for gradle branch"
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload APK to Release
-        run: |
-          for apk in apk/*.apk; do
-            gh release upload "${{ steps.create_release.outputs.release }}" "$apk" --clobber
-          done
+        uses: actions/upload-release-asset@v3
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: apk/*.apk
+          asset_name: MyApp-debug.apk
+          asset_content_type: application/vnd.android.package-archive
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
