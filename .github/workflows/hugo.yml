@@ -27,6 +27,10 @@ jobs:
           mkdir -p gradle/public
           cp -r public/* gradle/public/
 
+      - name: Check for changes
+        run: |
+          git diff --exit-code gradle/public || echo "Changes detected"
+
       - name: Commit and push changes to gradle/public
         run: |
           git config --local user.email "action@github.com"
@@ -70,19 +74,18 @@ jobs:
           echo "APK files:"
           ls apk
 
-      - name: Set tag and release name
-        id: set_release_info
-        run: |
-          TAG_NAME="release-$(echo $GITHUB_SHA | cut -c1-7)"
-          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
-          echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: apk-files
+          path: apk/
 
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
         with:
-          tag_name: ${{ env.TAG_NAME }}
-          release_name: ${{ env.RELEASE_NAME }}
+          tag_name: v1.0.1
+          release_name: "Release v1.0.1"
           body: "APK build for gradle branch"
           draft: false
           prerelease: false
