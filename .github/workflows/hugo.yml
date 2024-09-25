@@ -60,7 +60,7 @@ jobs:
           # Extract the repo name and format it for Cordova
           REPO_NAME=$(basename -s .git "$REPO_URL")
           APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/') # Capitalize first letter and replace '-' with space
-          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||') # Transform URL to package name format
+          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
           
           echo "Creating Cordova project with:"
           echo "App Name: $APP_NAME"
