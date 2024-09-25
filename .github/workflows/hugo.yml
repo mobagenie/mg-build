@@ -1,4 +1,4 @@
-name: Build, Deploy, and APKs
+name: Build, Deploy, and APK
 
 on:
   push:
