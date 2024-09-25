@@ -27,12 +27,16 @@ jobs:
           mkdir -p gradle/public
           cp -r public/* gradle/public/
 
+      - name: Check for changes
+        run: |
+          git diff --exit-code gradle/public || echo "Changes detected"
+
       - name: Commit and push changes to gradle/public
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add gradle/public
-          git commit -m "Update static site content"
+          git commit -m "Update static site content" || echo "No changes to commit"
           git push origin gradle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -43,11 +47,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./gradle/public
-          publish_branch: gh-pages  # Adjust this if needed
+          publish_branch: gh-pages
 
   build-apk:
     runs-on: ubuntu-latest
-    needs: build  # Ensure this runs after the build job
+    needs: build
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -65,7 +69,7 @@ jobs:
           mkdir -p apk
           cp -r gradle/public/platforms/android/app/build/outputs/apk/debug/*.apk apk/
           echo "APK files:"
-          ls apk  # List APK files for verification
+          ls apk
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v2
