@@ -1,0 +1,38 @@
+  
+{{ $socmed := .Get "socmed" }}
+
+{{ if eq $socmed "yt" }}
+{{ if (isset $.Page.Params "yt") }}
+{{ $yt := $.Page.Params.yt }}
+{{if gt (countwords $yt) 0}}
+		<a style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.youtube.com/channel/{{ $.Page.Params.yt }}" target="_blank"><i class="fas fa-video fa-lg"></i> Youtube</a>
+{{ end }}		
+{{ end }}
+
+{{ else if eq $socmed "fb" }}
+{{ if (isset $.Page.Params "fb") }}
+{{ $fb := $.Page.Params.fb }}
+{{if gt (countwords $fb) 0}}
+		  <a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.facebook.com/{{ $.Page.Params.fb }}" target="_blank"><i class="fas fa-thumbs-up fa-lg"></i> Facebook</a>
+{{ end }}		
+{{ end }}
+		  
+{{ else if eq $socmed "ig" }}
+{{ if (isset $.Page.Params "ig") }}
+{{ $ig := $.Page.Params.ig }}
+{{if gt (countwords $ig) 0}}
+<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.instagram.com/{{ $.Page.Params.ig }}" target="_blank"><i class="fas fa-camera fa-lg"></i> Instagram</a>
+{{ end }}		
+{{ end }}
+	
+{{ else if eq $socmed "nimo" }}
+{{ if (isset $.Page.Params "nimo") }}
+{{ $nimo := $.Page.Params.nimo }}
+{{if gt (countwords $nimo) 0}}
+<a  style="margin-bottom: 8px;" type="button" class="btn btn-lg btn-danger" href="https://www.nimo.tv/live/{{ $.Page.Params.nimotv }}" target="_blank"><i class="fas fa-video fa-lg"></i> Nimo TV</a>
+{{ end }}		
+{{ end }}
+
+{{ end }}
+
+		

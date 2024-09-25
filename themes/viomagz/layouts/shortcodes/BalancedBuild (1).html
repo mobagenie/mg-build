@@ -1,0 +1,43 @@
+      <div class="row text-white bg-dark">
+      	
+        <div class="col-lg-12">
+
+<h2><i class="fas fa-cog fa-sm"></i> Build 2
+
+{{ if (isset $.Page.Params "proplayer") }}
+<button class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Build by Professional Player"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></button>
+{{ end }} 
+
+</h2>
+
+</div>
+
+        <div class="col-lg-12">
+
+      <button type="button"  style="margin:2px;" class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "build1" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/items/iname/{{ .Get "build1" }}.png" alt="{{ .Get "build1" }}" id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+	
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "build2" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/items/iname/{{ .Get "build2" }}.png" alt="{{ .Get "build2" }}" id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "build3" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/items/iname/{{ .Get "build3" }}.png" alt="{{ .Get "build3" }}" id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+        
+    
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "build4" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/items/iname/{{ .Get "build4" }}.png" alt="{{ .Get "build4" }}" id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "build5" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/items/iname/{{ .Get "build5" }}.png" alt="{{ .Get "build5" }}" id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+    
+    
+      <button type="button" style="margin:2px;"  class="btn btn-primary" data-toggle="modal" data-target="#{{ .Get "build6" }}Data"><img src="{{ .Site.Params.cdn }}/p/images/items/iname/{{ .Get "build6" }}.png" alt="{{ .Get "build6" }}" id="itemboyutu" style="max-width:%15" class="itemler rounded-circle" width="50px" height="50px"   /></button>
+
+
+</div>
+
+      </div>
+	  
+
+	  
+										
+										{{ .Inner }}

@@ -92,7 +92,7 @@ unusedparam10: true
 ---
 
 
-{{< hero/GetStory />}}
+{{< hero/GetStory >}}
 
 {{< hero/HeroInfo >}}
  
@@ -100,7 +100,7 @@ unusedparam10: true
 
 {{< hero/OffensiveBuild >}} 
 
-{{< hero/BalancedBuild />}}
+{{< hero/BalancedBuild >}}
 
 
 {{< hero/RecommendedSpells >}}  
@@ -108,10 +108,10 @@ unusedparam10: true
 {{< hero/RecommendedEmblems >}}   
 
 
-{{< hero/ChampionAttributes />}}
+{{< hero/ChampionAttributes >}}
 
 
-{{< hero/FightingAbility />}}
+{{< hero/FightingAbility >}}
 
 {{< hero/StrongAgainst />}}
 

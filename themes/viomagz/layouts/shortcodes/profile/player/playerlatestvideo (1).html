@@ -1,0 +1,116 @@
+<div class="row text-white bg-dark" >
+        <div class="col-lg-12">
+
+<h2><i class="fas fa-video fa-sm"></i> {{ $.Page.Params.playername }} Latest Video</h2>
+
+</div>
+
+<div class="col-lg-12">
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+
+    <script>
+<!-- $(document).ready(function() { -->
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+    $.ajax({
+        url: "https://mgapis.herokuapp.com/ytlatestvideo.php?pid={{ $.Page.Params.yt }}&limit=1",
+        type: 'GET',
+        dataType: 'json',
+        success: function(json) {
+
+			$("#loading").hide();
+			
+            //alert(JSON.stringify(json.items[0].contentDetails.videoId));
+            var videoid = JSON.stringify(json.items[0].contentDetails.videoId);
+            videoid = videoid.replace('"', '');
+            videoid = videoid.replace('"', '');
+
+            htmlStr1 = "";
+            htmlStr1 += '<img class="mw-100" src="http://img.youtube.com/vi/' + videoid + '/hqdefault.jpg">';
+            htmlStr1 += "";
+
+            $("#thumbnail").html(htmlStr1);
+
+            $("#play").show();
+
+            $("#play").click(function() {
+
+                $("#play").hide();
+                //alert("The paragraph was clicked.");
+                $("#thumbnail").hide();
+
+                htmlStr = "";
+                htmlStr += '<iframe  class="mw-100" layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="534" height="300" type="text/html" src="https://www.youtube.com/embed/' + videoid + '?autoplay=1&playsinline=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://www.google.com"></iframe>';
+                htmlStr += "";
+
+                $("#video").html(htmlStr);
+
+            }); // jquery on click
+
+        } //ajax on success		
+
+    }); //ajax
+
+
+}); // jquery on ready doc
+    </script>
+
+<div id="loading" class="text-center">
+<div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+  <!-- <span class="sr-only">Loading...</span> -->
+</div>
+<br/>
+<span class="">Loading Video...</span>
+</div>
+
+<div class="text-center">
+<div class="youtube-embed">
+<div id="video"></div>
+</div>
+
+<DIV id="thumbnail"></div><br/>
+<button id="play" type="button" class="btn btn-lg btn-warning text-center" style="display:none"; ><i class="fas fa-play fa-lg"></i> PLAY VIDEO</button>
+</div>
+
+
+<!-- <iframe layout="responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="534" height="300" type="text/html" src="https://www.youtube.com/embed/'+ videoid +'?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=medium&origin=http://youtubeembedcode.com"></iframe> -->
+
+    <!-- <script> -->
+<!-- $.jQuery(function($){ -->
+	<!-- jQuery('.youtube-feed').youtubeFeed({ -->
+		<!-- //ID of the channel to pull in -->
+		<!-- channelId: 'UCirWugW5e03u3DUGA87s58A',  -->
+		<!-- //API Key -->
+		<!-- key: 'AIzaSyBfb4A6rdKGwqTbBa_IPny1SUe3qZKN_tU',  -->
+		<!-- //Number of videos to return (number per page if "pager" is set to true) -->
+		<!-- count: 1,  -->
+		<!-- //include Next and Previous page buttons to asynchronously load more videos -->
+		<!-- pager: true,  -->
+		<!-- //Previous Page Text -->
+		<!-- prevPageText: 'Previous Page', -->
+		<!-- //Next Page Text -->
+		<!-- nextPageText: 'Next Page', -->
+		<!-- //Append autoplay to video embed url -->
+		<!-- autoplay: false, -->
+		<!-- //HTML pattern for the output -->
+		<!-- pattern: '<div class="yt-placeholder">' + -->
+					<!-- '<a href="**VideoEmbedUrl**" class="yt-url">' + -->
+						<!-- '<img class="yt-thumb" src="**Thumbnail**">' + -->
+					<!-- '</a>' + -->
+				<!-- '</div>' -->
+	<!-- }, -->
+	<!-- function(){ -->
+		<!-- //Optional callback -->
+		<!-- //console.log('youtube loaded'); -->
+	<!-- }); -->
+<!-- }); -->
+
+    <!-- </script> -->
+	
+	<div class="youtube-feed"></div>
+
+</div>
+</div>
+
