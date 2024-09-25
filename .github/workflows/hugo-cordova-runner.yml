@@ -1,35 +1,24 @@
 name: Build, Deploy, and APK
 
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-#name: Deploy Hugo site to Pages
-
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["gradle"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write  # Ensure write permissions for the repository
+  pages: write     # For GitHub Pages
+  id-token: write  # For token access
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# Default to bash
 defaults:
   run:
     shell: bash
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -55,15 +44,12 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./gradle/public
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -97,10 +83,10 @@ jobs:
           echo "Package Name: com.$PACKAGE_NAME"
           
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
-          cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME  $APP_NAME &&
+          cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME $APP_NAME &&
           ls &&
           rm -rf com.$PACKAGE_NAME/www/* &&
-          cp -r gradle/public/* com.$PACKAGE_NAME/www &&                   
+          cp -r gradle/public/* com.$PACKAGE_NAME/www &&
           cd com.$PACKAGE_NAME &&
           ls &&
           ls www &&
@@ -111,9 +97,9 @@ jobs:
 
       - name: Archive APKs
         run: |
-          # Get the repository permalink
           REPO_URL="${{ github.event.repository.html_url }}"
-          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')       
+          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
+          
           mkdir -p apk
           cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/debug/*.apk apk/
           echo "APK files in apk directory:"
@@ -142,7 +128,7 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-debug.apk  # Specify the exact APK file name
+          asset_path: apk/app-debug.apk  # Make sure this path matches your APK
           asset_name: MyApp-debug.apk
           asset_content_type: application/vnd.android.package-archive
         env:
