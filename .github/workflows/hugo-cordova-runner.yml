@@ -109,7 +109,14 @@ jobs:
       - name: Restore Keystore
         run: |
           echo "${{ secrets.KEYSTORE_FILE }}" | base64 --decode > mg-build-release-key.keystore
-
+          
+- name: Verify Keystore File Size
+        run: |
+          if [ ! -s mg-build-release-key.keystore ]; then
+            echo "Keystore file is empty or not restored. Exiting..."
+            exit 1
+          fi
+          
       - name: Build APK using Docker
         run: |
           REPO_URL="${{ github.event.repository.html_url }}"
