@@ -27,5 +27,12 @@ jobs:
           mkdir -p gradle/public
           cp -r public/* gradle/public/  # Copy generated files to gradle/public
 
-      - name: List published files
-        run: ls -la gradle/public  # List contents for debugging
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add gradle/public
+          git commit -m "Update static site content"
+          git push origin gradle  # Push changes to the gradle branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
