@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aldous on Build - MobaGenie - Mobile Legends Build Guide</title><link>/tags/aldous.html</link><description>Recent content in Aldous on Build - MobaGenie - Mobile Legends Build Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 26 Jul 2021 04:43:59 +0700</lastBuildDate><atom:link href="/tags/aldous/feed.xml" rel="self" type="application/rss+xml"/><item><title>Build Aldous MLBB by Markocop</title><link>/build-aldous-mlbb-by-markocop.html</link><pubDate>Mon, 26 Jul 2021 04:43:59 +0700</pubDate><guid>/build-aldous-mlbb-by-markocop.html</guid><description>&lt;b>&lt;div class="row text-white bg-primary" style="padding-top:30px;">
+	 
+
+&lt;div class="col-lg-12 text-center font-weight-bold">BUILD ALDOUS MOBILE LEGENDS BY MARKOCOP&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">
+
+
+		
+
+
+&lt;div class="badge badge-light" style="margin-top:-5px;">
+ &lt;a style="color:white;" href="../../profile/markocop.html" title="Markocop">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/markocop.jpg" width="50px" height="50px" class="" alt="Markocop">
+	&lt;/div>&lt;a style="color:white;" href="../../profile/markocop" title="Markocop">&lt;div style="padding-top: 3px;">@Markocop&lt;/div>&lt;/a>
+
+
+		&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-medal fa-lg">&lt;/i>&lt;br/>WR : &lt;/div>
+ 
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-play fa-lg">&lt;/i>&lt;br/>Match : &lt;/div>
+		 
+ 
+ 
+ 
+
+ 
+ &lt;/div>&lt;/b>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	 
+ 	
+ 
+
+
+
+
+
+
+ 
+
+
+
+ &lt;div class="container-fluid">
+
+&lt;style>
+&lt;!-- body,html{ -->
+ &lt;!-- width:100%; -->
+ &lt;!-- height:100%; -->
+ &lt;!-- padding:0px; -->
+&lt;!-- margin:0px; -->
+&lt;!-- } -->
+&lt;!-- .modal-dialog{ -->
+ &lt;!-- height:calc(100% - 60px); -->
+&lt;!-- } -->
+&lt;!-- .modal-content{ -->
+ &lt;!-- height:100%; -->
+ &lt;!-- } -->
+&lt;!-- .modal-header{ -->
+ &lt;!-- height:50px; -->
+
+&lt;!-- } -->
+&lt;!-- .model-footer{ -->
+ &lt;!-- height:75px; -->
+&lt;!-- } -->
+&lt;!-- .modal-body { -->
+&lt;!-- height:calc(100% - 125px); -->
+&lt;!-- overflow-y: scroll; -->
+&lt;!-- } -->
+&lt;/style>
+
+&lt;div id="gridSystemModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+ &lt;div class="modal-dialog modal-lg" role="document">
+ &lt;div class="modal-content">
+ &lt;div class="modal-header">
+ &lt;h1 class="modal-title" id="gridModalLabel"
+		
+		 style="font-size: 16px;
+ margin-bottom: -4px;
+ margin-top: -4px;
+ line-height: 0.5;
+ /* background-color: #2e9fff; */
+ font-weight: 0;"
+		
+		>Build Aldous MLBB by Markocop&lt;/h1>
+		
+ &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">&lt;span aria-hidden="true">&amp;times;&lt;/span>&lt;/button>
+ &lt;/div>
+ &lt;div class="modal-body">
+
+&lt;div class="row">
+
+	
+&lt;div class="col-md-4 ml-auto"> 
+
+&lt;div class="card" style="max-width:100%;">
+
+
+ &lt;a title="Markocop" href="../../profile/markocop">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/markocop.jpg" class="card-img-top" alt="Markocop">&lt;/a>
+
+ 		
+ &lt;div class="card-body">
+ 
+
+ &lt;h5 class="card-titlec text-center">Markocop&lt;br/>&lt;a href="../../profile/markocop">@Markocop&lt;/a>&lt;/h5>
+
+ 	
+ &lt;p class="card-text"> &lt;/p></description></item><item><title>aldous</title><link>/hero/aldous.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/hero/aldous.html</guid><description>&lt;div id="ModalHero" class="modal2">
+ &lt;span class="close cursor" onclick="closeModal()">&amp;times;&lt;/span>
+ &lt;div class="modal-content">
+
+ &lt;div class="mySlidesHero">
+ &lt;div class="numbertext">ALDOUS HD Wallpaper&lt;/div>
+ &lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/aldous.jpg" title="ALDOUS HD Wallpaper" alt="ALDOUS HD Wallpaper" style="width:100%">	
+ &lt;/div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="prev" onclick="plusSlides(-1)">&amp;#10094;&lt;/a>
+ &lt;a class="next" onclick="plusSlides(1)">&amp;#10095;&lt;/a>
+
+ &lt;div class="caption-container">
+ &lt;p id="caption">
+	 &lt;div> Legends from the Land of Dawn say that the Western Desert&amp;#39;s Minoan Kingdom possesses a mysterious labyrinth. In the maze is a statue of a giant minotaur, which the people consider to be the mecca of the Minoan Kingdom. Some say that there is a group of mercenaries who guard the entire maze. ??The Kingdom produced a lot of precious jade, which brought the Minoan people great wealth. Very quickly, the entire kingdom was lost in the intoxicating allure of gems. Even many mercaneries, tasked with guarding the sacred maze became corrupted, abandoning their duty. Only one stayed—Aldous, who had never forgotten his duty to guard the Minoan Labyrinth. ?? &lt;/div>
+	 &lt;/p></description></item><item><title>Build aldous Mobile Legends by Uʙɪᴄᴀ †</title><link>/build-aldous-mlbb-by-u.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/build-aldous-mlbb-by-u.html</guid><description>&lt;b>&lt;div class="row text-white bg-primary" style="padding-top:30px;">
+	 
+
+&lt;div class="col-lg-12 text-center font-weight-bold">BUILD ALDOUS MOBILE LEGENDS BY UʙꞮᴄᴀ †&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">
+
+
+		
+
+
+&lt;div class="badge badge-light" style="margin-top:-5px;">
+ &lt;a style="color:white;" href="../../tags/u" title="Uʙɪᴄᴀ †">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/blank.jpg" width="50px" height="50px" class="" alt="Uʙɪᴄᴀ †">
+	&lt;/div>&lt;a style="color:white;" href="../../tags/u" title="Uʙɪᴄᴀ †">&lt;div style="padding-top: 3px;">@Uʙɪᴄᴀ †&lt;/div>&lt;/a>
+
+
+		&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-medal fa-lg">&lt;/i>&lt;br/>WR : 86%&lt;/div>
+ 
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-play fa-lg">&lt;/i>&lt;br/>Match : 550&lt;/div>
+		 
+ 
+ 
+ 
+
+ 
+ &lt;/div>&lt;/b>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	 
+ 	
+ 
+
+
+
+
+
+
+ 
+
+
+
+ &lt;div class="container-fluid">
+
+&lt;style>
+&lt;!-- body,html{ -->
+ &lt;!-- width:100%; -->
+ &lt;!-- height:100%; -->
+ &lt;!-- padding:0px; -->
+&lt;!-- margin:0px; -->
+&lt;!-- } -->
+&lt;!-- .modal-dialog{ -->
+ &lt;!-- height:calc(100% - 60px); -->
+&lt;!-- } -->
+&lt;!-- .modal-content{ -->
+ &lt;!-- height:100%; -->
+ &lt;!-- } -->
+&lt;!-- .modal-header{ -->
+ &lt;!-- height:50px; -->
+
+&lt;!-- } -->
+&lt;!-- .model-footer{ -->
+ &lt;!-- height:75px; -->
+&lt;!-- } -->
+&lt;!-- .modal-body { -->
+&lt;!-- height:calc(100% - 125px); -->
+&lt;!-- overflow-y: scroll; -->
+&lt;!-- } -->
+&lt;/style>
+
+&lt;div id="gridSystemModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+ &lt;div class="modal-dialog modal-lg" role="document">
+ &lt;div class="modal-content">
+ &lt;div class="modal-header">
+ &lt;h1 class="modal-title" id="gridModalLabel"
+		
+		 style="font-size: 16px;
+ margin-bottom: -4px;
+ margin-top: -4px;
+ line-height: 0.5;
+ /* background-color: #2e9fff; */
+ font-weight: 0;"
+		
+		>Build aldous Mobile Legends by Uʙɪᴄᴀ †&lt;/h1>
+		
+ &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">&lt;span aria-hidden="true">&amp;times;&lt;/span>&lt;/button>
+ &lt;/div>
+ &lt;div class="modal-body">
+
+&lt;div class="row">
+
+	
+&lt;div class="col-md-4 ml-auto"> 
+
+&lt;div class="card" style="max-width:100%;">
+
+
+ &lt;a title="Uʙɪᴄᴀ †" href="../../tags/u">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/avatar/player/blank.jpg" class="card-img-top" alt="Uʙɪᴄᴀ †">&lt;/a>
+
+ 		
+ &lt;div class="card-body">
+ 
+	
+ &lt;h5 class="card-titlec text-center">Uʙɪᴄᴀ †&lt;br/>&lt;a href="../../tags/u">@Uʙɪᴄᴀ †&lt;/a>&lt;/h5>	
+
+ 	
+ &lt;p class="card-text"> &lt;/p></description></item></channel></rss>

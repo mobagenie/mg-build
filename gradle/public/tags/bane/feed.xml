@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bane on Build - MobaGenie - Mobile Legends Build Guide</title><link>/tags/bane.html</link><description>Recent content in Bane on Build - MobaGenie - Mobile Legends Build Guide</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/bane/feed.xml" rel="self" type="application/rss+xml"/><item><title>bane</title><link>/hero/bane.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/hero/bane.html</guid><description>&lt;div id="ModalHero" class="modal2">
+ &lt;span class="close cursor" onclick="closeModal()">&amp;times;&lt;/span>
+ &lt;div class="modal-content">
+
+ &lt;div class="mySlidesHero">
+ &lt;div class="numbertext">BANE HD Wallpaper&lt;/div>
+ &lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/bane.jpg" title="BANE HD Wallpaper" alt="BANE HD Wallpaper" style="width:100%">	
+ &lt;/div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="prev" onclick="plusSlides(-1)">&amp;#10094;&lt;/a>
+ &lt;a class="next" onclick="plusSlides(1)">&amp;#10095;&lt;/a>
+
+ &lt;div class="caption-container">
+ &lt;p id="caption">
+	 &lt;div> Many years ago, Captain Bane roamed the seas on his ship, the Black Pearl, and the ever-victorious sea dwellers called him Lord of the Seven Seas. Today he has awakened from the briny depths, bringing his cursed body and a tattered Black Pearl back to these waters. He must announce his return to the sea dwellers and renew his reign here. &lt;/div>
+	 &lt;/p>
+ &lt;/div>
+
+
+ &lt;div class="column">
+ &lt;img class="demoHero cursor" src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_fill,g_face,f_auto/https://cdn2-build.mobagenie.my.id/p/images/banner/full/bane.jpg" style="width:100%" onclick="currentSlide(1)" title="BANE HD Wallpaper" alt="BANE Story">	
+ &lt;/div>
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+&lt;script>
+function openModal() {
+ document.getElementById("ModalHero").style.display = "block";
+}
+
+function closeModal() {
+ document.getElementById("ModalHero").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+ showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlidesHero");
+ var dots = document.getElementsByClassName("demoHero");
+ var captionText = document.getElementById("caption");
+ if (n > slides.length) {slideIndex = 1}
+ if (n &lt; 1) {slideIndex = slides.length}
+ for (i = 0; i &lt; slides.length; i++) {
+ slides[i].style.display = "none";
+ }
+ for (i = 0; i &lt; dots.length; i++) {
+ dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+ captionText.innerHTML = dots[slideIndex-1].alt;
+}
+&lt;/script>
+										 	
+
+
+
+
+ 
+ &lt;b>&lt;div class="row text-white bg-primary" style="padding-top:30px;">
+	 
+
+&lt;div class="col-lg-12 text-center font-weight-bold">BANE MOBILE LEGENDS&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">
+
+
+
+
+
+
+ 	
+
+
+
+
+ 	
+	
+
+
+
+
+
+		
+		
+		
+		
+&lt;i class="fas fa-project-diagram fa-lg">&lt;/i>&lt;br/>&lt;a style="color:white;" href="../../tags/fighter" title=""> Role: Fighter&lt;/a>
+
+		&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-ruler-combined fa-lg">&lt;/i>&lt;br/>Lane: ROAM&lt;/div>
+ 
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-sitemap fa-lg">&lt;/i>&lt;br/>Tier : A Tier&lt;/div>
+		 
+ &lt;div class="col-4 text-center ">&lt;i class="fas fa-coins fa-lg">&lt;/i>&lt;br/>BP : 6500&lt;/div>
+ &lt;div class="col-4 text-center ">&lt;i class="fas fa-gem fa-lg">&lt;/i>&lt;br/>DM : 254&lt;/div>
+ &lt;div class="col-4 text-center ">&lt;i class="fas fa-credit-card fa-lg">&lt;/i>&lt;br/>Ticket : 0&lt;/div>
+
+ 
+ &lt;/div>&lt;/b>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	 
+ 	
+ 
+
+
+
+
+
+
+ 
+
+
+
+ &lt;div class="container-fluid">
+
+&lt;style>
+&lt;!-- body,html{ -->
+ &lt;!-- width:100%; -->
+ &lt;!-- height:100%; -->
+ &lt;!-- padding:0px; -->
+&lt;!-- margin:0px; -->
+&lt;!-- } -->
+&lt;!-- .modal-dialog{ -->
+ &lt;!-- height:calc(100% - 60px); -->
+&lt;!-- } -->
+&lt;!-- .modal-content{ -->
+ &lt;!-- height:100%; -->
+ &lt;!-- } -->
+&lt;!-- .modal-header{ -->
+ &lt;!-- height:50px; -->
+
+&lt;!-- } -->
+&lt;!-- .model-footer{ -->
+ &lt;!-- height:75px; -->
+&lt;!-- } -->
+&lt;!-- .modal-body { -->
+&lt;!-- height:calc(100% - 125px); -->
+&lt;!-- overflow-y: scroll; -->
+&lt;!-- } -->
+&lt;/style>
+
+&lt;div id="gridSystemModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+ &lt;div class="modal-dialog modal-lg" role="document">
+ &lt;div class="modal-content">
+ &lt;div class="modal-header">
+ &lt;h1 class="modal-title" id="gridModalLabel"
+		
+		 style="font-size: 16px;
+ margin-bottom: -4px;
+ margin-top: -4px;
+ line-height: 0.5;
+ /* background-color: #2e9fff; */
+ font-weight: 0;"
+		
+		>bane&lt;/h1>
+		
+ &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">&lt;span aria-hidden="true">&amp;times;&lt;/span>&lt;/button>
+ &lt;/div>
+ &lt;div class="modal-body">
+
+&lt;div class="row">
+
+	
+&lt;div class="col-md-4 ml-auto"> 
+
+&lt;div class="card" style="max-width:100%;">
+
+
+ &lt;a title="" href="../../tags/">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/avatar/player/blank.jpg" class="card-img-top" alt="">&lt;/a>
+
+ 		
+ &lt;div class="card-body">
+ 
+	
+ &lt;h5 class="card-titlec text-center">&lt;br/>&lt;a href="../../tags/">@&lt;/a>&lt;/h5>	
+
+ 	
+ &lt;p class="card-text"> &lt;/p></description></item><item><title>Build bane Mobile Legends by WilfinNo1_idns</title><link>/build-bane-mlbb-by-wilfinno1idns.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/build-bane-mlbb-by-wilfinno1idns.html</guid><description>&lt;b>&lt;div class="row text-white bg-primary" style="padding-top:30px;">
+	 
+
+&lt;div class="col-lg-12 text-center font-weight-bold">BUILD BANE MOBILE LEGENDS BY WILFINNO1_IDNS&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">
+
+
+		
+
+
+&lt;div class="badge badge-light" style="margin-top:-5px;">
+ &lt;a style="color:white;" href="../../tags/wilfinno1idns" title="WilfinNo1_idns">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/banner/player/full/blank.jpg" width="50px" height="50px" class="" alt="WilfinNo1_idns">
+	&lt;/div>&lt;a style="color:white;" href="../../tags/wilfinno1idns" title="WilfinNo1_idns">&lt;div style="padding-top: 3px;">@WilfinNo1_idns&lt;/div>&lt;/a>
+
+
+		&lt;/div>
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-medal fa-lg">&lt;/i>&lt;br/>WR : 76.2%&lt;/div>
+ 
+ &lt;div class="col-4 text-center font-weight-bold">&lt;i class="fas fa-play fa-lg">&lt;/i>&lt;br/>Match : 550&lt;/div>
+		 
+ 
+ 
+ 
+
+ 
+ &lt;/div>&lt;/b>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	 
+ 	
+ 
+
+
+
+
+
+
+ 
+
+
+
+ &lt;div class="container-fluid">
+
+&lt;style>
+&lt;!-- body,html{ -->
+ &lt;!-- width:100%; -->
+ &lt;!-- height:100%; -->
+ &lt;!-- padding:0px; -->
+&lt;!-- margin:0px; -->
+&lt;!-- } -->
+&lt;!-- .modal-dialog{ -->
+ &lt;!-- height:calc(100% - 60px); -->
+&lt;!-- } -->
+&lt;!-- .modal-content{ -->
+ &lt;!-- height:100%; -->
+ &lt;!-- } -->
+&lt;!-- .modal-header{ -->
+ &lt;!-- height:50px; -->
+
+&lt;!-- } -->
+&lt;!-- .model-footer{ -->
+ &lt;!-- height:75px; -->
+&lt;!-- } -->
+&lt;!-- .modal-body { -->
+&lt;!-- height:calc(100% - 125px); -->
+&lt;!-- overflow-y: scroll; -->
+&lt;!-- } -->
+&lt;/style>
+
+&lt;div id="gridSystemModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+ &lt;div class="modal-dialog modal-lg" role="document">
+ &lt;div class="modal-content">
+ &lt;div class="modal-header">
+ &lt;h1 class="modal-title" id="gridModalLabel"
+		
+		 style="font-size: 16px;
+ margin-bottom: -4px;
+ margin-top: -4px;
+ line-height: 0.5;
+ /* background-color: #2e9fff; */
+ font-weight: 0;"
+		
+		>Build bane Mobile Legends by WilfinNo1_idns&lt;/h1>
+		
+ &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">&lt;span aria-hidden="true">&amp;times;&lt;/span>&lt;/button>
+ &lt;/div>
+ &lt;div class="modal-body">
+
+&lt;div class="row">
+
+	
+&lt;div class="col-md-4 ml-auto"> 
+
+&lt;div class="card" style="max-width:100%;">
+
+
+ &lt;a title="WilfinNo1_idns" href="../../tags/wilfinno1idns">&lt;img src="https://res.cloudinary.com/drlhixyyd/image/fetch/c_thumb,g_face,h_150,w_150/https://cdn2-build.mobagenie.my.id/p/images/avatar/player/blank.jpg" class="card-img-top" alt="WilfinNo1_idns">&lt;/a>
+
+ 		
+ &lt;div class="card-body">
+ 
+	
+ &lt;h5 class="card-titlec text-center">WilfinNo1_idns&lt;br/>&lt;a href="../../tags/wilfinno1idns">@WilfinNo1_idns&lt;/a>&lt;/h5>	
+
+ 	
+ &lt;p class="card-text"> &lt;/p></description></item></channel></rss>
