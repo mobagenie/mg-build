@@ -78,7 +78,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Archive APK
+      - name: Archive APKs
         run: |
           # Get the repository permalink
           REPO_URL="${{ github.event.repository.html_url }}"
