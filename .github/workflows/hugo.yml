@@ -72,6 +72,7 @@ jobs:
           cp -r gradle/public/* com.$PACKAGE_NAME/www &&          
           cd com.$PACKAGE_NAME &&
           ls &&
+          ls www &&
           cordova platform add android &&
           cordova build android --debug"
         env:
