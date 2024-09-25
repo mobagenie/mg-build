@@ -100,7 +100,6 @@ jobs:
           cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME  $APP_NAME &&
           ls &&
           rm -rf com.$PACKAGE_NAME/www/* &&
-          cp -r public/* com.$PACKAGE_NAME/www &&          
           cp -r gradle/public/* com.$PACKAGE_NAME/www &&                   
           cd com.$PACKAGE_NAME &&
           ls &&
