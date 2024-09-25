@@ -79,3 +79,19 @@ jobs:
         with:
           name: apk-files
           path: apk/
+
+      - name: Create Release
+        id: create_release
+        run: |
+          release=$(gh release create "v1.0.0" apk/*.apk --title "Release v1.0.0" --notes "APK build for gradle branch")
+          echo "::set-output name=release::$release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload APK to Release
+        run: |
+          for apk in apk/*.apk; do
+            gh release upload "${{ steps.create_release.outputs.release }}" "$apk" --clobber
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
