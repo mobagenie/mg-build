@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Build - MobaGenie - Mobile Legends Build Guide</title><link>/tools.html</link><description>Recent content in Tools on Build - MobaGenie - Mobile Legends Build Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 30 Jan 2021 13:23:09 +0700</lastBuildDate><atom:link href="/tools/feed.xml" rel="self" type="application/rss+xml"/><item><title>Mobile Legends Nick Fliper</title><link>/tools/mobilelegends-nick-fliper.html</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>/tools/mobilelegends-nick-fliper.html</guid><description>&lt;b>Generate Upside Down Nickname&lt;/b>
+			&lt;p>
+				This tool helps you generate Mobile Legends Nickname upside down (Flip), and then you can copy the result and paste it in Mobile Legends.
+				
+&lt;br/>&lt;br/>
+
+ex : &lt;b>ʇıɯıןoussǝɾ , uoɯǝן , ʇuǝʞq , ɐqoɯ xoɟ&lt;/b>
+			&lt;/p>
+
+			&lt;div class="form-group">
+				&lt;form name="theForm" id="theForm">
+					&lt;div class="col-lg-6">
+						&lt;h5>Write MLBB Nickname Here :&lt;/h5>
+						&lt;textarea class="form-control" rows="2" cols="30" name="source" onkeyup="updown(this)">&lt;/textarea>
+					&lt;/div>
+					
+					&lt;div class="col-lg-6">
+						&lt;h5>Nickname Result :&lt;/h5>
+						&lt;textarea class="form-control" rows="2" cols="30" name="resultf" id="output" readonly>&lt;/textarea>
+					&lt;/div>
+					
+					&lt;div class="clearfix">&lt;/div>
+
+				&lt;/form>
+
+			&lt;/div>
+
+		&lt;/div>
+		
+&lt;button onclick="copy()"> Copy Nickname &lt;/button>
+&lt;br/>
+
+ &lt;script>
+function copy() {
+ let textarea = document.getElementById("output");
+ textarea.select();
+ document.execCommand("copy");
+}
+&lt;/script>
+
+
+
+		&lt;/div>
+		
+
+	&lt;/div>
+	
+	&lt;script src="../js/updown.js" type="text/javascript" language="JavaScript">&lt;/script>
+
+
+&lt;br/>
+		
+		&lt;center>Made with ❤️ by MobaGenie&lt;/center></description></item></channel></rss>

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "456794",
+        "source_api": "all",
+        "tanggal": "2015-06-18",
+        "instansi_id": "126",
+        "belum": "19539",
+        "proses": "366",
+        "selesai": "464",
+        "parent_nid": "0",
+        "InstansiName": "Kementerian Sosial",
+        "rtl": "46.33"
+    },
+    {
+        "id": "456926",
+        "source_api": "all",
+        "tanggal": "2015-06-18",
+        "instansi_id": "858",
+        "belum": "427",
+        "proses": "480",
+        "selesai": "10579",
+        "parent_nid": "0",
+        "InstansiName": "Tim Sosialisasi Kebijakan Penyesuaian Subsidi BBM",
+        "rtl": "30.43"
+    },
+    {
+        "id": "456830",
+        "source_api": "all",
+        "tanggal": "2015-06-18",
+        "instansi_id": "416",
+        "belum": "2955",
+        "proses": "305",
+        "selesai": "2195",
+        "parent_nid": "0",
+        "InstansiName": "Kementerian Pendidikan dan Kebudayaan",
+        "rtl": "19.23"
+    }
+]
