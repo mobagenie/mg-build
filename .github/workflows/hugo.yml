@@ -70,18 +70,19 @@ jobs:
           echo "APK files:"
           ls apk
 
-      - name: Upload APK Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: apk-files
-          path: apk/
+      - name: Set tag and release name
+        id: set_release_info
+        run: |
+          TAG_NAME="release-$(echo $GITHUB_SHA | cut -c1-7)"
+          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
+          echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
         with:
-          tag_name: "release-${{ github.sha.substr(0, 7) }}"  # First 7 characters of commit SHA
-          release_name: "Release ${{ github.sha.substr(0, 7) }}"
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: ${{ env.RELEASE_NAME }}
           body: "APK build for gradle branch"
           draft: false
           prerelease: false
