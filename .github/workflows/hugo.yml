@@ -57,17 +57,20 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build APK using Docker
-        uses: docker://mobagenie/mgbuild:v1
-        with:
-          args: |
-            sh -c "cd gradle/public && cordova build android --debug"
+        run: |
+          docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
+          cd gradle/public &&
+          cordova create myApp com.example.myapp MyApp &&
+          cd myApp &&
+          cordova platform add android &&
+          cordova build android --debug"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Archive APK
         run: |
           mkdir -p apk
-          cp -r gradle/public/platforms/android/app/build/outputs/apk/debug/*.apk apk/
+          cp -r gradle/public/myApp/platforms/android/app/build/outputs/apk/debug/*.apk apk/
           echo "APK files:"
           ls apk
 
