@@ -27,10 +27,6 @@ jobs:
           mkdir -p gradle/public
           cp -r public/* gradle/public/
 
-      - name: Check for changes
-        run: |
-          git diff --exit-code gradle/public || echo "Changes detected"
-
       - name: Commit and push changes to gradle/public
         run: |
           git config --local user.email "action@github.com"
@@ -84,8 +80,8 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         with:
-          tag_name: ${{ github.sha }}  # Unique tag for each commit
-          release_name: "Release ${{ github.sha }}"
+          tag_name: "release-${{ github.sha::7 }}"  # First 7 characters of commit SHA
+          release_name: "Release ${{ github.sha::7 }}"
           body: "APK build for gradle branch"
           draft: false
           prerelease: false
