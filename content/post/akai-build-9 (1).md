@@ -1,6 +1,6 @@
 ---
 title: AAAAABuild akai Mobile Legends by Isocan
-slug: build-akai-mlbb-by-isocan
+slug: build-akai-mlbb-by-isocan222
 filename: "akai-build-9.html"
 
 categories: 
