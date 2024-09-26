@@ -40,21 +40,63 @@
 
 <div class="col-lg-12">
 
+
     <script>
+    	/*
+    try {
+    // Your code here
+
+    $.ajax({
+    url: "https://mg-build-api.vercel.app/ytlatestvideo?pid={{ .Params.yt }}&limit=1",
+type: 'GET',
+dataType: 'json',
+success: function(json) {
+    $("#loading").hide();
+    
+    var videoid = json.items[0].contentDetails.videoId; // Directly access videoId
+    alert(videoid); // Alerts the videoId without quotes
+},
+error: function(xhr, status, error) {
+    console.error("Error fetching video ID:", status, error); // Add error handling
+}
+	    });
+	
+	} catch (error) {
+    alert('An error occurred: ' + error.message); // Alert the error message
+}
+*/
+    	/*
+    
+     //   	 url: "http://localhost:3000/ytlatestvideo?pid={{ .Params.yt }}&limit=1",
+      //  url: "https://mgapis.herokuapp.com/ytlatestvideo.php?pid={{ .Params.yt }}&limit=1",
+       */
+       
 <!-- $(document).ready(function() { -->
 document.addEventListener("DOMContentLoaded", function(event) { 
 
 
     $.ajax({
-        url: "https://mgapis.herokuapp.com/ytlatestvideo.php?pid={{ .Params.yt }}&limit=1",
+    //	url: "https://mg-build-api.vercel.app/ytlatestvideo?pid=UCvh1at6xpV1ytYOAzxmqUsA&limit=1",
+    url: "https://mg-build-api.vercel.app/ytlatestvideo?pid={{ .Params.yt }}&limit=1",
+     /*
+     output json response : 
+     {"items":[{"contentDetails":{"videoId":"kgZm0b4-l_E"}}]}
+     
+     */
+     
         type: 'GET',
         dataType: 'json',
+    //    alert("hello2"); 
         success: function(json) {
 		
 			$("#loading").hide();
 		
-            //alert(JSON.stringify(json.items[0].contentDetails.videoId));
+     /*
+       alert(JSON.stringify(json.items[0].contentDetails.videoId));
             var videoid = JSON.stringify(json.items[0].contentDetails.videoId);
+            */
+            var videoid = json.items[0].contentDetails.videoId; // Directly access videoId
+ //   alert(videoid); // Alerts the videoId without quotes
             videoid = videoid.replace('"', '');
             videoid = videoid.replace('"', '');
 
