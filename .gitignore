@@ -1,7 +1,7 @@
-gradle/*
-/gradle/*
-public/*
-/public/*
+gradle7/*
+/gradle7/*
+public7/*
+/public7/*
 ssh_setup.sh
 push.sh
 deploy.sh

@@ -33,7 +33,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add gradle/public
           git commit -m "Update static site content"
-          git push origin gradle -f
+          git push origin gradle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
