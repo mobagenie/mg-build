@@ -1,0 +1,46 @@
+name: Build Hugo
+
+on:
+  push:
+    branches:
+      - gradle
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build Hugo
+        run: hugo --minify
+
+      - name: Publish to gradle/public
+        run: |
+          mkdir -p gradle/public
+          cp -r public/* gradle/public/
+
+      - name: Commit and push changes to gradle/public
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add gradle/public
+          git commit -m "Update static site content"
+          git push origin gradle
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/gradle'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gradle/public
+          publish_branch: gh-pages  # Adjust this if needed
