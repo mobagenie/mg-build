@@ -21,9 +21,23 @@
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 document.addEventListener('deviceready', onDeviceReady, false);
 
+/*
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
+}
+
+*/
+
+function onDeviceReady() {
+    // Cordova is now initialized. Have fun!
+    //console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    document.getElementById('deviceready').classList.add('ready');
+
+    // Open /index.html after 5 seconds
+    setTimeout(function() {
+        window.location.href = '/index.html';
+    }, 1000);
 }
