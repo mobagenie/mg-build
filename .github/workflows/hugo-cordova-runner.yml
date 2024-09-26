@@ -134,6 +134,11 @@ jobs:
 
       - name: Archive APKs
         run: |
+          REPO_URL="${{ github.event.repository.html_url }}"
+          REPO_NAME=$(basename -s .git "$REPO_URL")
+          APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/')
+          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')        
+          
           mkdir -p apk
           cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/release/*.apk apk/
           echo "APK files in apk directory:"
