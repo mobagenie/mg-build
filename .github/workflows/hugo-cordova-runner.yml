@@ -14,10 +14,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   check-keystore:
     runs-on: ubuntu-latest
@@ -121,10 +117,6 @@ jobs:
         run: |
           cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/gradle/public/mg-build-release-key.keystore"
 
-      - name: Copy Keystore to gradle/public
-        run: |
-          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/gradle/public/mg-build-release-key.keystore"
-
       - name: Build APK using Docker
         run: |
           REPO_URL="${{ github.event.repository.html_url }}"
@@ -139,10 +131,8 @@ jobs:
           cd com.$PACKAGE_NAME &&
           cordova platform add android &&
           cordova build android --release -- --packageType=apk --keystore=www/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-- name: Archive APKs
+      - name: Archive APKs
         run: |
           REPO_URL="https://github.com/mobagenie/mg-build"
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
