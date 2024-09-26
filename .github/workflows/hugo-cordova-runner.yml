@@ -122,6 +122,12 @@ jobs:
           mkdir -p "${GITHUB_WORKSPACE}/com.mobagenie.mg.build/platforms/android"
           cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/com.mobagenie.mg.build/platforms/android/mg-build-release-key.keystore"
 
+      - name: Remove Existing Project Directory
+        run: |
+          if [ -d "com.mobagenie.mg.build" ]; then
+            rm -rf com.mobagenie.mg.build
+          fi
+
       - name: Build APK using Docker
         run: |
           REPO_URL="${{ github.event.repository.html_url }}"
@@ -131,7 +137,6 @@ jobs:
 
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
           cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME $APP_NAME &&
-          rm -rf com.$PACKAGE_NAME/www/* &&
           cp -r gradle/public/* com.$PACKAGE_NAME/www &&
           cd com.$PACKAGE_NAME &&
           cordova platform add android &&
@@ -177,6 +182,3 @@ jobs:
           asset_content_type: application/vnd.android.package-archive
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Clean up Keystore
-        run: rm -f mg-build-release-key.keystore
