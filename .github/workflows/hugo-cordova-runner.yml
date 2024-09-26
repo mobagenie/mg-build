@@ -134,9 +134,6 @@ jobs:
 
       - name: Archive APKs
         run: |
-          REPO_URL="https://github.com/mobagenie/mg-build"
-          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
-          
           mkdir -p apk
           cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/release/*.apk apk/
           echo "APK files in apk directory:"
@@ -149,31 +146,31 @@ jobs:
           echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
           echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
-    - name: Create asset name
-      id: create_asset_name
-      run: echo "ASSET_NAME=com.${PACKAGE_NAME}-$(echo $GITHUB_SHA | cut -c1-7).apk" >> $GITHUB_ENV
+      - name: Create asset name
+        id: create_asset_name
+        run: echo "ASSET_NAME=com.${PACKAGE_NAME}-$(echo $GITHUB_SHA | cut -c1-7).apk" >> $GITHUB_ENV
 
-    - name: Create GitHub Release
-      id: create_release
-      uses: actions/create-release@v1
-      with:
-        tag_name: ${{ env.TAG_NAME }}
-        release_name: ${{ env.RELEASE_NAME }}
-        body: "APK build for gradle branch"
-        draft: false
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: ${{ env.RELEASE_NAME }}
+          body: "APK build for gradle branch"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Upload APK to Release
-      uses: actions/upload-release-asset@v1
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: apk/app-release.apk
-        asset_name: ${{ env.ASSET_NAME }}  # Reference the asset name here
-        asset_content_type: application/vnd.android.package-archive
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload APK to Release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: apk/app-release.apk
+          asset_name: ${{ env.ASSET_NAME }}  # Reference the asset name here
+          asset_content_type: application/vnd.android.package-archive
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Clean up Keystore
-      run: rm -f mg-build-release-key.keystore
+      - name: Clean up Keystore
+        run: rm -f mg-build-release-key.keystore
