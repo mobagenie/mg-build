@@ -151,7 +151,7 @@ jobs:
           echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
           echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
-      - name: Create asset name
+- name: Create asset name
         id: create_asset_name
         run: |
           REPO_URL="${{ github.event.repository.html_url }}"
@@ -159,8 +159,8 @@ jobs:
           APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/')
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
           
-         echo "ASSET_NAME=com.${PACKAGE_NAME}-$(echo $GITHUB_SHA | cut -c1-7).apk" >> $GITHUB_ENV
-
+          echo "ASSET_NAME=com.${PACKAGE_NAME}-$(echo $GITHUB_SHA | cut -c1-7).apk" >> $GITHUB_ENV
+          
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
