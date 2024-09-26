@@ -125,22 +125,41 @@ jobs:
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
 
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
-          cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME $APP_NAME &&
-          rm -rf com.$PACKAGE_NAME/www/* &&
-          cp -r gradle/public/* com.$PACKAGE_NAME/www &&
-          cd com.$PACKAGE_NAME &&
+          echo "{
+  \"name\": \"$PACKAGE_NAME\",
+  \"displayName\": \"$APP_NAME\",
+  \"version\": \"1.0.0\",
+  \"description\": \"A sample Apache Cordova application that responds to the deviceready event.\",
+  \"main\": \"index.js\",
+  \"scripts\": {
+    \"test\": \"echo 'Error: no test specified' && exit 1\"
+  },
+  \"keywords\": [
+    \"ecosystem:cordova\"
+  ],
+  \"author\": \"Apache Cordova Team\",
+  \"license\": \"Apache-2.0\"
+}" > "cordovaProject/package.json" &&
+echo "<?xml version='1.0' encoding='utf-8'?>
+<widget id=\"io.cordova.hellocordova\" version=\"1.0.0\" xmlns=\"http://www.w3.org/ns/widgets\" xmlns:cdv=\"http://cordova.apache.org/ns/1.0\">
+    <name>$APP_NAME</name>
+    <description>Sample Apache Cordova App</description>
+    <author email=\"dev@cordova.apache.org\" href=\"https://cordova.apache.org\">
+        Apache Cordova Team
+    </author>
+    <content src=\"index2.html\" />
+    <allow-intent href=\"http://*/*\" />
+    <allow-intent href=\"https://*/*\" />
+</widget>" > cordovaProject/config.xml &&
+          cp -r gradle/public/* cordovaProject/www &&
+          cd cordovaProject &&
           cordova platform add android &&
           cordova build android --release -- --packageType=apk --keystore=www/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
 
       - name: Archive APKs
         run: |
-          REPO_URL="${{ github.event.repository.html_url }}"
-          REPO_NAME=$(basename -s .git "$REPO_URL")
-          APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/')
-          PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')        
-          
           mkdir -p apk
-          cp -r com.$PACKAGE_NAME/platforms/android/app/build/outputs/apk/release/*.apk apk/
+          cp -r cordovaProject/platforms/android/app/build/outputs/apk/release/*.apk apk/
           echo "APK files in apk directory:"
           ls apk
 
