@@ -115,7 +115,7 @@ jobs:
 
       - name: Copy Keystore to Correct Location
         run: |
-          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/gradle/cordovaProject/key/mg-build-release-key.keystore"
+          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/cordovaProject/key/mg-build-release-key.keystore"
 
       - name: Build APK using Docker
         run: |
