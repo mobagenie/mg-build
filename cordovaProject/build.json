@@ -2,7 +2,7 @@
   "android": {
     "release": {
       "exclude": [
-        "www/mg-build-release-key.keystore" // Exclude key.jks from the build
+        "www/mg-build-release-key.keystore"
       ]
     }
   }
