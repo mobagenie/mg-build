@@ -22,25 +22,9 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
 
-      - name: Publish to gradle/public
-        run: |
-          mkdir -p gradle/public
-          cp -r public/* gradle/public/
-
-      - name: Commit and push changes to gradle/public
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add gradle/public
-          git commit -m "Update static site content"
-          git push origin gradle
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/gradle'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./gradle/public
-          publish_branch: gh-pages  # Adjust this if needed
+          publish_dir: ./public
+          publish_branch: gh-pages  # Ensure this branch exists
