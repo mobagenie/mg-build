@@ -46,7 +46,7 @@ jobs:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
 
       - name: Clean up
-        run: rm mg-build-release-key.keystore
+        run: rm -f mg-build-release-key.keystore  # Use -f to avoid errors if the file doesn't exist
 
   build:
     runs-on: ubuntu-latest
@@ -125,10 +125,7 @@ jobs:
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
 
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
-
-# Replace appNameReplace and appDescReplace in package.json
-sed -i 's/appNameReplace/$PACKAGE_NAME/g; s/appDescReplace/$APP_NAME/g' cordovaProject/package.json
-
+          sed -i 's/appNameReplace/$PACKAGE_NAME/g; s/appDescReplace/$APP_NAME/g' cordovaProject/package.json &&
           cp -r gradle/public/* cordovaProject/www &&
           cd cordovaProject &&
           cordova platform add android &&
@@ -179,11 +176,11 @@ sed -i 's/appNameReplace/$PACKAGE_NAME/g; s/appDescReplace/$APP_NAME/g' cordovaP
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-release.apk
+          asset_path: apk/app-release.apk  # Ensure this matches the APK filename
           asset_name: ${{ env.ASSET_NAME }}  # Reference the asset name here
           asset_content_type: application/vnd.android.package-archive
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Clean up Keystore
-        run: rm -f mg-build-release-key.keystore
+        run: rm -f mg-build-release-key.keystore  # Use -f to avoid errors if the file doesn't exist
