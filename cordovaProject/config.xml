@@ -8,4 +8,8 @@
     <content src="index2.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+<access origin="*" />
+<allow-navigation href="https://*/*" />
+<allow-navigation href="http://*/*" />
+<allow-intent href="https://*/*" />
 </widget>

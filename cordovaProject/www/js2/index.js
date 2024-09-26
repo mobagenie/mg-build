@@ -39,5 +39,5 @@ function onDeviceReady() {
     // Open /index.html after 5 seconds
     setTimeout(function() {
         window.location.href = '/index.html';
-    }, 1000);
+    }, 5000);
 }
