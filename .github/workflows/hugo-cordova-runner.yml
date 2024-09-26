@@ -124,7 +124,7 @@ jobs:
           APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/')
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
 
-          docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
+          docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c '
           echo "{
   \"name\": \"$PACKAGE_NAME\",
   \"displayName\": \"$APP_NAME\",
@@ -140,7 +140,7 @@ jobs:
   \"author\": \"Apache Cordova Team\",
   \"license\": \"Apache-2.0\"
 }" > "cordovaProject/package.json" &&
-echo "<?xml version='1.0' encoding='utf-8'?>
+          echo "<?xml version='1.0' encoding='utf-8'?>
 <widget id=\"io.cordova.hellocordova\" version=\"1.0.0\" xmlns=\"http://www.w3.org/ns/widgets\" xmlns:cdv=\"http://cordova.apache.org/ns/1.0\">
     <name>$APP_NAME</name>
     <description>Sample Apache Cordova App</description>
@@ -154,7 +154,7 @@ echo "<?xml version='1.0' encoding='utf-8'?>
           cp -r gradle/public/* cordovaProject/www &&
           cd cordovaProject &&
           cordova platform add android &&
-          cordova build android --release -- --packageType=apk --keystore=www/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
+          cordova build android --release -- --packageType=apk --keystore=www/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks'
 
       - name: Archive APKs
         run: |
