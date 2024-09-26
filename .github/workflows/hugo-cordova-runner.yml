@@ -135,12 +135,19 @@ jobs:
           APP_NAME=$(echo "$REPO_NAME" | sed -e 's/-/ /g' -e 's/^./\U&/')
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
 
-          docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
-          cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME $APP_NAME &&
-          cp -r gradle/public/* com.$PACKAGE_NAME/www &&
-          cd com.$PACKAGE_NAME &&
-          cordova platform add android &&
-          cordova build android --release -- --packageType=apk --keystore=gradle/public/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
+          docker run --rm \
+            -v "${{ github.workspace }}:/github/workspace" \
+            -w /github/workspace \
+            -e KEYSTORE_PASSWORD="${{ secrets.KEYSTORE_PASSWORD }}" \
+            -e KEY_ALIAS="${{ secrets.KEY_ALIAS }}" \
+            -e KEY_PASSWORD="${{ secrets.KEY_PASSWORD }}" \
+            mobagenie/mgbuild:v1 sh -c "
+            cp gradle/public/mg-build-release-key.keystore /github/workspace/com.mobagenie.mg.build/ &&
+            cd com.mobagenie.mg.build &&
+            cordova create com.$PACKAGE_NAME com.$PACKAGE_NAME $APP_NAME &&
+            cp -r gradle/public/* www/ &&
+            cordova platform add android &&
+            cordova build android --release -- --packageType=apk --keystore=mg-build-release-key.keystore --storePassword=\$KEYSTORE_PASSWORD --alias=\$KEY_ALIAS --password=\$KEY_PASSWORD --keystoreType=jks"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
