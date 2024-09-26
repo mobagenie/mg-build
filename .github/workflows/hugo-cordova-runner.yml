@@ -130,7 +130,7 @@ jobs:
           cp -r gradle/public/* cordovaProject/www &&
           cd cordovaProject &&
           cordova platform add android &&
-          cordova build android --release -- --packageType=apk --keystore=${GITHUB_WORKSPACE}/gradle/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
+          cordova build android --release -- --packageType=apk --keystore=/gradle/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
 
       - name: Archive APKs
         run: |
