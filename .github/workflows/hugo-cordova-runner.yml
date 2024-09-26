@@ -119,8 +119,7 @@ jobs:
 
       - name: Copy Keystore to Correct Location
         run: |
-          mkdir -p "${GITHUB_WORKSPACE}/com.mobagenie.mg.build/platforms/android"
-          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/com.mobagenie.mg.build/platforms/android/mg-build-release-key.keystore"
+          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/gradle/public/mg-build-release-key.keystore"
 
       - name: Copy Keystore to gradle/public
         run: |
@@ -139,7 +138,7 @@ jobs:
           cp -r gradle/public/* com.$PACKAGE_NAME/www &&
           cd com.$PACKAGE_NAME &&
           cordova platform add android &&
-          cordova build android --release -- --packageType=apk --keystore=mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
+          cordova build android --release -- --packageType=apk --keystore=www/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
