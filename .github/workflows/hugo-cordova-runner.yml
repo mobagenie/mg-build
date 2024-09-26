@@ -115,7 +115,7 @@ jobs:
 
       - name: Copy Keystore to Correct Location
         run: |
-          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/gradle/public/mg-build-release-key.keystore"
+          cp mg-build-release-key.keystore "${GITHUB_WORKSPACE}/gradle/mg-build-release-key.keystore"
 
       - name: Build APK using Docker
         run: |
@@ -130,7 +130,7 @@ jobs:
           cp -r gradle/public/* cordovaProject/www &&
           cd cordovaProject &&
           cordova platform add android &&
-          cordova build android --release -- --packageType=apk --keystore=www/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
+          cordova build android --release -- --packageType=apk --keystore=${GITHUB_WORKSPACE}/gradle/mg-build-release-key.keystore --storePassword=${{ secrets.KEYSTORE_PASSWORD }} --alias=${{ secrets.KEY_ALIAS }} --password=${{ secrets.KEY_PASSWORD }} --keystoreType=jks"
 
       - name: Archive APKs
         run: |
