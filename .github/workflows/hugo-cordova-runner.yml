@@ -125,7 +125,8 @@ jobs:
           PACKAGE_NAME=$(echo "$REPO_URL" | sed 's|https://github.com/||;s|/|.|g;s|.git$||;s|-|.|g;s|[^a-zA-Z0-9.]||g')
 
           docker run --rm -v "${{ github.workspace }}:/github/workspace" -w /github/workspace mobagenie/mgbuild:v1 sh -c "
-          sed -i 's/appNameReplace/$PACKAGE_NAME/g; s/appDescReplace/$APP_NAME/g' cordovaProject/package.json &&
+          sed -i 's/appNameReplace/$PACKAGE_NAME/g; s/appDescReplace/$APP_NAME/g' cordovaProject/config.xml &&
+          sed -i 's/pkgNameReplace/$PACKAGE_NAME/g; s/displayNameReplace/$APP_NAME/g' cordovaProject/package.json &&          
           cp -r gradle/public/* cordovaProject/www &&
           cd cordovaProject &&
           cordova platform add android &&
