@@ -151,7 +151,7 @@ jobs:
           echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
           echo "RELEASE_NAME=Release $(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
-- name: Create asset name
+      - name: Create asset name
         id: create_asset_name
         run: |
           REPO_URL="${{ github.event.repository.html_url }}"
